@@ -5,6 +5,7 @@
   justify-content: space-between;
   /* border: 1px solid; */
   height: 6rem;
+  margin: auto;
   padding: 1rem 4.8rem;
   background-color: transparent;
   z-index: 2;
