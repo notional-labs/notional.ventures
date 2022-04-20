@@ -1,7 +1,12 @@
 .header {
+
+  justify-content: center;
   width: auto;
-  height: 68rem;
+  height: 59rem;
+  min-height: auto;
   border: 3px solid black;
   background-image: url(/src/media/Group\ 17.svg);
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
+  filter: brightness(70%);
 }

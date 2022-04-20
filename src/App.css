@@ -1,4 +1,6 @@
-* {
-  margin: 0;
+.root {
+  margin: auto;
   background-color: #2C324D;
+  min-height: 100vh;
 }
+
