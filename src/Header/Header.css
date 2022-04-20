@@ -1,12 +1,24 @@
 .header {
-
+  position: relative;
   justify-content: center;
   width: auto;
-  height: 59rem;
+  height: 67.5rem;
   min-height: auto;
-  border: 3px solid black;
-  background-image: url(/src/media/Group\ 17.svg);
-  background-size: auto;
-  background-repeat: no-repeat;
+  border-bottom: 3px solid black;
+}
+
+.background1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  filter: brightness(70%);
+}
+
+.background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   filter: brightness(70%);
 }

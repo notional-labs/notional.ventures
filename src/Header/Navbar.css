@@ -1,34 +1,25 @@
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* border: 1px solid; */
   height: 6rem;
-  padding: 0 4.8rem;
+  padding: 1rem 4.8rem;
   background-color: transparent;
+  z-index: 2;
 }
 
 .main-nav-list {
+  position: relative;
   list-style: none;
   display: flex;
   align-items: center;
   gap: 3.2rem;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.3rem;
   background-color: transparent;
-
+  z-index: 2;
 }
 
-.main-nav-list li {
-  background-color: transparent;
-  filter: contrast(50%);
-}
-
-
-.logo img {
-  height: 4rem;
-  background:none;
-  background-color: transparent;
-  filter: brightness(100%);
-}
