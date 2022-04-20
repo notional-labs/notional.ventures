@@ -1,5 +1,5 @@
 import './Navbar.css'
-
+import NotionalLogo from '../media/Logo.png'
 
 const Navbar = () => {
   return (
