@@ -20,7 +20,9 @@ const Hero = () => {
     <div className="hero">
 
       <div className="description">
-        <p>At Notional we belive that khanh is gay</p>
+        <hr className="bar"></hr>
+        <p className="greetings">At Notional we belive that Khanh is gay</p>
+        <p className="label"></p>
       </div>
       <div>
         <Akash className="akash" />
