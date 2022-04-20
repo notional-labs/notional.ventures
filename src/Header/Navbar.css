@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid; */
+  height: 6rem;
+  padding: 0 4.8rem;
+  background: none;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.main-nav-list li {
+  background: none;
+}

@@ -1,10 +1,14 @@
-import './App.css';
+import React from "react";
+import "../src/App.css";
+import Header from "./Header/Header";
 
 function App() {
   return (
-    <div >
-
-    </div>
+    <React.Fragment>
+      <div>
+        <Header/>
+      </div>
+    </React.Fragment>
   );
 }
 
