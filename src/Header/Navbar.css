@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid; */
   height: 6rem;
   margin: auto;
   padding: 1rem 4.8rem;
@@ -14,13 +13,22 @@
 .main-nav-list {
   position: relative;
   list-style: none;
+  font-family: "Segoe UI Light";
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 5rem;
   color: white;
-  font-weight: 400;
-  font-size: 1.3rem;
+  font-size:1.8rem;
   background-color: transparent;
   z-index: 2;
 }
 
+.main-nav-list li:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main-nav-list li a {
+  text-decoration: none;
+  color: white;
+}

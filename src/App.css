@@ -1,6 +1,26 @@
+@font-face {
+  font-family: "Segoe UI Light";
+  src: url("/src/media/Segoe\ UI/Segoe\ UI\ Light.ttf");
+}
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url("/src/media/Segoe\ UI/Segoe\ UI.ttf");
+}
+@font-face {
+  font-family: "Segoe UI Semibold";
+  src: url("/src/media/Segoe\ UI/Segoe\ UI\ Semibold.ttf");
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url("/src/media/Segoe\ UI/Segoe\ UI\ Bold.ttf");
+}
+
 .root {
+  position: relative;
   margin: auto;
   background-color: #2C324D;
-  min-height: 100vh;
+  min-height: 1000vh;
+  height: auto;
+  max-height: max-content;
 }
 

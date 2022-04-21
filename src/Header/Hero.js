@@ -18,10 +18,9 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="hero">
-
       <div className="description">
         <hr className="bar"></hr>
-        <p className="greetings">At Notional we belive that Khanh is gay</p>
+        <p className="greetings">At Notional, we all believe that Khanh is gay</p>
         <p className="label"></p>
       </div>
       <div>
