@@ -1,0 +1,18 @@
+.osmo-ctb {
+  height: 8rem;
+  position: absolute;
+  left: 2rem;
+  top: 0;
+}
+
+.juno-ctb {
+  height: 9rem;
+  position: absolute;
+  left: 50rem;
+}
+
+.gaia-ctb {
+  height: 6rem;
+  position: absolute;
+  left: 70rem;
+}

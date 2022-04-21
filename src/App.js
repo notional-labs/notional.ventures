@@ -1,7 +1,7 @@
 import React from "react";
 import "../src/App.css";
 import Header from "./Header/Header";
-import Contributions from "./Body/Contributions";
+import Contributions from "./Body/Contribute/Contributions";
 
 function App() {
   return (

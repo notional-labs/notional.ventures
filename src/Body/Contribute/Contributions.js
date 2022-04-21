@@ -1,6 +1,8 @@
 import "./Contributions.css";
 import React from "react";
-import ContributionsBg from "../media/Group18.png";
+import AutoSlide from "./Slider";
+// import AutoSlide from "./Slider";
+// import ContributionsBg from "../media/Group18.png";
 
 const Contributions = () => {
   return (
@@ -15,6 +17,9 @@ const Contributions = () => {
             blandit egestas pellentesque eget, facilisis et ipsum. Quisque
             sodales quam eu rhoncus pellentesque.{" "}
           </p>
+        </div>
+        <div className="ecosystem">
+          <AutoSlide/>
         </div>
       </div>
     </div>
