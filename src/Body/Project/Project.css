@@ -1,0 +1,24 @@
+.project {
+  /* position: relative; */
+  height: 1500px;
+  width: auto;
+}
+.project .title {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.project .title .bar {
+  width: 100px;
+  border: 3px solid #FF4040;
+}
+
+.project .title .name {
+  margin-top: 20px;
+  font-family: "Segoe UI Light";
+  font-size: 60px;
+  color: white;
+}

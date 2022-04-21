@@ -1,6 +1,7 @@
 .contributions {
   position: relative;
-  background-color: none;
+  height: 1500px;
+  width: auto;
   /* margin-top: 0; */
 }
 .contributions .title {
@@ -85,7 +86,7 @@
   background-color: #ffffff33;
   height: 250px;
   width: 450px;
-  box-shadow: 1px 4px 1px 3px rgb(41, 38, 38);
+  box-shadow: 1px 4px 1px 5px rgb(41, 38, 38);
 }
 
 .companyinfo-item__1 {

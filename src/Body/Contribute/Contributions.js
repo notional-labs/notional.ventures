@@ -50,7 +50,7 @@ const Contributions = () => {
           </div>
           <div className="companyinfo-item companyinfo-item__2">
             <div style={infoStyle}>
-              <div style={infoStyle_number}>97,2%</div>
+              <div style={infoStyle_number}>99,3%</div>
               <div style={infoStyle_text}>Uptime</div>
             </div>
           </div>

@@ -1,0 +1,35 @@
+.stake {
+  /* position: relative; */
+  height: 1500px;
+  width: auto;
+}
+.stake .title {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.stake .title .bar {
+  width: 100px;
+  border: 3px solid #3a71fd;
+}
+
+.stake .title .name {
+  margin-top: 20px;
+  font-family: "Segoe UI Light";
+  font-size: 60px;
+  color: white;
+}
+
+.stake .title .text {
+  font-family: "Segoe UI Light";
+  font-size: 20px;
+  color: white;
+  width: 60%;
+  margin: 1rem auto;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
