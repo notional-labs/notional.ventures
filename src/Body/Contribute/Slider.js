@@ -14,8 +14,7 @@ const AutoSlide = () => {
         <img className="ecosystem-image__2" src={Juno} alt="juno" />
       </figure>
       <figure className="ecosystem-item ecosystem-item__3">
-        <img className="ecosystem-image__3
-        " src={Atom} alt="gaia" />
+        <img className="ecosystem-image__3" src={Atom} alt="gaia" />
       </figure>
     </React.Fragment>
   );
