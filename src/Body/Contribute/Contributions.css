@@ -52,7 +52,15 @@
 
 .ecosystem {
     position: absolute;
-    width: 200rem;
-    height: 7rem;
-    top: 35rem;
+    top: 32rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2vh);
+    gap: 10px;
+    align-content: center;
+    justify-content:center;
+    /* border: 7px solid black; */
+    height: 8rem;
+    grid-auto-flow: column;
 }

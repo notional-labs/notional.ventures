@@ -1,18 +1,24 @@
 import React from "react";
-import Osmosis from '../../media/image4.png'
-import Juno from '../../media/image7.png'
-import Atom from '../../media/image9.png'
-import './Slider.css'
+import Osmosis from "../../media/image4.png";
+import Juno from "../../media/image7.png";
+import Atom from "../../media/image9.png";
+import "./Slider.css";
 
 const AutoSlide = () => {
-
   return (
     <React.Fragment>
-      <img className="osmo-ctb" src={Osmosis} alt='osmosis'/>
-      <img className="juno-ctb" src={Juno} alt='juno'/>
-      <img className="gaia-ctb" src={Atom} alt='gaia'/>
+      <figure className="ecosystem-item ecosystem-item__1">
+        <img className="ecosystem-image__1" src={Osmosis} alt="osmosis" />
+      </figure>
+      <figure className="ecosystem-item ecosystem-item__2">
+        <img className="ecosystem-image__2" src={Juno} alt="juno" />
+      </figure>
+      <figure className="ecosystem-item ecosystem-item__3">
+        <img className="ecosystem-image__3
+        " src={Atom} alt="gaia" />
+      </figure>
     </React.Fragment>
   );
-}
+};
 
 export default AutoSlide;
