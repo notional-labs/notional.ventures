@@ -1,7 +1,7 @@
 .contributions {
   position: relative;
   height: 1500px;
-  width: 1700px;
+  width: auto;
   padding: 0;
   margin: 0 auto;
   /* margin-top: 0; */
@@ -44,7 +44,7 @@
   top: -6rem;
   height: 1650px;
   width: 100%;
-  background-image: url(../../media/Group18.png);
+  background-image: url(../../media/background-decor/Group18.png);
   z-index: 2;
   margin-top: 0px;
   background-size: contain;
