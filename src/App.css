@@ -21,6 +21,7 @@
   background-color: #2C324D;
   min-height: 1000vh;
   height: auto;
+  width: auto;
   max-height: max-content;
 }
 

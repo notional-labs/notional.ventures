@@ -26,50 +26,52 @@ const infoStyle_text = {
 
 const Contributions = () => {
   return (
-    <div className="contributions">
-      <div className="background">
-        <div className="title">
-          <hr className="bar"></hr>
-          <p className="name">Contributions</p>
-          <p className="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-            ante in nisi ultricies pharetra sed at metus. Integer sem nisi,
-            blandit egestas pellentesque eget, facilisis et ipsum. Quisque
-            sodales quam eu rhoncus pellentesque.{" "}
-          </p>
-        </div>
-        <div className="ecosystem">
-          <AutoSlide />
-        </div>
-        <div className="companyinfo">
-          <div className="companyinfo-item companyinfo-item__1">
-            <div style={infoStyle}>
-              <div style={infoStyle_number}>40</div>
-              <div style={infoStyle_text}>Chains operating</div>
-            </div>
+    <div className="general">
+      <div className="contributions">
+        <div className="background">
+          <div className="title">
+            <hr className="bar"></hr>
+            <p className="name">Contributions</p>
+            <p className="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+              ante in nisi ultricies pharetra sed at metus. Integer sem nisi,
+              blandit egestas pellentesque eget, facilisis et ipsum. Quisque
+              sodales quam eu rhoncus pellentesque.{" "}
+            </p>
           </div>
-          <div className="companyinfo-item companyinfo-item__2">
-            <div style={infoStyle}>
-              <div style={infoStyle_number}>99,3%</div>
-              <div style={infoStyle_text}>Uptime</div>
-            </div>
+          <div className="ecosystem">
+            <AutoSlide />
           </div>
-          <div className="companyinfo-item companyinfo-item__3">
-            <div style={infoStyle}>
-              <div style={infoStyle_number}>4183</div>
-              <div style={infoStyle_text}>Unique Users</div>
+          <div className="companyinfo">
+            <div className="companyinfo-item companyinfo-item__1">
+              <div style={infoStyle}>
+                <div style={infoStyle_number}>40</div>
+                <div style={infoStyle_text}>Chains operating</div>
+              </div>
             </div>
-          </div>
-          <div className="companyinfo-item companyinfo-item__4">
-            <div style={infoStyle}>
-              <div style={infoStyle_number}>$12M</div>
-              <div style={infoStyle_text}>Company Value</div>
+            <div className="companyinfo-item companyinfo-item__2">
+              <div style={infoStyle}>
+                <div style={infoStyle_number}>99,3%</div>
+                <div style={infoStyle_text}>Uptime</div>
+              </div>
             </div>
-          </div>
-          <div className="companyinfo-item companyinfo-item__5">
-            <div style={infoStyle}>
-              <div style={infoStyle_number}>$345K</div>
-              <div style={infoStyle_text}>Anual Rewards</div>
+            <div className="companyinfo-item companyinfo-item__3">
+              <div style={infoStyle}>
+                <div style={infoStyle_number}>4183</div>
+                <div style={infoStyle_text}>Unique Users</div>
+              </div>
+            </div>
+            <div className="companyinfo-item companyinfo-item__4">
+              <div style={infoStyle}>
+                <div style={infoStyle_number}>$12M</div>
+                <div style={infoStyle_text}>Company Value</div>
+              </div>
+            </div>
+            <div className="companyinfo-item companyinfo-item__5">
+              <div style={infoStyle}>
+                <div style={infoStyle_number}>$345K</div>
+                <div style={infoStyle_text}>Anual Rewards</div>
+              </div>
             </div>
           </div>
         </div>

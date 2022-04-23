@@ -4,6 +4,7 @@ import Header from "./Header/Header";
 import Contributions from "./Body/Contribute/Contributions";
 import Stake from "./Body/Stake/Stake";
 import Project from "./Body/Project/Project";
+import Team from "./Body/Team/Team";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Contributions/>
         <Stake/>
         <Project/>
+        <Team/>
       </div>
     </React.Fragment>
   );

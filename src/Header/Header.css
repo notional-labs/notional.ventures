@@ -1,7 +1,9 @@
 .header {
   position: relative;
   justify-content: center;
-  width: auto;
+  width: 1830px;
+  min-width: auto;
+  margin: 0px auto;
   height: 67.5rem;
   min-height: auto;
 }

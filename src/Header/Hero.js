@@ -1,17 +1,17 @@
 import React from "react";
-import { ReactComponent as Akash } from "../media/Akash.svg";
-import { ReactComponent as Desmos } from "../media/Desmos.svg";
-import { ReactComponent as Dig } from "../media/Dig.svg";
-import { ReactComponent as Emoney } from "../media/E-money.svg";
-import { ReactComponent as Atom } from "../media/Atom.svg";
-import { ReactComponent as Lum } from "../media/Lum.svg";
-import { ReactComponent as Juno } from "../media/Juno.svg";
-import { ReactComponent as Orange } from "../media/Rectangle13.svg";
-import { ReactComponent as Yellow } from "../media/Rectangle14.svg";
-import { ReactComponent as Purple } from "../media/Rectangle15.svg";
-import { ReactComponent as Red } from "../media/Rectangle16.svg";
-import { ReactComponent as Blue } from "../media/Rectangle17.svg";
-import { ReactComponent as Green } from "../media/Rectangle18.svg";
+import { ReactComponent as Akash } from "../media/background-decor/Akash.svg";
+import { ReactComponent as Desmos } from "../media/background-decor/Desmos.svg";
+import { ReactComponent as Dig } from "../media/background-decor/Dig.svg";
+import { ReactComponent as Emoney } from "../media/background-decor/E-money.svg";
+import { ReactComponent as Atom } from "../media/background-decor/Atom.svg";
+import { ReactComponent as Lum } from "../media/background-decor/Lum.svg";
+import { ReactComponent as Juno } from "../media/background-decor/Juno.svg";
+import { ReactComponent as Orange } from "../media/background-decor/Rectangle13.svg";
+import { ReactComponent as Yellow } from "../media/background-decor/Rectangle14.svg";
+import { ReactComponent as Purple } from "../media/background-decor/Rectangle15.svg";
+import { ReactComponent as Red } from "../media/background-decor/Rectangle16.svg";
+import { ReactComponent as Blue } from "../media/background-decor/Rectangle17.svg";
+import { ReactComponent as Green } from "../media/background-decor/Rectangle18.svg";
 
 import "./Hero.css";
 

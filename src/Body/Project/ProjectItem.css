@@ -1,0 +1,19 @@
+.project-item {
+  height: 30rem;
+  width: 50%;
+  margin: auto;
+  flex: 40%;
+  display: flex;
+  margin: 3rem auto;
+  justify-content: center;
+}
+
+.user-item__info{
+  align-items: center;
+}
+
+.user-item__info h2 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
