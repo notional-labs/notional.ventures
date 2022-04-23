@@ -15,7 +15,7 @@ export const members = [
         <div>
             <div style={{
                 width: '500px'
-                
+
             }}>
                 <Image src={adam} width={'500px'} preview={false} style={{
                     borderRadius: '20px'
@@ -380,7 +380,7 @@ export const members = [
                     marginTop: '20px',
                     textAlign: 'left'
                 }}>
-                    Du Lich
+                    Du Nguyen
                 </p>
                 <p style={{
                     color: '#EEC13F',

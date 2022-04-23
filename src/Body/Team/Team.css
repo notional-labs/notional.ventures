@@ -1,7 +1,5 @@
 .team {
   height: 100vh;
-  position: relative;
-  z-index: 2;
 }
 .team .title {
   text-align: center;
@@ -21,6 +19,10 @@
   font-family: "Segoe UI Light";
   font-size: 60px;
   color: white;
+}
+
+.member {
+  margin-top: 13rem;
 }
 
 div.react-3d-carousel div.slider-container div.slider-content div.slider-single div.slider-single-content {
