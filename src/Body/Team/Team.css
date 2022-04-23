@@ -22,3 +22,15 @@
   font-size: 60px;
   color: white;
 }
+
+div.react-3d-carousel div.slider-container div.slider-content div.slider-single div.slider-single-content {
+  box-shadow: none;
+}
+
+.preactive>.slider-single-content>div>div>p {
+  display: none;
+}
+
+.proactive>.slider-single-content>div>div>p {
+  display: none;
+}
