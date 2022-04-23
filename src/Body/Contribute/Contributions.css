@@ -1,9 +1,10 @@
 .contributions {
   position: relative;
-  height: 1500px;
+  height: 2200px;
   width: auto;
   padding: 0;
   margin: 0 auto;
+  
   /* margin-top: 0; */
 }
 .contributions .title {
@@ -13,7 +14,7 @@
   top: 10rem;
   width: 100%;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 9rem;
 }
 
 .contributions .title .bar {
@@ -42,16 +43,18 @@
 .background {
   position: absolute;
   top: -6rem;
-  height: 1650px;
+  height: 100%;
   width: 100%;
   background-image: url(../../media/background-decor/Group18.png);
   z-index: 2;
   margin-top: 0px;
-  background-size: contain;
+  background-size: auto;
   /* background-repeat: no-repeat; */
 }
 
 .ecosystem {
+  margin-top: 13rem;
+
   position: absolute;
   top: 32rem;
   width: 100%;
@@ -68,7 +71,7 @@
 
 .companyinfo {
   position: absolute;
-  top: 45rem;
+  top: 65rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);

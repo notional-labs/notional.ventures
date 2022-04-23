@@ -29,7 +29,7 @@
   height: 40rem;
 }
 
-.desmos {
+.osmosis {
   position: absolute;
   z-index: 3;
   right: 1rem;
@@ -51,7 +51,7 @@
   right:28rem;
   z-index: 3;
 }
-.lum {
+.sifchain {
   position: absolute;
   z-index: 1;
   top:38rem;

@@ -1,10 +1,10 @@
 import React from "react";
 import { ReactComponent as Akash } from "../media/background-decor/Akash.svg";
-import { ReactComponent as Desmos } from "../media/background-decor/Desmos.svg";
+import { ReactComponent as Osmosis } from "../media/background-decor/Osmosis.svg";
 import { ReactComponent as Dig } from "../media/background-decor/Dig.svg";
 import { ReactComponent as Emoney } from "../media/background-decor/E-money.svg";
 import { ReactComponent as Atom } from "../media/background-decor/Atom.svg";
-import { ReactComponent as Lum } from "../media/background-decor/Lum.svg";
+import { ReactComponent as Sifchain } from "../media/background-decor/Sifchain.svg";
 import { ReactComponent as Juno } from "../media/background-decor/Juno.svg";
 import { ReactComponent as Orange } from "../media/background-decor/Rectangle13.svg";
 import { ReactComponent as Yellow } from "../media/background-decor/Rectangle14.svg";
@@ -26,10 +26,10 @@ const Hero = () => {
       <div>
         <Akash className="akash" />
         <Atom className="atom" />
-        <Desmos className="desmos" />
+        <Osmosis className="osmosis" />
         <Dig className="dig" />
         <Emoney className="emoney" />
-        <Lum className="lum" />
+        <Sifchain className="sifchain" />
         <Juno className="juno" />
         <Orange className="orange" />
         <Yellow className="yellow" />
