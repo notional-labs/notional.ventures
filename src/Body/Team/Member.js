@@ -1,21 +1,21 @@
-import adam from '../assets/img/members/adam.jpg'
-import jacob from '../assets/img/members/jacob.jpg'
-import khanh from '../assets/img/members/khanh.jpeg'
-import ricardo from '../assets/img/members/ricardo.jpg'
-import billy from '../assets/img/members/billy.png'
-import long from '../assets/img/members/long.png'
-import son from '../assets/img/members/son.jpg'
-import vuong from '../assets/img/members/vuong.png'
-import minh from '../assets/img/members/minh.jpg'
-import vinh from '../assets/img/members/vinh.png'
-import du from '../assets/img/members/du.png'
-import { Image } from 'antd';
-
+import adam from '../../media/members/adam.jpg'
+import jacob from '../../media/members/jacob.jpg'
+import khanh from '../../media/members/khanh.jpeg'
+import ricardo from '../../media/members/khanh.jpeg'
+import billy from '../../media/members/billy.png'
+import long from '../../media/members/long.png'
+import son from '../../media/members/son.jpg'
+import vuong from '../../media/members/vuong.png'
+import minh from '../../media/members/minh.jpg'
+import vinh from '../../media/members/vinh.png'
+import du from '../../media/members/du.png'
+import { Image } from 'antd'
 export const members = [
     (
         <div>
             <div style={{
                 width: '500px'
+                
             }}>
                 <Image src={adam} width={'500px'} preview={false} style={{
                     borderRadius: '20px'

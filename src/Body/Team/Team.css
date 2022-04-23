@@ -1,3 +1,8 @@
+.team {
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
 .team .title {
   text-align: center;
   width: 100%;
