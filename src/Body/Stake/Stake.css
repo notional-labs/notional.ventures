@@ -1,30 +1,31 @@
-.stake {
+.stake-section {
   /* position: relative; */
   margin-top: -6rem;
   height: 1500px;
   width: auto;
 }
-.stake .title {
+.stake-section .title {
   text-align: center;
   width: 100%;
+  height: 30rem;
   margin: auto;
   align-items: center;
   margin-top: 5rem;
 }
 
-.stake .title .bar {
+.stake-section .title .bar {
   width: 100px;
   border: 3px solid #3a71fd;
 }
 
-.stake .title .name {
+.stake-section .title .name {
   margin-top: 20px;
   font-family: "Segoe UI Light";
   font-size: 60px;
   color: white;
 }
 
-.stake .title .text {
+.stake-section .title .text {
   font-family: "Segoe UI Light";
   font-size: 20px;
   color: white;
@@ -33,4 +34,9 @@
   align-items: center;
   text-align: center;
   font-size: 1.5rem;
+}
+
+.stake {
+  width: 70%;
+  margin: 0 auto;
 }

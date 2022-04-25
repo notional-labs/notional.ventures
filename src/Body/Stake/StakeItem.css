@@ -1,0 +1,29 @@
+.stake-item {
+    height: 20rem;
+    width: 15rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex: 0 0 15%;
+    padding: auto;
+}
+
+.stake-item__info h2 {
+    color: white;
+    font-weight: 700;
+    align-items: center;
+}
+
+.stake-btn {
+    margin-top: 1rem;
+    width: 7rem;
+    height: 3rem;
+    background-color: #FFFF;
+    color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+}
