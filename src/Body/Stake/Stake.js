@@ -41,6 +41,46 @@ const Stake = () => {
       image: `${Osmosis}`,
       name: 'Osmosis',
     },
+    {
+      id: "s2",
+      image: `${Atom}`,
+      name: 'Atom',
+    },
+    {
+      id: "s3",
+      image: `${Osmosis}`,
+      name: 'Osmosis',
+    },
+    {
+      id: "s2",
+      image: `${Atom}`,
+      name: 'Atom',
+    },
+    {
+      id: "s3",
+      image: `${Osmosis}`,
+      name: 'Osmosis',
+    },
+    {
+      id: "s2",
+      image: `${Atom}`,
+      name: 'Atom',
+    },
+    {
+      id: "s3",
+      image: `${Osmosis}`,
+      name: 'Osmosis',
+    },
+    {
+      id: "s2",
+      image: `${Atom}`,
+      name: 'Atom',
+    },
+    {
+      id: "s3",
+      image: `${Osmosis}`,
+      name: 'Osmosis',
+    },
   ];
   return (
     <div className="stake-section">

@@ -1,6 +1,6 @@
 .stake-item {
-    height: 20rem;
-    width: 15rem;
+    height: 22rem;
+    width: 10rem;
     border: 2px solid white;
     border-radius: 15px;
     list-style: none;
@@ -8,8 +8,8 @@
     margin: 0 auto;
     margin-bottom: 2rem;
     justify-content: center;
-    flex: 0 0 15%;
-    padding: auto;
+    flex: 0 0 17%;
+    align-items: center;
 }
 
 .stake-item__info h2 {

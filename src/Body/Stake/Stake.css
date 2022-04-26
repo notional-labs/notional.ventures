@@ -1,13 +1,13 @@
 .stake-section {
   /* position: relative; */
   margin-top: -6rem;
-  height: 1500px;
+  height: 1600px;
   width: auto;
 }
 .stake-section .title {
   text-align: center;
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   margin: auto;
   align-items: center;
   margin-top: 5rem;
@@ -37,6 +37,6 @@
 }
 
 .stake {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
