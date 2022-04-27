@@ -42,7 +42,7 @@ const StakeItem = (props) => {
             <img
               src={props.image}
               alt={props.name}
-              style={{ width: "9rem", height: "9rem", marginTop: "25px" }}
+              style={{ width: "7rem", height: "7rem", marginTop: "35px" }}
             />
           </div>
           <div className="stake-item__info">

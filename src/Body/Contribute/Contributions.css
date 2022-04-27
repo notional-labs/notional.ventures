@@ -54,23 +54,6 @@
   /* background-repeat: no-repeat; */
 }
 
-.ecosystem {
-  margin-top: 13rem;
-
-  position: absolute;
-  top: 32rem;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 2vh);
-  gap: 10px;
-  align-content: center;
-  justify-content: center;
-  /* border: 7px solid black; */
-  height: 8rem;
-  grid-auto-flow: column;
-}
-
 .companyinfo {
   position: absolute;
   top: 60rem;
