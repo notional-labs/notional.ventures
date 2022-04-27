@@ -25,6 +25,17 @@ const StakeItem = (props) => {
 
   return (
     <React.Fragment>
+      {showHandler && (
+        <Modal
+          chainid={loadedChainInfo.data.chain_id}
+          blockheight={loadedChainInfo.data.block_height}
+          blocktime={loadedChainInfo.data.block_time}
+          image={someone}
+          name={props.name}
+          show={showHandler}
+          onCancel={closeModalHandler}
+        ></Modal>
+      )}
       <li className="stake-item">
         <div className="stake-item__content">
           <div className="stake-item__image">
@@ -37,7 +48,16 @@ const StakeItem = (props) => {
           <div className="stake-item__info">
             <h2>{props.name}</h2>
           </div>
-          <button className="stake-btn">Stake</button>
+          <button
+            // onClick={showModalHandler}
+            onClick={() => {
+              fetchChainInfo();
+              showModalHandler();
+            }}
+            className="stake-btn"
+          >
+            Stake
+          </button>
         </div>
       </li>
     </React.Fragment>

@@ -28,12 +28,12 @@ const Stake = () => {
       name: "Juno",
     },
     {
-      id: "s2",
+      id: "s4",
       image: `${Starname}`,
       name: "Starname",
     },
     {
-      id: "s3",
+      id: "s5",
       image: `${Cyber}`,
       name: "Cyber",
     },

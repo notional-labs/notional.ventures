@@ -3,7 +3,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-2504px));
+    transform: translateX(calc(-2144px - 80px * 12));
   }
 }
 
@@ -18,10 +18,10 @@
 .slider .slide-track {
   animation: scroll 20s linear infinite;
   display: flex;
-  width: 7512px;
+  width: calc(-(2144px + 80px * 12) * 3);
 }
 .slider .slide {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
   align-self: center;
 }
