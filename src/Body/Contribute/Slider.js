@@ -1,21 +1,73 @@
 import React from "react";
-import Osmosis from "../../media/image4.png";
-import Juno from "../../media/image7.png";
-import Atom from "../../media/image9.png";
+import Osmosis from "../../media/logo/osmosis.png";
+import Juno from "../../media/logo/juno.png";
+import Cosmos from "../../media/logo/cosmos.png";
+import Stargaze from "../../media/logo/stargaze.png";
+import Cheq from "../../media/logo/cheqd.png";
+import Omniflix from "../../media/logo/omniflix.png";
 import "./Slider.css";
 
 const AutoSlide = () => {
   return (
     <React.Fragment>
-      <figure className="ecosystem-item ecosystem-item__1">
-        <img className="ecosystem-image__1" src={Osmosis} alt="osmosis" />
-      </figure>
-      <figure className="ecosystem-item ecosystem-item__2">
-        <img className="ecosystem-image__2" src={Juno} alt="juno" />
-      </figure>
-      <figure className="ecosystem-item ecosystem-item__3">
-        <img className="ecosystem-image__3" src={Atom} alt="gaia" />
-      </figure>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src={Osmosis} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Cosmos} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Juno} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Stargaze} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Cheq} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Omniflix} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Osmosis} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Cosmos} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Juno} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Stargaze} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Cheq} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Omniflix} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Osmosis} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Cosmos} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Juno} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Stargaze} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Cheq} alt="" />
+          </div>
+          <div class="slide">
+            <img src={Omniflix} alt="" />
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 };
