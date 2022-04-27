@@ -1,8 +1,6 @@
 import "./Contributions.css";
 import React from "react";
-import AutoSlide from "./Slider";
-// import AutoSlide from "./Slider";
-// import ContributionsBg from "../media/Group18.png";
+import Slider from "./Slider"
 
 const infoStyle = {
   "text-align": "center",
@@ -39,9 +37,7 @@ const Contributions = () => {
               sodales quam eu rhoncus pellentesque.{" "}
             </p>
           </div>
-          <div className="ecosystem">
-            <AutoSlide />
-          </div>
+          <Slider />
           <div className="companyinfo">
             <div className="companyinfo-item companyinfo-item__1">
               <div style={infoStyle}>
