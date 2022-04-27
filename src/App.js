@@ -10,11 +10,11 @@ function App() {
   return (
     <React.Fragment>
       <div className="root">
-        <Header/>
-        <Contributions/>
-        <Stake/>
-        <Project/>
-        <Team/>
+        <Header />
+        <Contributions />
+        <Stake />
+        <Project />
+        <Team />
       </div>
     </React.Fragment>
   );

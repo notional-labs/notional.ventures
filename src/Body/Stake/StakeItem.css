@@ -1,29 +1,29 @@
 .stake-item {
-    height: 22rem;
-    width: 260px;
-    border: 1px solid white;
-    border-radius: 15px;
-    list-style: none;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+  height: 22rem;
+  width: 260px;
+  border: 1px solid white;
+  border-radius: 15px;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .stake-item__info h2 {
-    font-family: "Segoe UI Semibold";
-    color: white;
-    margin-top: 15px;
-    font-size: 35px;
-    align-items: center;
+  font-family: "Segoe UI Semibold";
+  color: white;
+  margin-top: 15px;
+  font-size: 35px;
+  align-items: center;
 }
 
 .stake-btn {
-    margin-top: 1rem;
-    width: 10rem;
-    height: 3rem;
-    background-color: #FFFF;
-    color: black;
-    border: 1px solid white;
-    border-radius: 8px;
+  margin-top: 1rem;
+  width: 10rem;
+  height: 3rem;
+  background-color: #ffff;
+  color: black;
+  border: 1px solid white;
+  border-radius: 8px;
 }

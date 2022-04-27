@@ -1,6 +1,6 @@
 import "./Contributions.css";
 import React from "react";
-import Slider from "./Slider"
+import Slider from "./Slider";
 
 const infoStyle = {
   "text-align": "center",

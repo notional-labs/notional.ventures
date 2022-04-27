@@ -4,7 +4,7 @@ import "./ProjectList.css";
 const ProjectList = (props) => {
   return (
     <ul className="project-list">
-      {props.items.map(project => (
+      {props.items.map((project) => (
         <ProjectItem
           key={project.id}
           id={project.id}

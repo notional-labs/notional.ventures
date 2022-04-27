@@ -13,77 +13,83 @@ const Stake = () => {
     {
       id: "s1",
       image: `${Osmosis}`,
-      name: 'Osmosis',
+      name: "Osmosis",
+      chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
       id: "s2",
       image: `${Atom}`,
-      name: 'Atom',
+      name: "Atom",
+      chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
       id: "s3",
       image: `${Juno}`,
-      name: 'Juno',
+      name: "Juno",
     },
     {
       id: "s2",
       image: `${Starname}`,
-      name: 'Starname',
+      name: "Starname",
     },
     {
       id: "s3",
       image: `${Cyber}`,
-      name: 'Cyber',
+      name: "Cyber",
     },
     {
       id: "s2",
       image: `${Atom}`,
-      name: 'Atom',
+      name: "Atom",
+      chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
-      name: 'Osmosis',
+      name: "Osmosis",
+      chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
       id: "s2",
       image: `${Atom}`,
-      name: 'Atom',
+      name: "Atom",
+      chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
-      name: 'Osmosis',
+      name: "Osmosis",
+      chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
       id: "s2",
       image: `${Atom}`,
-      name: 'Atom',
+      name: "Atom",
+      chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
-      name: 'Osmosis',
+      name: "Osmosis",
+      chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
       id: "s2",
       image: `${Atom}`,
-      name: 'Atom',
+      name: "Atom",
+      chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
-      name: 'Osmosis',
+      name: "Osmosis",
+      chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
       id: "s2",
       image: `${Atom}`,
-      name: 'Atom',
-    },
-    {
-      id: "s3",
-      image: `${Osmosis}`,
-      name: 'Osmosis',
+      name: "Atom",
+      chainUrl: "https://api.cosmostation.io/v1/status",
     },
   ];
   return (
@@ -99,7 +105,7 @@ const Stake = () => {
         </p>
       </div>
       <div className="stake">
-        <StakeList stakes = {STAKES} />
+        <StakeList stakes={STAKES} />
       </div>
     </div>
   );

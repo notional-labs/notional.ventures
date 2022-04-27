@@ -1,9 +1,8 @@
 import React from "react";
 import "./Team.css";
-import {Carousel} from '3d-react-carousal';
+import { Carousel } from "3d-react-carousal";
 import { members } from "./Member";
 const Team = () => {
-
   return (
     <div className="team">
       <div className="title">

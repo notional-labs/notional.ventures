@@ -50,13 +50,13 @@
 .emoney {
   position: absolute;
   top: 27rem;
-  right:28rem;
+  right: 28rem;
   z-index: 3;
 }
 .sifchain {
   position: absolute;
   z-index: 1;
-  top:38rem;
+  top: 38rem;
   right: 68rem;
 }
 .juno {
@@ -72,7 +72,6 @@
   height: 37rem;
   right: 41rem;
   z-index: 2;
-
 }
 
 .yellow {
@@ -114,6 +113,3 @@
   right: 73rem;
   z-index: 1;
 }
-
-
-
