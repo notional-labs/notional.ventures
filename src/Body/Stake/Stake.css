@@ -1,7 +1,7 @@
 .stake-section {
   /* position: relative; */
   margin-top: -6rem;
-  height: 1600px;
+  height: auto;
   width: auto;
 }
 .stake-section .title {

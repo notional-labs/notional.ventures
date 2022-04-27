@@ -10,77 +10,75 @@ const Stake = () => {
       id: "s1",
       image: `${Osmosis}`,
       name: 'Osmosis',
+      chainUrl: 'https://api-bitcanna.cosmostation.io/v1/status'
     },
     {
       id: "s2",
       image: `${Atom}`,
       name: 'Atom',
+      chainUrl: 'https://api.cosmostation.io/v1/status'
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
       name: 'Osmosis',
+      chainUrl: 'https://api-bitcanna.cosmostation.io/v1/status'
     },
     {
       id: "s2",
       image: `${Atom}`,
       name: 'Atom',
+      chainUrl: 'https://api.cosmostation.io/v1/status'
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
       name: 'Osmosis',
+      chainUrl: 'https://api-bitcanna.cosmostation.io/v1/status'
     },
     {
       id: "s2",
       image: `${Atom}`,
       name: 'Atom',
+      chainUrl: 'https://api.cosmostation.io/v1/status'
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
       name: 'Osmosis',
+      chainUrl: 'https://api-bitcanna.cosmostation.io/v1/status'
     },
     {
       id: "s2",
       image: `${Atom}`,
       name: 'Atom',
+      chainUrl: 'https://api.cosmostation.io/v1/status'
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
       name: 'Osmosis',
+      chainUrl: 'https://api-bitcanna.cosmostation.io/v1/status'
     },
     {
       id: "s2",
       image: `${Atom}`,
       name: 'Atom',
+      chainUrl: 'https://api.cosmostation.io/v1/status'
     },
     {
-      id: "s3",
+      id: "s1",
       image: `${Osmosis}`,
       name: 'Osmosis',
+      chainUrl: 'https://api-bitcanna.cosmostation.io/v1/status'
     },
     {
       id: "s2",
       image: `${Atom}`,
       name: 'Atom',
+      chainUrl: 'https://api.cosmostation.io/v1/status'
     },
-    {
-      id: "s3",
-      image: `${Osmosis}`,
-      name: 'Osmosis',
-    },
-    {
-      id: "s2",
-      image: `${Atom}`,
-      name: 'Atom',
-    },
-    {
-      id: "s3",
-      image: `${Osmosis}`,
-      name: 'Osmosis',
-    },
+    
   ];
   return (
     <div className="stake-section">
