@@ -5,6 +5,16 @@ import Atom from "../../media/stake/Gaia.svg";
 import Juno from "../../media/stake/Juno.svg";
 import Cyber from "../../media/stake/Cyber.svg";
 import Starname from "../../media/stake/Starname.svg";
+import Akash from "../../media/stake/Akash.svg";
+import Emoney from "../../media/stake/Emoney.svg";
+import Evmos from "../../media/stake/Evmos.svg";
+import Sifchain from "../../media/stake/Sifchain.svg";
+import Sentinel from "../../media/stake/Sentinel.svg";
+import Stargaze from "../../media/stake/Stargaze.svg";
+import Kava from "../../media/stake/Kava.svg";
+import Ixo from "../../media/stake/Ixo.svg";
+import Secret from "../../media/stake/Secret.svg";
+import Regen from "../../media/stake/Regen.svg";
 
 import StakeList from "./StakeList";
 
@@ -38,59 +48,125 @@ const Stake = () => {
       name: "Cyber",
     },
     {
-      id: "s2",
-      image: `${Atom}`,
-      name: "Atom",
+      id: "s6",
+      image: `${Akash}`,
+      name: "Akash",
       chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
-      id: "s1",
-      image: `${Osmosis}`,
-      name: "Osmosis",
+      id: "s7",
+      image: `${Emoney}`,
+      name: "Emoney",
       chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
-      id: "s2",
-      image: `${Atom}`,
-      name: "Atom",
+      id: "s8",
+      image: `${Evmos}`,
+      name: "Evmos",
       chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
-      id: "s1",
-      image: `${Osmosis}`,
-      name: "Osmosis",
+      id: "s9",
+      image: `${Sifchain}`,
+      name: "Sifchain",
       chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
-      id: "s2",
-      image: `${Atom}`,
-      name: "Atom",
+      id: "s10",
+      image: `${Sentinel}`,
+      name: "Sentinel",
       chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
-      id: "s1",
-      image: `${Osmosis}`,
-      name: "Osmosis",
+      id: "s11",
+      image: `${Stargaze}`,
+      name: "Stargaze",
       chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
-      id: "s2",
-      image: `${Atom}`,
-      name: "Atom",
+      id: "s12",
+      image: `${Kava}`,
+      name: "Kava",
       chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
-      id: "s1",
-      image: `${Osmosis}`,
-      name: "Osmosis",
+      id: "s13",
+      image: `${Ixo}`,
+      name: "Ixo",
       chainUrl: "https://api-bitcanna.cosmostation.io/v1/status",
     },
     {
-      id: "s2",
-      image: `${Atom}`,
-      name: "Atom",
+      id: "s14",
+      image: `${Secret}`,
+      name: "Secret",
       chainUrl: "https://api.cosmostation.io/v1/status",
     },
+    {
+      id: "s15",
+      image: `${Regen}`,
+      name: "Regen",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s16",
+      image: `${Secret}`,
+      name: "Omniflix",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },    
+    {
+      id: "s17",
+      image: `${Secret}`,
+      name: "Likecoin",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s18",
+      image: `${Secret}`,
+      name: "Kichain",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s19",
+      image: `${Secret}`,
+      name: "Cheq",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s20",
+      image: `${Secret}`,
+      name: "Band",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s21",
+      image: `${Secret}`,
+      name: "Chihuahua",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s22",
+      image: `${Secret}`,
+      name: "Konstellation",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s23",
+      image: `${Secret}`,
+      name: "Vidulum",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s24",
+      image: `${Secret}`,
+      name: "Provenance",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    },
+    {
+      id: "s25",
+      image: `${Secret}`,
+      name: "Bitcanna",
+      chainUrl: "https://api.cosmostation.io/v1/status",
+    }
   ];
   return (
     <div className="stake-section">
