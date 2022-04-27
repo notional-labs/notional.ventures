@@ -1,26 +1,26 @@
 .stake-item {
     height: 22rem;
-    width: 10rem;
-    border: 2px solid white;
+    width: 260px;
+    border: 1px solid white;
     border-radius: 15px;
     list-style: none;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 2rem;
     justify-content: center;
-    flex: 0 0 17%;
     align-items: center;
 }
 
 .stake-item__info h2 {
+    font-family: "Segoe UI Semibold";
     color: white;
-    font-weight: 700;
+    margin-top: 15px;
+    font-size: 35px;
     align-items: center;
 }
 
 .stake-btn {
     margin-top: 1rem;
-    width: 7rem;
+    width: 10rem;
     height: 3rem;
     background-color: #FFFF;
     color: black;

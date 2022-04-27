@@ -1,7 +1,11 @@
 import React from "react";
 import "./Stake.css";
-import Osmosis from "../../media/stake/Osmosis.png";
-import Atom from "../../media/stake/Gaia.png";
+import Osmosis from "../../media/stake/Osmosis.svg";
+import Atom from "../../media/stake/Gaia.svg";
+import Juno from "../../media/stake/Juno.svg";
+import Cyber from "../../media/stake/Cyber.svg";
+import Starname from "../../media/stake/Starname.svg";
+
 import StakeList from "./StakeList";
 
 const Stake = () => {
@@ -18,18 +22,18 @@ const Stake = () => {
     },
     {
       id: "s3",
-      image: `${Osmosis}`,
-      name: 'Osmosis',
+      image: `${Juno}`,
+      name: 'Juno',
     },
     {
       id: "s2",
-      image: `${Atom}`,
-      name: 'Atom',
+      image: `${Starname}`,
+      name: 'Starname',
     },
     {
       id: "s3",
-      image: `${Osmosis}`,
-      name: 'Osmosis',
+      image: `${Cyber}`,
+      name: 'Cyber',
     },
     {
       id: "s2",

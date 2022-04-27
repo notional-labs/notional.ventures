@@ -1,7 +1,7 @@
 import "./Header.css";
 import Navbar from "./Navbar";
 import React from "react";
-import {ReactComponent as Group17} from '../media/background-decor/Group17-2.svg'
+import {ReactComponent as Group17} from '../media/background-decor/abstract.svg'
 import {ReactComponent as Group171} from '../media/background-decor/group17-1.svg'
 import Hero from "./Hero";
 

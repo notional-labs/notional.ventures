@@ -1,8 +1,11 @@
 .stake-section {
-  /* position: relative; */
-  margin-top: -6rem;
-  height: 1600px;
+  height: 140rem;
   width: auto;
+  background-image: url(../../media/background-decor/group19.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center -150px;
 }
 .stake-section .title {
   text-align: center;
@@ -15,7 +18,9 @@
 
 .stake-section .title .bar {
   width: 100px;
-  border: 3px solid #3a71fd;
+  height: 8px;
+  border: none;
+  background-color: #3a71fd;
 }
 
 .stake-section .title .name {
@@ -38,5 +43,6 @@
 
 .stake {
   width: 90%;
+  max-width: 100rem;
   margin: 0 auto;
 }

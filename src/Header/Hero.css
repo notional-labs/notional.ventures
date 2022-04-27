@@ -8,9 +8,11 @@
   margin-left: 5rem;
 }
 .description .bar {
-  width: 100px;
-  border: 3px solid #943afd;
   margin-left: 0;
+  width: 100px;
+  height: 8px;
+  border: none;
+  background-color: #943afd;
 }
 .description .greetings {
   margin-top: 20px;
