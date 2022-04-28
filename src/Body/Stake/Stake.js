@@ -30,7 +30,7 @@ const Stake = () => {
       id: "s2",
       image: `${Atom}`,
       name: "Atom",
-      chainUrl: "https://api-kava.cosmostation.io/v1/status",
+      chainUrl: "https://api.cosmostation.io/v1/status",
     },
     {
       id: "s3",

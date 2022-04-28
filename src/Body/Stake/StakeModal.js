@@ -1,26 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
-
+import { Image } from "antd";
 import Backdrop from "./Backdrop";
 import "./StakeModal.css";
 
 const ModalOverlay = (props) => {
   const content = (
     <div className={`modal ${props.className}`}>
-      <div>
-        <image
-          className="modal-image"
-          src={props.image}
-          alt={props.name}
-          style={{ width: "9rem", height: "9rem" }}
-        />
-        <div>{props.name}</div>
-      </div>
-      <div>
-        <p>chain-id: {props.chainid}</p>
-        <p>block-height: {props.blockheight}</p>
-        <p>block-time: {props.blocktime}</p>
+      <div className="chain-section" >
+        <div className="chain-info__image">
+          <Image
+            preview= {false}
+            className="chain-image"
+            src={props.image}
+            alt={props.name}
+            style={{ width: "9rem", height: "9rem" }}
+          />
+          <div>{props.name}</div>
+        </div>
+        <div className="chain-info__text">
+          <p>Chain ID: {props.chainid}</p>
+          <p>Block Height: {props.blockheight}</p>
+          <p>Block Time: {props.blocktime}</p>
+        </div>
       </div>
     </div>
   );

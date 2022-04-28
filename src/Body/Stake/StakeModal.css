@@ -4,16 +4,45 @@
   top: 22vh;
   left: 10%;
   width: 80%;
-  background: white;
-
+  background: rgba(0, 0, 0, 0.26);
+  color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   height: 70vh;
   border-radius: 8px;
 }
 
 .modal-image {
-  z-index: 100;
-  position: fixed;
+  display: block;
   height: 7rem;
   width: 7rem;
+  border-image: linear-gra;
+}
+
+.chain-section {
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: #3F3F3F78;
+  display: flex;
+  width: 25rem;
+  height: 15rem;
+}
+
+.chain-info__image {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.chain-info__image div {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.chain-info__text {
+  text-transform: capitalize ;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 18px;
 }

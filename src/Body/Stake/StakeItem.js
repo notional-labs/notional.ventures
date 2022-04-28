@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./StakeItem.css";
 import Modal from "./StakeModal";
 import axios from "axios";
-import someone from "../../media/members/vuong.png";
 
 const StakeItem = (props) => {
   const [showHandler, setShowHandler] = useState(false);
@@ -30,7 +29,7 @@ const StakeItem = (props) => {
           chainid={loadedChainInfo.data.chain_id}
           blockheight={loadedChainInfo.data.block_height}
           blocktime={loadedChainInfo.data.block_time}
-          image={someone}
+          image={props.image}
           name={props.name}
           show={showHandler}
           onCancel={closeModalHandler}
