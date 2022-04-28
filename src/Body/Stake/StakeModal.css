@@ -3,17 +3,20 @@
   position: fixed;
   top: 22vh;
   left: 10%;
-  width: 80%;
+  width: 75%;
+  background: rgb(19, 15, 15);
   color: white;
-  height: 70vh;
-  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  height: auto;
+  border-radius: 3rem;
+  padding: 5rem 3rem;
+  margin: 0 auto;
 }
 
 .modal-image {
   display: block;
   height: 7rem;
   width: 7rem;
-  border-image: linear-gra;
 }
 
 .chain-section {
@@ -43,4 +46,11 @@
   align-items: center;
   margin: auto;
   font-size: 18px;
+}
+
+.validator-section {
+  margin-top: 5rem;
+  line-height: 60px;
+  font-size: 30px;
+  font-weight: 400;
 }
