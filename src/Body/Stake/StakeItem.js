@@ -16,7 +16,7 @@ const StakeItem = (props) => {
   const fetchChainInfo = () => {
     return axios
       .get(`${props.chainUrl}`)
-      .then((response) => setLoadedChainInfo(response));
+      .then((response) => setLoadedChainInfo(response)).then(console.log(loadedChainInfo));
   };
 
   const showModalHandler = () => {
@@ -49,7 +49,7 @@ const StakeItem = (props) => {
             <h2>{props.name}</h2>
           </div>
           <button
-            // onClick={showModalHandler}
+            // onClick={fetchChainInfo}
             onClick={() => {
               fetchChainInfo();
               showModalHandler();
