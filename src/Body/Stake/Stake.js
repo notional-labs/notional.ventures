@@ -32,36 +32,42 @@ const Stake = () => {
       image: `${Atom}`,
       name: "Atom",
       api: "https://api.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s3",
       image: `${Juno}`,
       name: "Juno",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s4",
       image: `${Starname}`,
       name: "Starname",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s5",
       image: `${Cyber}`,
       name: "Cyber",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s6",
       image: `${Akash}`,
       name: "Akash",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s7",
       image: `${Emoney}`,
       name: "Emoney",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s8",
@@ -74,24 +80,28 @@ const Stake = () => {
       image: `${Sifchain}`,
       name: "Sifchain",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s10",
       image: `${Sentinel}`,
       name: "Sentinel",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s11",
       image: `${Stargaze}`,
       name: "Stargaze",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s12",
       image: `${Kava}`,
       name: "Kava",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s13",
@@ -104,54 +114,63 @@ const Stake = () => {
       image: `${Secret}`,
       name: "Secret",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s15",
       image: `${Regen}`,
       name: "Regen",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s16",
       image: `${Secret}`,
       name: "Omniflix",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s17",
       image: `${Secret}`,
       name: "Likecoin",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s18",
       image: `${Secret}`,
       name: "Kichain",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s19",
       image: `${Secret}`,
       name: "Cheq",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s20",
       image: `${Secret}`,
       name: "Band",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s21",
       image: `${Secret}`,
       name: "Chihuahua",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s22",
       image: `${Secret}`,
       name: "Konstellation",
       api: "https://api-kava.cosmostation.io",
+      rpc: ""
     },
     {
       id: "s23",
@@ -170,6 +189,7 @@ const Stake = () => {
       image: `${Secret}`,
       name: "Bitcanna",
       api: "https://lcd.bitcanna.io",
+      rpc: ""
     },
   ];
   return (
