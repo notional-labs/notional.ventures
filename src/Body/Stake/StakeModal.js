@@ -30,12 +30,13 @@ const ModalOverlay = (props) => {
         </div>
         <div className="validator-section">
           <p>Validator:  Notional</p>
-          <p>Address:</p>
+          <p>Address: {props.api}</p>
           <p>Rank:</p>
           <p>Commission:</p>
           <p>Voting Power:</p>
 
         </div>
+        <StakeUptime api = {props.api} />
       </div>
     </div>
   );

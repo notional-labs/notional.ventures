@@ -25,83 +25,96 @@ const Stake = () => {
       image: `${Osmosis}`,
       name: "Osmosis",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "https://rpc.cosmoshub.notional.ventures",
+      address: "osmovaloper1083svrca4t350mphfv9x45wq9asrs60c6rv0j5"
     },
     {
       id: "s2",
       image: `${Atom}`,
       name: "Atom",
       api: "https://api.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj"
     },
     {
       id: "s3",
       image: `${Juno}`,
       name: "Juno",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "junovaloper1083svrca4t350mphfv9x45wq9asrs60cpqzg0y"
     },
     {
       id: "s4",
       image: `${Starname}`,
       name: "Starname",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h"
     },
     {
       id: "s5",
       image: `${Cyber}`,
       name: "Cyber",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: ""
     },
     {
       id: "s6",
       image: `${Akash}`,
       name: "Akash",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "akashvaloper1083svrca4t350mphfv9x45wq9asrs60c0k5a63"
     },
     {
       id: "s7",
       image: `${Emoney}`,
       name: "Emoney",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "emoneyvaloper16dc379m0qj64g4pr4nkl7ewak52qy2srpe6lxp"
     },
     {
       id: "s8",
       image: `${Evmos}`,
       name: "Evmos",
-      api: "",
+      api: "https://api-kava.cosmostation.io",
+      rpc: "",
+      address: "evmosvaloper1rv94jqhlhx6makfwl6qs390e4shg32m6w6dxzy"
     },
     {
       id: "s9",
       image: `${Sifchain}`,
       name: "Sifchain",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "sifvaloper1083svrca4t350mphfv9x45wq9asrs60cyssqu6"
     },
     {
       id: "s10",
       image: `${Sentinel}`,
       name: "Sentinel",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "sentvaloper1083svrca4t350mphfv9x45wq9asrs60cv37gc8"
     },
     {
       id: "s11",
       image: `${Stargaze}`,
       name: "Stargaze",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "starsvaloper1v8yp5x5kfex4wep2pfuuyw68cn2lst3ksl0gss"
     },
     {
       id: "s12",
       image: `${Kava}`,
       name: "Kava",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "kavavaloper13jyqfhak8mu4c7pydjm3eu4qla7g06a9u6xf8g"
     },
     {
       id: "s13",
@@ -114,63 +127,72 @@ const Stake = () => {
       image: `${Secret}`,
       name: "Secret",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "secretvaloper18rchk5exp2vzcwrwuret5sjwpxhf4sq22ze4dr"
     },
     {
       id: "s15",
       image: `${Regen}`,
       name: "Regen",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "regenvaloper1083svrca4t350mphfv9x45wq9asrs60ct2p9a5"
     },
     {
       id: "s16",
       image: `${Secret}`,
       name: "Omniflix",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "omniflixvaloper15wshq6lmxmcn9vxky2mxf8zhstpn9ywmfc5ke5"
     },
     {
       id: "s17",
       image: `${Secret}`,
       name: "Likecoin",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: ""
     },
     {
       id: "s18",
       image: `${Secret}`,
       name: "Kichain",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "kivaloper1lmkzaxztjpesh0mf7qy76l5npqwc7fk3l2k57g"
     },
     {
       id: "s19",
       image: `${Secret}`,
       name: "Cheq",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: ""
     },
     {
       id: "s20",
       image: `${Secret}`,
       name: "Band",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "bandvaloper19huytqr8srz9wcdhvas5cvxddg8dtqcv6tce0s"
     },
     {
       id: "s21",
       image: `${Secret}`,
       name: "Chihuahua",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "chihuahuavaloper1h6vcu4r2hx70x5f0l3du3ey2g98u9ut2tafnnv"
     },
     {
       id: "s22",
       image: `${Secret}`,
       name: "Konstellation",
       api: "https://api-kava.cosmostation.io",
-      rpc: ""
+      rpc: "",
+      address: "darcvaloper1fndgrsqmmq68ppl42wjkxh32nwpuj7vqtgep38"
     },
     {
       id: "s23",
@@ -182,14 +204,15 @@ const Stake = () => {
       id: "s24",
       image: `${Secret}`,
       name: "Provenance",
-      api: "",
+      api: "pbvaloper10ap9fj9uq50cardmlzdj367kqg5x3ghjdp2v6p",
     },
     {
       id: "s25",
       image: `${Secret}`,
       name: "Bitcanna",
       api: "https://lcd.bitcanna.io",
-      rpc: ""
+      rpc: "",
+      address: "bcnavaloper1dl7w3myyfmnarh0t5uxmy7qe6szagz3kyhzq07"
     },
   ];
   return (

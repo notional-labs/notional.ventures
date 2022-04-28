@@ -4,17 +4,21 @@ import axios from "axios";
 
 const UptimeBlock = (props) => {
 
-  const [loadedChainInfo, setLoadedChainInfo] = useState([]);
+  const [loadedBlockHeight, setBlockHeight] = useState([]);
+    useEffect(() => {
+      getBlockInfo()
+    },[loadedBlockHeight])
     const getBlockInfo = () => {
         return axios
-          .get(`${props.api}`)
-          .then((response) => setLoadedChainInfo(response)).then(console.log(loadedChainInfo));
+          .get(`${props.api}/v1/staking/validator/uptime/cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj`)
+          .then((response) => setBlockHeight(response)).then(console.log(loadedBlockHeight));
       };
 
+
   return (
-    <div class="d-flex justify-content-between align-self-stretch flex-wrap">
-           
-          </div>
+    <button oneClick={getBlockInfo}>
+      log
+    </button>
   );
 };
 

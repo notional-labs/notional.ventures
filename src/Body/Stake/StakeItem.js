@@ -15,7 +15,8 @@ const StakeItem = (props) => {
   const fetchChainInfo = () => {
     return axios
       .get(`${props.api}/v1/status`)
-      .then((response) => setLoadedChainInfo(response)).then(console.log(loadedChainInfo));
+      .then((response) => setLoadedChainInfo(response))
+      .then(console.log(loadedChainInfo));
   };
 
   const showModalHandler = () => {
@@ -33,6 +34,7 @@ const StakeItem = (props) => {
           name={props.name}
           show={showHandler}
           onCancel={closeModalHandler}
+          api={props.api}
         ></Modal>
       )}
       <li className="stake-item">
