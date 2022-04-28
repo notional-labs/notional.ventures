@@ -34,7 +34,7 @@ const Stake = () => {
       name: "Atom",
       api: "https://api.cosmostation.io",
       rpc: "",
-      address: "cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj"
+      address: "cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em"
     },
     {
       id: "s3",

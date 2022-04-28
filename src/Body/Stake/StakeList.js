@@ -11,6 +11,7 @@ const StakeList = (props) => {
           image={stake.image}
           name={stake.name}
           api={stake.api}
+          address = {stake.address}
         />
       ))}
     </ul>

@@ -10,6 +10,7 @@ import "./StakeModal.css";
 const ModalOverlay = (props) => {
   const content = (
     <div className={`modal ${props.className}`}>
+      
       <div>
         <div className="chain-section">
           <div className="chain-info__image">
@@ -28,17 +29,28 @@ const ModalOverlay = (props) => {
             <p>Block Time: {props.blocktime}</p>
           </div>
         </div>
+
         <div className="validator-section">
-          <p>Validator:  Notional</p>
-          <p>Address: {props.api}</p>
+          <p>Validator: Notional</p>
+          <p>Address: {props.address}</p>
           <p>Rank:</p>
           <p>Commission:</p>
           <p>Voting Power:</p>
-
         </div>
-        <StakeUptime api = {props.api} />
       </div>
-    </div>
+    
+
+
+      <div className="uptime-section" >
+
+
+        
+        <StakeUptime
+          height={props.height}
+          uptime={props.uptime}
+        />
+      </div>
+  </div>
   );
   return ReactDOM.createPortal(content, document.getElementById("modal-hook"));
 };

@@ -6,22 +6,31 @@ import axios from "axios";
 const StakeItem = (props) => {
   const [showHandler, setShowHandler] = useState(false);
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
+  const [loadedBlockHeight, setBlockHeight] = useState([]);
+  
   const closeModalHandler = () => {
     setShowHandler(false);
   };
   useEffect(() => {
     fetchChainInfo();
+    getBlockInfo();
   }, [showHandler]);
-  const fetchChainInfo = () => {
-    return axios
-      .get(`${props.api}/v1/status`)
-      .then((response) => setLoadedChainInfo(response))
-      .then(console.log(loadedChainInfo));
-  };
-
+  
   const showModalHandler = () => {
     setShowHandler(true);
   };
+  
+  const fetchChainInfo = () => {
+    return axios
+      .get(`${props.api}/v1/status`)
+      .then((response) => setLoadedChainInfo(response));
+  };
+
+  const getBlockInfo = () => {
+      return axios
+        .get(`${props.api}/v1/staking/validator/uptime/${props.address}`)
+        .then((response) => setBlockHeight(response));
+    };
 
   return (
     <React.Fragment>
@@ -35,6 +44,9 @@ const StakeItem = (props) => {
           show={showHandler}
           onCancel={closeModalHandler}
           api={props.api}
+          address = {props.address}
+          height = {loadedBlockHeight.data.latest_height}
+          uptime = {loadedBlockHeight.data.uptime}
         ></Modal>
       )}
       <li className="stake-item">
@@ -53,6 +65,7 @@ const StakeItem = (props) => {
             // onClick={fetchChainInfo}
             onClick={() => {
               fetchChainInfo();
+              getBlockInfo();
               showModalHandler();
             }}
             className="stake-btn"
