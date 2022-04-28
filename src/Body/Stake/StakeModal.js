@@ -27,7 +27,7 @@ const ModalOverlay = (props) => {
           </div>
         </div>
         <div className="validator-section">
-          <p>Validator: Notional</p>
+          <p>Validator:  Notional</p>
           <p>Address:</p>
           <p>Rank:</p>
           <p>Commission:</p>
