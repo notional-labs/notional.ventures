@@ -10,7 +10,7 @@ const StakeList = (props) => {
           id={stake.id}
           image={stake.image}
           name={stake.name}
-          chainUrl={stake.chainUrl}
+          api={stake.api}
         />
       ))}
     </ul>

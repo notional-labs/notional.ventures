@@ -14,7 +14,7 @@ const StakeItem = (props) => {
   }, [showHandler]);
   const fetchChainInfo = () => {
     return axios
-      .get(`${props.chainUrl}`)
+      .get(`${props.api}/v1/status`)
       .then((response) => setLoadedChainInfo(response)).then(console.log(loadedChainInfo));
   };
 

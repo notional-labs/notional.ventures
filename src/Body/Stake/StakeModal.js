@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
 import { Image } from "antd";
 import Backdrop from "./Backdrop";
+import StakeUptime from "./StakeUptime";
+
 import "./StakeModal.css";
 
 const ModalOverlay = (props) => {
