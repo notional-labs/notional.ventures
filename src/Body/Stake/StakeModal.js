@@ -5,12 +5,12 @@ import { Image } from "antd";
 import Backdrop from "./Backdrop";
 import StakeUptime from "./StakeUptime";
 
+import StakeCalculate from "./StakeCalculate";
 import "./StakeModal.css";
 
 const ModalOverlay = (props) => {
   const content = (
     <div className={`modal ${props.className}`}>
-      
       <div>
         <div className="chain-section">
           <div className="chain-info__image">
@@ -38,19 +38,16 @@ const ModalOverlay = (props) => {
           <p>Voting Power:</p>
         </div>
       </div>
-    
 
-
-      <div className="uptime-section" >
-
-
-        
-        <StakeUptime
-          height={props.height}
-          uptime={props.uptime}
-        />
+      <div>
+        <div className="uptime-section">
+          <StakeUptime height={props.height} uptime={props.uptime} />
+        </div>
+        <div className="profit-section" >
+          <StakeCalculate pool = {props.pool} supply = {props.supply} inflation = {props.inflation}  />
+        </div>
       </div>
-  </div>
+    </div>
   );
   return ReactDOM.createPortal(content, document.getElementById("modal-hook"));
 };
