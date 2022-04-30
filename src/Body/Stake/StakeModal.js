@@ -26,8 +26,8 @@ const ModalOverlay = (props) => {
           <div className="chain-info__text">
             <p>Chain ID: {props.chainid}</p>
             <p>Block Height: {props.blockheight}</p>
-            <p>Block Time: {props.blocktime}</p>
-            <p>Price: {props.blocktime}</p>
+            <p>Block Time: {(props.blocktime).toFixed(2)}</p>
+            <p>Price: {(props.price).toFixed(2)}</p>
           </div>
         </div>
 

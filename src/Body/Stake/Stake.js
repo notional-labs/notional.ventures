@@ -11,7 +11,7 @@ import Atom from "../../media/stake/Gaia.svg";
 // import Sifchain from "../../media/stake/Sifchain.svg";
 // import Sentinel from "../../media/stake/Sentinel.svg";
 // import Stargaze from "../../media/stake/Stargaze.svg";
-// import Kava from "../../media/stake/Kava.svg";
+import Kava from "../../media/stake/Kava.svg";
 // import Ixo from "../../media/stake/Ixo.svg";
 // import Secret from "../../media/stake/Secret.svg";
 // import Regen from "../../media/stake/Regen.svg";
@@ -113,14 +113,14 @@ const Stake = () => {
     //   rpc: "",
     //   address: "starsvaloper1v8yp5x5kfex4wep2pfuuyw68cn2lst3ksl0gss"
     // },
-    // {
-    //   id: "s12",
-    //   image: `${Kava}`,
-    //   name: "Kava",
-    //   api: "https://api-kava.cosmostation.io",
-    //   rpc: "",
-    //   address: "kavavaloper13jyqfhak8mu4c7pydjm3eu4qla7g06a9u6xf8g"
-    // },
+    {
+      id: "s12",
+      image: `${Kava}`,
+      name: "Kava",
+      api: "https://api-kava.cosmostation.io",
+      rpc: "",
+      address: "kavavaloper13jyqfhak8mu4c7pydjm3eu4qla7g06a9u6xf8g"
+    },
     // {
     //   id: "s13",
     //   image: `${Ixo}`,
