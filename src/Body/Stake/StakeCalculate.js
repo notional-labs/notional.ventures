@@ -30,8 +30,8 @@ const StakeCalculate = (props) => {
         </div>
       </div>
       <div className="slider-caculate">
-        <Col span={21} style={{ height: "1rem" ,margin: '20px auto' }}>
-          <Slider min={1} max={10000} onChange={onChangeHandler} value={value} />
+        <Col span={21} style={{ height: "auto" ,margin: 'auto auto' }}>
+          <Slider style={{height: '1rem'}} min={1} max={10000} onChange={onChangeHandler} value={value} />
         </Col>
       </div>
       <div className="reward-table">
@@ -39,6 +39,7 @@ const StakeCalculate = (props) => {
           <div>Monthly Rewards {(value*annualProfit/100/12).toFixed(2)} = {((value*annualProfit/100/12)*19).toFixed(2)}$</div>
           <div>Annual Rewards {(value*annualProfit/100).toFixed(2)} = {((value*annualProfit/100)*19).toFixed(2)}$</div>
       </div>
+  
     </div>
   );
 };

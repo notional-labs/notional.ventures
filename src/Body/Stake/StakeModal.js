@@ -52,6 +52,14 @@ const ModalOverlay = (props) => {
         <div className="uptime-section">
           <StakeUptime height={props.height} uptime={props.uptime} />
         </div>
+        <div className="button">
+          <button className="delegate-btn keplr">
+            <a href="#" className="link">Delegate with Keplr</a>
+          </button>
+          <button className="delegate-btn ping">
+            <a href="#" className="link">Delegate with PingPub</a>
+            </button>
+        </div>
       </div>
     </div>
   );

@@ -63,3 +63,37 @@
 .profit-section {
   margin-top: 5rem;
 }
+
+.button {
+  margin-top: 70px;
+  justify-content: center;
+  display: flex;
+  gap: 4rem;
+}
+
+.delegate-btn {
+    /* background-color: rgb(213, 197, 197, 0.3); */
+    border: 0.5px solid white;
+    border-radius: 20px;
+    height: 3rem;
+    width: 16rem;
+    font-size: 16px;
+}
+
+.delegate-btn:hover {
+  cursor: pointer;
+}
+
+.delegate-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.keplr {
+  background-color: rgba(110, 154, 232, 0.25);
+}
+
+.ping {
+  background-color: rgba(123, 65, 216, 0.25)
+}
