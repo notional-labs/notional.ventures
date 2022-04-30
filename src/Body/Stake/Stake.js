@@ -37,6 +37,7 @@ const Stake = () => {
      denom: "ATOM",
      api: "https://api.cosmostation.io",
      rpc: "",
+     price: "https://api.coingecko.com/api/v3/simple/price?ids=juno-network,cosmos&vs_currencies=usd",
      address: "cosmosvaloper1yh089p0cre4nhpdqw35uzde5amg3qzexkeggdn"
     },
     // cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em

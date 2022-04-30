@@ -7,6 +7,7 @@ import "antd/dist/antd.css";
 const StakeCalculate = (props) => {
   let inflation = props.inflation;
   let bondedRatio = props.pool / props.supply;
+  let price = props.price
   let annualProfit = (((inflation * (1 - 0.02)) / bondedRatio) * 100).toFixed(
     2
   );
@@ -35,9 +36,9 @@ const StakeCalculate = (props) => {
         </Col>
       </div>
       <div className="reward-table">
-          <div>Daily Rewards {(value*annualProfit/100/365).toFixed(2)} = {((value*annualProfit/100/365)*19).toFixed(2)}$</div>
-          <div>Monthly Rewards {(value*annualProfit/100/12).toFixed(2)} = {((value*annualProfit/100/12)*19).toFixed(2)}$</div>
-          <div>Annual Rewards {(value*annualProfit/100).toFixed(2)} = {((value*annualProfit/100)*19).toFixed(2)}$</div>
+          <div>Daily Rewards {(value*annualProfit/100/365).toFixed(2)} = {((value*annualProfit/100/365)*price).toFixed(2)}$</div>
+          <div>Monthly Rewards {(value*annualProfit/100/12).toFixed(2)} = {((value*annualProfit/100/12)*price).toFixed(2)}$</div>
+          <div>Annual Rewards {(value*annualProfit/100).toFixed(2)} = {((value*annualProfit/100)*price).toFixed(2)}$</div>
       </div>
   
     </div>

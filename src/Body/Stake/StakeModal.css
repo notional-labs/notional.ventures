@@ -49,6 +49,7 @@
   text-transform: capitalize;
   justify-content: center;
   align-items: center;
+  padding-top: 25px;
   margin: auto;
   font-size: 18px;
 }

@@ -7,6 +7,7 @@ const StakeItem = (props) => {
   const [showHandler, setShowHandler] = useState(false);
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
   const [loadedBlockHeight, setBlockHeight] = useState([]);
+  const [price, setPrice] = useState([]);
   const [pool, setPool] = useState([]);
   const [supply, setSupply] = useState([]);
   const [inflation, setInflation] = useState([]);
@@ -23,6 +24,7 @@ const StakeItem = (props) => {
     fetchReward();
     fetchChainInfo();
     getBlockInfo();
+    getPriceInfo();
     callApiContinuosly();
   }, []);
 
@@ -31,21 +33,39 @@ const StakeItem = (props) => {
   };
 
   const fetchChainInfo = () => {
-    return axios
+    axios
       .get(`${props.api}/v1/status`)
-      .then((response) => setLoadedChainInfo(response));
+      .then((response) => setLoadedChainInfo(response))
+      .catch((errors) => {
+        console.error(errors);
+      });
   };
 
   const getBlockInfo = () => {
-    return axios
+    axios
       .get(`${props.api}/v1/staking/validator/uptime/${props.address}`)
-      .then((response) => setBlockHeight(response));
+      .then((response) => setBlockHeight(response))
+      .catch((errors) => {
+        console.error(errors);
+      });
+  };
+
+  const getPriceInfo = () => {
+    axios
+      .get(`${props.price}`)
+      .then((response) => {
+        setPrice(response);
+      })
+      .then(console.log(price))
+      .catch((errors) => {
+        console.error(errors);
+      });
   };
 
   const callApiContinuosly = () => {
     setInterval(getBlockInfo, 12000);
   };
-  if (showHandler === false) {
+  if (!showHandler) {
     clearInterval(callApiContinuosly);
   }
 
@@ -86,6 +106,7 @@ const StakeItem = (props) => {
           pool={pool.data.pool.bonded_tokens}
           supply={supply.data.amount.amount}
           inflation={inflation.data.inflation}
+          price={price.data.cosmos.usd}
         ></Modal>
       )}
       <li className="stake-item">
@@ -99,14 +120,16 @@ const StakeItem = (props) => {
           </div>
           <div className="stake-item__info">
             <h2>{props.name}</h2>
+            {/* <h1>{price.data.cosmos.usd}</h1> */}
           </div>
           <button
             // onClick={fetchChainInfo}
             onClick={() => {
               fetchChainInfo();
               getBlockInfo();
-              showModalHandler();
+              getPriceInfo();
               fetchReward();
+              showModalHandler();
             }}
             className="stake-btn"
           >

@@ -37,18 +37,15 @@
   padding: auto;
 }
 
-.slider-caculate {
-    
-}
 
 .reward-table {
-    margin-top: 30px;
+    margin-top: 35px;
     text-align: center;
     line-height: 30px;
 }
 
 .reward-table div {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: white;
 }

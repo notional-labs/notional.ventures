@@ -27,6 +27,7 @@ const ModalOverlay = (props) => {
             <p>Chain ID: {props.chainid}</p>
             <p>Block Height: {props.blockheight}</p>
             <p>Block Time: {props.blocktime}</p>
+            <p>Price: {props.blocktime}</p>
           </div>
         </div>
 
@@ -46,6 +47,7 @@ const ModalOverlay = (props) => {
             pool={props.pool}
             supply={props.supply}
             inflation={props.inflation}
+            price = {props.price}
           />
         </div>
 
