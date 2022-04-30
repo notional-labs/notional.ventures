@@ -15,6 +15,10 @@
     height: 3.5rem;
 }
 
+.uptime-header h2 {
+    color: white;
+}
+
 .label {
     font-family: 'Segoe UI Light';
     font-weight: 300;
@@ -23,6 +27,7 @@
     margin-top: -10px;
 }
 .uptime {
+    margin-top: 2.5rem;
     text-align: right;
     align-items: right;
     

@@ -1,6 +1,6 @@
 import "./Contributions.css";
 import React from "react";
-import Slider from "./Slider";
+import AutoSlide from "./PartnerCarousel";
 
 const infoStyle = {
   "text-align": "center",
@@ -37,7 +37,7 @@ const Contributions = () => {
               sodales quam eu rhoncus pellentesque.{" "}
             </p>
           </div>
-          <Slider />
+          <AutoSlide />
           <div className="companyinfo">
             <div className="companyinfo-item companyinfo-item__1">
               <div style={infoStyle}>

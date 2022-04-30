@@ -10,56 +10,63 @@ const StakeItem = (props) => {
   const [pool, setPool] = useState([]);
   const [supply, setSupply] = useState([]);
   const [inflation, setInflation] = useState([]);
-  const poolApi = 'https://lcd-cosmoshub.keplr.app/cosmos/staking/v1beta1/pool';
-  const supplyApi = 'https://lcd-cosmoshub.keplr.app/cosmos/bank/v1beta1/supply/uatom';
-  const inflationApi = 'https://lcd-cosmoshub.keplr.app/cosmos/mint/v1beta1/inflation';
-  
+  const poolApi = "https://lcd-cosmoshub.keplr.app/cosmos/staking/v1beta1/pool";
+  const supplyApi =
+    "https://lcd-cosmoshub.keplr.app/cosmos/bank/v1beta1/supply/uatom";
+  const inflationApi =
+    "https://lcd-cosmoshub.keplr.app/cosmos/mint/v1beta1/inflation";
+
   const closeModalHandler = () => {
     setShowHandler(false);
   };
   useEffect(() => {
+    fetchReward();
     fetchChainInfo();
     getBlockInfo();
     callApiContinuosly();
-    fetchReward();
   }, []);
-  
+
   const showModalHandler = () => {
     setShowHandler(true);
   };
-  
+
   const fetchChainInfo = () => {
     return axios
       .get(`${props.api}/v1/status`)
       .then((response) => setLoadedChainInfo(response));
   };
 
-  
   const getBlockInfo = () => {
     return axios
-    .get(`${props.api}/v1/staking/validator/uptime/${props.address}`)
-    .then((response) => setBlockHeight(response));
+      .get(`${props.api}/v1/staking/validator/uptime/${props.address}`)
+      .then((response) => setBlockHeight(response));
   };
 
-  const callApiContinuosly = () => {setInterval(getBlockInfo, 12000)}
+  const callApiContinuosly = () => {
+    setInterval(getBlockInfo, 12000);
+  };
   if (showHandler === false) {
-    clearInterval(callApiContinuosly)
+    clearInterval(callApiContinuosly);
   }
 
-  const poolRequest = axios.get(poolApi, {timeout: 10000});
-  const supplyRequest = axios.get(supplyApi, {timeout: 10000});
-  const inflationRequest = axios.get(inflationApi, {timeout: 10000});
-  const fetchReward = () => { axios.all([poolRequest, supplyRequest, inflationRequest], {timeout: 16000}).then(
-    axios.spread((...response) => {
-      setPool(response[0]);
-      setSupply(response[1]);
-      setInflation(response[2]);
-      
-    })
-  ).then(console.log(pool, supply, inflation)).catch(errors => {
-    console.error(errors);
-  })}
-
+  const poolRequest = axios.get(poolApi, { timeout: 16000 });
+  const supplyRequest = axios.get(supplyApi, { timeout: 16000 });
+  const inflationRequest = axios.get(inflationApi, { timeout: 16000 });
+  const fetchReward = () => {
+    axios
+      .all([poolRequest, supplyRequest, inflationRequest], { timeout: 16000 })
+      .then(
+        axios.spread((...response) => {
+          setPool(response[0]);
+          setSupply(response[1]);
+          setInflation(response[2]);
+        })
+      )
+      .then(console.log(pool, supply, inflation))
+      .catch((errors) => {
+        console.error(errors);
+      });
+  };
 
   return (
     <React.Fragment>
@@ -73,12 +80,12 @@ const StakeItem = (props) => {
           show={showHandler}
           onCancel={closeModalHandler}
           api={props.api}
-          address = {props.address}
-          height = {loadedBlockHeight.data.latest_height}
-          uptime = {loadedBlockHeight.data.uptime}
-          pool = {pool.data.pool.bonded_tokens}
-          supply = {supply.data.amount.amount}
-          inflation = {inflation.data.inflation}
+          address={props.address}
+          height={loadedBlockHeight.data.latest_height}
+          uptime={loadedBlockHeight.data.uptime}
+          pool={pool.data.pool.bonded_tokens}
+          supply={supply.data.amount.amount}
+          inflation={inflation.data.inflation}
         ></Modal>
       )}
       <li className="stake-item">
@@ -99,14 +106,15 @@ const StakeItem = (props) => {
               fetchChainInfo();
               getBlockInfo();
               showModalHandler();
+              fetchReward();
             }}
             className="stake-btn"
           >
             Stake
           </button>
-          <button onClick={() => {fetchReward()}} >
+          {/* <button onClick={() => {fetchReward()}}>
             Test
-          </button>
+          </button> */}
         </div>
       </li>
     </React.Fragment>

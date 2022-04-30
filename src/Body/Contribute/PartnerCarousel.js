@@ -5,7 +5,7 @@ import Cosmos from "../../media/logo/cosmos.png";
 import Stargaze from "../../media/logo/stargaze.png";
 import Cheq from "../../media/logo/cheqd.png";
 import Omniflix from "../../media/logo/omniflix.png";
-import "./Slider.css";
+import "./PartnerCarousel.css";
 
 const AutoSlide = () => {
   return (

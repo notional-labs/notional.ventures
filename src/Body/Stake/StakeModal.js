@@ -40,11 +40,17 @@ const ModalOverlay = (props) => {
       </div>
 
       <div>
+        <div className="profit-section">
+          <StakeCalculate
+            denom={props.name}
+            pool={props.pool}
+            supply={props.supply}
+            inflation={props.inflation}
+          />
+        </div>
+
         <div className="uptime-section">
           <StakeUptime height={props.height} uptime={props.uptime} />
-        </div>
-        <div className="profit-section" >
-          <StakeCalculate pool = {props.pool} supply = {props.supply} inflation = {props.inflation}  />
         </div>
       </div>
     </div>

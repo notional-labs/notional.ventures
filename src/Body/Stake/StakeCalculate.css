@@ -1,0 +1,54 @@
+.calculate {
+  background: rgba(63, 63, 63, 0.47);
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  box-sizing: border-box;
+  border-radius: 23px;
+  height: 350px;
+  margin-top: -80px;
+}
+
+.calculate .text {
+    margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.label {
+  font-family: "Segoe UI Light";
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+/* .annual-profit {
+    align-text: right;
+} */
+
+
+.value {
+  font-family: "Segoe UI Semibold";
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 50px;
+  color: white;
+}
+
+.slider-caculate {
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.reward-table {
+    text-align: center;
+    line-height: 30px;
+}
+
+.reward-table div {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}

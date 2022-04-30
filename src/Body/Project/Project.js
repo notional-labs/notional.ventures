@@ -39,6 +39,7 @@ const Project = () => {
         <p className="name">Our Projects</p>
       </div>
       <ProjectList items={PROJECTS} />
+      
     </div>
   );
 };
