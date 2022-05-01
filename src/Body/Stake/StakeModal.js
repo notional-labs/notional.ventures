@@ -8,7 +8,6 @@ import StakeUptime from "./StakeUptime";
 import Modal_divisor from "../../media/stake/modal-divisor.png";
 import Info_divisor from "../../media/stake/info-divisor.png";
 import StakeCalculate from "./StakeCalculate";
-import { useState } from "react";
 import "./StakeModal.css";
 
 const ModalOverlay = (props) => {
@@ -26,14 +25,19 @@ const ModalOverlay = (props) => {
       string.substring(midpoint + rstrip)
     );
   };
-
-  const [copySuccess, setCopySuccess] = useState("");
+  const [open, setOpen] = React.useState(true);
+  const [copyFeedback, setCopyFeedback] = React.useState("Click to copy");
+  const handleClose = () => {
+    setOpen(false);
+  };
   const copyToClipboard = async (copyMe) => {
     try {
       await navigator.clipboard.writeText(copyMe);
-      setCopySuccess("Copied!");
+      setCopyFeedback("Copied!");
+      setOpen(true);
     } catch (err) {
-      setCopySuccess("Failed to copy!");
+      setCopyFeedback("Failed to copy!");
+      setOpen(true);
     }
   };
 
@@ -89,9 +93,14 @@ const ModalOverlay = (props) => {
             <td className="validator-label">Address:</td>
             <td
               className="validator-value"
+              style={{ cursor: "pointer" }}
               onClick={() => copyToClipboard(props.address)}
             >
-              <Tooltip TransitionComponent={Zoom} title="Click to copy">
+              <Tooltip
+                open={open}
+                TransitionComponent={Zoom}
+                title={copyFeedback}
+              >
                 {smartTrim(props.address, 20)}
               </Tooltip>
             </td>
