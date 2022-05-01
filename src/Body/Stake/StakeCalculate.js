@@ -1,8 +1,9 @@
 import React from "react";
 import "./StakeCalculate.css";
 import { useState } from "react";
-import { Slider, Col } from "antd";
+import { Slider } from "antd";
 import "antd/dist/antd.css";
+import Reward_divisor from "../../media/stake/reward-divisor.png";
 
 const StakeCalculate = (props) => {
   let inflation = props.inflation;
@@ -17,44 +18,59 @@ const StakeCalculate = (props) => {
   };
   return (
     <div className="calculate">
-      <div className="text">
-        <div className="token-amount">
-          <p className="label">How many {props.denom} do you have?</p>
-          <h1 className="value">
+      <table className="info">
+        <tr className="label">
+          <td style={{ textAlign: "left" }}>
+            How many {props.denom} do you have?
+          </td>
+          <td style={{ textAlign: "right" }}>Annual Profit</td>
+        </tr>
+        <tr className="value">
+          <td style={{ textAlign: "left" }}>
             {value} {props.denom}
-          </h1>
-        </div>
+          </td>
+          <td style={{ textAlign: "right" }}>{annualProfit}%</td>
+        </tr>
+      </table>
 
-        <div className="annual-profit">
-          <p className="label">Annual Profit</p>
-          <h1 className="value">{annualProfit}%</h1>
-        </div>
-      </div>
       <div className="slider-caculate">
-        <Col span={21} style={{ height: "auto", margin: "auto auto" }}>
-          <Slider
-            style={{ height: "1rem" }}
-            min={1}
-            max={10000}
-            onChange={onChangeHandler}
-            value={value}
-          />
-        </Col>
+        <Slider
+          className="slider"
+          style={{ height: "2rem" }}
+          min={1}
+          max={5000}
+          onChange={onChangeHandler}
+          value={value}
+        />
       </div>
-      <div className="reward-table">
-        <div>
-          Daily Rewards {((value * annualProfit) / 100 / 365).toFixed(2)} ={" "}
-          {(((value * annualProfit) / 100 / 365) * price).toFixed(2)}$
-        </div>
-        <div>
-          Monthly Rewards {((value * annualProfit) / 100 / 12).toFixed(2)} ={" "}
-          {(((value * annualProfit) / 100 / 12) * price).toFixed(2)}$
-        </div>
-        <div>
-          Annual Rewards {((value * annualProfit) / 100).toFixed(2)} ={" "}
-          {(((value * annualProfit) / 100) * price).toFixed(2)}$
-        </div>
-      </div>
+
+      <table className="reward-table">
+        <tr>
+          <td className="name">Daily Rewards</td>
+          <td className="token">{((value * annualProfit) / 100 / 365).toFixed(2)} {props.denom}</td>
+          <td className="usd">$ {(((value * annualProfit) / 100 / 365) * price).toFixed(2)}</td>
+        </tr>
+        <tr>
+          <td colSpan={3}>
+            <img src={Reward_divisor} className="reward-divisor" />
+          </td>
+        </tr>
+        <tr>
+          <td className="name">Monthly Rewards</td>
+          <td className="token">{((value * annualProfit) / 100 / 12).toFixed(2)} {props.denom}</td>
+          <td className="usd">$ {(((value * annualProfit) / 100 / 12) * price).toFixed(2)}</td>
+        </tr>
+        <tr>
+          <td colSpan={3}>
+            <img src={Reward_divisor} className="reward-divisor" />
+          </td>
+        </tr>
+        <tr>
+          <td className="name">Annual Rewards</td>
+          <td className="token">{((value * annualProfit) / 100).toFixed(2)} {props.denom}</td>
+          <td className="usd">$ {(((value * annualProfit) / 100) * price).toFixed(2)}</td>
+        </tr>
+      </table>
     </div>
   );
 };

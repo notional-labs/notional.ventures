@@ -5,6 +5,8 @@ import { Image, Tooltip } from "antd";
 import Backdrop from "./Backdrop";
 import Zoom from "@mui/material/Zoom";
 import StakeUptime from "./StakeUptime";
+import Ping from "../../media/stake/ping.png";
+import Keplr from "../../media/stake/keplr.png";
 import Modal_divisor from "../../media/stake/modal-divisor.png";
 import Info_divisor from "../../media/stake/info-divisor.png";
 import StakeCalculate from "./StakeCalculate";
@@ -90,25 +92,22 @@ const ModalOverlay = (props) => {
               style={{ cursor: "pointer" }}
               onClick={() => copyToClipboard(props.address)}
             >
-              <Tooltip
-                TransitionComponent={Zoom}
-                title={copyFeedback}
-              >
+              <Tooltip TransitionComponent={Zoom} title={copyFeedback}>
                 {smartTrim(props.address, 20)}
               </Tooltip>
             </td>
           </tr>
           <tr>
             <td className="validator-label">Rank:</td>
-            <td className="validator-value"></td>
+            <td className="validator-value">o day</td>
           </tr>
           <tr>
             <td className="validator-label">Commission:</td>
-            <td className="validator-value"></td>
+            <td className="validator-value">o day</td>
           </tr>
           <tr>
             <td className="validator-label">Voting Power:</td>
-            <td className="validator-value"></td>
+            <td className="validator-value">o day</td>
           </tr>
         </table>
       </div>
@@ -138,14 +137,18 @@ const ModalOverlay = (props) => {
             >
               Delegate with Keplr
             </a>
+
+            <img src={Keplr} className="logo" />
           </button>
           <button className="delegate-btn ping">
             <a
               href={`https://ping.pub/${props.ping}/staking/${props.address}`}
               className="link"
             >
-              Delegate with PingPub
+              Delegate with Ping.pub
             </a>
+
+            <img src={Ping} className="logo" />
           </button>
         </div>
       </div>

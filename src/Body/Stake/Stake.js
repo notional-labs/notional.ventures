@@ -6,8 +6,6 @@ import StakeList from "./StakeList";
 
 
 const Stake = () => {
-
-
   return (
     <div className="stake-section">
       <div className="title">
