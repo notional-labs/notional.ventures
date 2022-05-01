@@ -100,15 +100,15 @@ const ModalOverlay = (props) => {
           </tr>
           <tr>
             <td className="validator-label">Rank:</td>
-            <td className="validator-value"></td>
+            <td className="validator-value">o day</td>
           </tr>
           <tr>
             <td className="validator-label">Commission:</td>
-            <td className="validator-value"></td>
+            <td className="validator-value">o day</td>
           </tr>
           <tr>
             <td className="validator-label">Voting Power:</td>
-            <td className="validator-value"></td>
+            <td className="validator-value">o day</td>
           </tr>
         </table>
       </div>

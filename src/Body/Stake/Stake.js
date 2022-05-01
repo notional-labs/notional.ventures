@@ -27,7 +27,6 @@ const Stake = () => {
     //   image: `${Osmosis}`,
     //   name: "Osmosis",
     //   api: "",
-    //   rpc: "https://rpc.cosmoshub.notional.ventures",
     //   address: "osmovaloper1083svrca4t350mphfv9x45wq9asrs60c6rv0j5"
     // },
     {
@@ -38,8 +37,7 @@ const Stake = () => {
       api: "https://api.cosmostation.io",
       keplr: "cosmoshub",
       ping: "cosmos",
-      price:
-        "https://api.coingecko.com/api/v3/simple/price?ids=cosmos&vs_currencies=usd",
+      price: "https://api.coingecko.com/api/v3/simple/price?ids=cosmos&vs_currencies=usd",
       address: "cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em",
     },
     // {

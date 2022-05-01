@@ -7,33 +7,73 @@
   margin-top: -80px;
 }
 
-.calculate .text {
-  margin-top: 2rem;
-  display: flex;
-  width: 100%;
+.calculate .info {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
 }
 
 .label {
   font-family: "Segoe UI Light";
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 33px;
+  font-size: 20px;
 }
-
-/* .annual-profit {
-    align-text: right;
-} */
 
 .value {
   font-family: "Segoe UI Semibold";
-  font-weight: 600;
   font-size: 55px;
-  line-height: 50px;
+  line-height: 60px;
   color: white;
-  padding: auto;
+}
+
+.slider-caculate {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+div.ant-slider-rail {
+  background: rgba(196, 196, 196, 0.5);
+  box-shadow: inset 0px 4px 9px rgba(0, 0, 0, 0.4);
+  margin-top: 5px;
+  border-radius: 5px; 
+  height: 10px;
+}
+
+/* div.ant-slider-handle:focus {
+
+} */
+
+div.ant-slider:hover > div.ant-slider-handle:not(.ant-tooltip-open)
+ {
+   border-color: #ffffff
+ }
+div.ant-slider-track {
+  height: 10px;
+  background: #ffffff;
+  margin-top: 5px;
+  margin-bottom: auto;
+  border-radius: 8px;
+}
+
+div.ant-slider-track:hover +  div.ant-slider-handle{
+  display: block;
+}
+
+div.ant-slider-handle {
+  color : white;
+  height: 20px;
+  width: 20px;
+  display: none;
+}
+
+div.ant-slider-handle:focus {
+  display: block;
 }
 
 .reward-table {
