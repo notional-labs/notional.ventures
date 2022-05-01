@@ -20,7 +20,7 @@
 }
 
 .modal-divisor {
-  height: 920px;
+  height: 500px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -35,8 +35,8 @@
   box-sizing: border-box;
   border-radius: 23px;
   display: flex;
-  width: 625px;
-  height: 355px;
+  width: 550px;
+  height: 300px;
 }
 
 .chain-info__image {
@@ -49,19 +49,25 @@
 .chain-info__image div {
   font-family: "Segoe UI Semibold";
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.info-divisor {
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .chain-info__text {
   text-transform: capitalize;
-  padding-top: 25px;
   margin: auto;
-  font-size: 25px;
+  width: 280px;
+  font-size: 20px;
 }
 
 .chain-info__text .info-label {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: left;
   font-family: "Segoe UI Regular";
 }
@@ -71,19 +77,12 @@
   font-family: "Segoe UI Light";
 }
 
-.info-divisor {
-  height: 80%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .validator-section {
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 400;
   white-space: nowrap;
-  width: 30rem;
-}
+  }
 
 .validator-label {
   font-family: "Segoe UI Regular";
@@ -96,8 +95,8 @@
 
 .validator-value {
   font-family: "Segoe UI Light";
-  max-width: 470px;
-  min-width: 470px;
+  max-width: 400px;
+  min-width: 400px;
   text-align: right;
 }
 

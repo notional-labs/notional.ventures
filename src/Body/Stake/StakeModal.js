@@ -14,7 +14,6 @@ const ModalOverlay = (props) => {
   const smartTrim = (string, maxLength) => {
     if (!string) return string;
     if (string.length <= maxLength) return string;
-
     let midpoint = Math.ceil(string.length / 2);
     let toremove = string.length - maxLength;
     let lstrip = Math.ceil(toremove / 2);
@@ -25,19 +24,14 @@ const ModalOverlay = (props) => {
       string.substring(midpoint + rstrip)
     );
   };
-  const [open, setOpen] = React.useState(true);
+
   const [copyFeedback, setCopyFeedback] = React.useState("Click to copy");
-  const handleClose = () => {
-    setOpen(false);
-  };
   const copyToClipboard = async (copyMe) => {
     try {
       await navigator.clipboard.writeText(copyMe);
       setCopyFeedback("Copied!");
-      setOpen(true);
     } catch (err) {
       setCopyFeedback("Failed to copy!");
-      setOpen(true);
     }
   };
 
@@ -52,10 +46,10 @@ const ModalOverlay = (props) => {
               src={props.image}
               alt={props.name}
               style={{
-                width: "12rem",
-                height: "12rem",
-                marginLeft: "-20px",
-                marginRight: "-20px",
+                width: "9rem",
+                height: "9rem",
+                marginLeft: "-10px",
+                marginRight: "-10px",
               }}
             />
             <div>{props.name}</div>
@@ -97,7 +91,6 @@ const ModalOverlay = (props) => {
               onClick={() => copyToClipboard(props.address)}
             >
               <Tooltip
-                open={open}
                 TransitionComponent={Zoom}
                 title={copyFeedback}
               >
