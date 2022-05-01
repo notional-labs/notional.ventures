@@ -31,13 +31,16 @@ const Stake = () => {
     //   address: "osmovaloper1083svrca4t350mphfv9x45wq9asrs60c6rv0j5"
     // },
     {
-     id: "s2",
-     image: `${Atom}`,
-     name: "Atom",
-     denom: "ATOM",
-     api: "https://api.cosmostation.io",
-     price: "https://api.coingecko.com/api/v3/simple/price?ids=juno-network,cosmos&vs_currencies=usd",
-     address: "cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj"
+      id: "s2",
+      image: `${Atom}`,
+      name: "Atom",
+      denom: "ATOM",
+      api: "https://api.cosmostation.io",
+      keplr: "cosmoshub",
+      ping: "cosmos",
+      price:
+        "https://api.coingecko.com/api/v3/simple/price?ids=cosmos&vs_currencies=usd",
+      address: "cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em",
     },
     // {
     //   id: "s3",
@@ -108,8 +111,8 @@ const Stake = () => {
       name: "Kava",
       denom: "KAVA",
       api: "https://api-kava.cosmostation.io",
-      
-      address: "kavavaloper13jyqfhak8mu4c7pydjm3eu4qla7g06a9u6xf8g"
+
+      address: "kavavaloper13jyqfhak8mu4c7pydjm3eu4qla7g06a9u6xf8g",
     },
     // {
     //   id: "s13",
@@ -200,22 +203,21 @@ const Stake = () => {
     //   address: "bcnavaloper1dl7w3myyfmnarh0t5uxmy7qe6szagz3kyhzq07"
     // },
   ];
- 
+
   return (
-    <div className = "stake-section">
-      <div className = "title">
-        <hr className = "bar"></hr>
-        <p className = "name">Stake With Us</p>
-        <p className = "text">
+    <div className="stake-section">
+      <div className="title">
+        <hr className="bar"></hr>
+        <p className="name">Stake With Us</p>
+        <p className="text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
           ante in nisi ultricies pharetra sed at metus. Integer sem nisi,
           blandit egestas pellentesque eget, facilisis et ipsum. Quisque sodales
           quam eu rhoncus pellentesque.{" "}
         </p>
       </div>
-      <div className = "stake">
-        <StakeList stakes = {STAKES} />
-      
+      <div className="stake">
+        <StakeList stakes={STAKES} />
       </div>
     </div>
   );

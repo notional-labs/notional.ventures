@@ -17,28 +17,28 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <div className = "hero">
-      <div className = "description">
-        <hr className = "bar"></hr>
-        <p className = "greetings">
+    <div className="hero">
+      <div className="description">
+        <hr className="bar"></hr>
+        <p className="greetings">
           At Notional, we all believe that Khanh is gay
         </p>
-        <p className = "label"></p>
+        <p className="label"></p>
       </div>
       <div>
-        <Akash className = "akash" />
-        <Atom className = "atom" />
-        <Osmosis className = "osmosis" />
-        <Dig className = "dig" />
-        <Emoney className = "emoney" />
-        <Sifchain className = "sifchain" />
-        <Juno className = "juno" />
-        <Orange className = "orange" />
-        <Yellow className = "yellow" />
-        <Purple className = "purple" />
-        <Red className = "red" />
-        <Blue className = "blue" />
-        <Green className = "green" />
+        <Akash className="akash" />
+        <Atom className="atom" />
+        <Osmosis className="osmosis" />
+        <Dig className="dig" />
+        <Emoney className="emoney" />
+        <Sifchain className="sifchain" />
+        <Juno className="juno" />
+        <Orange className="orange" />
+        <Yellow className="yellow" />
+        <Purple className="purple" />
+        <Red className="red" />
+        <Blue className="blue" />
+        <Green className="green" />
       </div>
     </div>
   );

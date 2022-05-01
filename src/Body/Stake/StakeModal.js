@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
-import { Image } from "antd";
-import ReactTable from "react-table";
+import { Image, Tooltip } from "antd";
 import Backdrop from "./Backdrop";
+import Zoom from "@mui/material/Zoom";
 import StakeUptime from "./StakeUptime";
 import Modal_divisor from "../../media/stake/modal-divisor.png";
 import Info_divisor from "../../media/stake/info-divisor.png";
 import StakeCalculate from "./StakeCalculate";
+import { useState } from "react";
 import "./StakeModal.css";
 
 const ModalOverlay = (props) => {
@@ -26,7 +27,15 @@ const ModalOverlay = (props) => {
     );
   };
 
-  const address = smartTrim(props.address, 22);
+  const [copySuccess, setCopySuccess] = useState("");
+  const copyToClipboard = async (copyMe) => {
+    try {
+      await navigator.clipboard.writeText(copyMe);
+      setCopySuccess("Copied!");
+    } catch (err) {
+      setCopySuccess("Failed to copy!");
+    }
+  };
 
   const content = (
     <div className={`modal ${props.className}`}>
@@ -38,7 +47,12 @@ const ModalOverlay = (props) => {
               className="chain-image"
               src={props.image}
               alt={props.name}
-              style={{ width: "12rem", height: "12rem", marginLeft: "-20px", marginRight: "-20px" }}
+              style={{
+                width: "12rem",
+                height: "12rem",
+                marginLeft: "-20px",
+                marginRight: "-20px",
+              }}
             />
             <div>{props.name}</div>
           </div>
@@ -68,23 +82,30 @@ const ModalOverlay = (props) => {
         </div>
         <table className="validator-section">
           <tr>
-            <td className="validator-label">Validator</td>
+            <td className="validator-label">Validator:</td>
             <td className="validator-value">Notional</td>
           </tr>
           <tr>
-            <td className="validator-label">Address</td>
-            <td className="validator-value">{address}</td>
+            <td className="validator-label">Address:</td>
+            <td
+              className="validator-value"
+              onClick={() => copyToClipboard(props.address)}
+            >
+              <Tooltip TransitionComponent={Zoom} title="Click to copy">
+                {smartTrim(props.address, 20)}
+              </Tooltip>
+            </td>
           </tr>
           <tr>
-            <td className="validator-label">Rank</td>
+            <td className="validator-label">Rank:</td>
             <td className="validator-value"></td>
           </tr>
           <tr>
-            <td className="validator-label">Commission</td>
+            <td className="validator-label">Commission:</td>
             <td className="validator-value"></td>
           </tr>
           <tr>
-            <td className="validator-label">Voting Power</td>
+            <td className="validator-label">Voting Power:</td>
             <td className="validator-value"></td>
           </tr>
         </table>
@@ -109,12 +130,18 @@ const ModalOverlay = (props) => {
 
         <div className="button">
           <button className="delegate-btn keplr">
-            <a href="#" className="link">
+            <a
+              href={`https://wallet.keplr.app/#/${props.keplr}/stake?modal=stake&validator=${props.address}`}
+              className="link"
+            >
               Delegate with Keplr
             </a>
           </button>
           <button className="delegate-btn ping">
-            <a href="#" className="link">
+            <a
+              href={`https://ping.pub/${props.ping}/staking/${props.address}`}
+              className="link"
+            >
               Delegate with PingPub
             </a>
           </button>

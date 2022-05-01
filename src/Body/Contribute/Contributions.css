@@ -51,7 +51,6 @@
   z-index: 2;
   margin-top: 0px;
   background-size: auto;
-  /* background-repeat: no-repeat; */
 }
 
 .companyinfo {
@@ -69,7 +68,6 @@
 }
 
 .companyinfo-item {
-  /* border: 1px solid black; */
   border-radius: 30px;
   background-color: #ffffff33;
   height: 250px;

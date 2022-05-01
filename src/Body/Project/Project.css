@@ -1,9 +1,7 @@
 .project {
-  /* position: relative; */
   margin-top: 10rem;
   height: auto;
   width: auto;
-  /* border: 1px solid black; */
 }
 .project .title {
   text-align: center;

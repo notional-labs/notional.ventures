@@ -13,20 +13,20 @@ import { Image } from "antd";
 export const members = [
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {adam}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={adam}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -37,7 +37,7 @@ export const members = [
         Adam Chaplin
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "20px",
           fontWeight: 400,
@@ -47,7 +47,7 @@ export const members = [
         CEO OF DEFI FOR YOU AND CO-FOUNDER OF DIG
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -61,20 +61,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {jacob}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={jacob}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -85,7 +85,7 @@ export const members = [
         Jacob Gadikian
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -95,7 +95,7 @@ export const members = [
         CHIEF ENGINEER AND CEO OF NOTIONAL
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -110,20 +110,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {khanh}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={khanh}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -134,7 +134,7 @@ export const members = [
         KHANH NGUYEN
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -144,7 +144,7 @@ export const members = [
         LEAD ENGINEER
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -158,20 +158,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {ricardo}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={ricardo}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -182,7 +182,7 @@ export const members = [
         RICARDO FERREIRA
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -192,7 +192,7 @@ export const members = [
         COMMUNITY AND OPERATIONS
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -207,20 +207,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {billy}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={billy}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -231,7 +231,7 @@ export const members = [
         William Gray
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -241,7 +241,7 @@ export const members = [
         CHIEF MARKETING OFFICER
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -255,20 +255,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {long}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={long}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -279,7 +279,7 @@ export const members = [
         Long Mai Gia
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -289,7 +289,7 @@ export const members = [
         LEAD INFRASTRUCTURE
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -302,20 +302,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {son}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={son}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -326,7 +326,7 @@ export const members = [
         Son Trinh
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -336,7 +336,7 @@ export const members = [
         BLOCKCHAIN ENGINEER
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -349,20 +349,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {vuong}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={vuong}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -373,7 +373,7 @@ export const members = [
         Vuong Nguyen
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -383,7 +383,7 @@ export const members = [
         BLOCKCHAIN ENGINEER
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -396,20 +396,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {minh}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={minh}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -420,7 +420,7 @@ export const members = [
         Minh Vu Le Nhat
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -430,7 +430,7 @@ export const members = [
         SERVER TECHNICIAN AND CUSTOMER ENGINEER
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -443,20 +443,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {vinh}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={vinh}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -467,7 +467,7 @@ export const members = [
         Vinh Nguyen
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -477,7 +477,7 @@ export const members = [
         PROJECT MANAGER
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",
@@ -490,20 +490,20 @@ export const members = [
   </div>,
   <div>
     <div
-      style = {{
+      style={{
         width: "500px",
       }}
     >
       <Image
-        src = {du}
-        width = {"500px"}
-        preview = {false}
-        style = {{
+        src={du}
+        width={"500px"}
+        preview={false}
+        style={{
           borderRadius: "20px",
         }}
       />
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 700,
@@ -514,7 +514,7 @@ export const members = [
         Du Nguyen
       </p>
       <p
-        style = {{
+        style={{
           color: "#EEC13F",
           fontSize: "24px",
           fontWeight: 400,
@@ -524,7 +524,7 @@ export const members = [
         INFRASTRUCTURE
       </p>
       <p
-        style = {{
+        style={{
           fontSize: "16px",
           fontWeight: 400,
           textAlign: "left",

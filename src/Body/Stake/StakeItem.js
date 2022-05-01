@@ -15,9 +15,12 @@ const StakeItem = (props) => {
   // const supplyApi = `${props.api}/cosmos/bank/v1beta1/supply/uatom`;
   // const inflationApi = `${props.api}/cosmos/mint/v1beta1/inflation`;
 
-  const poolApi = "https://api.cosmoshub.notional.ventures/cosmos/staking/v1beta1/pool";
-  const supplyApi = "https://api.cosmoshub.notional.ventures/cosmos/bank/v1beta1/supply/uatom";
-  const inflationApi = "https://api.cosmoshub.notional.ventures/cosmos/mint/v1beta1/inflation";
+  const poolApi =
+    "https://api.cosmoshub.notional.ventures/cosmos/staking/v1beta1/pool";
+  const supplyApi =
+    "https://api.cosmoshub.notional.ventures/cosmos/bank/v1beta1/supply/uatom";
+  const inflationApi =
+    "https://api.cosmoshub.notional.ventures/cosmos/mint/v1beta1/inflation";
 
   const closeModalHandler = () => {
     setShowHandler(false);
@@ -94,47 +97,49 @@ const StakeItem = (props) => {
     <React.Fragment>
       {showHandler && (
         <Modal
-          chainid = {loadedChainInfo.data.chain_id}
-          blockheight = {loadedChainInfo.data.block_height}
-          blocktime = {loadedChainInfo.data.block_time}
-          image = {props.image}
-          name = {props.name}
-          show = {showHandler}
-          onCancel = {closeModalHandler}
-          api = {props.api}
-          denom = {props.denom}
-          address = {props.address}
-          height = {loadedBlockHeight.data.latest_height}
-          uptime = {loadedBlockHeight.data.uptime}
-          pool = {pool.data.pool.bonded_tokens}
-          supply = {supply.data.amount.amount}
-          inflation = {inflation.data.inflation}
-          price = {price.data.cosmos.usd}
+          chainid={loadedChainInfo.data.chain_id}
+          blockheight={loadedChainInfo.data.block_height}
+          blocktime={loadedChainInfo.data.block_time}
+          image={props.image}
+          name={props.name}
+          show={showHandler}
+          onCancel={closeModalHandler}
+          api={props.api}
+          denom={props.denom}
+          ping={props.ping}
+          keplr={props.keplr}
+          address={props.address}
+          height={loadedBlockHeight.data.latest_height}
+          uptime={loadedBlockHeight.data.uptime}
+          pool={pool.data.pool.bonded_tokens}
+          supply={supply.data.amount.amount}
+          inflation={inflation.data.inflation}
+          price={price.data.cosmos.usd}
         ></Modal>
       )}
-      <li className = "stake-item">
-        <div className = "stake-item__content">
-          <div className = "stake-item__image">
+      <li className="stake-item">
+        <div className="stake-item__content">
+          <div className="stake-item__image">
             <img
-              src = {props.image}
-              alt = {props.name}
-              style = {{ width: "7rem", height: "7rem", marginTop: "35px" }}
+              src={props.image}
+              alt={props.name}
+              style={{ width: "7rem", height: "7rem", marginTop: "35px" }}
             />
           </div>
-          <div className = "stake-item__info">
+          <div className="stake-item__info">
             <h2>{props.name}</h2>
             {/* <h1>{price.data.cosmos.usd}</h1> */}
           </div>
           <button
             // onClick = {fetchChainInfo}
-            onClick = {() => {
+            onClick={() => {
               fetchChainInfo();
               getBlockInfo();
               getPriceInfo();
               fetchReward();
               showModalHandler();
             }}
-            className = "stake-btn"
+            className="stake-btn"
           >
             Stake
           </button>

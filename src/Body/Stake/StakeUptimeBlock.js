@@ -4,12 +4,13 @@ import nomiss from "../../media/stake/no-miss.png";
 
 const UptimeBlock = (props) => {
   let { height, uptime } = props;
+  console.log(height, uptime);
   if (uptime.length === 0) {
     return (
       <Image
-        style = {{ width: "4rem", height: "4rem" }}
-        preview = {false}
-        src = {nomiss}
+        style={{ width: "4rem", height: "4rem" }}
+        preview={false}
+        src={nomiss}
       />
     );
   } else {
@@ -18,18 +19,18 @@ const UptimeBlock = (props) => {
       if (height === element.height) {
         return (
           <Image
-            style = {{ width: "4rem", height: "4rem" }}
-            preview = {false}
-            src = {miss}
+            style={{ width: "4rem", height: "4rem" }}
+            preview={false}
+            src={miss}
           />
         );
       }
     }
     return (
       <Image
-        style = {{ width: "4rem", height: "4rem" }}
-        src = {nomiss}
-        preview = {false}
+        style={{ width: "4rem", height: "4rem" }}
+        src={nomiss}
+        preview={false}
       />
     );
   }

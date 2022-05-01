@@ -5,7 +5,7 @@
   border-radius: 15px;
   box-sizing: border-box;
   list-style: none;
-  transition: transform .4s;
+  transition: transform 0.4s;
   text-align: center;
   margin: 0 auto;
   justify-content: center;

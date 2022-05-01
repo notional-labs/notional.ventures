@@ -1,37 +1,35 @@
 .row {
-    display: flex;
-    margin-top: -20px;
-    margin-bottom: -38px;
+  display: flex;
+  margin-top: -20px;
+  margin-bottom: -38px;
 }
 
 .col {
-    margin-right: -25px;
-    margin-left: -10px;
+  margin-right: -25px;
+  margin-left: -10px;
 }
 
 .uptime-header {
-    font-family: "Segoe UI Light";
-    font-size: 30px;
-    height: 3.5rem;
+  font-family: "Segoe UI Light";
+  font-size: 30px;
+  height: 3.5rem;
 }
 
 .uptime-header h2 {
-    color: white;
+  color: white;
 }
 
 .label {
-    font-family: 'Segoe UI Light';
-    font-weight: 300;
-    font-size: 15px;
-    height: 2rem;
-    margin-top: -5px;
-    margin-bottom: 15px;
+  font-family: "Segoe UI Light";
+  font-weight: 300;
+  font-size: 15px;
+  height: 2rem;
+  margin-top: -5px;
+  margin-bottom: 15px;
 }
 .uptime {
-    margin-top: 2.5rem;
-    text-align: right;
-    align-items: right;
-    height: auto;
+  margin-top: 2.5rem;
+  text-align: right;
+  align-items: right;
+  height: auto;
 }
-
-

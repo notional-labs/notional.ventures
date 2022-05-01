@@ -19,6 +19,12 @@
   width: 7rem;
 }
 
+.modal-divisor {
+  height: 920px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .modal .uptime-section {
   margin-right: 0%;
 }
@@ -54,8 +60,8 @@
 }
 
 .chain-info__text .info-label {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: left;
   font-family: "Segoe UI Regular";
 }
@@ -72,10 +78,9 @@
 }
 
 .validator-section {
-  margin-top: 5rem;
-  line-height: 30px;
-  font-size: 25px;
-  font-weight: 400; 
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 400;
   white-space: nowrap;
   width: 30rem;
 }
@@ -91,8 +96,8 @@
 
 .validator-value {
   font-family: "Segoe UI Light";
-  max-width: 250px;
-  min-width: 250px;
+  max-width: 470px;
+  min-width: 470px;
   text-align: right;
 }
 
