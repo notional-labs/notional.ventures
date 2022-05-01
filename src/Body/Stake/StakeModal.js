@@ -2,65 +2,122 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
 import { Image } from "antd";
+import ReactTable from "react-table";
 import Backdrop from "./Backdrop";
 import StakeUptime from "./StakeUptime";
-
+import Modal_divisor from "../../media/stake/modal-divisor.png";
+import Info_divisor from "../../media/stake/info-divisor.png";
 import StakeCalculate from "./StakeCalculate";
 import "./StakeModal.css";
 
 const ModalOverlay = (props) => {
+  const smartTrim = (string, maxLength) => {
+    if (!string) return string;
+    if (string.length <= maxLength) return string;
+
+    let midpoint = Math.ceil(string.length / 2);
+    let toremove = string.length - maxLength;
+    let lstrip = Math.ceil(toremove / 2);
+    let rstrip = toremove - lstrip;
+    return (
+      string.substring(0, midpoint - lstrip) +
+      "..." +
+      string.substring(midpoint + rstrip)
+    );
+  };
+
+  const address = smartTrim(props.address, 22);
+
   const content = (
-    <div className = {`modal ${props.className}`}>
+    <div className={`modal ${props.className}`}>
       <div>
-        <div className = "chain-section">
-          <div className = "chain-info__image">
+        <div className="chain-section">
+          <div className="chain-info__image">
             <Image
-              preview = {false}
-              className = "chain-image"
-              src = {props.image}
-              alt = {props.name}
-              style = {{ width: "9rem", height: "9rem" }}
+              preview={false}
+              className="chain-image"
+              src={props.image}
+              alt={props.name}
+              style={{ width: "12rem", height: "12rem", marginLeft: "-20px", marginRight: "-20px" }}
             />
             <div>{props.name}</div>
           </div>
-          <div className = "chain-info__text">
-            <p>Chain ID: {props.chainid}</p>
-            <p>Block Height: {props.blockheight}</p>
-            <p>Block Time: {(props.blocktime).toFixed(2)}</p>
-            <p>Price: {(props.price).toFixed(2)}</p>
-          </div>
-        </div>
 
-        <div className = "validator-section">
-          <p>Validator: Notional</p>
-          <p>Address: {props.address}</p>
-          <p>Rank:</p>
-          <p>Commission:</p>
-          <p>Voting Power:</p>
+          <img src={Info_divisor} className="info-divisor" />
+
+          <table className="chain-info__text">
+            <tr>
+              <td className="info-label">Chain ID:</td>
+              <td className="info-value">{props.chainid}</td>
+            </tr>
+            <tr>
+              <td className="info-label">Block Height:</td>
+              <td className="info-value">
+                {props.blockheight.toLocaleString()}
+              </td>
+            </tr>
+            <tr>
+              <td className="info-label">Block Time:</td>
+              <td className="info-value">{props.blocktime.toFixed(2)}s</td>
+            </tr>
+            <tr>
+              <td className="info-label">Price:</td>
+              <td className="info-value">$ {props.price.toFixed(2)}</td>
+            </tr>
+          </table>
         </div>
+        <table className="validator-section">
+          <tr>
+            <td className="validator-label">Validator</td>
+            <td className="validator-value">Notional</td>
+          </tr>
+          <tr>
+            <td className="validator-label">Address</td>
+            <td className="validator-value">{address}</td>
+          </tr>
+          <tr>
+            <td className="validator-label">Rank</td>
+            <td className="validator-value"></td>
+          </tr>
+          <tr>
+            <td className="validator-label">Commission</td>
+            <td className="validator-value"></td>
+          </tr>
+          <tr>
+            <td className="validator-label">Voting Power</td>
+            <td className="validator-value"></td>
+          </tr>
+        </table>
       </div>
 
+      <img src={Modal_divisor} className="modal-divisor" />
+
       <div>
-        <div className = "profit-section">
+        <div className="profit-section">
           <StakeCalculate
-            denom = {props.denom}
-            pool = {props.pool}
-            supply = {props.supply}
-            inflation = {props.inflation}
-            price = {props.price}
+            denom={props.denom}
+            pool={props.pool}
+            supply={props.supply}
+            inflation={props.inflation}
+            price={props.price}
           />
         </div>
 
-        <div className = "uptime-section">
-          <StakeUptime height = {props.height} uptime = {props.uptime} />
+        <div className="uptime-section">
+          <StakeUptime height={props.height} uptime={props.uptime} />
         </div>
-        <div className = "button">
-          <button className = "delegate-btn keplr">
-            <a href = "#" className = "link">Delegate with Keplr</a>
+
+        <div className="button">
+          <button className="delegate-btn keplr">
+            <a href="#" className="link">
+              Delegate with Keplr
+            </a>
           </button>
-          <button className = "delegate-btn ping">
-            <a href = "#" className = "link">Delegate with PingPub</a>
-            </button>
+          <button className="delegate-btn ping">
+            <a href="#" className="link">
+              Delegate with PingPub
+            </a>
+          </button>
         </div>
       </div>
     </div>
@@ -71,13 +128,13 @@ const ModalOverlay = (props) => {
 const Modal = (props) => {
   return (
     <React.Fragment>
-      {props.show && <Backdrop onClick = {props.onCancel} />}
+      {props.show && <Backdrop onClick={props.onCancel} />}
       <CSSTransition
-        in = {props.show}
+        in={props.show}
         mountOnEnter
         unmountOnExit
-        timeout = {200}
-        classNames = "modal"
+        timeout={200}
+        classNames="modal"
       >
         <ModalOverlay {...props} />
       </CSSTransition>

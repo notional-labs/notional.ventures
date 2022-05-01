@@ -4,7 +4,7 @@ import StakeUptimeBlock from "./StakeUptimeBlock";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Divider from "../../media/stake/Line10.png"
+import Divisor from "../../media/stake/uptime-divisor.png"
 
 const Uptime = (props) => {
   let { height, uptime } = props;
@@ -32,7 +32,7 @@ const Uptime = (props) => {
         <h2>Uptime</h2>
       </div>
 
-      <img src = {Divider} className = "divisor"/>
+      <img src = {Divisor} className = "divisor"/>
 
       <div className = "label">
         <p>Last 100 blocks</p>

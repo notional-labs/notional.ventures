@@ -19,14 +19,18 @@
   width: 7rem;
 }
 
+.modal .uptime-section {
+  margin-right: 0%;
+}
+
 .chain-section {
   background: rgba(63, 63, 63, 0.47);
   border: 1px solid rgba(255, 255, 255, 0.39);
   box-sizing: border-box;
   border-radius: 23px;
   display: flex;
-  width: 30rem;
-  height: 15rem;
+  width: 625px;
+  height: 355px;
 }
 
 .chain-info__image {
@@ -36,29 +40,60 @@
   margin: auto;
 }
 
-.modal .uptime-section {
-  margin-right: 0%;
-}
-
 .chain-info__image div {
+  font-family: "Segoe UI Semibold";
   font-weight: 500;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .chain-info__text {
   text-transform: capitalize;
-  justify-content: center;
-  align-items: center;
   padding-top: 25px;
   margin: auto;
-  font-size: 18px;
+  font-size: 25px;
+}
+
+.chain-info__text .info-label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-family: "Segoe UI Regular";
+}
+
+.chain-info__text .info-value {
+  text-align: right;
+  font-family: "Segoe UI Light";
+}
+
+.info-divisor {
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .validator-section {
   margin-top: 5rem;
   line-height: 30px;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 400; 
+  white-space: nowrap;
+  width: 30rem;
+}
+
+.validator-label {
+  font-family: "Segoe UI Regular";
+  max-width: 150px;
+  min-width: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.validator-value {
+  font-family: "Segoe UI Light";
+  max-width: 250px;
+  min-width: 250px;
+  text-align: right;
 }
 
 .profit-section {
@@ -73,12 +108,12 @@
 }
 
 .delegate-btn {
-    /* background-color: rgb(213, 197, 197, 0.3); */
-    border: 0.5px solid white;
-    border-radius: 20px;
-    height: 3rem;
-    width: 16rem;
-    font-size: 16px;
+  /* background-color: rgb(213, 197, 197, 0.3); */
+  border: 0.5px solid white;
+  border-radius: 20px;
+  height: 3rem;
+  width: 16rem;
+  font-size: 16px;
 }
 
 .delegate-btn:hover {
@@ -90,11 +125,10 @@
   color: white;
 }
 
-
 .keplr {
   background-color: rgba(110, 154, 232, 0.25);
 }
 
 .ping {
-  background-color: rgba(123, 65, 216, 0.25)
+  background-color: rgba(123, 65, 216, 0.25);
 }
