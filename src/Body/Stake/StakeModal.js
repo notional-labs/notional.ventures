@@ -138,7 +138,7 @@ const ModalOverlay = (props) => {
               Delegate with Keplr
             </a>
 
-            <img src={Keplr} className="logo" />
+            <img src={Keplr} className="iconsasd" />
           </button>
           <button className="delegate-btn ping">
             <a
@@ -148,7 +148,7 @@ const ModalOverlay = (props) => {
               Delegate with Ping.pub
             </a>
 
-            <img src={Ping} className="logo" />
+            <img src={Ping} className="iconsasd" />
           </button>
         </div>
       </div>

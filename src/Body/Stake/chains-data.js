@@ -36,7 +36,7 @@ export const STAKES = [
     ping: "cosmos",
     price:
       "https://api.coingecko.com/api/v3/simple/price?ids=cosmos&vs_currencies=usd",
-    address: "cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em",
+    address: "cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj",
   },
   {
     id: "s3",

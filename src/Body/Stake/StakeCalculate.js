@@ -47,8 +47,12 @@ const StakeCalculate = (props) => {
       <table className="reward-table">
         <tr>
           <td className="name">Daily Rewards</td>
-          <td className="token">{((value * annualProfit) / 100 / 365).toFixed(2)} {props.denom}</td>
-          <td className="usd">$ {(((value * annualProfit) / 100 / 365) * price).toFixed(2)}</td>
+          <td className="token">
+            {((value * annualProfit) / 100 / 365).toFixed(2)} {props.denom}
+          </td>
+          <td className="usd">
+            $ {(((value * annualProfit) / 100 / 365) * price).toFixed(2)}
+          </td>
         </tr>
         <tr>
           <td colSpan={3}>
@@ -57,8 +61,12 @@ const StakeCalculate = (props) => {
         </tr>
         <tr>
           <td className="name">Monthly Rewards</td>
-          <td className="token">{((value * annualProfit) / 100 / 12).toFixed(2)} {props.denom}</td>
-          <td className="usd">$ {(((value * annualProfit) / 100 / 12) * price).toFixed(2)}</td>
+          <td className="token">
+            {((value * annualProfit) / 100 / 12).toFixed(2)} {props.denom}
+          </td>
+          <td className="usd">
+            $ {(((value * annualProfit) / 100 / 12) * price).toFixed(2)}
+          </td>
         </tr>
         <tr>
           <td colSpan={3}>
@@ -67,8 +75,12 @@ const StakeCalculate = (props) => {
         </tr>
         <tr>
           <td className="name">Annual Rewards</td>
-          <td className="token">{((value * annualProfit) / 100).toFixed(2)} {props.denom}</td>
-          <td className="usd">$ {(((value * annualProfit) / 100) * price).toFixed(2)}</td>
+          <td className="token">
+            {((value * annualProfit) / 100).toFixed(2)} {props.denom}
+          </td>
+          <td className="usd">
+            $ {(((value * annualProfit) / 100) * price).toFixed(2)}
+          </td>
         </tr>
       </table>
     </div>
