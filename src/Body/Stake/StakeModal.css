@@ -7,7 +7,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.39);
   padding: 5rem 3rem;
   display: flex;
   gap: 3rem;
