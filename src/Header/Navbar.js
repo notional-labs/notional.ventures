@@ -4,25 +4,25 @@ import NotionalLogo from "../media/logo/notional.png";
 const Navbar = () => {
   return (
     <div className="nav">
-      <div className="logo">
+      <div href="#" className="logo" style={{cursor: "pointer"}}>
         <img src={NotionalLogo} alt="Logo" />
       </div>
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
-            <a href="#">About Us</a>
+            <a href="#Contribution">Contribution</a>
           </li>
           <li>
-            <a href="#">Delegate</a>
+            <a href="#Delegate">Delegate</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#Project">Projects</a>
           </li>
           <li>
             <a href="#">Infrastructure</a>
           </li>
           <li>
-            <a href="#">Team</a>
+            <a href="#Team">Team</a>
           </li>
         </ul>
       </nav>
