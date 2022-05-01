@@ -1,36 +1,36 @@
-<svg width="2490" height="2440" viewBox="0 0 2490 2440" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_107_47)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1030.06 1145.85C957.681 1321.03 1383.91 1744.34 1337.72 1821.44C1291.55 1898.54 845.076 1783 752.983 1608.46C660.889 1433.91 587.732 967.225 785.163 774.196C982.601 581.16 1731.21 708.419 1772.02 770.364C1812.84 832.303 1102.45 970.675 1030.06 1145.85Z" fill="#A80000"/>
+<svg width = "2490" height = "2440" viewBox = "0 0 2490 2440" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+<g filter = "url(#filter0_f_107_47)">
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M1030.06 1145.85C957.681 1321.03 1383.91 1744.34 1337.72 1821.44C1291.55 1898.54 845.076 1783 752.983 1608.46C660.889 1433.91 587.732 967.225 785.163 774.196C982.601 581.16 1731.21 708.419 1772.02 770.364C1812.84 832.303 1102.45 970.675 1030.06 1145.85Z" fill = "#A80000"/>
 </g>
-<g filter="url(#filter1_f_107_47)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M486.249 810.818C556.43 703.87 765.122 589.222 843.615 611.895C922.101 634.568 899.018 842.474 957.192 946.855C1015.37 1051.24 1395.81 1104.92 1192.66 1238.18C989.512 1371.44 540.267 1324.81 422.535 1253.58C304.796 1182.35 416.068 917.765 486.249 810.818Z" fill="#4B1F7E"/>
+<g filter = "url(#filter1_f_107_47)">
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M486.249 810.818C556.43 703.87 765.122 589.222 843.615 611.895C922.101 634.568 899.018 842.474 957.192 946.855C1015.37 1051.24 1395.81 1104.92 1192.66 1238.18C989.512 1371.44 540.267 1324.81 422.535 1253.58C304.796 1182.35 416.068 917.765 486.249 810.818Z" fill = "#4B1F7E"/>
 </g>
-<g filter="url(#filter2_f_107_47)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1522.3 1022.74C1551.89 888.08 1440.19 410.139 1484.79 387.909C1529.38 365.679 1695.69 757.267 1789.88 889.361C1884.08 1021.46 2233.36 1047.32 2049.97 1180.48C1866.58 1313.65 1395.18 1222.17 1307.23 1195.87C1219.29 1169.58 1492.71 1157.4 1522.3 1022.74Z" fill="#2069EB"/>
+<g filter = "url(#filter2_f_107_47)">
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M1522.3 1022.74C1551.89 888.08 1440.19 410.139 1484.79 387.909C1529.38 365.679 1695.69 757.267 1789.88 889.361C1884.08 1021.46 2233.36 1047.32 2049.97 1180.48C1866.58 1313.65 1395.18 1222.17 1307.23 1195.87C1219.29 1169.58 1492.71 1157.4 1522.3 1022.74Z" fill = "#2069EB"/>
 </g>
-<g filter="url(#filter3_f_107_47)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1269.78 1352.34C1354.97 1236.11 1608.26 1111.5 1703.53 1136.15C1798.79 1160.79 1770.78 1386.75 1841.38 1500.19C1911.99 1613.64 2373.75 1671.99 2127.18 1816.81C1880.61 1961.64 1335.35 1910.96 1192.45 1833.55C1049.55 1756.14 1184.6 1468.58 1269.78 1352.34Z" fill="#1B1A48"/>
+<g filter = "url(#filter3_f_107_47)">
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M1269.78 1352.34C1354.97 1236.11 1608.26 1111.5 1703.53 1136.15C1798.79 1160.79 1770.78 1386.75 1841.38 1500.19C1911.99 1613.64 2373.75 1671.99 2127.18 1816.81C1880.61 1961.64 1335.35 1910.96 1192.45 1833.55C1049.55 1756.14 1184.6 1468.58 1269.78 1352.34Z" fill = "#1B1A48"/>
 </g>
 <defs>
-<filter id="filter0_f_107_47" x="65.968" y="77.6052" width="2301.75" height="2362.18" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="297" result="effect1_foregroundBlur_107_47"/>
+<filter id = "filter0_f_107_47" x = "65.968" y = "77.6052" width = "2301.75" height = "2362.18" filterUnits = "userSpaceOnUse" color-interpolation-filters = "sRGB">
+<feFlood flood-opacity = "0" result = "BackgroundImageFix"/>
+<feBlend mode = "normal" in = "SourceGraphic" in2 = "BackgroundImageFix" result = "shape"/>
+<feGaussianBlur stdDeviation = "297" result = "effect1_foregroundBlur_107_47"/>
 </filter>
-<filter id="filter1_f_107_47" x="0" y="238" width="1622.83" height="1456" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="185.5" result="effect1_foregroundBlur_107_47"/>
+<filter id = "filter1_f_107_47" x = "0" y = "238" width = "1622.83" height = "1456" filterUnits = "userSpaceOnUse" color-interpolation-filters = "sRGB">
+<feFlood flood-opacity = "0" result = "BackgroundImageFix"/>
+<feBlend mode = "normal" in = "SourceGraphic" in2 = "BackgroundImageFix" result = "shape"/>
+<feGaussianBlur stdDeviation = "185.5" result = "effect1_foregroundBlur_107_47"/>
 </filter>
-<filter id="filter2_f_107_47" x="902.877" y="0" width="1586.51" height="1638" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="193.5" result="effect1_foregroundBlur_107_47"/>
+<filter id = "filter2_f_107_47" x = "902.877" y = "0" width = "1586.51" height = "1638" filterUnits = "userSpaceOnUse" color-interpolation-filters = "sRGB">
+<feFlood flood-opacity = "0" result = "BackgroundImageFix"/>
+<feBlend mode = "normal" in = "SourceGraphic" in2 = "BackgroundImageFix" result = "shape"/>
+<feGaussianBlur stdDeviation = "193.5" result = "effect1_foregroundBlur_107_47"/>
 </filter>
-<filter id="filter3_f_107_47" x="839.903" y="843" width="1649.1" height="1356" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="145" result="effect1_foregroundBlur_107_47"/>
+<filter id = "filter3_f_107_47" x = "839.903" y = "843" width = "1649.1" height = "1356" filterUnits = "userSpaceOnUse" color-interpolation-filters = "sRGB">
+<feFlood flood-opacity = "0" result = "BackgroundImageFix"/>
+<feBlend mode = "normal" in = "SourceGraphic" in2 = "BackgroundImageFix" result = "shape"/>
+<feGaussianBlur stdDeviation = "145" result = "effect1_foregroundBlur_107_47"/>
 </filter>
 </defs>
 </svg>

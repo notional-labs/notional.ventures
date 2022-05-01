@@ -1,12 +1,12 @@
-<svg width="371" height="481" viewBox="0 0 371 481" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_58_2)">
-<circle cx="48.5" cy="158.5" r="158.5" fill="#943AFD" fill-opacity="0.87"/>
+<svg width = "371" height = "481" viewBox = "0 0 371 481" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+<g filter = "url(#filter0_f_58_2)">
+<circle cx = "48.5" cy = "158.5" r = "158.5" fill = "#943AFD" fill-opacity = "0.87"/>
 </g>
 <defs>
-<filter id="filter0_f_58_2" x="-274" y="-164" width="645" height="645" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="82" result="effect1_foregroundBlur_58_2"/>
+<filter id = "filter0_f_58_2" x = "-274" y = "-164" width = "645" height = "645" filterUnits = "userSpaceOnUse" color-interpolation-filters = "sRGB">
+<feFlood flood-opacity = "0" result = "BackgroundImageFix"/>
+<feBlend mode = "normal" in = "SourceGraphic" in2 = "BackgroundImageFix" result = "shape"/>
+<feGaussianBlur stdDeviation = "82" result = "effect1_foregroundBlur_58_2"/>
 </filter>
 </defs>
 </svg>

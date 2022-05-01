@@ -26,43 +26,43 @@ const Uptime = (props) => {
   ];
 
   return (
-    <div class="uptime">
+    <div class = "uptime">
 
-      <div className="uptime-header">
+      <div className = "uptime-header">
         <h2>Uptime</h2>
       </div>
 
       <img src = {Divider} className = "divisor"/>
 
-      <div className="label">
+      <div className = "label">
         <p>Last 100 blocks</p>
       </div>
-      <Container className="chart">
-        <Row className="row">
+      <Container className = "chart">
+        <Row className = "row">
           {idr1.map((id) => (
-            <Col className="col">
-              <StakeUptimeBlock height={height - id} uptime={uptime} className = "col" />
+            <Col className = "col">
+              <StakeUptimeBlock height = {height - id} uptime = {uptime} className = "col" />
             </Col>
           ))}
         </Row>
-        <Row className="row">
+        <Row className = "row">
           {idr2.map((id) => (
-            <Col className="col">
-              <StakeUptimeBlock height={height - id} uptime={uptime} className = "col" />
+            <Col className = "col">
+              <StakeUptimeBlock height = {height - id} uptime = {uptime} className = "col" />
             </Col>
           ))}
         </Row>
-        <Row className="row">
+        <Row className = "row">
           {idr3.map((id) => (
-            <Col className="col">
-              <StakeUptimeBlock height={height - id} uptime={uptime} className = "col" />
+            <Col className = "col">
+              <StakeUptimeBlock height = {height - id} uptime = {uptime} className = "col" />
             </Col>
           ))}
         </Row>
-        <Row className="row">
+        <Row className = "row">
           {idr4.map((id) => (
-            <Col className="col">
-              <StakeUptimeBlock height={height - id} uptime={uptime} className = "col" />
+            <Col className = "col">
+              <StakeUptimeBlock height = {height - id} uptime = {uptime} className = "col" />
             </Col>
           ))}
         </Row>

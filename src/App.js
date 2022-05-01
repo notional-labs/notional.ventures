@@ -9,7 +9,7 @@ import Team from "./Body/Team/Team";
 function App() {
   return (
     <React.Fragment>
-      <div className="root">
+      <div className = "root">
         <Header />
         <Contributions />
         <Stake />

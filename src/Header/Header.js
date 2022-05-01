@@ -7,10 +7,10 @@ import Hero from "./Hero";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className = "header">
       <Navbar />
-      <Group17 className="background1" />
-      <Group171 className="background2" />
+      <Group17 className = "background1" />
+      <Group171 className = "background2" />
       <Hero />
     </div>
   );

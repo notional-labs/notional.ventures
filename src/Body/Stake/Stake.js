@@ -36,17 +36,14 @@ const Stake = () => {
      name: "Atom",
      denom: "ATOM",
      api: "https://api.cosmostation.io",
-     rpc: "",
      price: "https://api.coingecko.com/api/v3/simple/price?ids=juno-network,cosmos&vs_currencies=usd",
-     address: "cosmosvaloper1yh089p0cre4nhpdqw35uzde5amg3qzexkeggdn"
+     address: "cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj"
     },
-    // cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em
     // {
     //   id: "s3",
     //   image: `${Juno}`,
     //   name: "Juno",
     //   api: "",
-    //   rpc: "",
     //   address: "junovaloper1083svrca4t350mphfv9x45wq9asrs60cpqzg0y"
     // },
     // {
@@ -54,7 +51,6 @@ const Stake = () => {
     //   image: `${Starname}`,
     //   name: "Starname",
     //   api: "",
-    //   rpc: "",
     //   address: "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h"
     // },
     // {
@@ -62,7 +58,6 @@ const Stake = () => {
     //   image: `${Cyber}`,
     //   name: "Cyber",
     //   api: "",
-    //   rpc: "",
     //   address: ""
     // },
     // {
@@ -70,7 +65,6 @@ const Stake = () => {
     //   image: `${Akash}`,
     //   name: "Akash",
     //   api: "https://api-akash.cosmostation.io",
-    //   rpc: "",
     //   address: "akashvaloper1g5qqaxu89qk54ex3zh6tus0a8ta2sj4fuejw9a"
     // },
     // {
@@ -78,7 +72,6 @@ const Stake = () => {
     //   image: `${Emoney}`,
     //   name: "Emoney",
     //   api: "",
-    //   rpc: "",
     //   address: "emoneyvaloper16dc379m0qj64g4pr4nkl7ewak52qy2srpe6lxp"
     // },
     // {
@@ -86,7 +79,6 @@ const Stake = () => {
     //   image: `${Evmos}`,
     //   name: "Evmos",
     //   api: "",
-    //   rpc: "",
     //   address: "evmosvaloper1rv94jqhlhx6makfwl6qs390e4shg32m6w6dxzy"
     // },
     // {
@@ -94,7 +86,6 @@ const Stake = () => {
     //   image: `${Sifchain}`,
     //   name: "Sifchain",
     //   api: "",
-    //   rpc: "",
     //   address: "sifvaloper1083svrca4t350mphfv9x45wq9asrs60cyssqu6"
     // },
     // {
@@ -102,7 +93,6 @@ const Stake = () => {
     //   image: `${Sentinel}`,
     //   name: "Sentinel",
     //   api: "",
-    //   rpc: "",
     //   address: "sentvaloper1083svrca4t350mphfv9x45wq9asrs60cv37gc8"
     // },
     // {
@@ -110,15 +100,15 @@ const Stake = () => {
     //   image: `${Stargaze}`,
     //   name: "Stargaze",
     //   api: "",
-    //   rpc: "",
     //   address: "starsvaloper1v8yp5x5kfex4wep2pfuuyw68cn2lst3ksl0gss"
     // },
     {
       id: "s12",
       image: `${Kava}`,
       name: "Kava",
+      denom: "KAVA",
       api: "https://api-kava.cosmostation.io",
-      rpc: "",
+      
       address: "kavavaloper13jyqfhak8mu4c7pydjm3eu4qla7g06a9u6xf8g"
     },
     // {
@@ -132,7 +122,6 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Secret",
     //   api: "",
-    //   rpc: "",
     //   address: "secretvaloper18rchk5exp2vzcwrwuret5sjwpxhf4sq22ze4dr"
     // },
     // {
@@ -140,7 +129,6 @@ const Stake = () => {
     //   image: `${Regen}`,
     //   name: "Regen",
     //   api: "",
-    //   rpc: "",
     //   address: "regenvaloper1083svrca4t350mphfv9x45wq9asrs60ct2p9a5"
     // },
     // {
@@ -148,7 +136,6 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Omniflix",
     //   api: "",
-    //   rpc: "",
     //   address: "omniflixvaloper15wshq6lmxmcn9vxky2mxf8zhstpn9ywmfc5ke5"
     // },
     // {
@@ -156,7 +143,6 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Likecoin",
     //   api: "",
-    //   rpc: "",
     //   address: ""
     // },
     // {
@@ -164,7 +150,6 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Kichain",
     //   api: "",
-    //   rpc: "",
     //   address: "kivaloper1lmkzaxztjpesh0mf7qy76l5npqwc7fk3l2k57g"
     // },
     // {
@@ -172,7 +157,6 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Cheq",
     //   api: "",
-    //   rpc: "",
     //   address: ""
     // },
     // {
@@ -180,7 +164,6 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Band",
     //   api: "",
-    //   rpc: "",
     //   address: "bandvaloper19huytqr8srz9wcdhvas5cvxddg8dtqcv6tce0s"
     // },
     // {
@@ -188,7 +171,6 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Chihuahua",
     //   api: "",
-    //   rpc: "",
     //   address: "chihuahuavaloper1h6vcu4r2hx70x5f0l3du3ey2g98u9ut2tafnnv"
     // },
     // {
@@ -196,7 +178,6 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Konstellation",
     //   api: "",
-    //   rpc: "",
     //   address: "darcvaloper1fndgrsqmmq68ppl42wjkxh32nwpuj7vqtgep38"
     // },
     // {
@@ -216,25 +197,24 @@ const Stake = () => {
     //   image: `${Secret}`,
     //   name: "Bitcanna",
     //   api: "",
-    //   rpc: "",
     //   address: "bcnavaloper1dl7w3myyfmnarh0t5uxmy7qe6szagz3kyhzq07"
     // },
   ];
  
   return (
-    <div className="stake-section">
-      <div className="title">
-        <hr className="bar"></hr>
-        <p className="name">Stake With Us</p>
-        <p className="text">
+    <div className = "stake-section">
+      <div className = "title">
+        <hr className = "bar"></hr>
+        <p className = "name">Stake With Us</p>
+        <p className = "text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
           ante in nisi ultricies pharetra sed at metus. Integer sem nisi,
           blandit egestas pellentesque eget, facilisis et ipsum. Quisque sodales
           quam eu rhoncus pellentesque.{" "}
         </p>
       </div>
-      <div className="stake">
-        <StakeList stakes={STAKES} />
+      <div className = "stake">
+        <StakeList stakes = {STAKES} />
       
       </div>
     </div>

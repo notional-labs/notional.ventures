@@ -3,26 +3,26 @@ import NotionalLogo from "../media/logo/notional.png";
 
 const Navbar = () => {
   return (
-    <div className="nav">
-      <div className="logo">
-        <img src={NotionalLogo} alt="Logo" />
+    <div className = "nav">
+      <div className = "logo">
+        <img src = {NotionalLogo} alt = "Logo" />
       </div>
-      <nav className="main-nav">
-        <ul className="main-nav-list">
+      <nav className = "main-nav">
+        <ul className = "main-nav-list">
           <li>
-            <a href="#">About Us</a>
+            <a href = "#">About Us</a>
           </li>
           <li>
-            <a href="#">Delegate</a>
+            <a href = "#">Delegate</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href = "#">Projects</a>
           </li>
           <li>
-            <a href="#">Infrastructure</a>
+            <a href = "#">Infrastructure</a>
           </li>
           <li>
-            <a href="#">Team</a>
+            <a href = "#">Team</a>
           </li>
         </ul>
       </nav>

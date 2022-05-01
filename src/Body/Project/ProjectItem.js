@@ -2,16 +2,16 @@ import React from "react";
 import "./ProjectItem.css";
 const ProjectItem = (props) => {
   return (
-    <li className="project-item">
-      <div className="project-item__content">
-        <div className="user-item__image">
+    <li className = "project-item">
+      <div className = "project-item__content">
+        <div className = "user-item__image">
           <img
-            src={props.image}
-            alt={props.name}
-            style={{ width: "22rem", height: "20rem" }}
+            src = {props.image}
+            alt = {props.name}
+            style = {{ width: "22rem", height: "20rem" }}
           />
         </div>
-        <div className="user-item__info">
+        <div className = "user-item__info">
           <h2>{props.name}</h2>
         </div>
       </div>

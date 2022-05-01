@@ -33,12 +33,12 @@ const Project = () => {
     },
   ];
   return (
-    <div className="project">
-      <div className="title">
-        <hr className="bar"></hr>
-        <p className="name">Our Projects</p>
+    <div className = "project">
+      <div className = "title">
+        <hr className = "bar"></hr>
+        <p className = "name">Our Projects</p>
       </div>
-      <ProjectList items={PROJECTS} />
+      <ProjectList items = {PROJECTS} />
       
     </div>
   );
