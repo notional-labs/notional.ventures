@@ -3,15 +3,15 @@
   border: 1px solid rgba(255, 255, 255, 0.39);
   box-sizing: border-box;
   border-radius: 23px;
-  height: 350px;
+  height: 400px;
   margin-top: -80px;
 }
 
 .calculate .info {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 85%;
   align-items: center;
   justify-content: center;
 }
@@ -29,30 +29,26 @@
 }
 
 .slider-caculate {
-  width: 90%;
+  margin-top: 25px;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   justify-content: center;
 }
 
-
 div.ant-slider-rail {
   background: rgba(196, 196, 196, 0.5);
   box-shadow: inset 0px 4px 9px rgba(0, 0, 0, 0.4);
   margin-top: 5px;
-  border-radius: 5px; 
+  border-radius: 5px;
   height: 10px;
 }
 
-/* div.ant-slider-handle:focus {
+div.ant-slider:hover > div.ant-slider-handle:not(.ant-tooltip-open) {
+  border-color: #ffffff;
+}
 
-} */
-
-div.ant-slider:hover > div.ant-slider-handle:not(.ant-tooltip-open)
- {
-   border-color: #ffffff
- }
 div.ant-slider-track {
   height: 10px;
   background: #ffffff;
@@ -61,12 +57,12 @@ div.ant-slider-track {
   border-radius: 8px;
 }
 
-div.ant-slider-track:hover +  div.ant-slider-handle{
+div.ant-slider-track:hover + div.ant-slider-handle {
   display: block;
 }
 
 div.ant-slider-handle {
-  color : white;
+  color: white;
   height: 20px;
   width: 20px;
   display: none;
@@ -77,13 +73,38 @@ div.ant-slider-handle:focus {
 }
 
 .reward-table {
-  margin-top: 35px;
+  margin-top: 30px;
+  width: 85%;
   text-align: center;
   line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.reward-table div {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: white;
+.reward-divisor {
+  width: 620px;
+}
+
+.reward-table .name {
+  min-width: 70px;
+  max-width: 70px;
+  font-family: "Segoe UI Light";
+  font-size: 20px;
+  text-align: left;
+}
+
+.reward-table .token {
+  font-family: "Segoe UI Light";
+  min-width: 70px;
+  max-width: 70px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.reward-table .usd {
+  font-family: "Segoe UI Light";
+  font-size: 20px;
+  text-align: right;
 }

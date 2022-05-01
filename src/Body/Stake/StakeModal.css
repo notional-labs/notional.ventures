@@ -82,7 +82,7 @@
   font-size: 25px;
   font-weight: 400;
   white-space: nowrap;
-  }
+}
 
 .validator-label {
   font-family: "Segoe UI Regular";
@@ -108,16 +108,21 @@
   margin-top: 70px;
   justify-content: center;
   display: flex;
-  gap: 4rem;
+  gap: 5rem;
+}
+
+.logo {
+  height: 30px;
+  margin-left: 10px;
 }
 
 .delegate-btn {
-  /* background-color: rgb(213, 197, 197, 0.3); */
-  border: 0.5px solid white;
-  border-radius: 20px;
-  height: 3rem;
-  width: 16rem;
+  height: 55px;
+  width: 297px;
   font-size: 16px;
+  border: 0.5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 53.5px;
 }
 
 .delegate-btn:hover {
@@ -130,9 +135,9 @@
 }
 
 .keplr {
-  background-color: rgba(110, 154, 232, 0.25);
+  background: rgba(110, 154, 232, 0.3);
 }
 
 .ping {
-  background-color: rgba(123, 65, 216, 0.25);
+  background: rgba(121, 63, 215, 0.3);
 }
