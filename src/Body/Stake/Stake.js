@@ -1,13 +1,11 @@
 import React from "react";
 import "./Stake.css";
-import {STAKES} from './Data'
-
+import { STAKES } from "./chains-data";
 import StakeList from "./StakeList";
-
 
 const Stake = () => {
   return (
-    <div className="stake-section">
+    <div id="Delegate" className="stake-section">
       <div className="title">
         <hr className="bar"></hr>
         <p className="name">Stake With Us</p>

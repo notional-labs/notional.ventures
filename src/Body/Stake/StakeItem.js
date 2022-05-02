@@ -142,10 +142,8 @@ const StakeItem = (props) => {
           </div>
           <div className="stake-item__info">
             <h2>{props.name}</h2>
-            {/* <h1>{price.data.cosmos.usd}</h1> */}
           </div>
           <button
-            // onClick = {fetchChainInfo}
             onClick={() => {
               // fetchChainInfo();
               // getBlockInfo();
@@ -157,9 +155,6 @@ const StakeItem = (props) => {
           >
             Stake
           </button>
-          {/* <button onClick = {() => {fetchReward()}}>
-            Test
-          </button> */}
         </div>
       </li>
     </React.Fragment>

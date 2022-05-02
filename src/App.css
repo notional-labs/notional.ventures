@@ -15,7 +15,12 @@
   src: url("/src/media/Segoe\ UI/Segoe\ UI\ Bold.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .root {
+  scroll-behavior: smooth;
   position: relative;
   margin: auto;
   background-color: #2c324d;

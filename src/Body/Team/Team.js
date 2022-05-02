@@ -4,7 +4,7 @@ import { Carousel } from "3d-react-carousal";
 import { members } from "./Member";
 const Team = () => {
   return (
-    <div className="team">
+    <div id="Team" className="team">
       <div className="title">
         <hr className="bar"></hr>
         <p className="name">Our Team</p>
