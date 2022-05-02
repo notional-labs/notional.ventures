@@ -8,6 +8,7 @@ const StakeItem = (props) => {
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
   const [loadedBlockHeight, setBlockHeight] = useState([]);
   const [price, setPrice] = useState([]);
+  const [commission, setCommnission] = useState([]);
   const [pool, setPool] = useState([]);
   const [supply, setSupply] = useState([]);
   const [inflation, setInflation] = useState([]);
@@ -30,15 +31,16 @@ const StakeItem = (props) => {
     fetchChainInfo();
     getBlockInfo();
     getPriceInfo();
-    callApiContinously();
+    getCommission();
+    // callApiContinously();
   }, []);
 
   const showModalHandler = () => {
     setShowHandler(true);
   };
 
-  const fetchChainInfo = () => {
-    axios
+  const fetchChainInfo = async () => {
+    await axios
       .get(`${props.api}/v1/status`)
       .then((response) => setLoadedChainInfo(response))
       .catch((errors) => {
@@ -46,17 +48,17 @@ const StakeItem = (props) => {
       });
   };
 
-  const getBlockInfo = () => {
-    axios
+  const getBlockInfo = async () => {
+    await axios
       .get(`${props.api}/v1/staking/validator/uptime/${props.address}`)
-      .then((response) => setBlockHeight(response))
+      .then((response) => setBlockHeight(response)).then(console.log(loadedBlockHeight))
       .catch((errors) => {
         console.error(errors);
       });
   };
 
-  const getPriceInfo = () => {
-    axios
+  const getPriceInfo = async () => {
+    await axios
       .get(`${props.price}`)
       .then((response) => {
         setPrice(response);
@@ -67,19 +69,30 @@ const StakeItem = (props) => {
       });
   };
 
-  const callApiContinously = () => {
-    setInterval(getBlockInfo, 12000);
-  };
-  if (!showHandler) {
-    clearInterval(callApiContinously);
+  const getCommission = async () => {
+    await axios.get(`https://api-cosmoshub-ia.notional.ventures/cosmos/staking/v1beta1/validators/${props.address}`)
+    .then((response) => {
+      setCommnission(response)
+    })
   }
 
-  const poolRequest = axios.get(poolApi, { timeout: 16000 });
-  const supplyRequest = axios.get(supplyApi, { timeout: 16000 });
-  const inflationRequest = axios.get(inflationApi, { timeout: 16000 });
-  const fetchReward = () => {
-    axios
-      .all([poolRequest, supplyRequest, inflationRequest], { timeout: 16000 })
+  // const callApiContinously = () => {
+  //   setInterval(getBlockInfo, 12000);
+  // };
+  // if (showHandler) {
+  //   callApiContinously()
+  // }
+  // else {
+  //   clearInterval(callApiContinously);
+
+  // }
+
+  const poolRequest = axios.get(poolApi);
+  const supplyRequest = axios.get(supplyApi);
+  const inflationRequest = axios.get(inflationApi);
+  const fetchReward = async () => {
+    await axios
+      .all([poolRequest, supplyRequest, inflationRequest])
       .then(
         axios.spread((...response) => {
           setPool(response[0]);
@@ -87,7 +100,7 @@ const StakeItem = (props) => {
           setInflation(response[2]);
         })
       )
-      .then(console.log(pool, supply, inflation))
+      // .then(console.log(pool, supply, inflation))
       .catch((errors) => {
         console.error(errors);
       });
@@ -111,6 +124,7 @@ const StakeItem = (props) => {
           address={props.address}
           height={loadedBlockHeight.data.latest_height}
           uptime={loadedBlockHeight.data.uptime}
+          commission={commission.data.validator.commission.commission_rates.rate}
           pool={pool.data.pool.bonded_tokens}
           supply={supply.data.amount.amount}
           inflation={inflation.data.inflation}
@@ -133,10 +147,10 @@ const StakeItem = (props) => {
           <button
             // onClick = {fetchChainInfo}
             onClick={() => {
-              fetchChainInfo();
-              getBlockInfo();
-              getPriceInfo();
-              fetchReward();
+              // fetchChainInfo();
+              // getBlockInfo();
+              // getPriceInfo();
+              // fetchReward();
               showModalHandler();
             }}
             className="stake-btn"

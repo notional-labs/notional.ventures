@@ -103,7 +103,7 @@ const ModalOverlay = (props) => {
           </tr>
           <tr>
             <td className="validator-label">Commission:</td>
-            <td className="validator-value">o day</td>
+            <td className="validator-value">{props.commission*100}%</td>
           </tr>
           <tr>
             <td className="validator-label">Voting Power:</td>
