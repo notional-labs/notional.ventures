@@ -13,6 +13,16 @@ import Kava from "../../media/stake/Kava.svg";
 import Ixo from "../../media/stake/Ixo.svg";
 import Secret from "../../media/stake/Secret.svg";
 import Regen from "../../media/stake/Regen.svg";
+import Kichain from "../../media/stake/Kichain.svg";
+import Likecoin from "../../media/stake/Likecoin.svg";
+import Konstellation from "../../media/stake/darc.svg";
+import Cheq from "../../media/stake/cheq.svg";
+import Bitcanna from "../../media/stake/bitcanna.svg";
+import Band from "../../media/stake/Band.svg";
+import Provenance from "../../media/stake/Provenance.svg";
+import Vidulum from "../../media/stake/vidulum.svg";
+import Omniflix from "../../media/stake/omniflix.svg";
+import Chihuahua from "../../media/stake/Juno.svg";
 
 export const STAKES = [
   {
@@ -183,7 +193,7 @@ export const STAKES = [
   },
   {
     id: "s16",
-    image: `${Secret}`,
+    image: `${Omniflix}`,
     name: "Omniflix",
     denom: "FLIX",
     api: "",
@@ -194,7 +204,7 @@ export const STAKES = [
   },
   {
     id: "s17",
-    image: `${Secret}`,
+    image: `${Likecoin}`,
     name: "Likecoin",
     denom: "LIKE",
     api: "",
@@ -205,7 +215,7 @@ export const STAKES = [
   },
   {
     id: "s18",
-    image: `${Secret}`,
+    image: `${Kichain}`,
     name: "Kichain",
     denom: "XKI",
     api: "",
@@ -216,7 +226,7 @@ export const STAKES = [
   },
   {
     id: "s19",
-    image: `${Secret}`,
+    image: `${Cheq}`,
     name: "Cheq",
     denom: "CHEQ",
     api: "",
@@ -227,7 +237,7 @@ export const STAKES = [
   },
   {
     id: "s20",
-    image: `${Secret}`,
+    image: `${Band}`,
     name: "Band",
     denom: "BAND",
     api: "",
@@ -238,7 +248,7 @@ export const STAKES = [
   },
   {
     id: "s21",
-    image: `${Secret}`,
+    image: `${Chihuahua}`,
     name: "Chihuahua",
     denom: "HUAHUA",
     api: "",
@@ -249,7 +259,7 @@ export const STAKES = [
   },
   {
     id: "s22",
-    image: `${Secret}`,
+    image: `${Konstellation}`,
     name: "Konstellation",
     denom: "DARC",
     api: "",
@@ -260,7 +270,7 @@ export const STAKES = [
   },
   {
     id: "s23",
-    image: `${Secret}`,
+    image: `${Vidulum}`,
     name: "Vidulum",
     denom: "VDL",
     api: "",
@@ -271,7 +281,7 @@ export const STAKES = [
   },
   {
     id: "s24",
-    image: `${Secret}`,
+    image: `${Provenance}`,
     name: "Provenance",
     denom: "HASH",
     api: "",
@@ -282,7 +292,7 @@ export const STAKES = [
   },
   {
     id: "s25",
-    image: `${Secret}`,
+    image: `${Bitcanna}`,
     name: "Bitcanna",
     denom: "BCNA",
     api: "",

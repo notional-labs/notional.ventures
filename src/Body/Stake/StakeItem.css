@@ -13,9 +13,9 @@
 }
 
 .stake-item:hover {
-  background-color: rgba(211, 211, 211, 0.69);
+  background-color: rgba(211, 211, 211, 0.3);
   transform: scale(1.1);
-  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.56);
+  box-shadow: 0px 0px 30px -2px rgb(0, 0, 0, 0.6);
   backdrop-filter: blur(22px);
 }
 
@@ -40,4 +40,11 @@
 
 .stake-btn:hover {
   box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.4);
+}
+
+.stake-item__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
 }

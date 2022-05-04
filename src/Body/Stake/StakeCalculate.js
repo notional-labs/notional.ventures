@@ -2,6 +2,7 @@ import React from "react";
 import "./StakeCalculate.css";
 import { useState } from "react";
 import { Slider } from "antd";
+import "antd/dist/antd.less";
 import "antd/dist/antd.css";
 import Reward_divisor from "../../media/stake/reward-divisor.png";
 
@@ -38,7 +39,7 @@ const StakeCalculate = (props) => {
           className="slider"
           style={{ height: "2rem" }}
           min={1}
-          max={5000}
+          max={10000}
           onChange={onChangeHandler}
           value={value}
         />
