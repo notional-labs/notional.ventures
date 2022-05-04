@@ -1,64 +1,15 @@
-import adam from "../../media/members/adam.jpg";
 import jacob from "../../media/members/jacob.jpg";
 import khanh from "../../media/members/khanh.jpeg";
-import ricardo from "../../media/members/khanh.jpeg";
+import ricardo from "../../media/members/ricardo.jpeg";
 import billy from "../../media/members/billy.png";
-import long from "../../media/members/long.png";
+import long from "../../media/members/long.jpg";
 import son from "../../media/members/son.jpg";
 import vuong from "../../media/members/vuong.png";
 import minh from "../../media/members/minh.jpg";
 import vinh from "../../media/members/vinh.png";
-import du from "../../media/members/du.png";
+import du from "../../media/members/du-pls-add-a-coloured-pic.png";
 import { Image } from "antd";
 export const members = [
-  <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={adam}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Adam Chaplin
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "20px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        CEO OF DEFI FOR YOU AND CO-FOUNDER OF DIG
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Founder and CEO of DeFi For You, Adam Chaplin is also the founder of Dig
-        Chain.
-      </p>
-    </div>
-  </div>,
   <div>
     <div
       style={{
@@ -104,7 +55,7 @@ export const members = [
       >
         Jacob Gadikian is the brains behind the engineering of Dig Chain. Jacob
         is responsible for designing and deploying Dig Chain in the Cosmos
-        ecosystem
+	ecosystem
       </p>
     </div>
   </div>,
