@@ -1,6 +1,6 @@
 import jacob from "../../media/members/jacob.jpg";
 import khanh from "../../media/members/khanh.jpeg";
-import ricardo from "../../media/members/ricardo.jpeg";
+import ricardo from "../../media/members/ricardo.jpg";
 import billy from "../../media/members/billy.png";
 import long from "../../media/members/long.jpg";
 import son from "../../media/members/son.jpg";
