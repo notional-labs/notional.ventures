@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="description">
         <hr className="bar"></hr>
         <p className="greetings">
-          At Notional, we all believe that Khanh is gay
+          Open Source, Organic edge validation and relaying
         </p>
         <p className="label"></p>
       </div>
