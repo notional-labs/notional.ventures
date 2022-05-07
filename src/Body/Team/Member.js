@@ -1,13 +1,13 @@
-import jacob from "../../media/members/jacob.jpg";
+import jacob from "../../media/members/jacob1.jpeg";
 import khanh from "../../media/members/khanh.jpeg";
-import ricardo from "../../media/members/ricardo.jpg";
+import ricardo from "../../media/members/ricardo1.jpeg";
 import billy from "../../media/members/billy.png";
 import long from "../../media/members/long.jpg";
 import son from "../../media/members/son.jpg";
 import vuong from "../../media/members/vuong.png";
 import minh from "../../media/members/minh.jpg";
-import vinh from "../../media/members/vinh.png";
-import du from "../../media/members/du-pls-add-a-coloured-pic.png";
+import vinh from "../../media/members/vinh1.png";
+import du from "../../media/members/du1.png";
 import { Image } from "antd";
 export const members = [
   <div>
