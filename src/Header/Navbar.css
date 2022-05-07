@@ -16,15 +16,22 @@
   font-family: "Segoe UI Light";
   display: flex;
   align-items: center;
-  gap: 5rem;
-  color: white;
+  gap: 3rem;
+  width: auto;
   font-size: 1.8rem;
   background-color: transparent;
+  margin: auto;
   z-index: 2;
 }
 
-.main-nav-list li:hover {
-  font-weight: 600;
+.main-nav-list li {
+  padding: 15px;
+}
+
+
+.main-nav-list li a:hover {
+  color: #e6e6e6;
+  font-weight:bolder;
   cursor: pointer;
   transition: 0.3s;
 }
