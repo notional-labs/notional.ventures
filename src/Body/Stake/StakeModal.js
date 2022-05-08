@@ -36,7 +36,9 @@ const ModalOverlay = (props) => {
       setCopyFeedback("Failed to copy!");
     }
   };
-
+  // const error = (
+  //   div 
+  // )
   const content = (
     <div className={`modal ${props.className}`}>
       <div>
@@ -154,7 +156,7 @@ const ModalOverlay = (props) => {
       </div>
     </div>
   );
-  return ReactDOM.createPortal(content, document.getElementById("modal-hook"));
+  return (ReactDOM.createPortal(content, document.getElementById("modal-hook")));
 };
 
 const Modal = (props) => {
