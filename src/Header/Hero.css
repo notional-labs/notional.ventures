@@ -23,7 +23,14 @@
   width: 40rem;
 }
 
-.dig {
+.akash {
+  position: absolute;
+  right: 55rem;
+  top: 37rem;
+  z-index: 1;
+}
+
+.atom {
   position: absolute;
   z-index: 2;
   right: 9rem;
@@ -31,7 +38,7 @@
   height: 40rem;
 }
 
-.osmosis {
+.juno {
   position: absolute;
   z-index: 3;
   right: 1rem;
@@ -39,7 +46,7 @@
   height: 32rem;
 }
 
-.atom {
+.secret {
   position: absolute;
   height: 29rem;
   top: 29rem;
@@ -47,26 +54,26 @@
   z-index: 2;
 }
 
-.emoney {
+.evmos {
   position: absolute;
   top: 27rem;
   right: 28rem;
   z-index: 3;
 }
-.sifchain {
+.omniflix {
   position: absolute;
   z-index: 1;
-  top: 38rem;
-  right: 68rem;
+  top: 43rem;
+  right: 70rem;
 }
-.juno {
+.sifchain {
   position: absolute;
   height: 29rem;
   top: 5rem;
   right: 27rem;
   z-index: 1;
 }
-.akash {
+.osmosis {
   position: absolute;
   top: 24rem;
   height: 37rem;
@@ -84,7 +91,7 @@
   position: absolute;
   top: 24rem;
   height: 10rem;
-  right: 10rem;
+  right: 1rem;
   z-index: 2;
 }
 .green {
@@ -110,6 +117,6 @@
   position: absolute;
   top: 46rem;
   height: 10rem;
-  right: 73rem;
+  right: 74rem;
   z-index: 1;
 }

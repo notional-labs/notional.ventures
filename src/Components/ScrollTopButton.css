@@ -1,4 +1,5 @@
 .scroll-btn {
+    background-color: 23283e;
 
 }
 
@@ -6,11 +7,11 @@
     width: 50px;
     height: 50px;
     border: 3px solid black;
+    border-radius: 30px;
     padding: 10px;
     position: fixed;
-    right: 3rem;
-    bottom: 5rem;
-    background-color: ;
+    right: 1rem;
+    bottom: 3rem;
 }
 
 .button-img:hover {

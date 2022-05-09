@@ -1,11 +1,12 @@
 import React from "react";
-import { ReactComponent as Akash } from "../media/background-decor/Akash.svg";
-import { ReactComponent as Osmosis } from "../media/background-decor/Osmosis.svg";
-import { ReactComponent as Dig } from "../media/background-decor/Dig.svg";
-import { ReactComponent as Emoney } from "../media/background-decor/E-money.svg";
-import { ReactComponent as Atom } from "../media/background-decor/Atom.svg";
-import { ReactComponent as Sifchain } from "../media/background-decor/Sifchain.svg";
-import { ReactComponent as Juno } from "../media/background-decor/Juno.svg";
+import { ReactComponent as Osmosis } from "../media/background-logo/Osmosis.svg";
+import { ReactComponent as Juno } from "../media/background-logo/Juno.svg";
+import { ReactComponent as Atom } from "../media/background-logo/Atom.svg";
+import { ReactComponent as Evmos } from "../media/background-logo/Evmos.svg";
+import { ReactComponent as Secret } from "../media/background-logo/Secret.svg";
+import { ReactComponent as Omniflix } from "../media/background-logo/Omniflix.svg";
+import { ReactComponent as Sif } from "../media/background-logo/Sif.svg";
+import { ReactComponent as Akash } from "../media/background-logo/Akash.svg";
 import { ReactComponent as Orange } from "../media/background-decor/Rectangle13.svg";
 import { ReactComponent as Yellow } from "../media/background-decor/Rectangle14.svg";
 import { ReactComponent as Purple } from "../media/background-decor/Rectangle15.svg";
@@ -26,13 +27,14 @@ const Hero = () => {
         <p className="label"></p>
       </div>
       <div>
-        <Akash className="akash" />
-        <Atom className="atom" />
+        <Akash className="akash"></Akash>
         <Osmosis className="osmosis" />
-        <Dig className="dig" />
-        <Emoney className="emoney" />
-        <Sifchain className="sifchain" />
+        <Secret className="secret" />
         <Juno className="juno" />
+        <Atom className="atom" />
+        <Evmos className="evmos" />
+        <Omniflix className="omniflix" />
+        <Sif className="sifchain" />
         <Orange className="orange" />
         <Yellow className="yellow" />
         <Purple className="purple" />
