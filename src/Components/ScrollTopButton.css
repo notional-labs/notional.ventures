@@ -1,0 +1,18 @@
+.scroll-btn {
+
+}
+
+.button-img { 
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    padding: 10px;
+    position: fixed;
+    right: 3rem;
+    bottom: 5rem;
+    background-color: ;
+}
+
+.button-img:hover {
+    cursor: pointer;
+}

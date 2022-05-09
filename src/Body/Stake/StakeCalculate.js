@@ -52,7 +52,7 @@ const StakeCalculate = (props) => {
             {((value * annualProfit) / 100 / 365).toFixed(2)} {props.denom}
           </td>
           <td className="usd">
-            $ {(((value * annualProfit) / 100 / 365) * price).toFixed(2)}
+            ${(((value * annualProfit) / 100 / 365) * price).toFixed(2)}
           </td>
         </tr>
         <tr>
@@ -66,7 +66,7 @@ const StakeCalculate = (props) => {
             {((value * annualProfit) / 100 / 12).toFixed(2)} {props.denom}
           </td>
           <td className="usd">
-            $ {(((value * annualProfit) / 100 / 12) * price).toFixed(2)}
+            ${(((value * annualProfit) / 100 / 12) * price).toFixed(2)}
           </td>
         </tr>
         <tr>
@@ -80,7 +80,7 @@ const StakeCalculate = (props) => {
             {((value * annualProfit) / 100).toFixed(2)} {props.denom}
           </td>
           <td className="usd">
-            $ {(((value * annualProfit) / 100) * price).toFixed(2)}
+            ${(((value * annualProfit) / 100) * price).toFixed(2)}
           </td>
         </tr>
       </table>

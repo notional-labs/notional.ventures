@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "antd";
 import ReactDOM from "react-dom";
-import Backdrop from "../Stake/Backdrop";
+import Backdrop from "../Body/Stake/Backdrop";
 import { CSSTransition } from "react-transition-group";
 const ModalOverlay = () => {
     const content = <div style={{width : "auto"}}>
