@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './ScrollTopButton.css'
-import TopButton from '../media/button/arrow-double-55556.svg'
+import TopButton from '../media/button/arrow-top.svg'
 import { Image } from "antd";
 
 const ScrollButton = () =>{
