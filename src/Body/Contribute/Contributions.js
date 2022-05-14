@@ -23,10 +23,10 @@ const infoStyle_text = {
 
 const Contributions = () => {
   return (
-    <div id="Contribution" className="general">
+    <div  className="general">
       <div className="contributions">
         <div className="background">
-          <div className="title">
+          <div id="Contribution" className="title">
             <hr className="bar"></hr>
             <p className="name">Contributions</p>
             <p className="text">
