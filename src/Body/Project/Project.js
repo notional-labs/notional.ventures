@@ -21,16 +21,6 @@ const Project = () => {
       image: `${Diglogo}`,
       name: "Digchain",
     },
-    {
-      id: "p1",
-      image: `${Anonelogo}`,
-      name: "Another-1",
-    },
-    {
-      id: "p1",
-      image: `${Anonelogo}`,
-      name: "Another-1",
-    },
   ];
   return (
     <div id="Project" className="project">

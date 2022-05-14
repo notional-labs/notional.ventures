@@ -39,9 +39,10 @@ const StakeCalculate = (props) => {
           className="slider"
           style={{ height: "2rem" }}
           min={1}
-          max={10000}
+          max={5000}
           onChange={onChangeHandler}
           value={value}
+          tooltipVisible = {false}
         />
       </div>
 
@@ -57,7 +58,7 @@ const StakeCalculate = (props) => {
         </tr>
         <tr>
           <td colSpan={3}>
-            <img src={Reward_divisor} className="reward-divisor" />
+            <img src={Reward_divisor} alt="reward" className="reward-divisor" />
           </td>
         </tr>
         <tr>
@@ -71,7 +72,7 @@ const StakeCalculate = (props) => {
         </tr>
         <tr>
           <td colSpan={3}>
-            <img src={Reward_divisor} className="reward-divisor" />
+            <img src={Reward_divisor} alt="reward" className="reward-divisor" />
           </td>
         </tr>
         <tr>

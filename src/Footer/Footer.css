@@ -1,9 +1,21 @@
 .footer {
   position: relative;
+  bottom: 0;
   justify-content: center;
   width: auto;
   min-width: auto;
-  margin: 0px auto;
-  height: 67.5rem;
+  margin-bottom: 0px;
+  height: 6rem;
   min-height: auto;
+  background-color: #0C0E18;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4.8rem;
+  align-self: center;
+  align-items: center;
+}
+
+.media-link {
+  display: flex;
+  gap: 1rem;
 }

@@ -1,0 +1,50 @@
+.contact-container {
+    height: auto;
+    width: auto;
+  }
+  .contact-container .title {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  .contact-container .title .bar {
+    width: 100px;
+    height: 8px;
+    border: none;
+    background-color: #F33DF6;
+  }
+  
+  .contact-container .title .name {
+    margin-top: 20px;
+    font-family: "Segoe UI Light";
+    font-size: 60px;
+    color: white;
+  }
+
+  .contact {
+      align-items: center;
+      /* align-self: center; */
+      justify-content: center;
+      margin: 0 auto;
+      display: flex;
+      gap: 5rem;
+  }
+
+  .contact-items_container {
+      line-height: 4rem;
+  }
+
+  .contact-items {
+      display: flex;
+      gap: 15px;
+      color:white;
+      line-height: 30px;
+      font-size: 20px;
+  }
+
+  h1 {
+      color: #945cd4 ;
+  }
