@@ -12,8 +12,6 @@ const StakeItem = (props) => {
   const [apr, setApr] = useState([]);
 
 
-
-
   const closeModalHandler = () => {
     setShowHandler(false);
   };
@@ -23,7 +21,7 @@ const StakeItem = (props) => {
     getBlockInfo();
     getPriceInfo();
     getCommission();
-    // callApiContinously();
+    callApiContinously();
   }, []);
 
   const showModalHandler = () => {
@@ -75,16 +73,15 @@ const StakeItem = (props) => {
     })
   }
 
-  // const callApiContinously = () => {
-  //   setInterval(getBlockInfo, 12000);
-  // };
-  // if (showHandler) {
-  //   callApiContinously()
-  // }
-  // else {
-  //   clearInterval(callApiContinously);
-
-  // }
+  const callApiContinously = () => {
+    setInterval(getBlockInfo, 12000);
+  };
+  if (showHandler) {
+    callApiContinously()
+  }
+  else {
+    clearInterval(callApiContinously);
+  }
 
 
   return (
@@ -95,11 +92,11 @@ const StakeItem = (props) => {
           blockheight={loadedChainInfo.data.height}
           blocktime={loadedChainInfo.data.blockTime}
           image={props.image}
-          name={props.name}
+          name={loadedChainInfo.data.name}
           show={showHandler}
           onCancel={closeModalHandler}
           api={props.api}
-          denom={props.denom}
+          denom={loadedChainInfo.data.denom}
           ping={props.ping}
           keplr={props.keplr}
           address={props.address}
