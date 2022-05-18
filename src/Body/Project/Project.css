@@ -2,6 +2,8 @@
   margin-top: 10rem;
   height: auto;
   width: auto;
+  max-width: 150rem;
+  margin: 0 auto;
 }
 .project .title {
   text-align: center;
