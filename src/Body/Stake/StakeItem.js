@@ -9,25 +9,16 @@ const StakeItem = (props) => {
   const [loadedBlockHeight, setBlockHeight] = useState([]);
   const [price, setPrice] = useState([]);
   const [commission, setCommnission] = useState([]);
-  const [pool, setPool] = useState([]);
-  const [supply, setSupply] = useState([]);
-  const [inflation, setInflation] = useState([]);
-  // const poolApi = `${props.api}/cosmos/staking/v1beta1/pool`;
-  // const supplyApi = `${props.api}/cosmos/bank/v1beta1/supply/uatom`;
-  // const inflationApi = `${props.api}/cosmos/mint/v1beta1/inflation`;
+  const [apr, setApr] = useState([]);
 
-  const poolApi =
-    "https://api.cosmoshub.notional.ventures/cosmos/staking/v1beta1/pool";
-  const supplyApi =
-    "https://api.cosmoshub.notional.ventures/cosmos/bank/v1beta1/supply/uatom";
-  const inflationApi =
-    "https://api.cosmoshub.notional.ventures/cosmos/mint/v1beta1/inflation";
+
+
 
   const closeModalHandler = () => {
     setShowHandler(false);
   };
   useEffect(() => {
-    fetchReward();
+    getApr();
     fetchChainInfo();
     getBlockInfo();
     getPriceInfo();
@@ -41,7 +32,7 @@ const StakeItem = (props) => {
 
   const fetchChainInfo = async () => {
     await axios
-      .get(`${props.api}/v1/status`)
+      .get(`${props.api}`)
       .then((response) => setLoadedChainInfo(response))
       .catch((errors) => {
         console.error(errors);
@@ -50,7 +41,7 @@ const StakeItem = (props) => {
 
   const getBlockInfo = async () => {
     await axios
-      .get(`${props.api}/v1/staking/validator/uptime/${props.address}`)
+      .get(`${props.api}`)
       .then((response) => setBlockHeight(response)).then(console.log(loadedBlockHeight))
       .catch((errors) => {
         console.error(errors);
@@ -59,20 +50,28 @@ const StakeItem = (props) => {
 
   const getPriceInfo = async () => {
     await axios
-      .get(`${props.price}`)
+      .get(`${props.api}`)
       .then((response) => {
         setPrice(response);
+        console.log(response);
       })
-      .then(console.log(price))
+      .then(console.log("ahihi"))
       .catch((errors) => {
         console.error(errors);
       });
   };
 
   const getCommission = async () => {
-    await axios.get(`https://api-cosmoshub-ia.notional.ventures/cosmos/staking/v1beta1/validators/${props.address}`)
+    await axios.get(`${props.api}/validator`)
     .then((response) => {
       setCommnission(response)
+    })
+  }
+
+  const getApr = async () => {
+    await axios.get(`${props.api}`)
+    .then((response) => {
+      setApr(response)
     })
   }
 
@@ -87,32 +86,14 @@ const StakeItem = (props) => {
 
   // }
 
-  const poolRequest = axios.get(poolApi);
-  const supplyRequest = axios.get(supplyApi);
-  const inflationRequest = axios.get(inflationApi);
-  const fetchReward = async () => {
-    await axios
-      .all([poolRequest, supplyRequest, inflationRequest])
-      .then(
-        axios.spread((...response) => {
-          setPool(response[0]);
-          setSupply(response[1]);
-          setInflation(response[2]);
-        })
-      )
-      // .then(console.log(pool, supply, inflation))
-      .catch((errors) => {
-        console.error(errors);
-      });
-  };
 
   return (
     <React.Fragment>
       {showHandler && (
         <Modal
-          chainid={loadedChainInfo.data.chain_id}
-          blockheight={loadedChainInfo.data.block_height}
-          blocktime={loadedChainInfo.data.block_time}
+          chainid={loadedChainInfo.data.chainID}
+          blockheight={loadedChainInfo.data.height}
+          blocktime={loadedChainInfo.data.blockTime}
           image={props.image}
           name={props.name}
           show={showHandler}
@@ -122,13 +103,11 @@ const StakeItem = (props) => {
           ping={props.ping}
           keplr={props.keplr}
           address={props.address}
-          height={loadedBlockHeight.data.latest_height}
+          height={loadedBlockHeight.data.height}
           uptime={loadedBlockHeight.data.uptime}
-          commission={commission.data.validator.commission.commission_rates.rate}
-          pool={pool.data.pool.bonded_tokens}
-          supply={supply.data.amount.amount}
-          inflation={inflation.data.inflation}
-          price={price.data.cosmos.usd}
+          commission={commission.data.commission}
+          apr = {apr.data.apr}
+          price={price.data.prices}
         ></Modal>
       )}
       <li className="stake-item">

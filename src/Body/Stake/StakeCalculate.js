@@ -7,10 +7,8 @@ import "antd/dist/antd.css";
 import Reward_divisor from "../../media/stake/reward-divisor.png";
 
 const StakeCalculate = (props) => {
-  let inflation = props.inflation;
-  let bondedRatio = props.pool / props.supply;
   let price = props.price;
-  let annualProfit = (((inflation * (1 - 0.02)) / bondedRatio) * 100).toFixed(
+  let annualProfit = (props.apr*100).toFixed(
     2
   );
   const [value, setValue] = useState(1000);
