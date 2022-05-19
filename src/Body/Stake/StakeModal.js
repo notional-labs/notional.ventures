@@ -50,10 +50,11 @@ const ModalOverlay = (props) => {
               src={props.image}
               alt={props.name}
               style={{
-                width: "9rem",
-                height: "9rem",
+                maxWidth: "9rem",
+                maxHeight: "9rem",
                 marginLeft: "-10px",
                 marginRight: "-10px",
+                marginBottom: "10px",
               }}
             />
             <div>{props.name}</div>
