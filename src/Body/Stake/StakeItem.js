@@ -6,21 +6,14 @@ import axios from "axios";
 const StakeItem = (props) => {
   const [showHandler, setShowHandler] = useState(false);
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
-  const [loadedBlockHeight, setBlockHeight] = useState([]);
-  const [price, setPrice] = useState([]);
-  const [commission, setCommnission] = useState([]);
-  const [apr, setApr] = useState([]);
-
+  const [validator, setValidator] = useState([]);
 
   const closeModalHandler = () => {
     setShowHandler(false);
   };
   useEffect(() => {
-    getApr();
     fetchChainInfo();
-    getBlockInfo();
-    getPriceInfo();
-    getCommission();
+    getValidatorData();
     callApiContinously();
   }, []);
 
@@ -37,44 +30,16 @@ const StakeItem = (props) => {
       });
   };
 
-  const getBlockInfo = async () => {
-    await axios
-      .get(`${props.api}`)
-      .then((response) => setBlockHeight(response)).then(console.log(loadedBlockHeight))
-      .catch((errors) => {
-        console.error(errors);
-      });
-  };
 
-  const getPriceInfo = async () => {
-    await axios
-      .get(`${props.api}`)
-      .then((response) => {
-        setPrice(response);
-        console.log(response);
-      })
-      .then(console.log("ahihi"))
-      .catch((errors) => {
-        console.error(errors);
-      });
-  };
-
-  const getCommission = async () => {
+  const getValidatorData = async () => {
     await axios.get(`${props.api}/validator`)
     .then((response) => {
-      setCommnission(response)
-    })
-  }
-
-  const getApr = async () => {
-    await axios.get(`${props.api}`)
-    .then((response) => {
-      setApr(response)
+      setValidator(response)
     })
   }
 
   const callApiContinously = () => {
-    setInterval(getBlockInfo, 12000);
+    setInterval(fetchChainInfo, 12000);
   };
   if (showHandler) {
     callApiContinously()
@@ -100,11 +65,12 @@ const StakeItem = (props) => {
           ping={props.ping}
           keplr={props.keplr}
           address={props.address}
-          height={loadedBlockHeight.data.height}
-          uptime={loadedBlockHeight.data.uptime}
-          commission={commission.data.commission}
-          apr = {apr.data.apr}
-          price={price.data.prices}
+          height={loadedChainInfo.data.height}
+          uptime={loadedChainInfo.data.uptime}
+          commission={validator.data.commission}
+          apr = {loadedChainInfo.data.apr}
+          price={loadedChainInfo.data.prices}
+          votingPower={validator.data.power}
         ></Modal>
       )}
       <li className="stake-item">
