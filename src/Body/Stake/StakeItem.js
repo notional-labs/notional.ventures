@@ -24,7 +24,7 @@ const StakeItem = (props) => {
   const fetchChainInfo = async () => {
     await axios
       .get(`${props.api}`)
-      .then((response) => setLoadedChainInfo(response))
+      .then(response => setLoadedChainInfo(response))
       .catch((errors) => {
         console.error(errors);
       });
@@ -71,6 +71,7 @@ const StakeItem = (props) => {
           apr = {loadedChainInfo.data.apr}
           price={loadedChainInfo.data.prices}
           votingPower={validator.data.power}
+          rank={validator.data.rank}
         ></Modal>
       )}
       <li className="stake-item">
@@ -78,7 +79,6 @@ const StakeItem = (props) => {
           <div className="stake-item__image">
             <img
               src={props.image}
-              alt={props.name}
               style={{ maxHeight: "7rem", maxWidth: "7rem"}}
             />
           </div>
@@ -95,7 +95,7 @@ const StakeItem = (props) => {
             }}
             className="stake-btn"
           >
-            Stake
+            Stake 
           </button>
         </div>
       </li>

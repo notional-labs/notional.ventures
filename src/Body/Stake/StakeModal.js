@@ -36,9 +36,7 @@ const ModalOverlay = (props) => {
       setCopyFeedback("Failed to copy!");
     }
   };
-  // const error = (
-  //   div 
-  // )
+
   const content = (
     <div className={`modal ${props.className}`}>
       <div>
@@ -96,13 +94,13 @@ const ModalOverlay = (props) => {
               onClick={() => copyToClipboard(props.address)}
             >
               <Tooltip TransitionComponent={Zoom} title={copyFeedback}>
-                {smartTrim(props.address, 20)}
+                {smartTrim(props.address, 25)}
               </Tooltip>
             </td>
           </tr>
           <tr>
             <td className="validator-label">Rank:</td>
-            <td className="validator-value">o day</td>
+            <td className="validator-value">{props.rank}</td>
           </tr>
           <tr>
             <td className="validator-label">Commission:</td>
