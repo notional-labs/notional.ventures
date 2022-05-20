@@ -19,7 +19,7 @@ const UptimeBlock = (props) => {
   } else {
     for (let index = 0; index < uptime.length; index++) {
       const element = uptime[index];
-      if (height === element.height) {
+      if (height === element) {
         return (
           <Tooltip TransitionComponent={Zoom} title={height}>
             <Image
