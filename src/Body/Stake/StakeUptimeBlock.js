@@ -5,7 +5,7 @@ import Zoom from "@mui/material/Zoom";
 
 const UptimeBlock = (props) => {
   let { height, uptime } = props;
-  console.log(height, uptime);
+  // console.log(height, uptime);
   if (uptime.length === 0) {
     return (
       <Tooltip TransitionComponent={Zoom} title={height}>

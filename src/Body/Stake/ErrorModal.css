@@ -1,0 +1,22 @@
+.errormodal {
+    z-index: 11;
+    width: 60rem;
+    height: 30rem;
+    background-color: #8e99c3;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    padding: 5rem 3rem;
+
+  }
+
+  .error-btn {
+      background-color: #4c62ba;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+  }

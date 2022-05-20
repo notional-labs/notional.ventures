@@ -24,7 +24,9 @@ const Hero = () => {
         <p className="greetings">
           Open Source, Organic edge validation and relaying
         </p>
-        <p className="label"></p>
+        <a href="#">
+          <p className="label">Whitepaper</p>
+        </a>
       </div>
       <div>
         <Akash className="akash"></Akash>

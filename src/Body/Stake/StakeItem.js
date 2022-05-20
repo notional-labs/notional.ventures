@@ -2,40 +2,54 @@ import React, { useEffect, useState } from "react";
 import "./StakeItem.css";
 import Modal from "./StakeModal";
 import axios from "axios";
+import ErrorModal from "./ErrorModal";
 
 const StakeItem = (props) => {
   const [showHandler, setShowHandler] = useState(false);
+  const [error, setError] = useState();
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
   const [validator, setValidator] = useState([]);
 
-  const closeModalHandler = () => {
-    setShowHandler(false);
-  };
   useEffect(() => {
     fetchChainInfo();
     getValidatorData();
     // callApiContinously();
   }, []);
 
+  const closeModalHandler = () => {
+    setShowHandler(false);
+
+  };
+
   const showModalHandler = () => {
     setShowHandler(true);
   };
 
-  const fetchChainInfo = async () => {
-    await axios
-      .get(`${props.api}`)
-      .then(response => setLoadedChainInfo(response))
-      .catch((errors) => {
-        console.error(errors);
-      });
+  const closeErrorHandler = () => {
+    setError(false);
+    setShowHandler(false);
   };
 
 
+  const fetchChainInfo = async () => {
+    try  { 
+    const res = await axios.get(`${props.api}`);
+    setLoadedChainInfo(res);
+    
+    } catch (err) {
+      console.log(err.message);
+      setError(true)
+    }
+  };
+
   const getValidatorData = async () => {
-    await axios.get(`${props.api}/validator`)
-    .then((response) => {
-      setValidator(response)
-    })
+    try {
+      const res = await axios.get(`${props.api}/validator`);
+      setValidator(res)
+    } catch (err) {
+      console.log(err.message);
+      setError(true)
+    }
   }
 
   // const callApiContinously = () => {
@@ -51,8 +65,13 @@ const StakeItem = (props) => {
 
   return (
     <React.Fragment>
-      {showHandler && (
+      {showHandler && error && (<ErrorModal
+        show = {error}
+        onCancel={closeErrorHandler}
+      />)}
+      {showHandler && !error && (
         <Modal
+          key = {loadedChainInfo.data.chainID}
           chainid={loadedChainInfo.data.chainID}
           blockheight={loadedChainInfo.data.height}
           blocktime={loadedChainInfo.data.blockTime}

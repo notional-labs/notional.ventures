@@ -7,6 +7,7 @@ const StakeList = (props) => {
     <ul className="stake-list">
       {props.stakes.map((stake) => (
         <StakeItem
+          key = {stake.id}
           id={stake.id}
           image={stake.image}
           name={stake.name}
