@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="description">
         <hr className="bar"></hr>
         <p className="greetings">
-          Open Source, Organic edge validation and relaying
+        Edge Validation, Relaying, and Open-Source Software Development  
         </p>
         <p className="label"></p>
       </div>

@@ -43,7 +43,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        CHIEF ENGINEER AND CEO OF NOTIONAL
+        Founder and Principal Engineer
       </p>
       <p
         style={{
@@ -53,9 +53,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Jacob Gadikian is the brains behind the engineering of Dig Chain. Jacob
-        is responsible for designing and deploying Dig Chain in the Cosmos
-	ecosystem
+        Jacob has been active in Cosmos since working as Jae Kwon’s research assistant at Tendermint. He owns a share in a bitcoin mine, and contributes to several projects in Cosmos. 
       </p>
     </div>
   </div>,
@@ -82,7 +80,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        KHANH NGUYEN
+        Khanh Nguyen
       </p>
       <p
         style={{
@@ -92,7 +90,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        LEAD ENGINEER
+        Lead Engineer
       </p>
       <p
         style={{
@@ -102,8 +100,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Khanh is responsible for assisting in the development and deployment of
-        Dig Chain. He single-handedly built Notional's dev team.
+        Khanh is an exceptionally talented engineer and helped to build out Notional’s engineering team. He is a frequent contributor to several major Cosmos projects.
       </p>
     </div>
   </div>,
@@ -130,7 +127,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        RICARDO FERREIRA
+        Ricardo Ferreira
       </p>
       <p
         style={{
@@ -140,7 +137,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        COMMUNITY AND OPERATIONS
+        Operations Manager 
       </p>
       <p
         style={{
@@ -150,9 +147,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Ricardo is responsible for managing and growing the Dig Chain community.
-        He takes his experience from Blurt and other projects to help oversee
-        ops for Dig.
+        Ricardo is a co-founder of Notional and is responsible for overseeing operations and assisting in client outreach.
       </p>
     </div>
   </div>,
@@ -189,7 +184,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        CHIEF MARKETING OFFICER
+        Marketing Director
       </p>
       <p
         style={{
@@ -199,8 +194,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        William Gray is responsible for managing the marketing of Dig Chain and
-        DeFi For You, spreading the word about the projects globally.
+        William is responsible for marketing and communications efforts to increase Notional’s brand position and delegations. He also assists with client outreach.
       </p>
     </div>
   </div>,
@@ -237,7 +231,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        LEAD INFRASTRUCTURE
+        Infrastructure Lead
       </p>
       <p
         style={{
@@ -247,7 +241,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Long runs Notional's Infrastructure
+        Long is responsible for overseeing Notional’s relaying infrastructure. He is also the front-of-house person for all relaying issues from clients.
       </p>
     </div>
   </div>,
@@ -284,7 +278,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        BLOCKCHAIN ENGINEER
+        Blockchain Engineer 
       </p>
       <p
         style={{
@@ -294,7 +288,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Son is a very talented blockchain engineer.
+        Son is dedicated to building out projects in Cosmos to solidify it as the go-to hub in the crypto world. He is a talented and eager blockchain engineer.
       </p>
     </div>
   </div>,
@@ -331,7 +325,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        BLOCKCHAIN ENGINEER
+        Blockchain Engineer
       </p>
       <p
         style={{
@@ -341,7 +335,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Vuong is responsible for blockchain development tasks at Notional.
+        Vuong is a capable and diligent engineer who has increasingly shown excellence in developing projects in Cosmos. 
       </p>
     </div>
   </div>,
@@ -378,7 +372,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        SERVER TECHNICIAN AND CUSTOMER ENGINEER
+        Service Technician and Customer Engineer
       </p>
       <p
         style={{
@@ -388,7 +382,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Minh is responsible for connecting Notional with customers and partners.
+        Minh is responsible for Notional's validators and keeping uptime to the highest possible standards. He is the man that keeps the blocks signing.
       </p>
     </div>
   </div>,
@@ -425,7 +419,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        PROJECT MANAGER
+        Project Manager
       </p>
       <p
         style={{
@@ -435,7 +429,7 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Vinh is the project manager.
+        Vinh is very talented in business development and management. He has made great progress in optimizing organization and efficiency within Notional. 
       </p>
     </div>
   </div>,
@@ -462,7 +456,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        Du Nguyen
+        Du Nguyen Lich
       </p>
       <p
         style={{
@@ -472,7 +466,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        INFRASTRUCTURE
+        Infrastructure
       </p>
       <p
         style={{
@@ -482,8 +476,286 @@ export const members = [
           color: "#ffffff",
         }}
       >
-        Du is a very talented infrastructure engineer
+        Du assists Long with relaying and validator infrastructure and is rapidly learning how to manage Notional’s systems to a high-degree of efficiency. 
       </p>
     </div>
   </div>,
+  <div>
+    <div
+      style={{
+        width: "500px",
+      }}
+    >
+      <Image
+        src={du}
+        width={"500px"}
+        preview={false}
+        style={{
+          borderRadius: "20px",
+        }}
+      />
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 700,
+          marginTop: "20px",
+          textAlign: "left",
+        }}
+      >
+        Brenn Hill
+      </p>
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 400,
+          textAlign: "left",
+        }}
+      >
+        Mentor Advisor
+      </p>
+      <p
+        style={{
+          fontSize: "16px",
+          fontWeight: 400,
+          textAlign: "left",
+          color: "#ffffff",
+        }}
+      >
+        
+      </p>
+    </div>
+  </div>,
+  <div>
+    <div
+      style={{
+        width: "500px",
+      }}
+    >
+      <Image
+        src={du}
+        width={"500px"}
+        preview={false}
+        style={{
+          borderRadius: "20px",
+        }}
+      />
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 700,
+          marginTop: "20px",
+          textAlign: "left",
+        }}
+      >
+        Huy Nguyen
+      </p>
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 400,
+          textAlign: "left",
+        }}
+      >
+        Designer
+      </p>
+      <p
+        style={{
+          fontSize: "16px",
+          fontWeight: 400,
+          textAlign: "left",
+          color: "#ffffff",
+        }}
+      >
+      </p>
+    </div>
+  </div>,
+  <div>
+    <div
+      style={{
+        width: "500px",
+      }}
+    >
+      <Image
+        src={du}
+        width={"500px"}
+        preview={false}
+        style={{
+          borderRadius: "20px",
+        }}
+      />
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 700,
+          marginTop: "20px",
+          textAlign: "left",
+        }}
+      >
+        Nguyen Manh Duc
+      </p>
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 400,
+          textAlign: "left",
+        }}
+      >
+        Flutter Developer
+      </p>
+      <p
+        style={{
+          fontSize: "16px",
+          fontWeight: 400,
+          textAlign: "left",
+          color: "#ffffff",
+        }}
+      >
+        
+      </p>
+    </div>
+  </div>,
+  <div>
+    <div
+      style={{
+        width: "500px",
+      }}
+    >
+      <Image
+        src={du}
+        width={"500px"}
+        preview={false}
+        style={{
+          borderRadius: "20px",
+        }}
+      />
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 700,
+          marginTop: "20px",
+          textAlign: "left",
+        }}
+      >
+        Minh Duc
+      </p>
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 400,
+          textAlign: "left",
+        }}
+      >
+        Flutter Developer
+      </p>
+      <p
+        style={{
+          fontSize: "16px",
+          fontWeight: 400,
+          textAlign: "left",
+          color: "#ffffff",
+        }}
+      >
+      </p>
+    </div>
+  </div>,
+  <div>
+    <div
+      style={{
+        width: "500px",
+      }}
+    >
+      <Image
+        src={du}
+        width={"500px"}
+        preview={false}
+        style={{
+          borderRadius: "20px",
+        }}
+      />
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 700,
+          marginTop: "20px",
+          textAlign: "left",
+        }}
+      >
+        Hieu Vu 
+      </p>
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 400,
+          textAlign: "left",
+        }}
+      >
+        CosmWasm Developer
+      </p>
+      <p
+        style={{
+          fontSize: "16px",
+          fontWeight: 400,
+          textAlign: "left",
+          color: "#ffffff",
+        }}
+      >
+      </p>
+    </div>
+  </div>,
+  <div>
+    <div
+      style={{
+        width: "500px",
+      }}
+    >
+      <Image
+        src={du}
+        width={"500px"}
+        preview={false}
+        style={{
+          borderRadius: "20px",
+        }}
+      />
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 700,
+          marginTop: "20px",
+          textAlign: "left",
+        }}
+      >
+        Nguyen Duc Chinh
+      </p>
+      <p
+        style={{
+          color: "#EEC13F",
+          fontSize: "24px",
+          fontWeight: 400,
+          textAlign: "left",
+        }}
+      >
+        CosmWasm Developer
+      </p>
+      <p
+        style={{
+          fontSize: "16px",
+          fontWeight: 400,
+          textAlign: "left",
+          color: "#ffffff",
+        }}
+      >
+      </p>
+    </div>
+  </div>
 ];

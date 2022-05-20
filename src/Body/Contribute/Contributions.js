@@ -30,10 +30,7 @@ const Contributions = () => {
             <hr className="bar"></hr>
             <p className="name">Contributions</p>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-              ante in nisi ultricies pharetra sed at metus. Integer sem nisi,
-              blandit egestas pellentesque eget, facilisis et ipsum. Quisque
-              sodales quam eu rhoncus pellentesque.{" "}
+            Notional Labs is committed to engaging in governance and community matters on every chain we validate. A team member is delegated to each chain to ensure dependable, genuine communication with project stakeholders. We also commit code to every chain we validate and have members on the core teams of several major projects, including Osmosis, Juno, and Sifchain.{" "}
             </p>
           </div>
           <AutoSlide />

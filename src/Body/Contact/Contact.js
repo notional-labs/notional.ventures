@@ -13,6 +13,9 @@ const Contact = () => {
       <div className="title">
         <hr className="bar"></hr>
         <p className="name">Contacts</p>
+        <p className="text">
+        Want to inquire about Notional’s services? Contact us and we’ll happily help you.{" "}
+        </p>
       </div>
       <div className="contact">
         <Image style={{width:"1000px", height:"600px"}} src={ContactBackground} preview={false} />
@@ -21,22 +24,22 @@ const Contact = () => {
             <h1>Contacts</h1>
             <div className="contact-items">
               <Image src={Email} preview={false} />
-              <p>example@gmail.com</p>
+              <p>william@notional.ventures</p>
             </div>
             <div className="contact-items">
               <Image src={Github} preview={false} />
-              <p>example@gmail.com</p>
+              <p>github.com/notional-labs</p>
             </div>
             <div className="contact-items">
               <Image src={Discord} preview={false} />
-              <p>example@gmail.com</p>
+              <p>vinh@notional.ventures</p>
             </div>
           </div>
           <div>
             <h1>Social networks</h1>
             <div className="contact-items">
               <Image src={Twitter} preview={false} />
-              <p>example@gmail.com</p>
+              <p>twitter.com/notionaldao</p>
             </div>
             <div className="contact-items">
               <Image src={Telegram} preview={false} />

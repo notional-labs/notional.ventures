@@ -8,6 +8,9 @@ const Team = () => {
       <div className="title">
         <hr className="bar"></hr>
         <p className="name">Our Team</p>
+        <p className="text">
+        The Notional Labs team is led by Jacob Gadakian and has 15+ highly capable and dedicated members split across infrastructure and relaying, software development, marketing and comms, and administration.{" "}
+        </p>
       </div>
       <div className="member">
         <Carousel

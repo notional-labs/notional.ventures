@@ -9,6 +9,17 @@
     align-items: center;
     margin-top: 5rem;
   }
+
+  .contact-container .title .text {
+    font-family: "Segoe UI Light";
+    font-size: 20px;
+    color: white;
+    width: 60%;
+    margin: 1rem auto;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
   
   .contact-container .title .bar {
     width: 100px;
