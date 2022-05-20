@@ -22,7 +22,7 @@ import Band from "../../media/stake/Band.svg";
 import Provenance from "../../media/stake/Provenance.svg";
 import Vidulum from "../../media/stake/vidulum.svg";
 import Omniflix from "../../media/stake/omniflix.svg";
-import Chihuahua from "../../media/stake/Juno.svg";
+import Chihuahua from "../../media/stake/Chihuahua.svg";
 
 export const STAKES = [
   {
