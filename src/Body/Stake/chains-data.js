@@ -22,7 +22,7 @@ import Band from "../../media/stake/Band.svg";
 import Provenance from "../../media/stake/Provenance.svg";
 import Vidulum from "../../media/stake/vidulum.svg";
 import Omniflix from "../../media/stake/omniflix.svg";
-import Chihuahua from "../../media/stake/Juno.svg";
+import Chihuahua from "../../media/stake/Chihuahua.svg";
 
 export const STAKES = [
   {
@@ -127,7 +127,7 @@ export const STAKES = [
   {
     id: "s12",
     image: `${Kava}`,
-    name: "Kava Network",
+    name: "Kava",
     api: "http://65.108.65.6:1405/information/kava",
     keplr: "kava",
     ping: "kava",
@@ -145,7 +145,7 @@ export const STAKES = [
   {
     id: "s14",
     image: `${Secret}`,
-    name: "Secret Network",
+    name: "Secret",
     api: "http://65.108.65.6:1405/information/secret",
     keplr: "secret",
     ping: "secret",
@@ -199,7 +199,7 @@ export const STAKES = [
   {
     id: "s20",
     image: `${Band}`,
-    name: "Band Protocol",
+    name: "Band",
     api: "http://65.108.65.6:1405/information/band",
     keplr: "",
     ping: "band-protocol",
