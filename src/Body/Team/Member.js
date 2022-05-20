@@ -1,13 +1,17 @@
 import jacob from "../../media/members/jacob1.jpeg";
-import khanh from "../../media/members/khanh1.png";
+import khanh from "../../media/members/khanh1.jpg";
 import ricardo from "../../media/members/ricardo1.jpeg";
 import billy from "../../media/members/billy1.png";
 import long from "../../media/members/long.jpg";
 import son from "../../media/members/son.jpg";
 import vuong from "../../media/members/vuong.png";
 import minh from "../../media/members/minh.jpg";
-import vinh from "../../media/members/vinh1.png";
-import du from "../../media/members/du1.png";
+import vinh from "../../media/members/vinh1.jpg";
+import du from "../../media/members/du1.jpg";
+import hieu from "../../media/members/Hieu1.jpg";
+import huy from "../../media/members/Huy1.jpg";
+import chinh from "../../media/members/chinh.jpg";
+import brenhill from "../../media/members/Brenhill.jpeg";
 import { Image } from "antd";
 export const members = [
   <div>
@@ -487,7 +491,7 @@ export const members = [
       }}
     >
       <Image
-        src={du}
+        src={brenhill}
         width={"500px"}
         preview={false}
         style={{
@@ -534,7 +538,7 @@ export const members = [
       }}
     >
       <Image
-        src={du}
+        src={huy}
         width={"500px"}
         preview={false}
         style={{
@@ -580,100 +584,7 @@ export const members = [
       }}
     >
       <Image
-        src={du}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Nguyen Manh Duc
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Flutter Developer
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        
-      </p>
-    </div>
-  </div>,
-  <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={du}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Minh Duc
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Flutter Developer
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-      </p>
-    </div>
-  </div>,
-  <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={du}
+        src={hieu}
         width={"500px"}
         preview={false}
         style={{
@@ -719,7 +630,7 @@ export const members = [
       }}
     >
       <Image
-        src={du}
+        src={chinh}
         width={"500px"}
         preview={false}
         style={{
