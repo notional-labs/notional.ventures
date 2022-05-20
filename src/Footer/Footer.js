@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="media-link">
         <a><Image preview ={false} src={Discord}/></a>
         <a><Image preview ={false} src={Github}/></a>
-        <a><Image preview ={false} src={Twitter}/></a>
+        <a href="https://twitter.com/notionaldao"><Image preview ={false} src={Twitter}/></a>
         <a><Image preview ={false} src={Telegram}/></a>
       </div>
     </div>

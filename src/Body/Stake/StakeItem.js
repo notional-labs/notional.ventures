@@ -6,7 +6,7 @@ import ErrorModal from "./ErrorModal";
 
 const StakeItem = (props) => {
   const [showHandler, setShowHandler] = useState(false);
-  const [error, setError] = useState();
+  const [error, setError] = useState(false);
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
   const [validator, setValidator] = useState([]);
 

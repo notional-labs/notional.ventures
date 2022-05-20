@@ -18,23 +18,23 @@
   margin-top: 20px;
   font-family: "Segoe UI Light";
   color: white;
-  font-size: 50px;
+  font-size: 42px;
   line-break: strict;
   width: 40rem;
 }
 
-.description .label {
-  margin-top: 20px;
-  font-family: "Hero";
+.info-btn {
+  font-family: "Segoe UI Light";
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   line-break: strict;
-  width: 20rem;
+  width: 16rem;
   height: 5rem;
   text-align: center;
   padding: 10px 1px;
   background-color: #6D7EBE;
   border-radius: 10px;
+  font-weight: 500;
 }
 
 .akash {

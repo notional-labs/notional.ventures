@@ -13,7 +13,6 @@ import { ReactComponent as Purple } from "../media/background-decor/Rectangle15.
 import { ReactComponent as Red } from "../media/background-decor/Rectangle16.svg";
 import { ReactComponent as Blue } from "../media/background-decor/Rectangle17.svg";
 import { ReactComponent as Green } from "../media/background-decor/Rectangle18.svg";
-
 import "./Hero.css";
 
 const Hero = () => {
@@ -24,9 +23,7 @@ const Hero = () => {
         <p className="greetings">
         Edge Validation, Relaying, and Open-Source Software Development  
         </p>
-        <a href="#">
-          <p className="label">Whitepaper</p>
-        </a>
+        <button className="info-btn"> Whitepaper </button>
       </div>
       <div>
         <Akash className="akash"></Akash>
