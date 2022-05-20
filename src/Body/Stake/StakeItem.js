@@ -13,7 +13,7 @@ const StakeItem = (props) => {
   useEffect(() => {
     fetchChainInfo();
     getValidatorData();
-    callApiContinously();
+    // callApiContinously();
   }, []);
 
   const closeModalHandler = () => {
@@ -52,15 +52,15 @@ const StakeItem = (props) => {
     }
   }
 
-  const callApiContinously = () => {
-    setInterval(fetchChainInfo, 12000);
-  };
-  if (showHandler) {
-    callApiContinously()
-  }
-  else {
-    clearInterval(callApiContinously);
-  }
+  // const callApiContinously = () => {
+  //   setInterval(fetchChainInfo, 12000);
+  // };
+  // if (showHandler) {
+  //   callApiContinously()
+  // }
+  // else {
+  //   clearInterval(callApiContinously);
+  // }
 
 
   return (
