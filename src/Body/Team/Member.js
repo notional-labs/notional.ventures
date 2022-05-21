@@ -460,7 +460,7 @@ export const members = [
           textAlign: "left",
         }}
       >
-        Du Nguyen Lich
+        Du Nguyen 
       </p>
       <p
         style={{

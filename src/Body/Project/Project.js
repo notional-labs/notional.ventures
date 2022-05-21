@@ -1,7 +1,8 @@
 import React from "react";
 import "./Project.css";
 import Diglogo from "../../media/logo/dig-logo.png";
-import Anonelogo from "../../media/logo/anone-logo.png";
+import Anonelogo from "../../media/logo/anone.png";
+import Craft from "../../media/logo/craft.png";
 import ProjectList from "./ProjectList";
 
 const Project = () => {
@@ -18,8 +19,8 @@ const Project = () => {
     },
     {
       id: "p3",
-      image: `${Diglogo}`,
-      name: "Digchain",
+      image: `${Craft}`,
+      name: "Craft Economic",
     },
   ];
   return (
