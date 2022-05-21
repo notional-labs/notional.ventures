@@ -5,7 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: center -80px;
+  background-position: center 0px;
 }
 .stake-section .title {
   text-align: center;
@@ -19,6 +19,7 @@
 .stake-section .title .bar {
   width: 100px;
   height: 8px;
+  margin-top: -200px;
   border: none;
   background-color: #3a71fd;
 }
