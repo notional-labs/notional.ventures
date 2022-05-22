@@ -20,8 +20,8 @@
 }
 
 .project-img {
-  width: 17rem;
-  height: 17rem ;
+  max-width: 17rem;
+  max-height: 17rem ;
 }
 
 @media only screen and (min-width:380px) and (max-width: 780px){

@@ -10,8 +10,8 @@
   padding: 5rem 3rem;
   display: flex;
   gap: 3rem;
-  background-color: #212020;
-  border-radius: 20px;
+  /* background-color: #212020;
+  border-radius: 20px; */
 }
 
 .modal-image {
