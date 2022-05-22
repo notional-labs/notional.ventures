@@ -4,14 +4,14 @@
   width: auto;
   min-width: auto;
   margin: 0px auto;
-  height: 67.5rem;
+  height: 1080px;
   min-height: auto;
 }
 
 .background1 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0; 
   z-index: 1;
   filter: brightness(70%);
 }
@@ -20,6 +20,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   filter: brightness(70%);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .background1 {
+    width: 100vw;
+    height: calc(100vw / 1920 * 2000);
+  }
+
+  .header {
+    height: calc(100vw * 1080 / 1920);
+  }
 }

@@ -21,13 +21,13 @@
 
 .project-img {
   max-width: 17rem;
-  max-height: 17rem ;
+  max-height: 17rem;
 }
 
 @media only screen and (min-width:360px) and (max-width: 1920px){
   .project-img {
-    width: 8rem;
-    height: 8rem ;
+    max-width: 8rem;
+    max-height: 8rem;
   }
   .project-item {
     flex: 10%;

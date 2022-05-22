@@ -26,7 +26,7 @@ const Hero = () => {
         <button className="info-btn"> Whitepaper </button>
       </div>
       <div>
-        <Akash className="akash"></Akash>
+        <Akash className="akash" />
         <Osmosis className="osmosis" />
         <Secret className="secret" />
         <Juno className="juno" />
