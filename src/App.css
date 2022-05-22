@@ -24,12 +24,13 @@ html {
   margin: auto;
   background-color: #2c324d;
   height: auto;
-  width: auto;
+  min-width: 100%;
   max-height: max-content; 
+  overflow-x: hidden !important;
 }
 
-@media only screen and (min-width:380px) and (max-width: 780px){ 
-  /* .root {
-    width: 800px;
-  } */
-}
+/* @media only screen and (min-width:360px) and (max-width: 1920px){ 
+  .root {
+    overflow-x: hidden !important;
+  }
+} */

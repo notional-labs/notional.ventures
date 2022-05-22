@@ -2,20 +2,19 @@
   position: relative;
   height: 2125px;
   width: auto;
-  padding: 0;
-  margin: 0 auto;
   margin-top: 5rem;
-
-  /* margin-top: 0; */
+  display: flex;
+  justify-content: center;
+  background-image: url(../../media/background-decor/background.png);
+  z-index: 2;
 }
 .contributions .title {
   z-index: 2;
   text-align: center;
   position: absolute;
-  top: 10rem;
-  width: 100%;
+  top: 20rem;
+  max-width: 2000px;
   align-items: center;
-  margin-top: 9rem;
 }
 
 .contributions .title .bar {
@@ -26,7 +25,6 @@
 }
 
 .contributions .title .name {
-  margin-top: 20px;
   font-family: "Segoe UI Light";
   font-size: 60px;
   color: white;
@@ -44,29 +42,27 @@
   margin-bottom: 4rem;
 }
 
-.background {
-  position: absolute;
-  top: -6rem;
-  height: 100%;
-  width: 100%;
-  background-image: url(../../media/background-decor/background.png);
-  z-index: 2;
-  margin-top: 0px;
-  /* background-size:contain; */
+.info-number {
+  font-family: "Segoe UI Bold";
+  text-align: center;
+  font-size: 100px;
+}
+
+.info-text {
+  font-family: "Segoe UI Light";
+  text-align: center;
+  font-size: 32px;
 }
 
 .companyinfo {
-  position: absolute;
-  top: 56rem;
-  width: 100%;
   display: grid;
+  position: absolute;
+  width: 1510px;
+  top: 56rem;
+  gap: 80px;
+  row-gap: 40px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5 2vh);
-  gap: 20px;
-  row-gap: 2rem;
-  grid-auto-flow: column;
-  align-content: center;
-  justify-content: center;
 }
 
 .companyinfo-item {
@@ -76,35 +72,6 @@
   width: 450px;
   box-shadow: 4px 8px 30px 5px rgba(0, 0, 0, 0.5);
 }
-
-.info-number {
-  text-align: center;
-  font-weight: 600;
-  font-size: 6rem;
-}
-
-.info-text {
-  margin-top: -1rem;
-  text-align: center;
-  font-weight: 300;
-  font-size: 2rem;
-}
-
-.infoStyle {
-  color: white;
-  text-align: center;
-  margin: 2rem 2rem 2rem 2rem;
-  height: "12rem";
-}
-
-
-
-/* .infoStyle_text {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: 300;
-  font-size: 2rem;
-}; */
 
 .companyinfo-item__1 {
   grid-column-start: 1;
@@ -152,58 +119,47 @@
   color: white;
 }
 
-@media only screen and (min-width:380px) and (max-width: 780px){
+/* tablets device */
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
   .contributions {
-    height: auto;
+    background-size: contain;
+    height: calc(100vw * 1.13);
+  }
+  .contributions .title {
+    top: calc(100vw * 320 / 1920);
   }
   .contributions .title .bar {
-    margin-top: -10rem;
-    height: 3px;
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
   }
-  
+
   .contributions .title .name {
-    margin-top: 0;
-    font-size: 5px;
+    font-size: calc(100vw * 60 / 1920);
   }
-  
-  .contributions .title .name {
-    margin-top: 10px;
-      font-family: "Segoe UI Light";
-      font-size: 30px;
-  }
+
   .contributions .title .text {
-      display: block;
-      font-size: 10px;
+    display: block;
+    font-size: calc(100vw * 20 / 1920);
   }
-  .background {
-    height: 600px;
-  }
-  .companyinfo{
-    margin-top: -38rem;
-    gap: 5px;
+  .companyinfo {
+    top: calc(100vw * 896 / 1920);
+    width: calc(100vw * 1510 / 1920);
+    gap: calc(100vw * 80 / 1920);
+    row-gap: calc(100vw * 40 / 1920);
   }
   .companyinfo-item {
-    width: 100px;
-    height: 60px;
+    border-radius: calc(100vw * 30 / 1920);
+    background-color: #ffffff33;
+    height: calc(100vw * 250 / 1920);
+    width: calc(100vw * 450 / 1920);
+    box-shadow: 4px 8px 30px 5px rgba(0, 0, 0, 0.5);
   }
+
   .info-number {
-    margin-top: 5px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 15px;
+    font-size: calc(100vw * 100 / 1920);
   }
   
   .info-text {
-    margin-top: 2px;
-    text-align: center;
-    font-weight: 300;
-    font-size: 10px;
-  }
-  
-  .infoStyle {
-    color: white;
-    text-align: center;
-    margin: 2px 2px 2px 2px;
-    height: 3rem;
+    font-size: calc(100vw * 32 / 1920);
   }
 }

@@ -49,8 +49,28 @@
 }
 
 
-@media only screen and (min-width:380px) and (max-width: 780px){
+@media only screen and (min-width:360px) and (max-width: 1920px){
   .stake-section {
     margin-top: 55rem;
+    background-size: 82%;
+    background-position: center ;
+    margin-top: 20rem;
+  }
+  .stake-section .title {
+    height: 11rem;
+  }
+  .stake-section .title .bar {
+    height: 3px;
+  }
+  
+  .stake-section .title .name {
+    font-size: 30px;
+  }
+  .stake-section .title .text { 
+    display: block;
+    font-size: 10px;
+  }
+  .stake {
+    max-width: 60rem;
   }
 }

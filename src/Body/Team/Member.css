@@ -1,0 +1,49 @@
+.member {
+    width: 500px;
+}
+
+.member-img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.member-name {
+    color: #EEC13F;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.member-position {
+    color: #EEC13F;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.member-description {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+    .member {
+        width: 250px;
+    }
+    .member-img {
+        width: 250px;
+        border-radius: 10;
+    }
+    .member-name {
+        font-size: 16px;
+    }
+    .member-position{
+        font-size: 16px;
+    }
+    .member-description{
+        font-size: 10px;
+    }
+}
