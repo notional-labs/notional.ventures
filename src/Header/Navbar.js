@@ -3,7 +3,8 @@ import NotionalLogo from "../media/logo/notional.png";
 import SideDrawer from "./SideDrawer";
 import React, { useState } from "react";
 import Backdrop from "../Body/Stake/Backdrop";
-
+import NavBtn from '../media/button/nav-btn.png'
+import { Image } from "antd";
 const Navbar = () => {
   const [drawerHandler, setDrawerHandler] = useState(false);
   const openDrawerHandler = () => {
@@ -38,13 +39,11 @@ const Navbar = () => {
       </SideDrawer>
       <div className="nav">
         <button className="main-navigation-btn" onClick={openDrawerHandler}>
-          <span />
-          <span />
-          <span />
+          <Image className="btn-img" style={{width: "2.5rem", height: "2.5rem", margin: "1rem", "margin-left": "0"}} src = {NavBtn} preview = {false}/>
         </button>
 
         <div href="#" className="logo" style={{ cursor: "pointer" }}>
-          <img src={NotionalLogo} alt="Logo" />
+          <Image className="logo-img" src={NotionalLogo} alt="Logo" preview = {false} />
         </div>
 
         <nav className="main-nav">
