@@ -44,6 +44,11 @@
       gap: 5rem;
   }
 
+  .img-contact {
+    width:"1000px"; 
+    height:"600px";
+  }
+
   .contact-items_container {
       line-height: 4rem;
   }
@@ -56,6 +61,48 @@
       font-size: 20px;
   }
 
-  h1 {
+  .contact-title {
       color: #945cd4 ;
+  }
+
+  @media only screen and (min-width:380px) and (max-width: 780px){
+    .text {
+      display: none;
+    }
+    .contact {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .img-contact {
+      max-width: 320px;
+    }
+    .contact-container .title {
+      margin-top: 0px;
+    }
+    .contact-container .title .bar {
+      height: 3px;
+    }
+    .contact-container .title .name {
+      margin-top: 10px;
+      font-family: "Segoe UI Light";
+      font-size: 30px;
+    }
+    .contact-items_container {
+      display: flex;
+      gap: 3rem;
+    }
+    .contact-items {
+      display: flex;
+      gap: 15px;
+      color:white;
+      line-height: 30px;
+      font-size: 10px;
+    }
+    .contact-title {
+      font-size: 15px;
+    }
+    .img-icon {
+      max-height: 20px;
+      max-width: 18px;
+    }
   }

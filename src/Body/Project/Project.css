@@ -26,3 +26,27 @@
   font-size: 60px;
   color: white;
 }
+
+@media only screen and (min-width:380px) and (max-width: 780px){
+  .project .title {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  .project .title .bar {
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: #ff4040;
+  }
+  
+  .project .title .name {
+    margin-top: 20px;
+    font-family: "Segoe UI Light";
+    font-size: 30px;
+    color: white;
+  }
+}

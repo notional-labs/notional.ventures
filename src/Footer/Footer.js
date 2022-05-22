@@ -10,7 +10,8 @@ import Telegram from "../media/icon/telegram.png";
 const Footer = () => {
   return (
     <div className = "footer">
-      <Image style={{width:"11rem", height:"3rem"}} src={NotionalLogo}/>
+      <Image className="footer-img" src={NotionalLogo}/>
+      <p className="footer-text" >Meet the global social commnuity:</p>
       <div className="media-link">
         <a><Image preview ={false} src={Discord}/></a>
         <a><Image preview ={false} src={Github}/></a>

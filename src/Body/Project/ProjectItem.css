@@ -18,3 +18,23 @@
   font-size: 3rem;
   text-align: center;
 }
+
+.project-img {
+  width: 17rem;
+  height: 17rem ;
+}
+
+@media only screen and (min-width:380px) and (max-width: 780px){
+  .project-img {
+    width: 8rem;
+    height: 8rem ;
+  }
+  .project-item {
+    flex: 10%;
+    height: 10rem;
+    gap: 1rem;
+  }
+  .user-item__info h2 {
+    font-size: 1rem;
+  }
+}

@@ -14,7 +14,7 @@ const StakeItem = (props) => {
     fetchChainInfo();
     getValidatorData();
     // callApiContinously();
-  }, []);
+  }, [showHandler]);
 
   const closeModalHandler = () => {
     setShowHandler(false);
@@ -106,10 +106,6 @@ const StakeItem = (props) => {
           </div>
           <button
             onClick={() => {
-              // fetchChainInfo();
-              // getBlockInfo();
-              // getPriceInfo();
-              // fetchReward();
               showModalHandler();
             }}
             className="stake-btn"

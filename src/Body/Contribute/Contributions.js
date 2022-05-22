@@ -2,24 +2,24 @@ import "./Contributions.css";
 import React from "react";
 import AutoSlide from "./PartnerCarousel";
 
-const infoStyle = {
-  "text-align": "center",
-  margin: "2rem 2rem 2rem 2rem",
-  height: "12rem",
-};
+// const infoStyle = {
+//   "text-align": "center",
+//   margin: "2rem 2rem 2rem 2rem",
+//   height: "12rem",
+// };
 
-const infoStyle_number = {
-  height: "6rem",
-  "font-weight": "600",
-  "font-size": "6rem",
-};
+// const infoStyle_number = {
+//   // height: "6rem",
+//   // "font-weight": "600",
+//   // "font-size": "6rem",
+// };
 
-const infoStyle_text = {
-  "margin-top": "20px",
-  "text-align": "center",
-  "font-weight": "300",
-  "font-size": "2rem",
-};
+// const infoStyle_text = {
+//   "margin-top": "20px",
+//   "text-align": "center",
+//   "font-weight": "300",
+//   "font-size": "2rem",
+// };
 
 const Contributions = () => {
   return (
@@ -36,33 +36,33 @@ const Contributions = () => {
           <AutoSlide />
           <div className="companyinfo">
             <div className="companyinfo-item companyinfo-item__1">
-              <div style={infoStyle}>
-                <div style={infoStyle_number}>40</div>
-                <div style={infoStyle_text}>Chains operating</div>
+              <div className="infoStyle">
+                <div className="info-number">40</div>
+                <div className="info-text">Chains operating</div>
               </div>
             </div>
             <div className="companyinfo-item companyinfo-item__2">
-              <div style={infoStyle}>
-                <div style={infoStyle_number}>99,3%</div>
-                <div style={infoStyle_text}>Uptime</div>
+              <div className="infoStyle">
+                <div className="info-number">99,3%</div>
+                <div className="info-text">Uptime</div>
               </div>
             </div>
             <div className="companyinfo-item companyinfo-item__3">
-              <div style={infoStyle}>
-                <div style={infoStyle_number}>4183</div>
-                <div style={infoStyle_text}>Unique Users</div>
+              <div className="infoStyle">
+                <div className="info-number">4183</div>
+                <div className="info-text">Unique Users</div>
               </div>
             </div>
             <div className="companyinfo-item companyinfo-item__4">
-              <div style={infoStyle}>
-                <div style={infoStyle_number}>$12M</div>
-                <div style={infoStyle_text}>Company Value</div>
+              <div className="infoStyle">
+                <div className="info-number">$12M</div>
+                <div className="info-text">Company Value</div>
               </div>
             </div>
             <div className="companyinfo-item companyinfo-item__5">
-              <div style={infoStyle}>
-                <div style={infoStyle_number}>$345K</div>
-                <div style={infoStyle_text}>Anual Rewards</div>
+              <div className="infoStyle">
+                <div className="info-number">$345K</div>
+                <div className="info-text">Anual Rewards</div>
               </div>
             </div>
           </div>

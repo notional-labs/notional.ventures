@@ -1,6 +1,6 @@
 .contributions {
   position: relative;
-  height: 2200px;
+  height: 2140px;
   width: auto;
   padding: 0;
   margin: 0 auto;
@@ -41,6 +41,7 @@
   align-items: center;
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .background {
@@ -51,7 +52,7 @@
   background-image: url(../../media/background-decor/background.png);
   z-index: 2;
   margin-top: 0px;
-  background-size: auto;
+  /* background-size:contain; */
 }
 
 .companyinfo {
@@ -75,6 +76,35 @@
   width: 450px;
   box-shadow: 4px 8px 30px 5px rgba(0, 0, 0, 0.5);
 }
+
+.info-number {
+  text-align: center;
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+.info-text {
+  margin-top: -1rem;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.infoStyle {
+  color: white;
+  text-align: center;
+  margin: 2rem 2rem 2rem 2rem;
+  height: "12rem";
+}
+
+
+
+/* .infoStyle_text {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2rem;
+}; */
 
 .companyinfo-item__1 {
   grid-column-start: 1;
@@ -120,4 +150,60 @@
   justify-self: center;
   align-self: center;
   color: white;
+}
+
+@media only screen and (min-width:380px) and (max-width: 780px){
+  .contributions {
+    height: auto;
+  }
+  .contributions .title .bar {
+    margin-top: -10rem;
+    height: 3px;
+  }
+  
+  .contributions .title .name {
+    margin-top: 0;
+    font-size: 5px;
+  }
+  
+  .contributions .title .name {
+    margin-top: 10px;
+      font-family: "Segoe UI Light";
+      font-size: 30px;
+  }
+  .contributions .title .text {
+      display: block;
+      font-size: 10px;
+  }
+  .background {
+    height: 600px;
+  }
+  .companyinfo{
+    margin-top: -38rem;
+    gap: 5px;
+  }
+  .companyinfo-item {
+    width: 100px;
+    height: 60px;
+  }
+  .info-number {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .info-text {
+    margin-top: 2px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  
+  .infoStyle {
+    color: white;
+    text-align: center;
+    margin: 2px 2px 2px 2px;
+    height: 3rem;
+  }
 }

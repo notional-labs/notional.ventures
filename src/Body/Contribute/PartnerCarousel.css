@@ -13,6 +13,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-top: 45rem;
 }
 
 .slider .slide-track {
@@ -24,4 +25,10 @@
   padding-left: 80px;
   padding-right: 80px;
   align-self: center;
+}
+
+@media only screen and (min-width:380px) and (max-width: 780px){
+  .slider {
+    display: none;
+  }
 }

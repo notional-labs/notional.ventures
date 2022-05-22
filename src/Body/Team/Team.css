@@ -53,3 +53,12 @@ div.react-3d-carousel
 .proactive > .slider-single-content > div > div > p {
   display: none;
 }
+
+@media only screen and (min-width:380px) and (max-width: 780px){
+  .team {
+    height: 65rem;
+  }
+  .member {
+    margin-top: 6rem;
+  }
+}

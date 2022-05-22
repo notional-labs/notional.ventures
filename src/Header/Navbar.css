@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: auto;
   height: 6rem;
   margin: auto;
   padding: 1rem 4.8rem;
@@ -39,4 +40,8 @@
 .main-nav-list li a {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (min-width:380px) and (max-width: 780px){
+    
 }

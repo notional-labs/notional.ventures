@@ -21,10 +21,15 @@ html {
 
 .root {
   scroll-behavior: smooth;
-  position: relative;
   margin: auto;
   background-color: #2c324d;
   height: auto;
   width: auto;
-  max-height: max-content;
+  max-height: max-content; 
+}
+
+@media only screen and (min-width:380px) and (max-width: 780px){ 
+  /* .root {
+    width: 800px;
+  } */
 }

@@ -19,3 +19,29 @@
   display: flex;
   gap: 1rem;
 }
+
+.footer-img {
+  width: 11rem; 
+  height:3rem
+}
+
+.footer-text {
+  display: none;
+  color: white;
+  
+}
+
+@media only screen and (min-width:380px) and (max-width: 780px){ 
+  .footer {
+    flex-direction: column;
+  }
+  .footer-img {
+    display: none;
+  }
+  .footer-text {
+    display:contents;
+  }
+  .media-link {
+    margin-top: 5px;
+  }
+}

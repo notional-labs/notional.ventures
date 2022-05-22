@@ -18,31 +18,31 @@ const Contact = () => {
         </p>
       </div>
       <div className="contact">
-        <Image style={{width:"1000px", height:"600px"}} src={ContactBackground} preview={false} />
+        <Image className = "img-contact" src={ContactBackground} preview={false} />
         <div className="contact-items_container">
           <div>
-            <h1>Contacts</h1>
+            <h1 className="contact-title">Contacts</h1>
             <div className="contact-items">
-              <Image src={Email} preview={false} />
+              <Image className="img-icon" src={Email} preview={false} />
               <p>william@notional.ventures</p>
             </div>
             <div className="contact-items">
-              <Image src={Github} preview={false} />
+              <Image className="img-icon" src={Github} preview={false} />
               <p>github.com/notional-labs</p>
             </div>
             <div className="contact-items">
-              <Image src={Discord} preview={false} />
+              <Image className="img-icon" src={Discord} preview={false} />
               <p>vinh@notional.ventures</p>
             </div>
           </div>
           <div>
-            <h1>Social networks</h1>
+            <h1 className="contact-title">Social networks</h1>
             <div className="contact-items">
-              <Image src={Twitter} preview={false} />
+              <Image className="img-icon" src={Twitter} preview={false} />
               <p>twitter.com/notionaldao</p>
             </div>
             <div className="contact-items">
-              <Image src={Telegram} preview={false} />
+              <Image className="img-icon" src={Telegram} preview={false} />
               <p>example@gmail.com</p>
             </div>
           </div>

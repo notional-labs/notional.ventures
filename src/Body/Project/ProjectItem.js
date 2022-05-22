@@ -8,7 +8,7 @@ const ProjectItem = (props) => {
           <img
             src={props.image}
             alt={props.name}
-            style={{ maxWidth: "22rem", maxHeight: "20rem" }}
+            className = "project-img"
           />
         </div>
         <div className="user-item__info">
