@@ -1,6 +1,6 @@
 .contributions {
   position: relative;
-  height: 2140px;
+  height: 2125px;
   width: auto;
   padding: 0;
   margin: 0 auto;
@@ -57,7 +57,7 @@
 
 .companyinfo {
   position: absolute;
-  top: 60rem;
+  top: 56rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);

@@ -1,38 +1,41 @@
 .errormodal {
-    z-index: 11;
-    width: 60rem;
-    height: auto;
-    /* background-color: #222020;
+  z-index: 11;
+  width: 60rem;
+  height: auto;
+  /* background-color: #222020;
     border-radius: 20px; */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 40px;
-    padding: 5rem 3rem;
-    text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  padding: 5rem 3rem;
+  text-align: center;
+}
 
-  }
+.errormodal h1 {
+  font-family: "Segoe UI Light";
+  font-size: 35px;
+  color: white;
+}
 
-  .errormodal h1 {
-      font-size: 35px;
-      color: white;
-  }
+.errormodal p {
+  font-family: "Segoe UI Light";
+  font-size: 15px;
+  width: 25rem;
+  margin: 0 auto;
+  color: #a1a1a1;
+}
 
-  .errormodal p {
-      font-size: 15px;
-      width: 25rem;
-      margin: 0 auto;
-      margin-top: 40px;
-  }
+.errormodal label {
+  font-size: 200px;
+  line-height: 50%;
+  margin-bottom: 0;
+  font-family: "Segoe UI Semibold";
+}
 
-  .errormodal label {
-      font-size: 100px;
-      margin-bottom: 0;
-  }
-
-  /* .error-btn {
+/* .error-btn {
       background-color: #4c62ba;
       position: fixed;
       bottom: 0;
