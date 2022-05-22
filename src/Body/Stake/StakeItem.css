@@ -1,6 +1,6 @@
 .stake-item {
   height: 22rem;
-  width: 260px;
+  width: 17rem;
   border: 1px solid white;
   border-radius: 15px;
   box-sizing: border-box;
@@ -47,4 +47,34 @@
   align-items: center;
   justify-content: center;
   height: 10rem;
+}
+
+.stake-item__image__detail {
+  max-width: 7rem;
+  max-height: 7rem;
+}
+
+@media only screen and (min-width:360px) and (max-width: 1920px){
+  .stake-item{
+    height: 10rem;
+    width: 7rem;
+  }
+  .stake-item__image__detail {
+    margin-top: 2rem;
+    max-height: 3rem;
+    max-width: 3rem;
+  }
+
+  .stake-item__info h2 {
+    font-size: 10px;
+    margin-top: 14px;
+  }
+  .stake-btn {
+    width: 4rem;
+    height: 2rem;
+    font-size: 10px;
+  }
+  .stake-item__image{
+    height: 3rem;
+  }
 }

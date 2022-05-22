@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="description">
         <hr className="bar"></hr>
         <p className="greetings">
-        Edge Validation, Relaying, and Open-Source Software Development  
+        Edge Validation, Relaying, and Open-Source Software Development
         </p>
         <button className="info-btn"> Whitepaper </button>
       </div>

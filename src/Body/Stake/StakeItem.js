@@ -98,7 +98,7 @@ const StakeItem = (props) => {
           <div className="stake-item__image">
             <img
               src={props.image}
-              style={{ maxHeight: "7rem", maxWidth: "7rem"}}
+              className = "stake-item__image__detail"
             />
           </div>
           <div className="stake-item__info">

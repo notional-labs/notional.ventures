@@ -8,7 +8,6 @@
 }
 
 .slider {
-  margin: 42rem auto;
   height: 200px;
   overflow: hidden;
   position: relative;
@@ -27,7 +26,7 @@
   align-self: center;
 }
 
-@media only screen and (min-width:380px) and (max-width: 780px){
+@media only screen and (min-width:360px) and (max-width: 1920px){
   .slider {
     display: none;
   }

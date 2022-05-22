@@ -34,7 +34,7 @@
   color: white;
 }
 
-.member {
+.member-container {
   margin-top: 13rem;
 }
 
@@ -54,11 +54,27 @@ div.react-3d-carousel
   display: none;
 }
 
-@media only screen and (min-width:380px) and (max-width: 780px){
+@media only screen and (min-width:360px) and (max-width: 1920px){
   .team {
-    height: 65rem;
+    height: 40rem;
   }
-  .member {
+  .team .title {
+    width: 100%;
+  }
+  
+  .team .title .bar {
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: #f33df6;
+  }
+  .team .title .name {
+    margin-top: 20px;
+    font-family: "Segoe UI Light";
+    font-size: 30px;
+    color: white;
+  }
+  .member-container {
     margin-top: 6rem;
   }
 }

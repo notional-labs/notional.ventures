@@ -12,661 +12,158 @@ import hieu from "../../media/members/Hieu1.jpg";
 import huy from "../../media/members/Huy1.jpg";
 import chinh from "../../media/members/chinh.jpg";
 import brenhill from "../../media/members/Brenhill.jpeg";
+import "./Member.css";
 import { Image } from "antd";
 export const members = [
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={jacob}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Jacob Gadikian
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Founder and Principal Engineer
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Jacob has been active in Cosmos since working as Jae Kwon’s research assistant at Tendermint. He owns a share in a bitcoin mine, and contributes to several projects in Cosmos. 
+    <div className="member">
+      <Image src={jacob} className="member-img" preview={false} />
+      <p className="member-name">Jacob Gadikian</p>
+      <p className="member-position">Founder and Principal Engineer</p>
+      <p className="member-description">
+        Jacob has been active in Cosmos since working as Jae Kwon’s research
+        assistant at Tendermint. He owns a share in a bitcoin mine, and
+        contributes to several projects in Cosmos.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={khanh}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Khanh Nguyen
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Lead Engineer
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Khanh is an exceptionally talented engineer and helped to build out Notional’s engineering team. He is a frequent contributor to several major Cosmos projects.
+    <div className="member">
+      <Image src={khanh} className="member-img" preview={false} />
+      <p className="member-name">Khanh Nguyen</p>
+      <p className="member-position">Lead Engineer</p>
+      <p className="member-description">
+        Khanh is an exceptionally talented engineer and helped to build out
+        Notional’s engineering team. He is a frequent contributor to several
+        major Cosmos projects.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={ricardo}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Ricardo Ferreira
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Operations Manager 
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Ricardo is a co-founder of Notional and is responsible for overseeing operations and assisting in client outreach.
+    <div className="member">
+      <Image src={ricardo} className="member-img" preview={false} />
+      <p className="member-name">Ricardo Ferreira</p>
+      <p className="member-position">Operations Manager</p>
+      <p className="member-description">
+        Ricardo is a co-founder of Notional and is responsible for overseeing
+        operations and assisting in client outreach.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={billy}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        William Gray
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Marketing Director
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        William is responsible for marketing and communications efforts to increase Notional’s brand position and delegations. He also assists with client outreach.
+    <div className="member">
+      <Image src={billy} className="member-img" preview={false} />
+      <p className="member-name">William Gray</p>
+      <p className="member-position">Marketing Director</p>
+      <p className="member-description">
+        William is responsible for marketing and communications efforts to
+        increase Notional’s brand position and delegations. He also assists with
+        client outreach.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={long}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Long Mai Gia
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Infrastructure Lead
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Long is responsible for overseeing Notional’s relaying infrastructure. He is also the front-of-house person for all relaying issues from clients.
+    <div className="member">
+      <Image src={long} className="member-img" preview={false} />
+      <p className="member-name">Long Mai Gia</p>
+      <p className="member-position">Infrastructure Lead</p>
+      <p className="member-description">
+        Long is responsible for overseeing Notional’s relaying infrastructure.
+        He is also the front-of-house person for all relaying issues from
+        clients.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={son}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Son Trinh
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Blockchain Engineer 
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Son is dedicated to building out projects in Cosmos to solidify it as the go-to hub in the crypto world. He is a talented and eager blockchain engineer.
+    <div className="member">
+      <Image src={son} className="member-img" preview={false} />
+      <p className="member-name">Son Trinh</p>
+      <p className="member-position">Blockchain Engineer</p>
+      <p className="member-description">
+        Son is dedicated to building out projects in Cosmos to solidify it as
+        the go-to hub in the crypto world. He is a talented and eager blockchain
+        engineer.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={vuong}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Vuong Nguyen
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Blockchain Engineer
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Vuong is a capable and diligent engineer who has increasingly shown excellence in developing projects in Cosmos. 
+    <div className="member">
+      <Image src={vuong} className="member-img" preview={false} />
+      <p className="member-name">Vuong Nguyen</p>
+      <p className="member-position">Blockchain Engineer</p>
+      <p className="member-description">
+        Vuong is a capable and diligent engineer who has increasingly shown
+        excellence in developing projects in Cosmos.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={minh}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Minh Vu Le Nhat
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
+    <div className="member">
+      <Image src={minh} className="member-img" preview={false} />
+      <p className="member-name">Minh Vu Le Nhat</p>
+      <p className="member-position">
         Service Technician and Customer Engineer
       </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Minh is responsible for Notional's validators and keeping uptime to the highest possible standards. He is the man that keeps the blocks signing.
+      <p className="member-description">
+        Minh is responsible for Notional's validators and keeping uptime to the
+        highest possible standards. He is the man that keeps the blocks signing.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={vinh}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Vinh Nguyen
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Project Manager
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Vinh is very talented in business development and management. He has made great progress in optimizing organization and efficiency within Notional. 
+    <div className="member">
+      <Image src={vinh} className="member-img" preview={false} />
+      <p className="member-name">Vinh Nguyen</p>
+      <p className="member-position">Project Manager</p>
+      <p className="member-description">
+        Vinh is very talented in business development and management. He has
+        made great progress in optimizing organization and efficiency within
+        Notional.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={du}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Du Nguyen 
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Infrastructure
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        Du assists Long with relaying and validator infrastructure and is rapidly learning how to manage Notional’s systems to a high-degree of efficiency. 
+    <div className="member">
+      <Image src={du} className="member-img" preview={false} />
+      <p className="member-name">Du Nguyen</p>
+      <p className="member-position">Infrastructure</p>
+      <p className="member-description">
+        Du assists Long with relaying and validator infrastructure and is
+        rapidly learning how to manage Notional’s systems to a high-degree of
+        efficiency.
       </p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={brenhill}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Brenn Hill
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Mentor Advisor
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-        
-      </p>
+    <div className="member">
+      <Image src={brenhill} className="member-img" preview={false} />
+      <p className="member-name">Brenn Hill</p>
+      <p className="member-position">Mentor Advisor</p>
+      <p className="member-description"></p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={huy}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Huy Nguyen
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        Designer
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-      </p>
+    <div className="member">
+      <Image src={huy} className="member-img" preview={false} />
+      <p className="member-name">Huy Nguyen</p>
+      <p className="member-position">Designer</p>
+      <p className="member-description"></p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={hieu}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Hieu Vu 
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        CosmWasm Developer
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-      </p>
+    <div className="member">
+      <Image src={hieu} className="member-img" preview={false} />
+      <p className="member-name">Hieu Vu</p>
+      <p className="member-position">CosmWasm Developer</p>
+      <p className="member-description"></p>
     </div>
   </div>,
   <div>
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <Image
-        src={chinh}
-        width={"500px"}
-        preview={false}
-        style={{
-          borderRadius: "20px",
-        }}
-      />
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 700,
-          marginTop: "20px",
-          textAlign: "left",
-        }}
-      >
-        Nguyen Duc Chinh
-      </p>
-      <p
-        style={{
-          color: "#EEC13F",
-          fontSize: "24px",
-          fontWeight: 400,
-          textAlign: "left",
-        }}
-      >
-        CosmWasm Developer
-      </p>
-      <p
-        style={{
-          fontSize: "16px",
-          fontWeight: 400,
-          textAlign: "left",
-          color: "#ffffff",
-        }}
-      >
-      </p>
+    <div className="member">
+      <Image src={chinh} className="member-img" preview={false} />
+      <p className="member-name">Nguyen Duc Chinh</p>
+      <p className="member-position">CosmWasm Developer</p>
+      <p className="member-description"></p>
     </div>
-  </div>
+  </div>,
 ];
