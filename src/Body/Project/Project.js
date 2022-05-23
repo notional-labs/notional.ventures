@@ -20,7 +20,7 @@ const Project = () => {
     {
       id: "p3",
       image: `${Craft}`,
-      name: "Craft Economic",
+      name: "Craft Economy",
     },
   ];
   return (

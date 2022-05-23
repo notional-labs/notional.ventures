@@ -2,10 +2,10 @@ import React from "react";
 import "./Contact.css";
 import ContactBackground from "../../media/background-decor/Contact.svg";
 import Email from "../../media/icon/mail.png";
-import Discord from "../../media/icon/discord.png";
+// import Discord from "../../media/icon/discord.png";
 import Github from "../../media/icon/github.png";
 import Twitter from "../../media/icon/twitter.png";
-import Telegram from "../../media/icon/telegram.png";
+// import Telegram from "../../media/icon/telegram.png";
 import { Image } from "antd";
 const Contact = () => {
   return (
@@ -27,11 +27,11 @@ const Contact = () => {
               <p>william@notional.ventures</p>
             </div>
             <div className="contact-items">
-              <Image className="img-icon" src={Github} preview={false} />
-              <p>github.com/notional-labs</p>
+              <Image className="img-icon" src={Email} preview={false} />
+              <p>ricardo@notional.ventures</p>
             </div>
             <div className="contact-items">
-              <Image className="img-icon" src={Discord} preview={false} />
+              <Image className="img-icon" src={Email} preview={false} />
               <p>vinh@notional.ventures</p>
             </div>
           </div>
@@ -42,8 +42,8 @@ const Contact = () => {
               <p>twitter.com/notionaldao</p>
             </div>
             <div className="contact-items">
-              <Image className="img-icon" src={Telegram} preview={false} />
-              <p>example@gmail.com</p>
+              <Image className="img-icon" src={Github} preview={false} />
+              <p>github.com/notional-labs</p>
             </div>
           </div>
         </div>

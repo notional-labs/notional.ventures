@@ -28,7 +28,7 @@
 }
 
 .team .title .name {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-family: "Segoe UI Light";
   font-size: 60px;
   color: white;
@@ -56,25 +56,28 @@ div.react-3d-carousel
 
 @media only screen and (min-width:360px) and (max-width: 1920px){
   .team {
-    height: 40rem;
+    height: calc(100vw * (80*16) / 1920);
+    margin-top: calc(100vw * (5*27) / 1920);
+
   }
   .team .title {
     width: 100%;
+    /* margin-top: calc(100vw * (5*27) / 1920); */
   }
   
   .team .title .bar {
-    width: 100px;
-    height: 3px;
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
     border: none;
     background-color: #f33df6;
   }
   .team .title .name {
-    margin-top: 20px;
     font-family: "Segoe UI Light";
-    font-size: 30px;
+    font-size: calc(100vw * 60 / 1920);
     color: white;
   }
   .member-container {
-    margin-top: 6rem;
+    margin-top: calc(100vw * (5*18) / 1920);
+
   }
 }

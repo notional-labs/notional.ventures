@@ -31,19 +31,22 @@
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
     .member {
-        width: 250px;
+        max-width: calc(100vw / 1920 * 600);
     }
     .member-img {
-        width: 250px;
+        max-width: calc(100vw / 1920 * 600);
         border-radius: 10;
     }
     .member-name {
-        font-size: 16px;
+        font-size: calc(100vw * 34 / 1920);
+
     }
     .member-position{
-        font-size: 16px;
+        font-size: calc(100vw * 34 / 1920);
+
     }
     .member-description{
-        font-size: 10px;
+        font-size: calc(100vw * 24 / 1920);
+
     }
 }

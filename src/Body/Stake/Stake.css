@@ -21,7 +21,7 @@
 }
 
 .stake-section .title .name {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-family: "Segoe UI Light";
   font-size: 60px;
   color: white;
@@ -49,23 +49,25 @@
   .stake-section {
     background-size: 82%;
     background-position: center;
+    
   }
   .stake-section .title {
-    height: 11rem;
+    height: auto;
   }
   .stake-section .title .bar {
-    height: 3px;
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
   }
   
   .stake-section .title .name {
-    font-size: 30px;
+    font-size: calc(100vw * 60 / 1920);
   }
   .stake-section .title .text { 
     display: block;
-    font-size: 10px;
+    font-size: calc(100vw * 20 / 1920);
   }
   .stake {
     max-width: 60rem;
-    margin-top: 20px;
+    margin-top: calc(100vw * 100 / 1920);
   }
 }

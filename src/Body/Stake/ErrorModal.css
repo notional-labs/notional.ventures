@@ -41,3 +41,21 @@
       bottom: 0;
       right: 0;
   } */
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .errormodal {
+    width: calc(100vw / 1920 * (60 * 35));
+    font-size: calc(100vw / 1920 * 61);
+  }
+  .errormodal h1 {
+    font-size: calc(100vw / 1920 * 55);
+  }
+  .errormodal p {
+    font-size: calc(100vw / 1920 * 46);
+    width: calc(100vw / 1920 * (25 * 36));
+    
+  }
+  .errormodal label {
+    font-size: calc(100vw / 1920 * 230);
+  }
+}

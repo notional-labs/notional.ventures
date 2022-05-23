@@ -1,108 +1,118 @@
 .contact-container {
-    height: auto;
-    width: auto;
+  height: auto;
+  width: auto;
+}
+.contact-container .title {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.contact-container .title .text {
+  font-family: "Segoe UI Light";
+  font-size: 20px;
+  color: white;
+  width: 60%;
+  margin: 1rem auto;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact-container .title .bar {
+  width: 100px;
+  height: 8px;
+  border: none;
+  background-color: #f33df6;
+}
+
+.contact-container .title .name {
+  /* margin-top: 20px; */
+  font-family: "Segoe UI Light";
+  font-size: 60px;
+  color: white;
+}
+
+.contact {
+  align-items: center;
+  /* align-self: center; */
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+}
+
+.img-contact {
+  width: "1000px";
+  height: "360px";
+}
+
+.img-icon {
+  max-height: 28px;
+  max-width: 22px;
+}
+
+.contact-items_container {
+  line-height: 4rem;
+}
+
+.contact-items {
+  display: flex;
+  gap: 15px;
+  color: white;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.contact-title {
+  color: #945cd4;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .text {
+    display: none;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .img-contact {
+    max-width: calc(100vw / 1920 * 1000);
+    max-height: calc(100vw / 1920 * 626);
   }
   .contact-container .title {
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    align-items: center;
-    margin-top: 5rem;
-  }
+    margin-top: calc(100vw * (5*22) / 1920);
 
-  .contact-container .title .text {
-    font-family: "Segoe UI Light";
-    font-size: 20px;
-    color: white;
-    width: 60%;
-    margin: 1rem auto;
-    align-items: center;
-    text-align: center;
-    font-size: 1.5rem;
   }
-  
   .contact-container .title .bar {
-    width: 100px;
-    height: 8px;
-    border: none;
-    background-color: #F33DF6;
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
   }
-  
   .contact-container .title .name {
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: "Segoe UI Light";
-    font-size: 60px;
-    color: white;
+    font-size: calc(100vw * 60 / 1920);
   }
-
-  .contact {
-      align-items: center;
-      /* align-self: center; */
-      justify-content: center;
-      margin: 0 auto;
-      display: flex;
-      gap: 5rem;
-  }
-
-  .img-contact {
-    width:"1000px"; 
-    height:"360px";
-  }
-
   .contact-items_container {
-      line-height: 4rem;
+    display: flex;
+    gap: 3rem;
+    line-height: 2rem;
   }
-
   .contact-items {
-      display: flex;
-      gap: 15px;
-      color:white;
-      line-height: 30px;
-      font-size: 20px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    line-height: 20px;
+    font-size: calc(100vw * 35 / 1920);
   }
-
   .contact-title {
-      color: #945cd4 ;
-  }
+    font-size: calc(100vw * 40 / 1920);
 
-  @media only screen and (min-width:360px) and (max-width: 1920px){
-    .text {
-      display: none;
-    }
-    .contact {
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .img-contact {
-      max-width: 320px;
-    }
-    .contact-container .title {
-      margin-top: 0px;
-    }
-    .contact-container .title .bar {
-      height: 3px;
-    }
-    .contact-container .title .name {
-      margin-top: 10px;
-      font-family: "Segoe UI Light";
-      font-size: 30px;
-    }
-    .contact-items_container {
-      display: flex;
-      gap: 3rem;
-    }
-    .contact-items {
-      display: flex;
-      gap: 15px;
-      color:white;
-      line-height: 30px;
-      font-size: 10px;
-    }
-    .contact-title {
-      font-size: 15px;
-    }
-    .img-icon {
-      max-height: 20px;
-      max-width: 18px;
-    }
   }
+  .img-icon {
+    max-width: calc(100vw / 1920 * 38);
+    max-height: calc(100vw / 1920 * 30);
+  }
+}
