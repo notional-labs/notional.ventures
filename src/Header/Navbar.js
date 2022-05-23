@@ -2,7 +2,6 @@ import "./Navbar.css";
 import NotionalLogo from "../media/logo/notional.png";
 import SideDrawer from "./SideDrawer";
 import React, { useState } from "react";
-import Backdrop from "../Body/Stake/Backdrop";
 import NavBtn from '../media/button/nav-btn.png'
 import { Image } from "antd";
 const Navbar = () => {
@@ -15,8 +14,7 @@ const Navbar = () => {
   };
   return (
     <div className="nav-container">
-      {drawerHandler && <Backdrop onClick = {closeDrawerHandler}/>}
-      <SideDrawer show={drawerHandler} onClick={closeDrawerHandler}>
+      <SideDrawer show={drawerHandler} onCancel={closeDrawerHandler}>
         <nav className="main-nav-drawer">
           <ul className="main-nav-list-drawer">
             <li>

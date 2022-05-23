@@ -2,6 +2,7 @@ import { Image, Tooltip } from "antd";
 import miss from "../../media/stake/miss.png";
 import nomiss from "../../media/stake/no-miss.png";
 import Zoom from "@mui/material/Zoom";
+import "./StakeUptimeBlock.css";
 
 const UptimeBlock = (props) => {
   let { height, uptime } = props;
@@ -10,7 +11,7 @@ const UptimeBlock = (props) => {
     return (
       <Tooltip TransitionComponent={Zoom} title={height}>
         <Image
-          style={{ width: "4rem", height: "4rem" }}
+          className="block"
           preview={false}
           src={nomiss}
         />
@@ -23,7 +24,7 @@ const UptimeBlock = (props) => {
         return (
           <Tooltip TransitionComponent={Zoom} title={height}>
             <Image
-              style={{ width: "4rem", height: "4rem" }}
+          className="block"
               preview={false}
               src={miss}
             />
@@ -34,7 +35,7 @@ const UptimeBlock = (props) => {
     return (
       <Tooltip TransitionComponent={Zoom} title={height}>
         <Image
-          style={{ width: "4rem", height: "4rem" }}
+          className="block"
           src={nomiss}
           preview={false}
         />

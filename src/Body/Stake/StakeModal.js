@@ -39,57 +39,50 @@ const ModalOverlay = (props) => {
 
   const content = (
     <div className={`modal ${props.className}`}>
-      <div>
+      <div className="leftModule">
         <div className="chain-section">
-          <div className="chain-info__image">
+          <div className="chainInfo">
             <Image
               preview={false}
-              className="chain-image"
+              className="chainLogo"
               src={props.image}
-              alt={props.name}
-              style={{
-                maxWidth: "9rem",
-                maxHeight: "9rem",
-                marginLeft: "-10px",
-                marginRight: "-10px",
-                marginBottom: "10px",
-              }}
             />
-            <div>{props.name}</div>
+            <div className="chainLabel">{props.name}</div>
           </div>
 
           <img src={Info_divisor} className="info-divisor" />
 
-          <table className="chain-info__text">
+          <table className="chainDetail">
             <tr>
-              <td className="info-label">Chain ID:</td>
-              <td className="info-value">{props.chainid}</td>
+              <td className="detailLabel">Chain ID:</td>
+              <td className="detailValue">{props.chainid}</td>
             </tr>
             <tr>
-              <td className="info-label">Block Height:</td>
-              <td className="info-value">
+              <td className="detailLabel">Block Height:</td>
+              <td className="detailValue">
                 {props.blockheight.toLocaleString()}
               </td>
             </tr>
             <tr>
-              <td className="info-label">Block Time:</td>
-              <td className="info-value">{props.blocktime.toFixed(2)}s</td>
+              <td className="detailLabel">Block Time:</td>
+              <td className="detailValue">{props.blocktime.toFixed(2)}s</td>
             </tr>
             <tr>
-              <td className="info-label">Price:</td>
-              <td className="info-value">$ {props.price.toFixed(2)}</td>
+              <td className="detailLabel">Price:</td>
+              <td className="detailValue">$ {props.price.toFixed(2)}</td>
             </tr>
           </table>
         </div>
+
         <table className="validator-section">
           <tr>
-            <td className="validator-label">Validator:</td>
-            <td className="validator-value">Notional</td>
+            <td className="validatorLabel">Validator:</td>
+            <td className="validatorValue">Notional</td>
           </tr>
           <tr>
-            <td className="validator-label">Address:</td>
+            <td className="validatorLabel">Address:</td>
             <td
-              className="validator-value"
+              className="validatorValue"
               style={{ cursor: "pointer" }}
               onClick={() => copyToClipboard(props.address)}
             >
@@ -99,16 +92,16 @@ const ModalOverlay = (props) => {
             </td>
           </tr>
           <tr>
-            <td className="validator-label">Rank:</td>
-            <td className="validator-value">{props.rank}</td>
+            <td className="validatorLabel">Rank:</td>
+            <td className="validatorValue">{props.rank}</td>
           </tr>
           <tr>
-            <td className="validator-label">Commission:</td>
-            <td className="validator-value">{props.commission*100}%</td>
+            <td className="validatorLabel">Commission:</td>
+            <td className="validatorValue">{props.commission*100}%</td>
           </tr>
           <tr>
-            <td className="validator-label">Voting Power:</td>
-            <td className="validator-value">{props.votingPower}</td>
+            <td className="validatorLabel">Voting Power:</td>
+            <td className="validatorValue">{props.votingPower}</td>
           </tr>
         </table>
       </div>
@@ -146,7 +139,6 @@ const ModalOverlay = (props) => {
             >
               Delegate with Ping.pub
             </a>
-
             <img src={Ping} className="iconsasd" />
           </button>
         </div>

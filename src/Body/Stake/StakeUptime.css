@@ -1,3 +1,23 @@
+.uptime {
+  margin-top: 2.5rem;
+  text-align: right;
+  align-items: right;
+  height: auto;
+}
+
+.uptime-header {
+  font-family: "Segoe UI Light";
+  font-size: 40px;
+  color: white;
+}
+
+.label {
+  font-family: "Segoe UI Light";
+  font-size: 15px;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
 .row {
   display: flex;
   margin-top: -20px;
@@ -9,27 +29,32 @@
   margin-left: -10px;
 }
 
-.uptime-header {
-  font-family: "Segoe UI Light";
-  font-size: 30px;
-  height: 3.5rem;
-}
+@media only screen and (min-width:360px) and (max-width: 1920px){
+  .uptime {
+    margin-top: 2.5rem;
+  }
+  
+  .uptime-header {
+    font-size: calc(100vw / 1920 * 60);
+  }
+  
+  .label {
+    font-size: calc(100vw / 1920 * 25);
+    margin-top: calc(100vw / 1920 * -5);
+    margin-bottom: calc(100vw / 1920 * 15);
+  }
 
-.uptime-header h2 {
-  color: white;
-}
+  .divisor {
+    width: calc(100vw / 1920 * 800);
+  }
 
-.label {
-  font-family: "Segoe UI Light";
-  font-weight: 300;
-  font-size: 15px;
-  height: 2rem;
-  margin-top: -5px;
-  margin-bottom: 15px;
-}
-.uptime {
-  margin-top: 2.5rem;
-  text-align: right;
-  align-items: right;
-  height: auto;
+  .row {
+    margin-top: calc(100vw / 1920 * -20);
+    margin-bottom: calc(100vw / 1920 * -38);
+  }
+
+  .col {
+    margin-right: calc(100vw / 1920 * -25);
+    margin-left: calc(100vw / 1920 * -10);
+  }
 }
