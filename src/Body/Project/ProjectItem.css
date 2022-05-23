@@ -4,7 +4,14 @@
   margin: auto;
   flex: 40%;
   display: flex;
-  margin: 3rem auto;
+  /* margin: 3rem auto; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.user-item__image {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -20,14 +27,15 @@
 }
 
 .project-img {
-  max-width: 17rem;
-  max-height: 17rem;
+  width: 17rem;
+  height: 17rem;
+  margin: 30px;
 }
 
 @media only screen and (min-width:360px) and (max-width: 1920px){
   .project-img {
-    max-width: 8rem;
-    max-height: 8rem;
+    max-width: calc(100vw / 1920 * (17*16));
+    max-height: calc(100vw / 1920 * (17*16));
   }
   .project-item {
     flex: 10%;
@@ -35,6 +43,6 @@
     gap: 1rem;
   }
   .user-item__info h2 {
-    font-size: 1rem;
+    font-size: calc(100vw * 60 / 1920);
   }
 }

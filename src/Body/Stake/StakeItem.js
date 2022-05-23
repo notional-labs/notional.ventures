@@ -98,6 +98,7 @@ const StakeItem = (props) => {
           <div className="stake-item__image">
             <img
               src={props.image}
+              alt={props.name}
               className = "stake-item__image__detail"
             />
           </div>
