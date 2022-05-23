@@ -28,7 +28,7 @@ const Uptime = (props) => {
   return (
     <div class="uptime">
       <div className="uptime-header">
-        <h2>Uptime</h2>
+        Uptime
       </div>
 
       <img src={Divisor} className="divisor" />
@@ -36,6 +36,7 @@ const Uptime = (props) => {
       <div className="label">
         <p>Last 100 blocks</p>
       </div>
+
       <Container className="chart">
         <Row className="row">
           {idr1.map((id) => (

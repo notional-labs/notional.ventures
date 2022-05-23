@@ -13,10 +13,10 @@ const Footer = () => {
       <Image className="footer-img" src={NotionalLogo}/>
       <p className="footer-text" >Meet the global social commnuity:</p>
       <div className="media-link">
-        <a><Image preview ={false} src={Discord}/></a>
-        <a><Image preview ={false} src={Github}/></a>
-        <a href="https://twitter.com/notionaldao"><Image preview ={false} src={Twitter}/></a>
-        <a><Image preview ={false} src={Telegram}/></a>
+        <a><Image className="icon-footer__img" preview ={false} src={Discord}/></a>
+        <a href="https://github.com/notional-labs"><Image className="icon-footer__img" preview ={false} src={Github}/></a>
+        <a href="https://twitter.com/notionaldao"><Image className="icon-footer__img" preview ={false} src={Twitter}/></a>
+        <a><Image className="icon-footer__img" preview ={false} src={Telegram}/></a>
       </div>
     </div>
   );

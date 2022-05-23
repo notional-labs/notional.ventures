@@ -16,7 +16,7 @@
 }
 
 .user-item__info {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   align-items: center;
 }
 
@@ -27,8 +27,8 @@
 }
 
 .project-img {
-  max-width: 17rem;
-  max-height: 17rem;
+  width: 17rem;
+  height: 17rem;
   margin: 30px;
 }
 

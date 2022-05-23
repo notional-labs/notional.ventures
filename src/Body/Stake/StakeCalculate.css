@@ -3,8 +3,6 @@
   border: 1px solid rgba(255, 255, 255, 0.39);
   box-sizing: border-box;
   border-radius: 23px;
-  height: 400px;
-  margin-top: -80px;
 }
 
 .calculate .info {
@@ -16,16 +14,14 @@
   justify-content: center;
 }
 
-.label {
+.calculate .info .label {
   font-family: "Segoe UI Light";
   font-size: 20px;
 }
 
-.value {
+.calculate .info .value {
   font-family: "Segoe UI Semibold";
   font-size: 55px;
-  line-height: 60px;
-  color: white;
 }
 
 .slider-caculate {
@@ -69,6 +65,7 @@ div.ant-slider-handle {
 
 .reward-table {
   margin-top: 30px;
+  margin-bottom: 2rem;
   width: 85%;
   text-align: center;
   line-height: 30px;
@@ -102,4 +99,67 @@ div.ant-slider-handle {
   font-family: "Segoe UI Light";
   font-size: 20px;
   text-align: right;
+}
+@media only screen and (min-width:360px) and (max-width: 1920px){
+  .calculate {
+    border-radius: calc(100vw / 1920 * 23);
+    width:  auto;
+  }
+
+  .calculate .info {
+    margin-top: calc(100vw / 1920 * 32);
+  }
+
+  .calculate .info .label {
+    font-size: calc(100vw / 1920 * 30);
+  }
+  
+  .calculate .info .value {
+    font-size: calc(100vw / 1920 * 65);
+  }
+
+  .slider-caculate {
+    margin-top: calc(100vw / 1920 * 35);
+  }
+
+  div.ant-slider-rail {
+    border-radius: calc(100vw / 1920 * 5);
+    height: calc(100vw / 1920 * 10);
+  }
+  
+  div.ant-slider-track {
+    height: calc(100vw / 1920 * 10);
+    border-radius: calc(100vw / 1920 * 5);
+  }
+  
+  div.ant-slider-handle {
+    height: calc(100vw / 1920 * 20);
+    width: calc(100vw / 1920 * 20);
+  }
+
+  .reward-table {
+    margin-bottom: calc(100vw / 1920 * 32);
+    margin-top: calc(100vw / 1920 * 30);
+    line-height: calc(100vw / 1920 * 30);
+  }
+  
+  .reward-divisor {
+    width: calc(100vw / 1920 * 1100);
+  }
+  
+  .reward-table .name {
+    min-width: calc(100vw / 1920 * 70);
+    max-width: calc(100vw / 1920 * 70);
+    font-size: calc(100vw / 1920 * 30);
+  }
+  
+  .reward-table .token {
+    min-width: calc(100vw / 1920 * 70);
+    max-width: calc(100vw / 1920 * 70);
+    font-size: calc(100vw / 1920 * 30);
+  }
+  
+  .reward-table .usd {
+    font-size: calc(100vw / 1920 * 30);
+  }
 }

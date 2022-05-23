@@ -50,8 +50,8 @@
 }
 
 .img-icon {
-  max-height: 28px;
-  max-width: 22px;
+  height: 28px;
+  width: 34px;
 }
 
 .contact-items_container {
@@ -108,11 +108,11 @@
     font-size: calc(100vw * 35 / 1920);
   }
   .contact-title {
-    font-size: calc(100vw * 40 / 1920);
+    font-size: calc(100vw * 45 / 1920);
 
   }
   .img-icon {
-    max-width: calc(100vw / 1920 * 38);
-    max-height: calc(100vw / 1920 * 30);
+    max-width: calc(100vw / 1920 * 34);
+    max-height: calc(100vw / 1920 * 28);
   }
 }

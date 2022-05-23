@@ -56,25 +56,26 @@
 
 @media only screen and (min-width:360px) and (max-width: 1920px){
   .stake-item{
-    height: 10rem;
-    width: 7rem;
+    width: calc(100vw / 1920 * (17 * 16));
+    height: calc(100vw / 1920 * (22 * 16));
   }
   .stake-item__image__detail {
-    margin-top: 2rem;
-    max-height: 3rem;
-    max-width: 3rem;
+    margin-top: calc(100vw * (5*22) / 1920);
+    max-width: calc(100vw / 1920 * (7 * 16));
+    max-height: calc(100vw / 1920 * (7 * 16));
   }
 
   .stake-item__info h2 {
-    font-size: 10px;
-    margin-top: 22px;
+    font-size: calc(100vw * 35 / 1920);
+    margin-top: calc(100vw * 90 / 1920);  
   }
   .stake-btn {
-    width: 4rem;
-    height: 2rem;
-    font-size: 10px;
+    width: calc(100vw / 1920 * (10 * 16));
+    height: calc(100vw / 1920 * (3 * 16));
+    margin-top: calc(100vw * (2*22) / 1920);
+    font-size: calc(100vw * 30 / 1920);
   }
   .stake-item__image{
-    height: 3rem;
+        height: calc(100vw / 1920 * (3 * 16));
   }
 }
