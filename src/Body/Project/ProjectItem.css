@@ -27,15 +27,15 @@
 }
 
 .project-img {
-  width: 17rem;
-  height: 17rem;
+  max-width: 17rem;
+  max-height: 17rem;
   margin: 30px;
 }
 
 @media only screen and (min-width:360px) and (max-width: 1920px){
   .project-img {
-    max-width: calc(100vw / 1920 * (17*16));
-    max-height: calc(100vw / 1920 * (17*16));
+    max-width: calc(100vw / 1920 * (17 * 16));
+    max-height: calc(100vw / 1920 * (17 * 16));
   }
   .project-item {
     flex: 10%;
