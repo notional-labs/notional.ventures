@@ -100,6 +100,8 @@
     width: 100%;
     z-index: 8;
     max-height: calc(100vw / 1920 * 96);
+    flex-direction: row-reverse;
+    padding: 1rem 1rem;
   }
   .nav-drawer {
     display: block;
@@ -114,6 +116,7 @@
 
   .main-navigation-btn {
     display: block;
+    margin: 0;
   }
   .main-navigation-btn span {
     display: block;
