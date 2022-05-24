@@ -3,8 +3,9 @@
   width: auto;
   background-image: url(../../media/background-decor/group19.svg);
   background-size: cover;
+  border: white solid 1px;
   background-repeat: no-repeat;
-  background-position: center 0px;
+  background-position: center;
 }
 .stake-section .title {
   text-align: center;
