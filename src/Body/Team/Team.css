@@ -62,7 +62,6 @@ div.react-3d-carousel
   }
   .team .title {
     width: 100%;
-    /* margin-top: calc(100vw * (5*27) / 1920); */
   }
   
   .team .title .bar {
