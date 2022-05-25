@@ -12,7 +12,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  margin-top: 42rem;
+  margin-top: 40rem;
 }
 
 .slider .slide-track {
@@ -26,7 +26,14 @@
   align-self: center;
 }
 
-@media only screen and (min-width:360px) and (max-width: 1920px){
+@media only screen and (min-width:1300px) and (max-width: 1920px){
+  .slider {
+    /* display: none; */
+    margin-top: calc(100vw * (25*18) / 1300);
+  }
+}
+
+@media only screen and (min-width:360px) and (max-width: 1299px){
   .slider {
     display: none;
   }

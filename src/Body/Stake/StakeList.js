@@ -17,6 +17,7 @@ const StakeList = (props) => {
           price={stake.price}
           denom={stake.denom}
           address={stake.address}
+          rank = {stake.rank}
         />
       ))}
     </ul>

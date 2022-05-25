@@ -36,6 +36,7 @@
   cursor: pointer;
   border: 1px solid white;
   border-radius: 8px;
+  font-size: 30px;
 }
 
 .stake-btn:hover {

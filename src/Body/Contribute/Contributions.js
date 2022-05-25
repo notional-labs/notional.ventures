@@ -23,7 +23,7 @@ const Contributions = () => {
       <div className="companyinfo">
         <div className="companyinfo-item companyinfo-item__1">
           <div className="infoStyle">
-            <div className="info-number">40</div>
+            <div className="info-number">26</div>
             <div className="info-text">Chains operating</div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Contributions = () => {
         </div>
         <div className="companyinfo-item companyinfo-item__3">
           <div className="infoStyle">
-            <div className="info-number">4183</div>
+            <div className="info-number">2K+</div>
             <div className="info-text">Unique Users</div>
           </div>
         </div>
