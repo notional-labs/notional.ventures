@@ -51,11 +51,13 @@
 
 .img-icon {
   height: 28px;
-  width: 34px;
+  width: 32px;
 }
 
-.contact-items_container {
-  line-height: 4rem;
+
+.contact-items_container div {
+  line-height: 3rem;
+  gap: 1rem;
 }
 
 .contact-items {
@@ -112,7 +114,7 @@
 
   }
   .img-icon {
-    max-width: calc(100vw / 1920 * 34);
+    max-width: calc(100vw / 1920 * 32);
     max-height: calc(100vw / 1920 * 28);
   }
 }

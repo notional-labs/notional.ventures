@@ -10,60 +10,60 @@ import "./PartnerCarousel.css";
 const AutoSlide = () => {
   return (
     <React.Fragment>
-      <div class="slider">
-        <div class="slide-track">
-          <div class="slide">
+      <div className= "slider">
+        <div className="slide-track">
+          <div className="slide">
             <img src={Osmosis} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Cosmos} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Juno} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Stargaze} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Cheq} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Omniflix} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Osmosis} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Cosmos} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Juno} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Stargaze} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Cheq} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Omniflix} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Osmosis} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Cosmos} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Juno} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Stargaze} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Cheq} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={Omniflix} alt="" />
           </div>
         </div>
