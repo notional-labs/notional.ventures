@@ -29,7 +29,7 @@
   margin-left: -10px;
 }
 
-@media only screen and (min-width:360px) and (max-width: 1920px){
+@media only screen and (min-width:360px) and (max-width: 1600px){
   .uptime {
     margin-top: 2.5rem;
   }

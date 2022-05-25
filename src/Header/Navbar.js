@@ -41,7 +41,7 @@ const Navbar = () => {
         </button>
 
         <div href="#" className="logo" style={{ cursor: "pointer" }}>
-          <Image className="logo-img" src={NotionalLogo} alt="Logo" preview = {false} />
+          <Image style = {{width: "200px"}} className="logo-img" src={NotionalLogo} alt="Logo" preview = {false} />
         </div>
 
         <nav className="main-nav">

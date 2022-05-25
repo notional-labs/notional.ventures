@@ -100,7 +100,7 @@ div.ant-slider-handle {
   font-size: 20px;
   text-align: right;
 }
-@media only screen and (min-width:360px) and (max-width: 1920px){
+@media only screen and (min-width:360px) and (max-width: 1600px){
   .calculate {
     border-radius: calc(100vw / 1920 * 23);
     width:  auto;

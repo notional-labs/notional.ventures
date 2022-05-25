@@ -280,7 +280,6 @@
   }
 
   .info-btn {
-    /* display: none; */
     font-size: calc(100vw * 35 / 1920);
     width: calc(100vw * 256 / 1920);
     height: calc(100vw * 80 / 1920);
