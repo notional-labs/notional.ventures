@@ -64,7 +64,7 @@
   }
   .stake-section .title .text { 
     display: block;
-    font-size: calc(100vw * 20 / 1920);
+    font-size: calc(100vw * 20*1.5 / 1920);
   }
   .stake {
     max-width: 60rem;
