@@ -72,7 +72,7 @@
   color: #945cd4;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 1920px) {
+@media only screen and (min-width: 360px) and (max-width: 1300px) {
   .text {
     display: none;
   }
@@ -81,21 +81,21 @@
     gap: 2rem;
   }
   .img-contact {
-    max-width: calc(100vw / 1920 * 1000);
-    max-height: calc(100vw / 1920 * 626);
+    max-width: calc(100vw / 1300 * 1000);
+    max-height: calc(100vw / 1300 * 626);
   }
   .contact-container .title {
-    margin-top: calc(100vw * (5*22) / 1920);
+    margin-top: calc(100vw * (5*22) / 1300);
 
   }
   .contact-container .title .bar {
-    height: calc(100vw * 8 / 1920);
-    width: calc(100vw * 100 / 1920);
+    height: calc(100vw * 8 / 1300);
+    width: calc(100vw * 100 / 1300);
   }
   .contact-container .title .name {
     margin-top: 10px;
     font-family: "Segoe UI Light";
-    font-size: calc(100vw * 60 / 1920);
+    font-size: calc(100vw * 60 / 1300);
   }
   .contact-items_container {
     display: flex;
@@ -107,14 +107,14 @@
     gap: 10px;
     color: white;
     line-height: 20px;
-    font-size: calc(100vw * 35 / 1920);
+    font-size: calc(100vw * 35 / 1300);
   }
   .contact-title {
-    font-size: calc(100vw * 45 / 1920);
+    font-size: calc(100vw * 45 / 1300);
 
   }
   .img-icon {
-    max-width: calc(100vw / 1920 * 32);
-    max-height: calc(100vw / 1920 * 28);
+    max-width: calc(100vw / 1300 * 32);
+    max-height: calc(100vw / 1300 * 28);
   }
 }
