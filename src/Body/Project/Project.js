@@ -1,8 +1,8 @@
 import React from "react";
 import "./Project.css";
 import Diglogo from "../../media/logo/dig-logo.png";
-import Anonelogo from "../../media/logo/anone.png";
-import Craft from "../../media/logo/craft.png";
+import Anonelogo from "../../media/logo/another-logo.png";
+import Craft from "../../media/logo/economy-logo.png";
 import ProjectList from "./ProjectList";
 
 const Project = () => {
