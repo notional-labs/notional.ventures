@@ -124,7 +124,7 @@ const ModalOverlay = (props) => {
         <div className="button">
           <button className="delegate-btn keplr">
             <a
-              href={`https://wallet.keplr.app/#/${props.keplr}/stake?modal=stake&validator=${props.address}`}
+              onClick = {() => window.open(`https://wallet.keplr.app/#/${props.keplr}/stake?modal=stake&validator=${props.address}`)}
               className="link"
             >
               Delegate with Keplr
@@ -134,7 +134,7 @@ const ModalOverlay = (props) => {
           </button>
           <button className="delegate-btn ping">
             <a
-              href={`https://ping.pub/${props.ping}/staking/${props.address}`}
+              onClick = {() => window.open(`https://ping.pub/${props.ping}/staking/${props.address}`)}
               className="link"
             >
               Delegate with Ping.pub

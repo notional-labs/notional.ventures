@@ -38,7 +38,7 @@ export const STAKES = [
   {
     id: "s2",
     image: `${Atom}`,
-    name: "Gaia",
+    name: "Cosmoshub",
     api: "https://backend.notional.ventures/information/gaia",
     keplr: "cosmoshub",
     ping: "cosmos",
