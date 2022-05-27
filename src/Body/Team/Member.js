@@ -5,7 +5,7 @@ import billy from "../../media/members/billy1.png";
 import long from "../../media/members/long.jpg";
 import son from "../../media/members/son.jpg";
 import vuong from "../../media/members/vuong.png";
-import minh from "../../media/members/minh.jpg";
+import minh from "../../media/members/Minh-web.jpg";
 import vinh from "../../media/members/vinh1.jpg";
 import du from "../../media/members/du1.jpg";
 import hieu from "../../media/members/Hieu1.jpg";
