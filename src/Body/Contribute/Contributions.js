@@ -47,8 +47,8 @@ const Contributions = () => {
         </div>
         <div className="companyinfo-item companyinfo-item__5">
           <div className="infoStyle">
-            <div className="info-number">$345K</div>
-            <div className="info-text">Anual Rewards</div>
+            <div className="info-number">~$200K</div>
+            <div className="info-text">Annual Rewards</div>
           </div>
         </div>
       </div>
