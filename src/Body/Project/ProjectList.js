@@ -10,6 +10,7 @@ const ProjectList = (props) => {
           id={project.id}
           image={project.image}
           name={project.name}
+          url={project.url}
         />
       ))}
     </ul>

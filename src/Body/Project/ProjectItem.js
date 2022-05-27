@@ -3,7 +3,8 @@ import "./ProjectItem.css";
 const ProjectItem = (props) => {
   return (
     <li className="project-item">
-      <div className="project-item__content">
+      <div className="project-item__content"
+          onClick = {() => window.open(`${props.url}`)}>
         <div className="user-item__image">
           <img
             src={props.image}

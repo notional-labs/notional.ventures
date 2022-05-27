@@ -11,16 +11,19 @@ const Project = () => {
       id: "p1",
       image: `${Anonelogo}`,
       name: "Another-1",
+      url: "https://anone.notional.ventures"
     },
     {
       id: "p2",
       image: `${Diglogo}`,
       name: "Digchain",
+      url: "https://digchain.org"
     },
     {
       id: "p3",
       image: `${Craft}`,
       name: "Craft Economy",
+      url: "https://github.com/notional-labs/craft"
     },
   ];
   return (
