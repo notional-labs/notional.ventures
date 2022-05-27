@@ -68,7 +68,7 @@ export const members = [
       <p className="member-name">Long Mai Gia</p>
       <p className="member-position">Infrastructure Lead</p>
       <p className="member-description">
-        Long is responsible for overseeing Notional’s relaying infrastructure.
+        Long oversees Notional’s relaying and validation infrastructure.
         He is also the front-of-house person for all relaying issues from
         clients.
       </p>
@@ -105,8 +105,8 @@ export const members = [
         Service Technician and Customer Engineer
       </p>
       <p className="member-description">
-        Minh is responsible for Notional's validators and keeping uptime to the
-        highest possible standards. He is the man that keeps the blocks signing.
+        Minh is responsible for Notional's server configurations with deep insight
+        in Linux and creating all useful open-sourced tools to improve the Cosmos ecosystem.
       </p>
     </div>
   </div>,
