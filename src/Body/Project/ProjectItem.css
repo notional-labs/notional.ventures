@@ -32,11 +32,28 @@
   margin: 30px;
 }
 
+.project-item__content:hover .project-img {
+  max-width: 18rem;
+  max-height: 18rem;
+  transition: 0.5s ease;
+}
+
+/* .project-item__content:hover .user-item__info h2 {
+
+} */
+
+
 @media only screen and (min-width:360px) and (max-width: 1920px){
   .project-img {
     max-width: calc(100vw / 1920 * (17 * 16));
     max-height: calc(100vw / 1920 * (17 * 16));
   }
+
+  .project-img:hover {
+    max-width: calc(100vw / 1920 * (18 * 16));
+    max-height: calc(100vw / 1920 * (18 * 16));
+  }
+
   .project-item {
     flex: 10%;
     height: 10rem;
