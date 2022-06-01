@@ -24,6 +24,11 @@
   height:3rem
 }
 
+.icon-footer__img:hover {
+  transform: translateY(5px);
+  transition: 0.2s ease;
+}
+
 .footer-text {
   display: none;
   color: white;

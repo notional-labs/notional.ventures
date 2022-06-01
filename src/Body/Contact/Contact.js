@@ -14,11 +14,16 @@ const Contact = () => {
         <hr className="bar"></hr>
         <p className="name">Contacts</p>
         <p className="text">
-        Want to inquire about Notional’s services? Contact us and we’ll happily help you.{" "}
+          Want to inquire about Notional’s services? Contact us and we’ll
+          happily help you.{" "}
         </p>
       </div>
       <div className="contact">
-        <Image className = "img-contact" src={ContactBackground} preview={false} />
+        <Image
+          className="img-contact"
+          src={ContactBackground}
+          preview={false}
+        />
         <div className="contact-items_container">
           <div>
             <h1 className="contact-title">Contacts</h1>
@@ -37,11 +42,19 @@ const Contact = () => {
           </div>
           <div>
             <h1 className="contact-title">Social networks</h1>
-            <div className="contact-items">
+            <div
+              className="contact-items"
+              onClick={() => window.open(`https://twitter.com/notionaldao`)}
+              style={{ cursor: "pointer" }}
+            >
               <Image className="img-icon" src={Twitter} preview={false} />
               <p>twitter.com/notionaldao</p>
             </div>
-            <div className="contact-items">
+            <div
+              className="contact-items"
+              onClick={() => window.open(`https://github.com/notional-labs`)}
+              style={{ cursor: "pointer" }}
+            >
               <Image className="img-icon" src={Github} preview={false} />
               <p>github.com/notional-labs</p>
             </div>

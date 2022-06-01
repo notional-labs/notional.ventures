@@ -68,6 +68,10 @@
   font-size: 20px;
 }
 
+.contact-items:hover {
+  font-weight: 500;
+}
+
 .contact-title {
   color: #945cd4;
 }
