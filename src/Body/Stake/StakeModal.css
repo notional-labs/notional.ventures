@@ -124,6 +124,7 @@
 
 .modal .delegate-btn:hover {
   cursor: pointer;
+  font-weight: 500;
 }
 
 .modal .delegate-btn a {
@@ -135,8 +136,16 @@
   background: rgba(110, 154, 232, 0.3);
 }
 
+.modal .keplr:hover {
+  background:rgba(37, 104, 219, 0.3);
+}
+
 .modal .ping {
   background: rgba(121, 63, 215, 0.3);
+}
+
+.modal .ping:hover {
+  background: rgba(101, 34, 209, 0.3);
 }
 
 @media only screen and (min-width:360px) and (max-width: 1600px){

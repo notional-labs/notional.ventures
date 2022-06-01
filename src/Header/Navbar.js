@@ -47,7 +47,7 @@ const Navbar = () => {
         <nav className="main-nav">
           <ul className="main-nav-list">
             <li>
-              <a href="#Contribution">Contribution</a>
+              <a className="test" href="#Contribution">Contribution</a>
             </li>
             <li>
               <a href="#Delegate">Delegate</a>

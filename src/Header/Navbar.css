@@ -78,20 +78,24 @@
   z-index: 5;
 }
 
-.main-nav-list li a:hover {
-  color: #dfc3ff;
-  font-size: 2rem;
-  font-weight: bolder;
-  cursor: pointer;
-  transition: 0.3s ease;
-  position: relative;
-  z-index: 5;
-}
-
 .main-nav-list li a {
   text-decoration: none;
   color: white;
+  font-size: 27px;
+  font-weight: 500;
 }
+
+.main-nav-list li a:hover {
+  color: #dfc3ff;
+  font-weight: 700;
+  transform: translateY(5px);
+  transition: 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  display: block;
+}
+
 
 
 
