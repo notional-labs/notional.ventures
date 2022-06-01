@@ -7,6 +7,7 @@ import Zoom from "@mui/material/Zoom";
 import StakeUptime from "./StakeUptime";
 import Ping from "../../media/stake/ping.png";
 import Keplr from "../../media/stake/keplr.png";
+import Close from "../../media/button/x-btn.svg";
 import Modal_divisor from "../../media/stake/modal-divisor.png";
 import Info_divisor from "../../media/stake/info-divisor.png";
 import StakeCalculate from "./StakeCalculate";
@@ -39,14 +40,12 @@ const ModalOverlay = (props) => {
 
   const content = (
     <div className={`modal ${props.className}`}>
+      <Image onClick={props.onCancel} preview={false} className="close-btn-mobile" src={Close} />
+
       <div className="leftModule">
         <div className="chain-section">
           <div className="chainInfo">
-            <Image
-              preview={false}
-              className="chainLogo"
-              src={props.image}
-            />
+            <Image preview={false} className="chainLogo" src={props.image} />
             <div className="chainLabel">{props.name}</div>
           </div>
 
@@ -97,7 +96,7 @@ const ModalOverlay = (props) => {
           </tr>
           <tr>
             <td className="validatorLabel">Commission:</td>
-            <td className="validatorValue">{props.commission*100}%</td>
+            <td className="validatorValue">{props.commission * 100}%</td>
           </tr>
           <tr>
             <td className="validatorLabel">Voting Power:</td>
@@ -124,7 +123,11 @@ const ModalOverlay = (props) => {
         <div className="button">
           <button className="delegate-btn keplr">
             <a
-              onClick = {() => window.open(`https://wallet.keplr.app/#/${props.keplr}/stake?modal=stake&validator=${props.address}`)}
+              onClick={() =>
+                window.open(
+                  `https://wallet.keplr.app/#/${props.keplr}/stake?modal=stake&validator=${props.address}`
+                )
+              }
               className="link"
             >
               Delegate with Keplr
@@ -134,7 +137,11 @@ const ModalOverlay = (props) => {
           </button>
           <button className="delegate-btn ping">
             <a
-              onClick = {() => window.open(`https://ping.pub/${props.ping}/staking/${props.address}`)}
+              onClick={() =>
+                window.open(
+                  `https://ping.pub/${props.ping}/staking/${props.address}`
+                )
+              }
               className="link"
             >
               Delegate with Ping.pub
@@ -143,9 +150,10 @@ const ModalOverlay = (props) => {
           </button>
         </div>
       </div>
+      <Image onClick={props.onCancel} preview={false} className="close-btn-pc" src={Close} />
     </div>
   );
-  return (ReactDOM.createPortal(content, document.getElementById("modal-hook")));
+  return ReactDOM.createPortal(content, document.getElementById("modal-hook"));
 };
 
 const Modal = (props) => {

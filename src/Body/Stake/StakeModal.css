@@ -148,6 +148,33 @@
   background: rgba(101, 34, 209, 0.3);
 }
 
+.close-btn-pc {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.close-btn-pc:hover {
+  height: 34px;
+  width: 34px;
+  transition: 0.3s ease;
+}
+
+.close-btn-mobile {
+  display: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: -1rem;
+  top: 0;
+  filter: invert(1);
+  cursor: pointer;
+}
+
 @media only screen and (min-width:360px) and (max-width: 1600px){
   .modal {
     flex-direction: column;
@@ -257,5 +284,15 @@
     border: 0.5px solid #ffffff;
     box-sizing: border-box;
     border-radius: calc(100vw / 1920 * 53.5);
+  }
+
+  .close-btn-mobile {
+    display: block;
+    width:  calc(100vw / 1920 * 30);
+    height:  calc(100vw / 1920 * 30);
+  }
+
+  .close-btn-pc {
+    display: none;
   }
 }
