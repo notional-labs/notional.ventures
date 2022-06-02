@@ -54,7 +54,6 @@
   width: 32px;
 }
 
-
 .contact-items_container div {
   line-height: 3rem;
   gap: 1rem;
@@ -69,7 +68,8 @@
 }
 
 .contact-items:hover {
-  font-weight: 500;
+  color: rgb(189, 189, 253);
+  text-decoration: underline;
 }
 
 .contact-title {
