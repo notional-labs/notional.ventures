@@ -29,7 +29,10 @@ const Contact = () => {
             <h1 className="contact-title">Contacts</h1>
             <div className="contact-items">
               <Image className="img-icon" src={Email} preview={false} />
-              <p href="mailto:contact@notional.ventures">contact@notional.ventures</p>
+              <p 
+                onClick={() => window.open(`mailto:contact@notional.ventures`)}
+                style={{ cursor: "pointer" }}
+              >contact@notional.ventures</p>
             </div>
           </div>
           <div>
