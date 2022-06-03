@@ -41,7 +41,7 @@ jobs:
         NODE_OPTIONS: --openssl-legacy-provider
         CI: false
       run: |
-        npm i --ignore-scripts
+        npm i --ignore-scripts --force
         npm run build
 
     - name: Transfer /build folder to server
