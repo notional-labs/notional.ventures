@@ -29,15 +29,7 @@ const Contact = () => {
             <h1 className="contact-title">Contacts</h1>
             <div className="contact-items">
               <Image className="img-icon" src={Email} preview={false} />
-              <p>william@notional.ventures</p>
-            </div>
-            <div className="contact-items">
-              <Image className="img-icon" src={Email} preview={false} />
-              <p>ricardo@notional.ventures</p>
-            </div>
-            <div className="contact-items">
-              <Image className="img-icon" src={Email} preview={false} />
-              <p>vinh@notional.ventures</p>
+              <p href="mailto:contact@notional.ventures">contact@notional.ventures</p>
             </div>
           </div>
           <div>
