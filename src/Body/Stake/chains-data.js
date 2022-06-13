@@ -43,7 +43,7 @@ export const STAKES = [
     keplr: "cosmoshub",
     ping: "cosmos",
     address: "cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj",
-    rank: "63"
+    rank: "67"
   },
   {
     id: "s3",
@@ -53,7 +53,7 @@ export const STAKES = [
     keplr: "juno",
     ping: "juno",
     address: "junovaloper1083svrca4t350mphfv9x45wq9asrs60cpqzg0y",
-    rank: "15"
+    rank: "16"
   },
   {
     id: "s4",
@@ -85,7 +85,7 @@ export const STAKES = [
     keplr: "akashnet",
     ping: "akash-network",
     address: "akashvaloper1g5qqaxu89qk54ex3zh6tus0a8ta2sj4fuejw9a",
-    rank: "44"
+    rank: "41"
 
   },
   {
@@ -96,7 +96,7 @@ export const STAKES = [
     keplr: "emoney",
     ping: "e-money",
     address: "emoneyvaloper16dc379m0qj64g4pr4nkl7ewak52qy2srpe6lxp",
-    rank: "17"
+    rank: "18"
 
   },
   {
@@ -107,7 +107,7 @@ export const STAKES = [
     keplr: "evmos",
     ping: "evmos",
     address: "evmosvaloper1rv94jqhlhx6makfwl6qs390e4shg32m6w6dxzy",
-    rank: "12"
+    rank: "9"
 
   },
   {
@@ -118,7 +118,7 @@ export const STAKES = [
     keplr: "sifchain",
     ping: "sifchain",
     address: "sifvaloper1083svrca4t350mphfv9x45wq9asrs60cyssqu6",
-    rank: "20"
+    rank: "22"
 
   },
   {
@@ -129,7 +129,7 @@ export const STAKES = [
     keplr: "sentinel",
     ping: "sentinel",
     address: "sentvaloper1083svrca4t350mphfv9x45wq9asrs60cv37gc8",
-    rank: "36"
+    rank: "35"
 
   },
   {
@@ -140,7 +140,7 @@ export const STAKES = [
     keplr: "stargaze",
     ping: "stargaze",
     address: "starsvaloper1v8yp5x5kfex4wep2pfuuyw68cn2lst3ksl0gss",
-    rank: "50"
+    rank: "35"
 
   },
   {
@@ -151,7 +151,7 @@ export const STAKES = [
     keplr: "kava",
     ping: "kava",
     address: "kavavaloper13jyqfhak8mu4c7pydjm3eu4qla7g06a9u6xf8g",
-    rank: "28"
+    rank: "27"
 
   },
   {
@@ -173,7 +173,7 @@ export const STAKES = [
     keplr: "secret",
     ping: "secret",
     address: "secretvaloper18rchk5exp2vzcwrwuret5sjwpxhf4sq22ze4dr",
-    rank: "62"
+    rank: "63"
 
   },
   {
@@ -184,7 +184,7 @@ export const STAKES = [
     keplr: "regen",
     ping: "regen",
     address: "regenvaloper1083svrca4t350mphfv9x45wq9asrs60ct2p9a5",
-    rank: "34"
+    rank: "30"
 
   },
   {
@@ -206,7 +206,7 @@ export const STAKES = [
     keplr: "",
     ping: "likecoin",
     address: "cosmosvaloper16dc379m0qj64g4pr4nkl7ewak52qy2srvwj2rz",
-    rank: "43"
+    rank: "39"
 
   },
   {
@@ -217,7 +217,7 @@ export const STAKES = [
     keplr: "",
     ping: "kichain",
     address: "kivaloper1lmkzaxztjpesh0mf7qy76l5npqwc7fk3l2k57g",
-    rank: "82"
+    rank: "83"
 
   },
   {
@@ -228,7 +228,7 @@ export const STAKES = [
     keplr: "",
     ping: "cheqd",
     address: "cheqdvaloper1gyjqlfkrggd0uyd748fw9y5kq9xzmjqqh8848x",
-    rank: "20"
+    rank: "19"
 
   },
   {
@@ -239,7 +239,7 @@ export const STAKES = [
     keplr: "",
     ping: "band-protocol",
     address: "bandvaloper19huytqr8srz9wcdhvas5cvxddg8dtqcv6tce0s",
-    rank: "66"
+    rank: "68"
 
   },
   {
@@ -250,7 +250,7 @@ export const STAKES = [
     keplr: "",
     ping: "chihuahua",
     address: "chihuahuavaloper1h6vcu4r2hx70x5f0l3du3ey2g98u9ut2tafnnv",
-    rank: "18"
+    rank: "19"
 
   },
   {
@@ -261,7 +261,7 @@ export const STAKES = [
     keplr: "",
     ping: "",
     address: "darcvaloper1fndgrsqmmq68ppl42wjkxh32nwpuj7vqtgep38",
-    rank: "10"
+    rank: "6"
 
   },
   {
@@ -272,7 +272,7 @@ export const STAKES = [
     keplr: "",
     ping: "vidulum",
     address: "vdlvaloper16pu0t4yauhduaxvu3k29w539da5d2mfxqjdmjj",
-    rank: "40"
+    rank: "39"
 
   },
   {
