@@ -76,7 +76,7 @@ const StakeItem = (props) => {
           blockheight={loadedChainInfo.data.height}
           blocktime={loadedChainInfo.data.blockTime}
           image={props.image}
-          name={loadedChainInfo.data.name}
+          name={props.name}
           show={showHandler}
           onCancel={closeModalHandler}
           api={props.api}

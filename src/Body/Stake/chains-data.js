@@ -23,6 +23,7 @@ import Provenance from "../../media/stake/Provenance.svg";
 import Vidulum from "../../media/stake/vidulum.svg";
 import Omniflix from "../../media/stake/omniflix.svg";
 import Chihuahua from "../../media/stake/chihuahua.svg";
+import Fetchai from "../../media/stake/Fetch.svg";
 
 export const STAKES = [
   {
@@ -295,6 +296,17 @@ export const STAKES = [
     ping: "bitcanna",
     address: "bcnavaloper1dl7w3myyfmnarh0t5uxmy7qe6szagz3kyhzq07",
     rank: "11"
+
+  },
+  {
+    id: "s26",
+    image: `${Fetchai}`,
+    name: "Fetch.AI",
+    api: "https://backend.notional.ventures/information/bitcanna",
+    keplr: "",
+    ping: "fetchhub",
+    address: "fetchvaloper1s9myentgxavnpw7648an2v6zvvpza0axa6dd0x",
+    rank: "58"
 
   },
 ];

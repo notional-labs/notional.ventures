@@ -121,7 +121,7 @@ const ModalOverlay = (props) => {
         </div>
 
         <div className="button">
-          <button className="delegate-btn keplr">
+          {(props.keplr === "") ? <button className="delegate-btn-unable keplr-unable">
             <a
               onClick={() =>
                 window.open(
@@ -134,7 +134,22 @@ const ModalOverlay = (props) => {
             </a>
 
             <img src={Keplr} className="iconsasd" />
-          </button>
+          </button> :
+          <button className="delegate-btn keplr">
+          <a
+            onClick={() =>
+              window.open(
+                `https://wallet.keplr.app/#/${props.keplr}/stake?modal=stake&validator=${props.address}`
+              )
+            }
+            className="link"
+          >
+            Delegate with Keplr
+          </a>
+
+          <img src={Keplr} className="iconsasd" />
+        </button>
+          }
           <button className="delegate-btn ping">
             <a
               onClick={() =>

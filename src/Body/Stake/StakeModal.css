@@ -122,9 +122,22 @@
   border-radius: 53.5px;
 }
 
+.modal .delegate-btn-unable {
+  height: 55px;
+  width: 297px;
+  font-size: 16px;
+  border: 0.5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 53.5px;
+}
+
 .modal .delegate-btn:hover {
   cursor: pointer;
   font-weight: 500;
+}
+
+.modal .delegate-btn-unable:hover {
+  cursor: not-allowed;
 }
 
 .modal .delegate-btn a {
@@ -132,7 +145,17 @@
   color: white;
 }
 
+.modal .delegate-btn-unable a {
+  cursor:not-allowed;
+  text-decoration: none;
+  color: white;
+}
+
 .modal .keplr {
+  background: rgba(110, 154, 232, 0.3);
+}
+
+.modal .keplr-unable {
   background: rgba(110, 154, 232, 0.3);
 }
 
