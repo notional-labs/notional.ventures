@@ -302,7 +302,16 @@
 
   .modal .delegate-btn {
     height: calc(100vw / 1920 * 65);
-    width: calc(100vw / 1920 * 307);
+    width: calc(100vw / 1920 * 360);
+    font-size: calc(100vw / 1920 * 20);
+    border: 0.5px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: calc(100vw / 1920 * 53.5);
+  }
+
+  .modal .delegate-btn-unable {
+    height: calc(100vw / 1920 * 65);
+    width: calc(100vw / 1920 * 360);
     font-size: calc(100vw / 1920 * 20);
     border: 0.5px solid #ffffff;
     box-sizing: border-box;
