@@ -302,7 +302,7 @@ export const STAKES = [
     id: "s26",
     image: `${Fetchai}`,
     name: "Fetch.AI",
-    api: "https://backend.notional.ventures/information/bitcanna",
+    api: "https://backend.notional.ventures/information/fetch",
     keplr: "",
     ping: "fetchhub",
     address: "fetchvaloper1s9myentgxavnpw7648an2v6zvvpza0axa6dd0x",
