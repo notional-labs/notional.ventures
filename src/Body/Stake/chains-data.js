@@ -307,6 +307,5 @@ export const STAKES = [
     ping: "fetchhub",
     address: "fetchvaloper1s9myentgxavnpw7648an2v6zvvpza0axa6dd0x",
     rank: "58"
-
   },
 ];
