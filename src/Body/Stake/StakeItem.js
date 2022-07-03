@@ -3,6 +3,7 @@ import "./StakeItem.css";
 import Modal from "./StakeModal";
 import axios from "axios";
 import ErrorModal from "./ErrorModal";
+import { Link } from "react-router-dom";
 
 const StakeItem = (props) => {
   const [showHandler, setShowHandler] = useState(false);
@@ -105,13 +106,13 @@ const StakeItem = (props) => {
           <div className="stake-item__info">
             <h2>{props.name}</h2>
           </div>
-          <button
+          <button 
             onClick={() => {
               showModalHandler();
             }}
             className="stake-btn"
           >
-            Stake 
+           Stake
           </button>
         </div>
       </li>

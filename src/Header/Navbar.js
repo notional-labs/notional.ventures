@@ -2,8 +2,10 @@ import "./Navbar.css";
 import NotionalLogo from "../media/logo/notional.png";
 import SideDrawer from "./SideDrawer";
 import React, { useState } from "react";
-import NavBtn from '../media/button/nav-btn.png'
+import NavBtn from "../media/button/nav-btn.png";
 import { Image } from "antd";
+import { HashLink } from "react-router-hash-link";
+
 const Navbar = () => {
   const [drawerHandler, setDrawerHandler] = useState(false);
   const openDrawerHandler = () => {
@@ -18,48 +20,84 @@ const Navbar = () => {
         <nav className="main-nav-drawer">
           <ul className="main-nav-list-drawer">
             <li>
-              <a href="#Contribution">Contribution</a>
+              <HashLink smooth to={"/#Contribution"}>
+                Contribution
+              </HashLink>
             </li>
             <li>
-              <a href="#Delegate">Delegate</a>
+              <HashLink smooth to={"/#Delegate"}>
+                Delegate
+              </HashLink>
             </li>
             <li>
-              <a href="#Project">Projects</a>
+              <HashLink smooth to={"/#Project"}>
+                Projects
+              </HashLink>
             </li>
             <li>
-              <a href="#Team">Team</a>
+              <HashLink smooth to={"/#Team"}>
+                Team
+              </HashLink>
             </li>
             <li>
-              <a href="#Contact">Contact</a>
+              <HashLink smooth to={"/#Contact"}>
+                Contact
+              </HashLink>
             </li>
           </ul>
         </nav>
       </SideDrawer>
       <div className="nav">
         <button className="main-navigation-btn" onClick={openDrawerHandler}>
-          <Image className="btn-img" style={{width: "2.5rem", height: "2.5rem", margin: "1rem", "margin-left": "0"}} src = {NavBtn} preview = {false}/>
+          <Image
+            className="btn-img"
+            style={{
+              width: "2.5rem",
+              height: "2.5rem",
+              margin: "1rem",
+              "margin-left": "0",
+            }}
+            src={NavBtn}
+            preview={false}
+          />
         </button>
 
         <div href="#" className="logo" style={{ cursor: "pointer" }}>
-          <Image style = {{width: "200px"}} className="logo-img" src={NotionalLogo} alt="Logo" preview = {false} />
+          <Image
+            style={{ width: "200px" }}
+            className="logo-img"
+            src={NotionalLogo}
+            alt="Logo"
+            preview={false}
+          />
         </div>
 
         <nav className="main-nav">
           <ul className="main-nav-list">
             <li>
-              <a className="test" href="#Contribution">Contribution</a>
+              <HashLink className="test" smooth to={"/#Contribution"}>
+                Contribution
+              </HashLink>
             </li>
             <li>
-              <a href="#Delegate">Delegate</a>
+              <HashLink smooth to={"/#Delegate"}>
+                Delegate
+              </HashLink>
             </li>
             <li>
-              <a href="#Project">Projects</a>
+              <HashLink smooth to={"/#Project"}>
+                Projects
+              </HashLink>
             </li>
             <li>
-              <a href="#Team">Team</a>
+              <HashLink smooth to={"/#Team"}>
+                Team
+              </HashLink>
             </li>
             <li>
-              <a href="#Contact">Contact</a>
+              <HashLink smooth to={"/#Contact"}>
+                Contact
+              </HashLink>
             </li>
           </ul>
         </nav>
