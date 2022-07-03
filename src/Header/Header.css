@@ -6,6 +6,7 @@
   margin: 0px auto;
   height: 1080px;
   min-height: auto;
+  border: red solid;
 }
 
 .background1 {
@@ -16,7 +17,7 @@
   filter: brightness(70%);
 }
 
-.background2 {
+.abstract {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,10 +27,11 @@
 
 .akash {
   position: absolute;
-  right: 55rem;
+  right: 50rem;
   top: 37rem;
-  width: 31rem;
-  height: 32rem;
+  width: 15rem;
+  border: white solid;
+  height: 15rem;
   z-index: 1;
 }
 
@@ -38,17 +40,17 @@
   z-index: 2;
   right: 9rem;
   top: 10rem;
-  height: 40rem;
-  width: 45rem;
+  height: 20rem;
+  width: 23rem;
 }
 
 .juno {
-  width: 37rem;
+  width: 10rem;
   position: absolute;
   z-index: 3;
   right: 1rem;
-  top: 1rem;
-  height: 32rem;
+  top: 10rem;
+  height: 10rem;
 }
 
 .secret {

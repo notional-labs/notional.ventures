@@ -4,9 +4,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ new-ui ]
 
 jobs:
   deploy:
@@ -48,7 +46,7 @@ jobs:
       uses: garygrossgarten/github-action-scp@release
       with:
         local: build
-        remote: /root/notional.ventures
+        remote: /root/beta.notional.ventures
         host: ${{ secrets.WEB_SERVER }}
         username: ${{ secrets.USERNAME }}
         privateKey: ${{ secrets.PRIV_KEY }}

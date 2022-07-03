@@ -35,6 +35,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </SideDrawer>
+
       <div className="nav">
         <button className="main-navigation-btn" onClick={openDrawerHandler}>
           <Image className="btn-img" style={{width: "2.5rem", height: "2.5rem", margin: "1rem", "margin-left": "0"}} src = {NavBtn} preview = {false}/>

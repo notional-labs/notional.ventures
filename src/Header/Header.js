@@ -2,7 +2,7 @@ import "./Header.css";
 import Navbar from "./Navbar";
 import React from "react";
 import { ReactComponent as Group17 } from "../media/background-decor/abstract.svg";
-import { ReactComponent as Group171 } from "../media/background-decor/group17-1.svg";
+import Abstract from "../media/background-decor/Background.png";
 import { ReactComponent as Osmosis } from "../media/background-logo/Osmosis.svg";
 import { ReactComponent as Juno } from "../media/background-logo/Juno.svg";
 import { ReactComponent as Atom } from "../media/background-logo/Atom.svg";
@@ -23,7 +23,7 @@ const Header = () => {
     <div className="header">
       <Navbar />
       <Group17 className="background1" />
-      <Group171 className="background2" />
+      {/* <img src={Abstract} className="abstract" /> */}
       <Akash className="akash" />
       <Osmosis className="osmosis" />
       <Secret className="secret" />
