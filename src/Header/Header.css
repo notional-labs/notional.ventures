@@ -164,7 +164,7 @@
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
-  .background1 {
+  .lines {
     width: 100vw;
     height: calc(100vw * 2000 / 1920 );
   }
