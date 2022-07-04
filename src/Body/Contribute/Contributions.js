@@ -1,10 +1,13 @@
 import "./Contributions.css";
 import React from "react";
 import AutoSlide from "./PartnerCarousel";
+import Filter from "../../media/background-decor/background-contribution.png";
+import Abstract from "../../media/background-decor/abstract-contribution.png";
 
 const Contributions = () => {
   return (
     <div className="contributions">
+      <img src = {Filter} className = "filter" />
       <div id="Contribution" className="title">
         <hr className="bar"></hr>
         <p className="name">Contributions</p>
@@ -17,7 +20,7 @@ const Contributions = () => {
           Osmosis, Juno, and Sifchain.{" "}
         </p>
       </div>
-
+      <img src = {Abstract} className = "abstract-contribution" />
       <AutoSlide />
       
       <div className="companyinfo">
