@@ -37,7 +37,7 @@ html {
 .root {
   scroll-behavior: smooth;
   margin: auto;
-  background-color: #000;
+  background-color: red;
   height: auto;
   min-width: 100%;
   max-height: max-content; 
