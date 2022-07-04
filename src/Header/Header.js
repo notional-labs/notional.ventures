@@ -22,8 +22,8 @@ const Header = () => {
   return (
     <div className="header">
       <Navbar />
-      <Group17 className="background1" />
-      {/* <img src={Abstract} className="abstract" /> */}
+      <Group17 className="lines" />
+      <img src={Abstract} className="abstract" />
       <Akash className="akash" />
       <Osmosis className="osmosis" />
       <Secret className="secret" />
@@ -44,7 +44,6 @@ const Header = () => {
         <p className="greetings">
           Edge Validation, Relaying, and Open-Source Software Development
         </p>
-        <button className="info-btn"> Whitepaper </button>
       </div>
     </div>
   );

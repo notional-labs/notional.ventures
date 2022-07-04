@@ -6,138 +6,136 @@
   margin: 0px auto;
   height: 1080px;
   min-height: auto;
-  border: red solid;
 }
 
-.background1 {
+.lines {
   position: absolute;
   top: 0;
   right: 0; 
   z-index: 1;
-  filter: brightness(70%);
+  filter: brightness(100%);
 }
 
 .abstract {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -13rem;
+  left: -20rem;
   z-index: 0.5;
   filter: brightness(70%);
 }
 
 .akash {
   position: absolute;
-  right: 50rem;
-  top: 37rem;
-  width: 15rem;
-  border: white solid;
-  height: 15rem;
+  right: 61.5rem;
+  top: 54.8rem;
+  width: 14rem;
+  height: 14rem;
   z-index: 1;
 }
 
 .atom {
   position: absolute;
   z-index: 2;
-  right: 9rem;
-  top: 10rem;
-  height: 20rem;
-  width: 23rem;
+  right: 15.8rem;
+  top: 25.8rem;
+  height: 27.8rem;
+  width: 27.8rem;
 }
 
 .juno {
-  width: 10rem;
+  width: 21.5rem;
+  height: 21.5rem;
   position: absolute;
   z-index: 3;
-  right: 1rem;
-  top: 10rem;
-  height: 10rem;
+  right: 6.8rem;
+  top: 13rem;
 }
 
 .secret {
-  width: 34rem;
+  width: 19rem;
+  height: 19rem;
   position: absolute;
-  height: 29rem;
-  top: 29rem;
-  right: 2rem;
+  top: 45.5rem;
+  right: 6rem;
   z-index: 2;
 }
 
 .evmos {
-  width: 31rem;
+  width: 13.7rem;
+  height: 13.7rem;
   position: absolute;
-  top: 27rem;
-  right: 28rem;
+  top: 46.4rem;
+  right: 35.5rem;
   z-index: 3;
-  height: 32rem;
 }
 .omniflix {
-  width: 36rem;
+  width: 18rem;
+  height: 18rem;
   position: absolute;
   z-index: 1;
-  top: 40rem;
-  right: 70rem;
-  height: 36rem;
+  top: 49.6rem;
+  right: 77.5rem;
 }
 .sifchain {
-  width: 36rem;
+  width: 20rem;
+  height: 20rem;
   position: absolute;
-  height: 29rem;
-  top: 5rem;
-  right: 27rem;
+  top: 18.3rem;
+  right: 35.6rem;
   z-index: 1;
 }
 .osmosis {
-  width: 39rem;
+  width: 21.4rem;
+  height: 21.4rem;
   position: absolute;
-  top: 24rem;
-  height: 37rem;
-  right: 41rem;
+  top: 40.3rem;
+  right: 48.5rem;
   z-index: 2;
 }
 
 .yellow {
   width: 6rem;
   position: absolute;
-  top: 10rem;
+  top: 15.6rem;
   height: 10rem;
-  right: 4rem;
+  right: 0.7rem;
 }
 .red {
   width: 4.5rem;
   position: absolute;
-  top: 24rem;
+  top: 31.8rem;
   height: 10rem;
-  right: 1rem;
-  z-index: 2;
+  right: 5.5rem;
+  z-index: 9;
 }
 .green {
   width: 6.5rem;
   position: absolute;
-  top: 24rem;
+  top: 32.4rem;
   height: 10rem;
-  right: 55rem;
+  right: 54rem;
 }
 .purple {
   width: 6.5rem;
   position: absolute;
-  top: 44rem;
+  top: 55rem;
   height: 10rem;
-  right: 26rem;
+  right: 25.5rem;
   z-index: 2;
 }
 .blue {
   width: 6.5rem;
   position: absolute;
-  top: 3rem;
-  right: 30rem;
+  top: 10.2rem;
+  right: 29.5rem;
   height: 10rem;
 }
 .orange {
   width: 6.5rem;
   position: absolute;
-  top: 46rem;
+  top: 54.7rem;
   height: 10rem;
-  right: 74rem;
+  right: 73.8rem;
   z-index: 1;
 }
 
@@ -145,7 +143,7 @@
   display: inline-block;
   position: relative;
   margin-top: 13rem;
-  margin-left: 5rem;
+  margin-left: 9rem;
   z-index: 1;
 }
 .description .bar {
@@ -157,135 +155,116 @@
   z-index: 1;
 }
 .description .greetings {
-  font-family: "Segoe UI Light";
+  font-family: "Segoe UI Bold";
   color: white;
-  font-size: 42px;
+  font-size: 50px;
   line-break: strict;
   max-width: 50rem;
   z-index: 1;
 }
 
-.info-btn {
-  font-family: "Segoe UI Light";
-  color: white;
-  font-size: 35px;
-  width: 16rem;
-  height: 5rem;
-  text-align: center;
-  background-color: #6d7ebe;
-  border-radius: 10px;
-  z-index: 1;
-  display: none;
-}
-
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
   .background1 {
     width: 100vw;
-    height: calc(100vw / 1920 * 2000);
+    height: calc(100vw * 2000 / 1920 );
   }
 
   .header {
     height: calc(100vw * 1080 / 1920);
   }
+
   .akash {
-    width: calc(100vw * 496 / 1920);
-    right: calc(100vw * 880 / 1920);
-    top: calc(100vw * 592 / 1920);
-    height: calc(100vw * 512 / 1920);
+    width: calc(100vw * 14 * 16 / 1920);
+    right: calc(100vw * 61.5 * 16 / 1920);
+    top: calc(100vw * 54.8 * 16 / 1920);
+    height: calc(100vw * 14 * 16 / 1920);
   }
 
   .atom {
-    width: calc(100vw * 720 / 1920);
-    right: calc(100vw * 144 / 1920);
-    top: calc(100vw * 160 / 1920);
-    height: calc(100vw * 640 / 1920);
+    width: calc(100vw * 27.8 * 16 / 1920);
+    right: calc(100vw * 15.8 * 16 / 1920);
+    top: calc(100vw * 25.8 * 16 / 1920);
+    height: calc(100vw * 27.8 * 16 / 1920);
   }
 
   .juno {
-    width: calc(100vw * 592 / 1920);
-    right: calc(100vw * 16 / 1920);
-    top: calc(100vw * 16 / 1920);
-    height: calc(100vw * 512 / 1920);
+    width: calc(100vw * 21.5 * 16 / 1920);
+    right: calc(100vw * 6.8 * 16 / 1920);
+    top: calc(100vw * 13 * 16 / 1920);
+    height: calc(100vw * 21.5 * 16 / 1920);
   }
 
   .secret {
-    width: calc(100vw * 544 / 1920);
-    height: calc(100vw * 464 / 1920);
-    top: calc(100vw * 464 / 1920);
-    right: calc(100vw * 32 / 1920);
+    width: calc(100vw * 19 * 16 / 1920);
+    height: calc(100vw * 19 * 16 / 1920);
+    top: calc(100vw * 45.5 * 16 / 1920);
+    right: calc(100vw * 6 * 16 / 1920);
   }
 
   .evmos {
-    width: calc(100vw * 496 / 1920);
-    top: calc(100vw * 432 / 1920);
-    right: calc(100vw * 448 / 1920);
-    height: calc(100vw * 512 / 1920);
+    width: calc(100vw * 13.7 * 16 / 1920);
+    top: calc(100vw * 46.4 * 16 / 1920);
+    right: calc(100vw * 35.5 * 16 / 1920);
+    height: calc(100vw * 13.7 * 16 / 1920);
   }
   .omniflix {
-    width: calc(100vw * 576 / 1920);
-    top: calc(100vw * 640 / 1920);
-    right: calc(100vw * 1120 / 1920);
-    height: calc(100vw * 576 / 1920);
+    width: calc(100vw * 18 * 16 / 1920);
+    top: calc(100vw * 49.6 * 16 / 1920);
+    right: calc(100vw * 77.5 * 16 / 1920);
+    height: calc(100vw * 18 * 16 / 1920);
   }
   .sifchain {
-    width: calc(100vw * 576 / 1920);
-    height: calc(100vw * 464 / 1920);
-    top: calc(100vw * 80 / 1920);
-    right: calc(100vw * 432 / 1920);
+    width: calc(100vw * 20 * 16 / 1920);
+    height: calc(100vw * 20 * 16 / 1920);
+    top: calc(100vw * 18.3 * 16 / 1920);
+    right: calc(100vw * 35.6 * 16 / 1920);
   }
   .osmosis {
-    width: calc(100vw * 624 / 1920);
-    top: calc(100vw * 384 / 1920);
-    height: calc(100vw * 592 / 1920);
-    right: calc(100vw * 656 / 1920);
+    width: calc(100vw * 21.4 * 16 / 1920);
+    top: calc(100vw * 40.3 * 16 / 1920);
+    height: calc(100vw * 21.4 * 16 / 1920);
+    right: calc(100vw * 48.5 * 16 / 1920);
   }
 
   .yellow {
-    width: calc(100vw * 96 / 1920);
-    top: calc(100vw * 160 / 1920);
-    height: calc(100vw * 160 / 1920);
-    right: calc(100vw * 64 / 1920);
+    width: calc(100vw * 6 * 16 / 1920);
+    top: calc(100vw * 15.6 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 0.7 * 16 / 1920);
   }
   .red {
-    width: calc(100vw * 72 / 1920);
-    top: calc(100vw * 384 / 1920);
-    height: calc(100vw * 160 / 1920);
-    right: calc(100vw * 16 / 1920);
+    width: calc(100vw * 4.5 * 16 / 1920);
+    top: calc(100vw * 31.8 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 5.5 * 16 / 1920);
   }
   .green {
-    width: calc(100vw * 104 / 1920);
-    top: calc(100vw * 384 / 1920);
-    height: calc(100vw * 160 / 1920);
-    right: calc(100vw * 880 / 1920);
+    width: calc(100vw * 6.5 * 16 / 1920);
+    top: calc(100vw * 32.4 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 54 * 16 / 1920);
   }
   .purple {
-    width: calc(100vw * 104 / 1920);
-    top: calc(100vw * 704 / 1920);
-    height: calc(100vw * 160 / 1920);
-    right: calc(100vw * 416 / 1920);
+    width: calc(100vw * 6.5 * 16 / 1920);
+    top: calc(100vw * 55 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 25.5 * 16 / 1920);
   }
   .blue {
-    width: calc(100vw * 104 / 1920);
-    top: calc(100vw * 48 / 1920);
-    right: calc(100vw * 480 / 1920);
-    height: calc(100vw * 160 / 1920);
+    width: calc(100vw * 6.5 * 16 / 1920);
+    top: calc(100vw * 10.2 * 16 / 1920);
+    right: calc(100vw * 29.5 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
   }
   .orange {
-    width: calc(100vw * 104 / 1920);
-    top: calc(100vw * 736 / 1920);
-    height: calc(100vw * 160 / 1920);
-    right: calc(100vw * 1184 / 1920);
+    width: calc(100vw * 6.5 * 16 / 1920);
+    top: calc(100vw * 54.7 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 73.8 * 16 / 1920);
   }
   .description {
-    margin-top: calc(100vw * 208 / 1920);
-    margin-left: calc(100vw * 80 / 1920);
-  }
-
-  .info-btn {
-    font-size: calc(100vw * 35 / 1920);
-    width: calc(100vw * 256 / 1920);
-    height: calc(100vw * 80 / 1920);
-    border-radius: calc(100vw * 10 / 1920);
+    margin-top: calc(100vw * 13 * 16 / 1920);
+    margin-left: calc(100vw * 9 * 16 / 1920);
   }
 
   .description .bar {
@@ -294,7 +273,7 @@
   }
 
   .description .greetings {
-    font-size: calc(100vw * 42 / 1920);
-    max-width: calc(100vw * 800 / 1920);
+    font-size: calc(100vw * 50 / 1920);
+    max-width: calc(100vw * 50 * 16 / 1920);
   }
 }

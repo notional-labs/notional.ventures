@@ -4,7 +4,6 @@
   width: auto;
   display: flex;
   justify-content: center;
-  background-image: url(../../media/background-decor/background.png);
   z-index: 2;
 }
 .contributions .title {
