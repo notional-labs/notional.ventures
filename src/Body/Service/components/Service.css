@@ -1,0 +1,45 @@
+.service-section {
+    height: auto;
+    width: auto;
+    /* background-image: url(../../media/background-decor/group19.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+  }
+  .service-section .title {
+    text-align: center;
+    width: 100%;
+    height: 25rem;
+    align-items: center;
+  }
+  
+  .service-section .title .bar {
+    width: 100px;
+    height: 8px;
+    border: none;
+    background-color: #3a71fd;
+  }
+  
+  .service-section .title .name {
+    /* margin-top: 20px; */
+    font-family: "Segoe UI Light";
+    font-size: 60px;
+    color: white;
+  }
+  
+  .service-section .title .text {
+    font-family: "Segoe UI Light";
+    font-size: 20px;
+    color: white;
+    width: 60%;
+    margin: 1rem auto;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .service {
+    width: 90%;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
