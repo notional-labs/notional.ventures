@@ -1,32 +1,32 @@
 .contributions {
   position: relative;
-  height: 2125px;
+  height: 1800px;
   width: auto;
   display: flex;
   justify-content: center;
-  z-index: 2;
 }
 
 .contributions .filter {
-  top: -25rem;
+  top: -15rem;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 80%;
+  z-index: 1;
 }
 
 .contributions .abstract-contribution {
   z-index: 0;
-  height: 50%;
+  height: 60%;
   position: inherit;
   top: 20rem;
-  left: 30rem;
+  left: -25rem;
 }
 
 .contributions .title {
   z-index: 2;
   text-align: center;
   position: absolute;
-  top: 20rem;
+  top: 10rem;
   max-width: 2000px;
   align-items: center;
 }
@@ -71,8 +71,9 @@
 .companyinfo {
   display: grid;
   position: absolute;
+  z-index: 1;
   width: 1510px;
-  top: 56rem;
+  top: 45rem;
   gap: 80px;
   row-gap: 40px;
   grid-template-columns: repeat(6, 1fr);
@@ -84,7 +85,8 @@
   background-color: #ffffff33;
   height: 250px;
   width: 450px;
-  box-shadow: 4px 8px 30px 5px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 8px 30px 5px rgb(255, 255, 255, 0.15);
 }
 
 .companyinfo-item__1 {

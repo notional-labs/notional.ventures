@@ -2,7 +2,7 @@ import "./Contributions.css";
 import React from "react";
 import AutoSlide from "./PartnerCarousel";
 import Filter from "../../media/background-decor/background-contribution.png";
-import Abstract from "../../media/background-decor/abstract-contribution.png";
+import Abstract from "../../media/background-decor/abstract-contribution-1.png";
 
 const Contributions = () => {
   return (

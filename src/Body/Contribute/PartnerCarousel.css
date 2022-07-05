@@ -10,9 +10,10 @@
 .slider {
   height: 200px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   width: 100%;
-  margin-top: 40rem;
+  z-index: 1;
+  margin-top: 30rem;
 }
 
 .slider .slide-track {

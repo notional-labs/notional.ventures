@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   right: 0; 
-  z-index: 0;
+  z-index: 1;
   filter: brightness(100%);
 }
 
@@ -20,7 +20,7 @@
   position: absolute;
   top: -13rem;
   left: -20rem;
-  z-index: 0.5;
+  z-index: 0;
   filter: brightness(70%);
 }
 
