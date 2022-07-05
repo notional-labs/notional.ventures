@@ -8,12 +8,21 @@ import { Image } from "antd";
 
 const Navbar = () => {
   const [drawerHandler, setDrawerHandler] = useState(false);
+  const [color, setColor] = useState(false)
   const openDrawerHandler = () => {
     setDrawerHandler(true);
   };
   const closeDrawerHandler = () => {
     setDrawerHandler(false);
   };
+  const changeColor = () => {
+    if (window.scrollY >=90) {
+      setColor(true)
+    } else {
+      setColor(false)
+    }
+  }
+  window.addEventListener('scroll', changeColor)
   return (
     <div className="nav-container">
       <SideDrawer show={drawerHandler} onCancel={closeDrawerHandler}>
@@ -41,7 +50,7 @@ const Navbar = () => {
         </nav>
       </SideDrawer>
 
-      <div className="nav">
+      <div className={color ? 'nav nav-bg' : 'nav'}>
         <button className="main-navigation-btn" onClick={openDrawerHandler}>
           <Image
             className="btn-img"
