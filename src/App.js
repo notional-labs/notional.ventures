@@ -11,7 +11,22 @@ import Contact from "./Body/Contact/Contact";
 import Footer from "./Footer/Footer";
 import RingLoader from "react-spinners/RingLoader";
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+
+const Home = () => {
+  return (
+    <>
+      <Header />
+      <Contributions />
+      <Stake />
+      <Service />
+      <Project />
+      <Team />
+      <Contact />
+      <Footer />
+      <ScrollButton />
+    </>
+  );
+};
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,17 +45,7 @@ function App() {
       )}
       {!isLoading && (
         <div className="root">
-          <Router>
-            <Header />
-            <Contributions />
-            <Stake />
-            <Service/>
-            <Project />
-            <Team />
-            <Contact />
-            <Footer />
-          </Router>
-          <ScrollButton />
+          <Home/> 
         </div>
       )}
     </React.Fragment>

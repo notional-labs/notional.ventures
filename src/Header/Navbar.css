@@ -57,6 +57,7 @@
   text-decoration: none;
   font-size: 45px;
   position: relative;
+  font-weight: 700;
 
 }
 
@@ -82,12 +83,12 @@
   text-decoration: none;
   color: white;
   font-size: 27px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .main-nav-list li a:hover {
   color: #dfc3ff;
-  font-weight: 700;
+  font-weight: 900;
   transform: translateY(5px);
   transition: 0.2s ease;
   cursor: pointer;

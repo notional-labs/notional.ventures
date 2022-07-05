@@ -4,7 +4,7 @@ import SideDrawer from "./SideDrawer";
 import React, { useState } from "react";
 import NavBtn from "../media/button/nav-btn.png";
 import { Image } from "antd";
-import { HashLink } from "react-router-hash-link";
+// import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [drawerHandler, setDrawerHandler] = useState(false);
@@ -20,29 +20,22 @@ const Navbar = () => {
         <nav className="main-nav-drawer">
           <ul className="main-nav-list-drawer">
             <li>
-              <HashLink smooth to={"/#Contribution"}>
-                Contribution
-              </HashLink>
+              <a href="#Contribution">Contribution</a>
             </li>
             <li>
-              <HashLink smooth to={"/#Delegate"}>
-                Delegate
-              </HashLink>
+              <a href="#Delegate">Delegate</a>
             </li>
             <li>
-              <HashLink smooth to={"/#Project"}>
-                Projects
-              </HashLink>
+              <a href="#Service">Service</a>
             </li>
             <li>
-              <HashLink smooth to={"/#Team"}>
-                Team
-              </HashLink>
+              <a href="#Project">Projects</a>
             </li>
             <li>
-              <HashLink smooth to={"/#Contact"}>
-                Contact
-              </HashLink>
+              <a href="#Team">Team</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -75,30 +68,23 @@ const Navbar = () => {
 
         <nav className="main-nav">
           <ul className="main-nav-list">
-            <li>
-              <HashLink className="test" smooth to={"/#Contribution"}>
-                Contribution
-              </HashLink>
+          <li>
+              <a href="#Contribution">Contribution</a>
             </li>
             <li>
-              <HashLink smooth to={"/#Delegate"}>
-                Delegate
-              </HashLink>
+              <a href="#Delegate">Delegate</a>
             </li>
             <li>
-              <HashLink smooth to={"/#Project"}>
-                Projects
-              </HashLink>
+              <a href="#Service">Service</a>
             </li>
             <li>
-              <HashLink smooth to={"/#Team"}>
-                Team
-              </HashLink>
+              <a href="#Project">Projects</a>
             </li>
             <li>
-              <HashLink smooth to={"/#Contact"}>
-                Contact
-              </HashLink>
+              <a href="#Team">Team</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
         </nav>
