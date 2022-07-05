@@ -25,6 +25,7 @@
   font-family: "Segoe UI Light";
   font-size: 60px;
   color: white;
+  font-weight: 700;
 }
 
 .stake-section .title .text {
@@ -35,6 +36,7 @@
   margin: 1rem auto;
   align-items: center;
   text-align: center;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 

@@ -30,7 +30,7 @@
 @media only screen and (min-width:1300px) and (max-width: 1920px){
   .slider {
     /* display: none; */
-    margin-top: calc(100vw * (25*18) / 1300);
+    margin-top: calc(100vw * (25*18) / 1250);
   }
 }
 

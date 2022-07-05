@@ -25,6 +25,7 @@
     font-family: "Segoe UI Light";
     font-size: 60px;
     color: white;
+    font-weight: 700;
   }
   
   .service-section .title .text {
@@ -36,6 +37,7 @@
     align-items: center;
     text-align: center;
     font-size: 1.5rem;
+    font-weight: 600;
   }
   
   .service {
