@@ -22,8 +22,8 @@ const Home = () => {
       <Project />
       <Team />
       <Contact />
-      <Footer />
       <ScrollButton />
+      <Footer />
     </>
   );
 };
