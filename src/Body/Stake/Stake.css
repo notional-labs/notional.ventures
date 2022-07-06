@@ -2,18 +2,19 @@
   height: auto;
   border: white solid;
   width: auto;
-  
+  background-image: url(../../media/background-decor/group19.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.stake-section .stake-background {
+/* .stake-section .stake-background {
   z-index: 0;    
-  height: 100%;
+  height: auto;
   border: red solid;
   position: absolute;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  margin: 0 auto;
+} */
 
 .stake-section .title {
   z-index: 1;
@@ -60,7 +61,7 @@
 
 @media only screen and (min-width:360px) and (max-width: 1920px){
   .stake-section {
-    background-size: 82%;
+    /* background-size: 82%; */
     background-position: center;
     
   }

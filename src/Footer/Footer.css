@@ -45,8 +45,8 @@
     display: none;
   }
   .icon-footer__img {
-    width: calc(100vw / 1155 * 45);
-    height: calc(100vw / 1155 * 45);
+    width: calc(100vw / 1155 * 40);
+    height: calc(100vw / 1155 * 40);
   }
   .footer-text {
     display:contents;

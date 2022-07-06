@@ -7,7 +7,7 @@ import StakeList from "./StakeList";
 const Stake = () => {
   return (
     <div id="Delegate" className="stake-section">
-      <img src={Background} className = "stake-background" />
+      {/* <img src={Background} className = "stake-background" /> */}
       <div className="title">
         <hr className="bar"></hr>
         <p className="name">Stake With Us</p>
