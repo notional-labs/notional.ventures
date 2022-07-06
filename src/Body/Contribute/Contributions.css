@@ -15,7 +15,7 @@
 }
 
 .contributions .abstract-contribution {
-  z-index: 0;
+  z-index: 1;
   height: 60%;
   position: inherit;
   top: 20rem;
@@ -42,20 +42,17 @@
   font-family: "Segoe UI Light";
   font-size: 60px;
   color: white;
-  font-weight: 700;
 }
 
-.contributions .title .text {
+.contributions .title .contributions-text {
   font-family: "Segoe UI Light";
-  font-size: 20px;
+  font-size: 22px;
   color: white;
   width: 70%;
-  margin: 1rem auto;
+  z-index: 1;
+  margin: auto;
   align-items: center;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 4rem;
 }
 
 .info-number {
@@ -141,10 +138,20 @@
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
   .contributions {
     background-size: contain;
-    height: calc(100vw * 1.13);
+    height: calc(100vw * 1500 / 1920);
   }
+
+  .contributions .filter {
+    top: calc(100vw * -15 * 16 / 1920);
+  }
+
+  .contributions .abstract-contribution {
+    top: calc(100vw * 20 * 16 / 1920);
+    left: calc(100vw * -25 * 16 / 1920);
+  }
+
   .contributions .title {
-    top: calc(100vw * 320 / 1920);
+    top: calc(100vw * 10 * 16 / 1920);
   }
   .contributions .title .bar {
     height: calc(100vw * 8 / 1920);
@@ -155,16 +162,17 @@
     font-size: calc(100vw * 60 / 1920);
   }
 
-  .contributions .title .text {
-    display: block;
-    font-size: calc(100vw * 20 * 1.5 / 1920);
+  .contributions .title .contributions-text {
+    font-size: calc(100vw * 22 / 1920);
   }
+
   .companyinfo {
-    top: calc(100vw * 896 / 1920);
+    top: calc(100vw * 45 * 16 / 1920);
     width: calc(100vw * 1510 / 1920);
     gap: calc(100vw * 80 / 1920);
     row-gap: calc(100vw * 40 / 1920);
   }
+
   .companyinfo-item {
     border-radius: calc(100vw * 30 / 1920);
     background-color: #ffffff33;
@@ -179,5 +187,14 @@
   
   .info-text {
     font-size: calc(100vw * 32 / 1920);
+  }
+}
+
+
+/* tablets device */
+@media only screen and (min-width: 360px) and (max-width: 1299px) {
+  .companyinfo {
+    top: calc(100vw * 35 * 16 / 1920);
+
   }
 }

@@ -11,7 +11,7 @@ const Contributions = () => {
       <div id="Contribution" className="title">
         <hr className="bar"></hr>
         <p className="name">Contributions</p>
-        <p className="text">
+        <p className="contributions-text">
           Notional Labs is committed to engaging in governance and community
           matters on every chain we validate. A team member is delegated to each
           chain to ensure dependable, genuine communication with project

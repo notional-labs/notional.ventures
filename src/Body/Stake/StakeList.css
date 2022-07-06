@@ -1,6 +1,7 @@
 .stake-list {
   width: auto;
   height: auto;
+  z-index: inherit;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
