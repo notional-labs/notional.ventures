@@ -1,8 +1,8 @@
 .stake-section {
   height: auto;
-  border: white solid;
   width: auto;
   background-image: url(../../media/background-decor/group19.svg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -47,6 +47,7 @@
   width: 60%;
   z-index: inherit; 
   margin: auto;
+  font-weight: 600;
   align-items: center;
   text-align: center;
 }
