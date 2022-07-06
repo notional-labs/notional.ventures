@@ -3,7 +3,7 @@ import "../src/App.css";
 import Header from "./Header/Header";
 import Contributions from "./Body/Contribute/Contributions";
 import Stake from "./Body/Stake/Stake";
-import Service from "./Body/Service/Service";
+import Infrastructure from "./Body/Infrastructure/Infra";
 import Project from "./Body/Project/Project";
 import Team from "./Body/Team/Team";
 import ScrollButton from "./Components/ScrollTopButton";
@@ -18,7 +18,7 @@ const Home = () => {
       <Header />
       <Contributions />
       <Stake />
-      <Service />
+      <Infrastructure />
       <Project />
       <Team />
       <Contact />
