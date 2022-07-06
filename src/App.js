@@ -3,7 +3,7 @@ import "../src/App.css";
 import Header from "./Header/Header";
 import Contributions from "./Body/Contribute/Contributions";
 import Stake from "./Body/Stake/Stake";
-import Service from "./Body/Service/components/Service";
+import Service from "./Body/Service/Service";
 import Project from "./Body/Project/Project";
 import Team from "./Body/Team/Team";
 import ScrollButton from "./Components/ScrollTopButton";

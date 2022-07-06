@@ -7,6 +7,7 @@
   list-style: none;
   transition: transform 0.4s;
   text-align: center;
+  z-index: inherit;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
