@@ -44,7 +44,7 @@
   color: white;
 }
 
-.contributions .title .contributions-text {
+.contributions .title .text {
   font-family: "Segoe UI Light";
   font-size: 22px;
   color: white;
@@ -53,6 +53,7 @@
   margin: auto;
   align-items: center;
   text-align: center;
+  font-weight: 600;
 }
 
 .info-number {

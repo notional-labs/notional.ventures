@@ -2,7 +2,7 @@ import "./Contributions.css";
 import React from "react";
 import AutoSlide from "./PartnerCarousel";
 import Filter from "../../media/background-decor/background-contribution.png";
-import Abstract from "../../media/background-decor/abstract-contribution-1.png";
+import Abstract from "../../media/background-decor/Circle_mesh1 1.png";
 
 const Contributions = () => {
   return (
@@ -11,7 +11,7 @@ const Contributions = () => {
       <div id="Contribution" className="title">
         <hr className="bar"></hr>
         <p className="name">Contributions</p>
-        <p className="contributions-text">
+        <p className="text">
           Notional Labs is committed to engaging in governance and community
           matters on every chain we validate. A team member is delegated to each
           chain to ensure dependable, genuine communication with project

@@ -22,25 +22,25 @@ const Infra = () => {
       </div>
 
       <div className="services">
-        <div className="service-item">
+        <button className="service-item">
           <div className="service-title">26</div>
           <div className="service-description">Chains operating</div>
-        </div>
+        </button>
 
-        <div className="service-item">
+        <button className="service-item">
           <div className="service-title">26</div>
           <div className="service-description">Chains operating</div>
-        </div>
+        </button>
         
-        <div className="service-item">
+        <button className="service-item">
           <div className="service-title">26</div>
           <div className="service-description">Chains operating</div>
-        </div>
+        </button>
         
-        <div className="service-item">
+        <button className="service-item">
           <div className="service-title">26</div>
           <div className="service-description">Chains operating</div>
-        </div>
+        </button>
         
       </div>
     </div>
