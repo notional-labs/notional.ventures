@@ -1,11 +1,8 @@
 .infra-section {
     height: auto;
     width: auto;
-    /* background-image: url(../../media/background-decor/group19.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
   }
+
 .infra-section .title {
   text-align: center;
   width: 100%;
@@ -46,7 +43,7 @@
   display: grid;
   gap: 80px;
   grid-template-columns: repeat(6, 1fr);
-  top: 45rem;
+  /* top: 45rem; */
   gap: 80px;
 }
 
