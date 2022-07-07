@@ -1,7 +1,7 @@
 import React from "react";
 import "./Stake.css";
 import { STAKES } from "./chains-data";
-import Background from "../../media/background-decor/group19.svg";
+// import Background from "../../media/background-decor/group19.svg";
 import StakeList from "./StakeList";
 
 const Stake = () => {
