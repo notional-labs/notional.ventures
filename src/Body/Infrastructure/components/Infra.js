@@ -1,5 +1,6 @@
 import React from "react";
 import "./Infra.css";
+import Graph from "../components/Graph";
 import { Link } from "react-router-dom";
 // import Background from "../../media/background-decor/infrastructe-background.png"
 
@@ -18,7 +19,20 @@ const Infra = () => {
         </p>
       </div>
 
-      <div className="relayer"></div>
+      <div className="relayer">
+        <div className="relayer-info">
+          <p className="relayer-title">
+            Our IBC Relayer
+          </p>
+          <p className="relayer-text">
+            We provide services for various chains in Cosmos Ecosystem, from RPC,
+            gRPC, WebSocket and API to snapshot services and our service uptime
+            monitor status. Feel free to checkout all service.
+          </p>
+        </div>
+        
+        <Graph className="relayer-graph" />
+      </div>
 
       <div className="services">
         <a className="link">

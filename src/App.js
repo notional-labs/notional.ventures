@@ -9,8 +9,7 @@ import Team from "./Body/Team/Team";
 import Contact from "./Body/Contact/Contact";
 import Footer from "./Footer/Footer";
 import RingLoader from "react-spinners/RingLoader";
-import { useEffect, useState } from "react";
-import Graph from "./Body/Infrastructure/Graph";
+import { useState } from "react";
 
 
 const Home = () => {
@@ -24,7 +23,6 @@ const Home = () => {
       <Team />
       <Contact />
       <Footer />
-      <Graph/>
     </>
   );
 };

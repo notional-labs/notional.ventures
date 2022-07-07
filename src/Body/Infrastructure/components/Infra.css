@@ -1,10 +1,10 @@
 .infra-section {
     height: auto;
     width: auto;
-    background-image: url(../../../media/background-decor/infrastructe-background.png);
+    /* background-image: url(../../../media/background-decor/infrastructe-background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: center; */
   }
 
 .infra-section .title {
@@ -38,6 +38,26 @@
   align-items: center;
   text-align: center;
   font-weight: 600;
+}
+
+.infra-section .relayer {
+  height: auto;
+  width: auto;
+  position: relative;
+  border: white solid;
+  display: flex;
+}
+
+.infra-section .relayer .relayer-info {
+  text-align: center;
+  width: 100%;
+  height: 25rem;
+  align-items: center;
+  border: red solid;
+}
+
+.infra-section .relayer .relayer-graph {
+  z-index: -2;
 }
 
 .infra-section .services {

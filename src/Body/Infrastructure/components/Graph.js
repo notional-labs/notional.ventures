@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ForceGraph3D from "react-force-graph-3d";
+import "./Graph.css";
 import { Sprite, CanvasTexture, SpriteMaterial } from "three";
 
 const Graph = () => {
@@ -26,7 +27,7 @@ const Graph = () => {
       let ctx = canvas.getContext("2d");
       let PI2 = Math.PI * 2;
       ctx.arc(16, 16, 16, 0, PI2, true);
-      ctx.fillStyle = "blue";
+      ctx.fillStyle = "red";
       ctx.fill();
 
       return canvas;
@@ -36,8 +37,12 @@ const Graph = () => {
     const data = genRandomTree();
     return (
       <ForceGraph3D
+        className="infra-graph"
         graphData={data}
+        backgroundColor="grey"
         nodeLabel="id"
+        width={2000}
+        height={2000}
         nodeId="id"
         linkCurvature={0.1}
         nodeThreeObject={({ canvas }) => {

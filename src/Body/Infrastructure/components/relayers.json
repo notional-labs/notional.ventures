@@ -1,0 +1,139 @@
+{
+  "nodes": [
+    {
+      "id": "Juno"
+    },
+    {
+      "id": "Osmosis"
+    },
+    {
+      "id": "Cosmoshub"
+    },
+    {
+      "id": "Sifchain"
+    },
+    {
+      "id": "Omniflixhub"
+    },
+    {
+      "id": "Akash"
+    },
+    {
+      "id": "Terra"
+    },
+    {
+      "id": "Umee"
+    },
+    {
+      "id": "Persistence"
+    },
+    {
+      "id": "Microtick"
+    },
+    {
+      "id": "Band"
+    },
+    {
+      "id": "Kichain"
+    },
+    {
+      "id": "Lum"
+    },
+    {
+      "id": "Axelar"
+    },
+    {
+      "id": "Stargaze"
+    },
+    {
+      "id": "Starname"
+    },
+    {
+      "id": "Secret"
+    },
+    {
+      "id": "Cheq"
+    },
+    {
+      "id": "Konstellation"
+    },
+    {
+      "id": "Fetch"
+    },
+    {
+      "id": "Chihuahua"
+    },
+    {
+      "id": "Bitcanna"
+    },
+    {
+      "id": "Crypto"
+    },
+    {
+      "id": "Kava"
+    },
+    {
+      "id": "Evmos"
+    },
+    {
+      "id": "Bostrom"
+    },
+    {
+      "id": "Likecoin"
+    },
+    {
+      "id": "Dig"
+    },
+    {
+      "id": "Bitsong"
+    },
+    {
+      "id": "Regen"
+    },
+    {
+      "id": "Sentinel"
+    },
+    {
+      "id": "Iris"
+    },
+    {
+      "id": "Ixo"
+    },
+    {
+      "id": "Emoney"
+    },
+    {
+      "id": "Injection"
+    },
+    {
+      "id": "Gravity"
+    },
+    {
+      "id": "Comdex"
+    },
+    {
+      "id": "Vidulum"
+    },
+    {
+      "id": "Desmos"
+    },
+    {
+      "id": "Medibloc"
+    },
+    {
+      "id": "Cronos"
+    },
+    {
+      "id": "Sommelier"
+    },
+    {
+      "id": "Kujira"
+    }
+  ],
+  "links": [
+    {
+      "source": "Persistence",
+      "target": "Sommelier"
+    }
+  ]
+}
