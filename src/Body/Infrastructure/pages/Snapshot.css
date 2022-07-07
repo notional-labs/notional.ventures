@@ -1,0 +1,27 @@
+.snapshot-section {
+    background-color: black;
+    height: 100vh;
+    color: white;
+    justify-content: center;
+}
+
+.test {
+    font-size:3rem;
+}
+
+.text {
+    font-size: 2rem;
+}
+
+.snapshot-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.snapshot-instruction {
+    margin-top: 2rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 1rem;
+}

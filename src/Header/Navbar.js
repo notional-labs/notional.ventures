@@ -35,7 +35,7 @@ const Navbar = () => {
               <a href="#Delegate">Delegate</a>
             </li>
             <li>
-              <a href="#Service">Service</a>
+              <a href="#Infra">Infrastructure</a>
             </li>
             <li>
               <a href="#Project">Projects</a>
@@ -84,7 +84,7 @@ const Navbar = () => {
               <a href="#Delegate">Delegate</a>
             </li>
             <li>
-              <a href="#Service">Service</a>
+              <a href="#Infra">Infrastructure</a>
             </li>
             <li>
               <a href="#Project">Projects</a>
