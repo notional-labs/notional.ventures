@@ -2,10 +2,11 @@ import React from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import "./Graph.css";
 import Data from "./relayers.json";
+import { Sprite, TextureLoader, SpriteMaterial } from "three";
 import { useState, useCallback } from "react";
 
 const Graph = () => {
-
+ 
     const NODE_R = 8;
     // const [highlightNodes, setHighlightNodes] = useState(new Set());
     // const [highlightLinks, setHighlightLinks] = useState(new Set());
@@ -57,7 +58,7 @@ const Graph = () => {
         <ForceGraph3D
             graphData={Data}
             // backgroundColor="rgba(0,0,0,0)"
-            backgroundColor="black"
+            backgroundColor="grey"
             height={700}
             width={700}
             // nodeRelSize={NODE_R}
@@ -65,6 +66,14 @@ const Graph = () => {
             nodeId="id"
             nodeLabel="id"
             linkCurvature={0.1}
+            nodeThreeObject={({id}) => {
+                const imgTexture = new TextureLoader().load(`https://picsum.photos/100/100/?random`);
+                const material = new SpriteMaterial({ map: imgTexture });
+                const sprite = new Sprite(material);
+                sprite.scale.set(12, 12);
+      
+                return sprite;
+            }}
             // autoPauseRedraw={false}
             // linkWidth={(link) => (highlightLinks.has(link) ? 5 : 1)}
             // linkDirectionalParticles={4}

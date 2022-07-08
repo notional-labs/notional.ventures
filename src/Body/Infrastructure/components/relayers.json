@@ -51,6 +51,6 @@
     {"source": "Kujira","target": "Sommelier"},
     {"source": "Iris","target": "Sommelier"},
     {"source": "Ixo","target": "Osmosis"},
-    {"source": "Osmosis","target": "Osmosis"}
+    {"source": "Osmosis","target": "Cosmoshub"}
   ]
 }
