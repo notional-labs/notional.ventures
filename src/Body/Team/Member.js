@@ -21,7 +21,7 @@ export const members = [
             <p className="member-name">Jacob Gadikian</p>
             <p className="member-position">Founder and Principal Engineer</p>
             <p className="member-description">
-                Jacob has been active in Cosmos since working as Jae Kwon’s
+                Jacob has been active in Cosmos since working as Jae Kwon's
                 research assistant at Tendermint. He owns a share in a bitcoin
                 mine, and contributes to several projects in Cosmos.
             </p>
@@ -34,7 +34,7 @@ export const members = [
             <p className="member-position">Lead Engineer</p>
             <p className="member-description">
                 Khanh is an exceptionally talented engineer and helped to build
-                out Notional’s engineering team. He is a frequent contributor to
+                out Notional's engineering team. He is a frequent contributor to
                 several major Cosmos projects.
             </p>
         </div>
@@ -43,10 +43,11 @@ export const members = [
         <div className="member">
             <Image src={ricardo} className="member-img" preview={false} />
             <p className="member-name">Ricardo Ferreira</p>
-            <p className="member-position">Operations Manager</p>
+            <p className="member-position">Business Development</p>
             <p className="member-description">
-                Ricardo is a co-founder of Notional and is responsible for
-                overseeing operations and assisting in client outreach.
+                Having vast commercial and contracts experience, Ricardo heads
+                up Notional's client engagement and ongoing success management
+                of the B2B relationship lifecycle.
             </p>
         </div>
     </div>,
@@ -57,7 +58,7 @@ export const members = [
             <p className="member-position">Marketing Director</p>
             <p className="member-description">
                 William is responsible for marketing and communications efforts
-                to increase Notional’s brand position and delegations. He also
+                to increase Notional's brand position and delegations. He also
                 assists with client outreach.
             </p>
         </div>
@@ -68,7 +69,7 @@ export const members = [
             <p className="member-name">Long Mai Gia</p>
             <p className="member-position">Infrastructure Lead</p>
             <p className="member-description">
-                Long oversees Notional’s relaying and validation infrastructure.
+                Long oversees Notional's relaying and validation infrastructure.
                 He is also the front-of-house person for all relaying issues
                 from clients.
             </p>
@@ -130,7 +131,7 @@ export const members = [
             <p className="member-position">Infrastructure</p>
             <p className="member-description">
                 Du assists Long with relaying and validator infrastructure and
-                is rapidly learning how to manage Notional’s systems to a
+                is rapidly learning how to manage Notional's systems to a
                 high-degree of efficiency.
             </p>
         </div>

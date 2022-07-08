@@ -7,15 +7,6 @@
   background-position: center;
 }
 
-/* .stake-section .stake-background {
-  z-index: 0;    
-  height: auto;
-  border: red solid;
-  position: absolute;
-  display: block;
-  margin: 0 auto;
-} */
-
 .stake-section .title {
   z-index: 1;
   text-align: center;
@@ -60,12 +51,7 @@
 }
 
 
-@media only screen and (min-width:360px) and (max-width: 1920px){
-  .stake-section {
-    /* background-size: 82%; */
-    background-position: center;
-    
-  }
+@media only screen and (min-width:360px) and (max-width: 1920px) {
   .stake-section .title {
     height: auto;
   }

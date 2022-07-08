@@ -1,206 +1,56 @@
 {
   "nodes": [
-    {
-      "id": "Juno",
-      "name": "Juno"
-    },
-    {
-      "id": "Osmosis",
-      "name": "Osmosis"
-    },
-    {
-      "id": "Cosmoshub",
-      "name": "Cosmoshub"
-    },
-    {
-      "id": "Sifchain",
-      "name": "Sifchain"
-    },
-    {
-      "id": "Omniflixhub",
-      "name": "Omniflixhub"
-    },
-    {
-      "id": "Akash",
-      "name": "Akash"
-    },
-    {
-      "id": "Terra",
-      "name": "Terra"
-    },
-    {
-      "id": "Umee",
-      "name": "Umee"
-    },
-    {
-      "id": "Persistence",
-      "name": "Persistence"
-    },
-    {
-      "id": "Microtick",
-      "name": "Microtick"
-    },
-    {
-      "id": "Band",
-      "name": "Band"
-    },
-    {
-      "id": "Kichain",
-      "name": "Kichain"
-    },
-    {
-      "id": "Lum",
-      "name": "Lum"
-    },
-    {
-      "id": "Axelar",
-      "name": "Axelar"
-    },
-    {
-      "id": "Stargaze",
-      "name": "Stargaze"
-    },
-    {
-      "id": "Starname",
-      "name": "Starname"
-    },
-    {
-      "id": "Secret",
-      "name": "Secret"
-    },
-    {
-      "id": "Cheq",
-      "name": "Cheq"
-    },
-    {
-      "id": "Konstellation",
-      "name": "Konstellation"
-    },
-    {
-      "id": "Fetch",
-      "name": "Fetch"
-    },
-    {
-      "id": "Chihuahua",
-      "name": "Chihuahua"
-    },
-    {
-      "id": "Bitcanna",
-      "name": "Bitcanna"
-    },
-    {
-      "id": "Crypto",
-      "name": "Crypto"
-    },
-    {
-      "id": "Kava",
-      "name": "Kava"
-    },
-    {
-      "id": "Evmos",
-      "name": "Evmos"
-    },
-    {
-      "id": "Bostrom",
-      "name": "Bostrom"
-    },
-    {
-      "id": "Likecoin",
-      "name": "Likecoin"
-    },
-    {
-      "id": "Dig",
-      "name": "Dig"
-    },
-    {
-      "id": "Bitsong",
-      "name": "Bitsong"
-    },
-    {
-      "id": "Regen",
-      "name": "Regen"
-    },
-    {
-      "id": "Sentinel",
-      "name": "Sentinel"
-    },
-    {
-      "id": "Iris",
-      "name": "Iris"
-    },
-    {
-      "id": "Ixo",
-      "name": "Ixo"
-    },
-    {
-      "id": "Emoney",
-      "name": "Emoney"
-    },
-    {
-      "id": "Injection",
-      "name": "Injection"
-    },
-    {
-      "id": "Gravity",
-      "name": "Gravity"
-    },
-    {
-      "id": "Comdex",
-      "name": "Comdex"
-    },
-    {
-      "id": "Vidulum",
-      "name": "Vidulum"
-    },
-    {
-      "id": "Desmos",
-      "name": "Desmos"
-    },
-    {
-      "id": "Medibloc",
-      "name": "Medibloc"
-    },
-    {
-      "id": "Cronos",
-      "name": "Cronos"
-    },
-    {
-      "id": "Sommelier",
-      "name": "Sommelier"
-    },
-    {
-      "id": "Kujira",
-      "name": "Kujira"
-    }
+    {"id": "Juno","name": "Juno"},
+    {"id": "Osmosis","name": "Osmosis"},
+    {"id": "Cosmoshub","name": "Cosmoshub"},
+    {"id": "Sifchain","name": "Sifchain"},
+    {"id": "Omniflixhub","name": "Omniflixhub"},
+    {"id": "Akash","name": "Akash"},
+    {"id": "Terra","name": "Terra"},
+    {"id": "Umee","name": "Umee"},
+    {"id": "Persistence","name": "Persistence"},
+    {"id": "Microtick","name": "Microtick"},
+    {"id": "Band","name": "Band"},
+    {"id": "Kichain","name": "Kichain"},
+    {"id": "Lum","name": "Lum"},
+    {"id": "Axelar","name": "Axelar"},
+    {"id": "Stargaze","name": "Stargaze"},
+    {"id": "Starname","name": "Starname"},
+    {"id": "Secret","name": "Secret"},
+    {"id": "Cheq","name": "Cheq"},
+    {"id": "Konstellation","name": "Konstellation"},
+    {"id": "Fetch","name": "Fetch"},
+    {"id": "Chihuahua","name": "Chihuahua"},
+    {"id": "Bitcanna","name": "Bitcanna"},
+    {"id": "Crypto","name": "Crypto"},
+    {"id": "Kava","name": "Kava"},
+    {"id": "Evmos","name": "Evmos"},
+    {"id": "Bostrom","name": "Bostrom"},
+    {"id": "Likecoin","name": "Likecoin"},
+    {"id": "Dig","name": "Dig"},
+    {"id": "Bitsong","name": "Bitsong"},
+    {"id": "Regen","name": "Regen"},
+    {"id": "Sentinel","name": "Sentinel"},
+    {"id": "Iris","name": "Iris"},
+    {"id": "Ixo","name": "Ixo"},
+    {"id": "Emoney","name": "Emoney"},
+    {"id": "Injection","name": "Injection"},
+    {"id": "Gravity","name": "Gravity"},
+    {"id": "Comdex","name": "Comdex"},
+    {"id": "Vidulum","name": "Vidulum"},
+    {"id": "Desmos","name": "Desmos"},
+    {"id": "Medibloc","name": "Medibloc"},
+    {"id": "Cronos","name": "Cronos"},
+    {"id": "Sommelier","name": "Sommelier"},
+    {"id": "Kujira","name": "Kujira"}
   ],
   "links": [
-    {
-      "source": "Persistence",
-      "target": "Sommelier"
-    },
-    {
-      "source": "Cronos",
-      "target": "Sommelier"
-    },
-    {
-      "source": "Medibloc",
-      "target": "Sommelier"
-    },
-    {
-      "source": "Kujira",
-      "target": "Sommelier"
-    },
-    {
-      "source": "Iris",
-      "target": "Sommelier"
-    },
-    {
-      "source": "Ixo",
-      "target": "Sommelier"
-    },
-    {
-      "source": "Osmosis",
-      "target": "Sommelier"
-    }
+    {"source": "Persistence","target": "Sommelier"},
+    {"source": "Cronos","target": "Sommelier"},
+    {"source": "Medibloc","target": "Sommelier"},
+    {"source": "Kujira","target": "Sommelier"},
+    {"source": "Iris","target": "Sommelier"},
+    {"source": "Ixo","target": "Osmosis"},
+    {"source": "Osmosis","target": "Osmosis"}
   ]
 }
