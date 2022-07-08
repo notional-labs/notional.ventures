@@ -1,91 +1,91 @@
 import React from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import "./Graph.css";
-import Data from "./relayers.json";
-import { Sprite, TextureLoader, SpriteMaterial } from "three";
+import {Data} from "./relayers";
+// import { Sprite, TextureLoader, SpriteMaterial } from "three";
 import { useState, useCallback } from "react";
 
 const Graph = () => {
- 
-    const NODE_R = 8;
-    const [highlightNodes, setHighlightNodes] = useState(new Set());
-    const [highlightLinks, setHighlightLinks] = useState(new Set());
-    const [hoverNode, setHoverNode] = useState(null);
+    
+    const gData = Data;
+    console.log(Data);
 
+    gData.links.forEach(link => {
+        const a = gData.nodes[link.source];
+        console.log(link);
+        const b = gData.nodes[link.target];
+        !a.neighbors && (a.neighbors = []);
+        !b.neighbors && (b.neighbors = []);
+        a.neighbors.push(b);
+        b.neighbors.push(a);
+  
+        !a.links && (a.links = []);
+        !b.links && (b.links = []);
+        a.links.push(link);
+        b.links.push(link);
+      });
+      console.log(gData)
+      
+
+      const highlightNodes = new Set();
+      const highlightLinks = new Set();
+      let hoverNode = null;
+      
     const updateHighlight = () => {
-        setHighlightNodes(highlightNodes);
-        setHighlightLinks(highlightLinks);
+        // Graph
     };
-
-    const handleNodeHover = (node) => {
-        highlightNodes.clear();
-        highlightLinks.clear();
-        if (node) {
-            highlightNodes.add(node);
-            node.neighbors.forEach((neighbor) => highlightNodes.add(neighbor));
-            node.links.forEach((link) => highlightLinks.add(link));
-        }
-
-        setHoverNode(node || null);
-        updateHighlight();
-    };
-
-    const handleLinkHover = (link) => {
-        highlightNodes.clear();
-        highlightLinks.clear();
-
-        if (link) {
-            highlightLinks.add(link);
-            highlightNodes.add(link.source);
-            highlightNodes.add(link.target);
-        }
-
-        updateHighlight();
-    };
-
-    const paintRing = useCallback(
-        (node, ctx) => {
-            // add ring just for highlighted nodes
-            ctx.beginPath();
-            ctx.arc(node.x, node.y, NODE_R * 1.4, 0, 2 * Math.PI, false);
-            ctx.fillStyle = node === hoverNode ? "red" : "orange";
-            ctx.fill();
-        },
-        [hoverNode]
-    );
 
     return (
         <ForceGraph3D
-            graphData={Data}
+            graphData={gData}
             backgroundColor="rgba(10,10,10,100)"
-            // backgroundColor="grey"
             height={700}
             width={1000}
-            // nodeRelSize={NODE_R}
-            nodeColor="white"
+            nodeColor={node => 
+                highlightNodes.has(node) ? node === hoverNode ? 'rgb(255,0,0,1)' : 'rgba(255,160,0,0.8)' : 'rgba(0,255,255,0.6)'
+            }
             nodeId="id"
             nodeLabel="name"
             linkCurvature={0.1}
-            nodeThreeObject={({id}) => {
-                const imgTexture = new TextureLoader().load(`../../../media/chains/${id}.png`);
-                const material = new SpriteMaterial({ map: imgTexture });
-                const sprite = new Sprite(material);
-                sprite.scale.set(20, 20);
+            // nodeThreeObject={({id}) => {
+            //     const imgTexture = new TextureLoader().load(`../../../media/chains/${id}.png`);
+            //     const material = new SpriteMaterial({ map: imgTexture });
+            //     const sprite = new Sprite(material);
+            //     sprite.scale.set(20, 20);
       
-                return sprite;
+            //     return sprite;
+            // }}
+            linkWidth={(link) => (highlightLinks.has(link) ? 4 : 1)}
+            linkDirectionalParticles={link => highlightLinks.has(link) ? 4 : 0}
+            linkDirectionalParticleWidth={4}
+            onNodeHover={node => {
+                // no state change
+                if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
+
+                highlightNodes.clear();
+                highlightLinks.clear();
+                if (node) {
+                    highlightNodes.add(node);
+                    node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
+                    node.links.forEach(link => highlightLinks.add(link));
+                }
+
+                hoverNode = node || null;
+
+                updateHighlight();
             }}
-            autoPauseRedraw={false}
-            linkWidth={(link) => (highlightLinks.has(link) ? 15 : 6)}
-            linkDirectionalParticles={4}
-            linkDirectionalParticleWidth={(link) =>
-                highlightLinks.has(link) ? 4 : 0
-            }
-            nodeCanvasObjectMode={(node) =>
-                highlightNodes.has(node) ? "before" : undefined
-            }
-            nodeCanvasObject={paintRing}
-            onNodeHover={handleNodeHover}
-            onLinkHover={handleLinkHover}
+            onLinkHover={link => {
+                highlightNodes.clear();
+                highlightLinks.clear();
+      
+                if (link) {
+                  highlightLinks.add(link);
+                  highlightNodes.add(link.source);
+                  highlightNodes.add(link.target);
+                }
+      
+                updateHighlight();
+            }}
         />
     );
 };
