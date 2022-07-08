@@ -58,7 +58,7 @@ const Navbar = () => {
               width: "2.5rem",
               height: "2.5rem",
               margin: "1rem",
-              "margin-left": "0",
+              marginLeft: "0",
             }}
             src={NavBtn}
             preview={false}
