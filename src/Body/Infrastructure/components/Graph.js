@@ -75,7 +75,7 @@ const Graph = () => {
                 return sprite;
             }}
             autoPauseRedraw={false}
-            linkWidth={(link) => (highlightLinks.has(link) ? 5 : 1)}
+            linkWidth={(link) => (highlightLinks.has(link) ? 15 : 6)}
             linkDirectionalParticles={4}
             linkDirectionalParticleWidth={(link) =>
                 highlightLinks.has(link) ? 4 : 0
