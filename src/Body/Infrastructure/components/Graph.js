@@ -57,17 +57,17 @@ const Graph = () => {
     return (
         <ForceGraph3D
             graphData={Data}
-            // backgroundColor="rgba(0,0,0,0)"
-            backgroundColor="grey"
+            backgroundColor="rgba(10,10,10,100)"
+            // backgroundColor="grey"
             height={700}
-            width={700}
+            width={1000}
             // nodeRelSize={NODE_R}
             nodeColor="white"
             nodeId="id"
             nodeLabel="id"
             linkCurvature={0.1}
             nodeThreeObject={({id}) => {
-                const imgTexture = new TextureLoader().load(`https://picsum.photos/100/100/?random`);
+                const imgTexture = new TextureLoader().load(`../../../media/chains/${id}.png`);
                 const material = new SpriteMaterial({ map: imgTexture });
                 const sprite = new Sprite(material);
                 sprite.scale.set(12, 12);
