@@ -43,15 +43,29 @@
 .infra-section .relayer {
   height: auto;
   width: auto;
+  max-width: 1920px;
+  margin: auto;
   position: relative;
   border: white solid;
   display: flex;
 }
 
+.infra-section .relayer .relayer-info .relayer-title {
+  font-family: "Segoe UI Light";
+  color: white;
+  font-size: 40px;
+}
+
+.infra-section .relayer .relayer-info .relayer-text {
+  font-family: "Segoe UI Light";
+  color: white;
+  font-size: 20px;
+}
+
 .infra-section .relayer .relayer-info {
   text-align: center;
-  width: 100%;
-  height: 25rem;
+  width: 40%;
+  height: auto;
   align-items: center;
   border: red solid;
 }
