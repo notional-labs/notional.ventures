@@ -5,43 +5,31 @@ import Zoom from "@mui/material/Zoom";
 import "./StakeUptimeBlock.css";
 
 const UptimeBlock = (props) => {
-  let { height, uptime } = props;
-  // console.log(height, uptime);
-  if (uptime.length === 0) {
-    return (
-      <Tooltip TransitionComponent={Zoom} title={height}>
-        <Image
-          className="block"
-          preview={false}
-          src={nomiss}
-        />
-      </Tooltip>
-    );
-  } else {
-    for (let index = 0; index < uptime.length; index++) {
-      const element = uptime[index];
-      if (height === parseInt(element)) {
+    let { height, uptime } = props;
+    // console.log(height, uptime);
+    if (uptime.length === 0) {
         return (
-          <Tooltip TransitionComponent={Zoom} title={height}>
-            <Image
-          className="block"
-              preview={false}
-              src={miss}
-            />
-          </Tooltip>
+            <Tooltip TransitionComponent={Zoom} title={height}>
+                <Image className="block" preview={false} src={nomiss} />
+            </Tooltip>
         );
-      }
+    } else {
+        for (let index = 0; index < uptime.length; index++) {
+            const element = uptime[index];
+            if (height === parseInt(element)) {
+                return (
+                    <Tooltip TransitionComponent={Zoom} title={height}>
+                        <Image className="block" preview={false} src={miss} />
+                    </Tooltip>
+                );
+            }
+        }
+        return (
+            <Tooltip TransitionComponent={Zoom} title={height}>
+                <Image className="block" src={nomiss} preview={false} />
+            </Tooltip>
+        );
     }
-    return (
-      <Tooltip TransitionComponent={Zoom} title={height}>
-        <Image
-          className="block"
-          src={nomiss}
-          preview={false}
-        />
-      </Tooltip>
-    );
-  }
 };
 
 export default UptimeBlock;
