@@ -32,12 +32,12 @@
 .infra-section .title .text {
   font-family: "Segoe UI Light";
   font-size: 22px;
-  color: white;
   width: 60%;
   margin: 1rem auto;
   align-items: center;
   text-align: center;
   font-weight: 600;
+  color: white;
 }
 
 .infra-section .relayer {
@@ -81,8 +81,9 @@
   margin: auto;
   flex-wrap: wrap;
   gap: 5rem;
-  /* margin: 3rem auto; */
+  margin-top: 2rem;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .infra-section .services .service-item{

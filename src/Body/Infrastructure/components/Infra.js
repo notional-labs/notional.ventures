@@ -58,7 +58,7 @@ const Infra = () => {
                         </div>
                     </button>
                 </a>
-                <a className="link">
+                <a href="https://status.notional.ventures/status/cosmosia" className="link">
                     <button className="service-item">
                         <div className="service-title">26</div>
                         <div className="service-description">UPTIME KUMA</div>
