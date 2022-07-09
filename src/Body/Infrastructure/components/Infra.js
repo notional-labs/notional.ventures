@@ -31,7 +31,7 @@ const Infra = () => {
                     </p>
                 </div>
 
-                <Graph className="relayer-graph" />
+                {/* <Graph className="relayer-graph" /> */}
             </div>
 
             <div className="services">
@@ -44,7 +44,6 @@ const Infra = () => {
                 <Link
                     to="/snapshot"
                     className="link"
-                    style={{ cursor: "pointer" }}
                 >
                     <button className="service-item">
                         <div className="service-title">26</div>

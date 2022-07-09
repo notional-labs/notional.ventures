@@ -1,6 +1,6 @@
 .snapshot-section {
     background-color: black;
-    height: 1000vh;
+    height:150vh;
     color: white;
     justify-content: center;
 }
@@ -25,3 +25,4 @@
     font-size: 1rem;
     padding: 1rem;
 }
+

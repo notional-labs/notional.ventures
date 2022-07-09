@@ -93,13 +93,10 @@
 
 .link{
   color: black;
-  cursor: pointer;
 }
 
 .link:hover {
   color: bisque;
-  cursor: pointer;
-
 }
 .service-item {
   border-radius: 30px;
@@ -108,4 +105,6 @@
   width: 450px;
   /* backdrop-filter: blur(5px); */
   box-shadow: 4px 8px 30px 2px rgb(255, 255, 255, 0.15);
+  cursor: pointer;
 }
+

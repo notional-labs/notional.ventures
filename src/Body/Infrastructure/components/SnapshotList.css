@@ -1,9 +1,51 @@
 .snapshot-list {
-    width: auto;
-    height: auto;
-    z-index: inherit;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 0;
-  }
+  width: auto;
+  height: auto;
+  z-index: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  row-gap: 1rem;
+  padding: 0;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.snapshot-list-container {
+    margin-top: 2rem;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: rgb(78, 76, 73);
+}
+
+.paginationActive a {
+  color: white;
+  background-color: rgb(78, 76, 73);
+}
+
+.paginationDisabled a {
+  color: grey;
+  background-color: rgb(63, 61, 61);
+}
