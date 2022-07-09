@@ -1,15 +1,56 @@
 .modal {
-    z-index: 11;
-    width: auto;
-    max-height: 100vh;
-    max-width:100vw;
-    height: auto;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 5rem 3rem;
-    display: relative;
-    gap: 3rem;
-  }
+  z-index: 11;
+  width: auto;
+  max-height: 100vh;
+  max-width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 5rem 3rem;
+  display: relative;
+  gap: 3rem;
+}
+
+.content {
+  background-color: rgb(90, 89, 87);
+  border: 1px solid white;
+  height: 50rem;
+  width: 50rem;
+}
+
+.snapshot-name {
+  border-bottom: 1px solid white;
+  justify-content: center;
+  justify-items: center;
+  font-size: 2rem;
+}
+
+.snapshot-name p {
+    margin: 0 auto;
+}
+
+.snapshot-type-modal-container {
+  display: flex;
+}
+
+.snapshot-modal-navbar {
+}
+
+.snapshot-modal-data {
+    border-left: 1px solid white;
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
+
+.snapshot-modal-navbar li {
+  list-style: none;
+}
+
+.snapshot-modal-navbar-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
