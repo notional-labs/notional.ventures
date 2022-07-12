@@ -36,9 +36,9 @@ function App() {
             <Project />
             <Team />
             <Contact />
+            <ScrollButton />
             <Footer />
           </Router>
-          <ScrollButton />
         </div>
       )}
     </React.Fragment>
