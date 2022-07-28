@@ -11,9 +11,10 @@ const Graph = () => {
     console.log(Data);
 
     gData.links.forEach(link => {
-        const a = gData.nodes[link.source];
-        console.log(link);
+        let a = gData.nodes[link.source];
+        console.log(a)
         const b = gData.nodes[link.target];
+        // gData.nodes[a]
         !a.neighbors && (a.neighbors = []);
         !b.neighbors && (b.neighbors = []);
         a.neighbors.push(b);
@@ -24,7 +25,6 @@ const Graph = () => {
         a.links.push(link);
         b.links.push(link);
       });
-      console.log(gData)
       
 
       const highlightNodes = new Set();
