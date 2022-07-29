@@ -85,7 +85,7 @@ export const STAKES = [
     api: "https://backend.notional.ventures/akash",
     keplr: "akashnet",
     ping: "akash-network",
-    address: "akashvaloper1g5qqaxu89qk54ex3zh6tus0a8ta2sj4fuejw9a",
+    address: "akashvaloper1083svrca4t350mphfv9x45wq9asrs60c0k5a63",
     rank: "41"
 
   },
