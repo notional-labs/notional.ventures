@@ -12,7 +12,11 @@ const ModalOverlay = (props) => {
 
   let golvdb_content = <div>golvdb</div>;
   let rocklvdb_content = <div>rocklvdb</div>;
-  let instruction_content = <div>instruction</div>;
+  let instruction_content = <div>
+        instruction <br />
+        Date: 12/34/5961 13:12:20 CEST Time<br/>
+        Size: 120Gb
+    </div>;
   const changeToGo = () => {
     setGolvdb(true);
     setRocklvdb(false);
