@@ -2,6 +2,11 @@ import React from "react";
 import "./Infra.css";
 // import Graph from "../components/Graph";
 import { Link } from "react-router-dom";
+import { Image } from "antd";
+import RPC from "../../../media/background-logo/RPC.svg"
+import Snapshots from "../../../media/background-logo/Snapshot.svg"
+import Upgrade from "../../../media/background-logo/Update.svg"
+import Uptime from "../../../media/background-logo/Uptime1.svg"
 // import Background from "../../media/background-decor/infrastructe-background.png"
 
 const Infra = () => {
@@ -37,7 +42,7 @@ const Infra = () => {
             <div className="services">
                 <a className="link">
                     <button className="service-item">
-                        <div className="service-title">26</div>
+                        <Image src={RPC} preview = {false} className="service-title"></Image>
                         <div className="service-description">RPC LISTS</div>
                     </button>
                 </a>
@@ -46,13 +51,13 @@ const Infra = () => {
                     className="link"
                 >
                     <button className="service-item">
-                        <div className="service-title">26</div>
+                        <Image src={Snapshots} preview = {false} className="service-title">26</Image>
                         <div className="service-description">SNAPSHOTS</div>
                     </button>
                 </Link>
                 <a className="link">
                     <button className="service-item">
-                        <div className="service-title">26</div>
+                        <Image src={Upgrade} preview = {false} className="service-title">26</Image>
                         <div className="service-description">
                             CHAINS UPGRADE
                         </div>
@@ -60,7 +65,7 @@ const Infra = () => {
                 </a>
                 <a href="https://status.notional.ventures/status/cosmosia" className="link">
                     <button className="service-item">
-                        <div className="service-title">26</div>
+                        <Image src={Uptime} preview = {false} className="service-title">26</Image>
                         <div className="service-description">UPTIME KUMA</div>
                     </button>
                 </a>
