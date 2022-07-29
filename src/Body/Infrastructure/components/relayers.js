@@ -1,28 +1,28 @@
 export const Data = {
-  "nodes": [
-    {"id": "Akash","name": "Akash", "neighbors" : []},
-    {"id": "Axelar","name": "Axelar", "neighbors" : []},
-    {"id": "Band","name": "Band", "neighbors" : []},
-    {"id": "Cheq","name": "Cheq", "neighbors" : []},
-    {"id": "Cosmoshub","name": "Cosmoshub", "neighbors" : []},
-    {"id": "Evmos","name": "Evmos", "neighbors" : []},
-    {"id": "Juno","name": "Juno", "neighbors" : []},
-    {"id": "Kichain","name": "Kichain", "neighbors" : []},
-    {"id": "Lum","name": "Lum", "neighbors" : []},
-    {"id": "Omniflixhub","name": "Omniflixhub", "neighbors" : []},
-    {"id": "Osmosis","name": "Osmosis", "neighbors" : []},
-    {"id": "Sifchain","name": "Sifchain", "neighbors" : []},
-    {"id": "Sommelier","name": "Sommelier", "neighbors" : []},
-    {"id": "Terra","name": "Terra", "neighbors" : []},
-    {"id": "Umee","name": "Umee", "neighbors" : []}
-  ],
-  "links": [
-    {"source": "Omniflixhub","target": "Sommelier"},
-    {"source": "Sifchain","target": "Sommelier"},
-    {"source": "Evmos","target": "Lum"},
-    {"source": "Terra","target": "Cheq"},
-    {"source": "Axelar","target": "Akash"},
-    {"source": "Band","target": "Akash"},
-    {"source": "Osmosis","target": "Cosmoshub"}
-  ]
-}
+    nodes: [
+        { id: "Akash", name: "Akash", logo: "Akash.png", neighbors: [], links: [] },
+        { id: "Axelar", name: "Axelar", logo: "Axelar.png", neighbors: [], links: [] },
+        { id: "Band", name: "Band", logo: "Band.png", neighbors: [], links: [] },
+        { id: "Cheq", name: "Cheq", logo: "Cheq.png", neighbors: [], links: [] },
+        { id: "Cosmoshub", name: "Cosmoshub", logo: "Cosmoshub.png", neighbors: [], links: [] },
+        { id: "Evmos", name: "Evmos", logo: "Evmos.png", neighbors: [], links: [] },
+        { id: "Juno", name: "Juno", logo: "Juno.png", neighbors: [], links: [] },
+        { id: "Kichain", name: "Kichain", logo: "Kichain.png", neighbors: [], links: [] },
+        { id: "Lum", name: "Lum", logo: "Lum.png", neighbors: [], links: [] },
+        { id: "Omniflixhub", name: "Omniflixhub", logo: "Omniflixhub.png", neighbors: [], links: [] },
+        { id: "Osmosis", name: "Osmosis", logo: "Osmosis.png", neighbors: [], links: [] },
+        { id: "Sifchain", name: "Sifchain", logo: "Sifchain.png", neighbors: [], links: [] },
+        { id: "Sommelier", name: "Sommelier", logo: "Sommelier.png", neighbors: [], links: [] },
+        { id: "Terra", name: "Terra", logo: "Terra.png", neighbors: [], links: [] },
+        { id: "Umee", name: "Umee", logo: "Umee.png", neighbors: [], links: [] },
+    ],
+    links: [
+        { source: "Omniflixhub", target: "Sommelier" },
+        { source: "Sifchain", target: "Sommelier" },
+        { source: "Evmos", target: "Lum" },
+        { source: "Terra", target: "Cheq" },
+        { source: "Axelar", target: "Akash" },
+        { source: "Band", target: "Akash" },
+        { source: "Osmosis", target: "Cosmoshub" },
+    ],
+};

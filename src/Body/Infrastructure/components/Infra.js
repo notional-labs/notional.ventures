@@ -1,6 +1,6 @@
 import React from "react";
 import "./Infra.css";
-import Graph from "../components/Graph";
+// import Graph from "../components/Graph";
 import { Link } from "react-router-dom";
 // import Background from "../../media/background-decor/infrastructe-background.png"
 
