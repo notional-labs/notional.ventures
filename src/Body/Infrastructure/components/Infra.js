@@ -42,8 +42,8 @@ const Infra = () => {
             <div className="services">
                 <a className="link">
                     <button className="service-item">
-                        <Image src={RPC} preview = {false} className="service-title"></Image>
-                        <div className="service-description">RPC LISTS</div>
+                        <Image src={RPC} preview = {false} ></Image>
+                        <div >RPC LISTS</div>
                     </button>
                 </a>
                 <Link
@@ -51,22 +51,22 @@ const Infra = () => {
                     className="link"
                 >
                     <button className="service-item">
-                        <Image src={Snapshots} preview = {false} className="service-title">26</Image>
-                        <div className="service-description">SNAPSHOTS</div>
+                        <Image src={Snapshots} preview = {false} >26</Image>
+                        <div >SNAPSHOTS</div>
                     </button>
                 </Link>
                 <a className="link">
                     <button className="service-item">
-                        <Image src={Upgrade} preview = {false} className="service-title">26</Image>
-                        <div className="service-description">
+                        <Image src={Upgrade} preview = {false} >26</Image>
+                        <div >
                             CHAINS UPGRADE
                         </div>
                     </button>
                 </a>
                 <a href="https://status.notional.ventures/status/cosmosia" className="link">
                     <button className="service-item">
-                        <Image src={Uptime} preview = {false} className="service-title">26</Image>
-                        <div className="service-description">UPTIME KUMA</div>
+                        <Image src={Uptime} preview = {false} >26</Image>
+                        <div >UPTIME KUMA</div>
                     </button>
                 </a>
             </div>

@@ -12,11 +12,22 @@ const ModalOverlay = (props) => {
 
   let golvdb_content = <div>golvdb</div>;
   let rocklvdb_content = <div>rocklvdb</div>;
-  let instruction_content = <div>
-        instruction <br />
-        Date: 12/34/5961 13:12:20 CEST Time<br/>
-        Size: 120Gb
-    </div>;
+  let instruction_content = (
+    <div>
+      Chain ID <br />
+      GoLevelDB <br />
+      Date: {props.goSnapshotInfo.data_date} <br />
+      Size: {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
+      <br />
+      RockLevelDB <br />
+      Date: {props.rockSnapshotInfo.data_date} <br />
+      Size: {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(
+        2
+      )}{" "}
+      GB
+      <br />
+    </div>
+  );
   const changeToGo = () => {
     setGolvdb(true);
     setRocklvdb(false);
@@ -35,15 +46,19 @@ const ModalOverlay = (props) => {
   let content = (
     <div className={`modal ${props.className}`}>
       <div className="content">
-        <div className="snapshot-name">
-          <p>{props.name}</p>
-        </div>
         <div className="snapshot-type-modal-container">
+          <div className="snapshot-name">
+            <p>{props.name}</p>
+          </div>
           <ul className="snapshot-modal-navbar">
             <li>
               <button
                 onClick={changeToIns}
-                className="snapshot-modal-navbar-btn"
+                className={
+                  instruction
+                    ? "snapshot-modal-navbar-btn-focus"
+                    : "snapshot-modal-navbar-btn"
+                }
               >
                 Instruction
               </button>
@@ -51,7 +66,11 @@ const ModalOverlay = (props) => {
             <li>
               <button
                 onClick={changeToGo}
-                className="snapshot-modal-navbar-btn"
+                className={
+                  golvdb
+                    ? "snapshot-modal-navbar-btn-focus"
+                    : "snapshot-modal-navbar-btn"
+                }
               >
                 GoLevelDB
               </button>
@@ -59,17 +78,21 @@ const ModalOverlay = (props) => {
             <li>
               <button
                 onClick={changeToRock}
-                className="snapshot-modal-navbar-btn"
+                className={
+                  rocklvdb
+                    ? "snapshot-modal-navbar-btn-focus"
+                    : "snapshot-modal-navbar-btn"
+                }
               >
                 Rocksdb
               </button>
             </li>
           </ul>
-          <div className="snapshot-modal-data">
-            {(golvdb && golvdb_content) ||
-              (rocklvdb && rocklvdb_content) ||
-              (instruction && instruction_content)}
-          </div>
+        </div>
+        <div className="snapshot-modal-data">
+          {(golvdb && golvdb_content) ||
+            (rocklvdb && rocklvdb_content) ||
+            (instruction && instruction_content)}
         </div>
       </div>
     </div>

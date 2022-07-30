@@ -34,6 +34,7 @@ const StakeItem = (props) => {
         try {
             const res = await axios.get(`${props.api}/information`);
             setLoadedChainInfo(res);
+            console.log(loadedChainInfo);
         } catch (err) {
             console.log(err.message);
             setError(true);

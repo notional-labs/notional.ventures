@@ -15,34 +15,44 @@
 }
 
 .content {
-  background-color: rgb(90, 89, 87);
-  border: 1px solid white;
+  background-color: #D9D9D9;
+  border-radius: 20px;
   height: 50rem;
   width: 50rem;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: inset 220px 2px 50px 10px  rgba(0, 0, 0, 0.4);
+  
 }
 
 .snapshot-name {
-  border-bottom: 1px solid white;
   justify-content: center;
   justify-items: center;
-  font-size: 2rem;
-}
-
-.snapshot-name p {
-    margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 .snapshot-type-modal-container {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #525252;
+  width: 13rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 30px 0 0 30px;
 }
 
 .snapshot-modal-navbar {
+  line-height: 4rem;
+  padding: 0;
 }
 
 .snapshot-modal-data {
-    border-left: 1px solid white;
     margin-left: 2rem;
     padding-left: 2rem;
+    margin-top: 18rem;
+    color: black;
 }
 
 .snapshot-modal-navbar li {
@@ -53,4 +63,18 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  font-size: 20px;
+  width: 10rem;
+}
+
+.snapshot-modal-navbar-btn-focus {
+  color: black;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 10rem;
 }
