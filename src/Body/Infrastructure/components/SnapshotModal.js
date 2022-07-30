@@ -10,8 +10,54 @@ const ModalOverlay = (props) => {
   const [rocklvdb, setRocklvdb] = useState(false);
   const [instruction, setInstruction] = useState(true);
 
-  let golvdb_content = <div>golvdb</div>;
-  let rocklvdb_content = <div>rocklvdb</div>;
+  let golvdb_content = (
+    <div>
+      <div>
+        <h3>Addrbook.json</h3>
+        <p>wget -O ~/.osmosisd/config/addrbook.json URL</p>
+        <button>
+          <a href={props.goSnapshotInfo.addrbook}>Download</a>
+        </button>
+      </div>
+      <div>
+        <h3>Snapshot</h3>
+        <p>
+          cd ~/.osmosisd <br />
+          aria2c -x8 URL <br />
+          tar -xvf file_name <br />
+        </p>
+        <button>
+          <a href={props.goSnapshotInfo.data}>Download | {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB</a>
+        </button>
+      </div>
+    </div>
+  );
+  let rocklvdb_avl = (
+    <div>
+      <div>
+        <h3>Addrbook.json</h3>
+        <p>wget -O ~/.osmosisd/config/addrbook.json URL</p>
+        <button>
+          <a href={props.rockSnapshotInfo.addrbook}>Download</a>
+        </button>
+      </div>
+      <div>
+        <h3>Snapshot</h3>
+        <p>
+          cd ~/.osmosisd <br />
+          aria2c -x8 URL <br />
+          tar -xvf file_name <br />
+        </p>
+        <button>
+          <a href={props.rockSnapshotInfo.data}>Download | {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB</a>
+        </button>
+      </div>
+    </div>
+  );
+  let rocklvdb_unavl = (
+    <h1>unavailable at the moment</h1>
+  );
+  const rocklvdb_content = props.rockSnapshotInfo.addrbook === "NaN" ? rocklvdb_unavl : rocklvdb_avl ;
   let instruction_content = (
     <div>
       Chain ID <br />
@@ -21,9 +67,7 @@ const ModalOverlay = (props) => {
       <br />
       RockLevelDB <br />
       Date: {props.rockSnapshotInfo.data_date} <br />
-      Size: {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(
-        2
-      )}{" "}
+      Size: {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}
       GB
       <br />
     </div>
