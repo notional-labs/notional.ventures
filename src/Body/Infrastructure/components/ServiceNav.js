@@ -38,7 +38,10 @@ const ServiceNav = () => {
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="#">RPC</a>
+                            <Link onFocus={true} to="/rpc">RPC</Link>
+                        </li>
+                        <li>
+                            <Link to="/snapshot">Snapshot</Link>
                         </li>
                         <li>
                             <a href="#">Uptime</a>

@@ -1,0 +1,11 @@
+.rpc-section {
+    background-color: black;
+    height:100vh;
+    color: white;
+    justify-content: center;
+}
+
+.rpc-container {
+    width: 80%;
+    margin: 0 auto;
+}

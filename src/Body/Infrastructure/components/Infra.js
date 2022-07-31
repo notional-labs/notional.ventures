@@ -40,12 +40,12 @@ const Infra = () => {
             </div>
 
             <div className="services">
-                <a className="link">
+                <Link to="/rpc" className="link">
                     <button className="service-item">
                         <Image src={RPC} preview = {false} ></Image>
                         <div >RPC LISTS</div>
                     </button>
-                </a>
+                </Link>
                 <Link
                     to="/snapshot"
                     className="link"

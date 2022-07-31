@@ -5,6 +5,7 @@ import App from "./App";
 import Snapshot from "./Body/Infrastructure/pages/Snapshot";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Rpc from "./Body/Infrastructure/pages/Rpc";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -14,7 +15,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="snapshot" element={<Snapshot />} />
-                <Route path="API" element={<Snapshot />} />
+                <Route path="rpc" element={<Rpc />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

@@ -27,7 +27,10 @@ const ModalOverlay = (props) => {
           tar -xvf file_name <br />
         </p>
         <button>
-          <a href={props.goSnapshotInfo.data}>Download | {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB</a>
+          <a href={props.goSnapshotInfo.data}>
+            Download |{" "}
+            {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
+          </a>
         </button>
       </div>
     </div>
@@ -49,15 +52,18 @@ const ModalOverlay = (props) => {
           tar -xvf file_name <br />
         </p>
         <button>
-          <a href={props.rockSnapshotInfo.data}>Download | {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB</a>
+          <a href={props.rockSnapshotInfo.data}>
+            Download |{" "}
+            {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}{" "}
+            GB
+          </a>
         </button>
       </div>
     </div>
   );
-  let rocklvdb_unavl = (
-    <h1>unavailable at the moment</h1>
-  );
-  const rocklvdb_content = props.rockSnapshotInfo.addrbook === "NaN" ? rocklvdb_unavl : rocklvdb_avl ;
+  let rocklvdb_unavl = <h1>unavailable at the moment</h1>;
+  const rocklvdb_content =
+    props.rockSnapshotInfo.addrbook === "NaN" ? rocklvdb_unavl : rocklvdb_avl;
   let instruction_content = (
     <div>
       Chain ID <br />
@@ -66,10 +72,17 @@ const ModalOverlay = (props) => {
       Size: {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
       <br />
       RockLevelDB <br />
-      Date: {props.rockSnapshotInfo.data_date} <br />
-      Size: {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}
-      GB
-      <br />
+      {props.rockSnapshotInfo.addrbook === "NaN" ? (
+        <div>Not available</div>
+      ) : (
+        <div>
+          Date: {props.rockSnapshotInfo.data_date} <br />
+          Size:{" "}
+          {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}
+          GB
+          <br />
+        </div>
+      )}
     </div>
   );
   const changeToGo = () => {
