@@ -9,7 +9,7 @@ const Rpc = () => {
         <div className="rpc-section">
             <ServiceNav/>
             <div className="rpc-container">
-                <h1>RPC list</h1>
+                <div>RPC list</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel ante in nisi ultricies pharetra sed at metus. </p>
                 <div>
                     <RpcList rpc = {STAKES}/>

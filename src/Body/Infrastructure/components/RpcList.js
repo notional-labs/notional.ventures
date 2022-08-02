@@ -1,9 +1,21 @@
 import React from "react";
-
-const RpcList = () => {
-    return <div>
-        <h1></h1>
-    </div>
+import RpcItem from "./RpcItem";
+import "./RpcList.css"
+const RpcList = (props) => {
+        return (
+            <ul className="rpc-list">
+                {props.rpc.map((stake) => (
+                    <RpcItem
+                        key={stake.id}
+                        id={stake.id}
+                        image={stake.image}
+                        name={stake.name}
+                        rpc_service={stake.rpc_service}
+                        api_service={stake.api_service}
+                    />
+                ))}
+            </ul>
+        );
 }
 
 export default RpcList;

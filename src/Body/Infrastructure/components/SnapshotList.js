@@ -7,7 +7,7 @@ const SnapshotList = (props) => {
   const [snapshots, setSnapshots] = useState(props.snapshots);
   const [pageNumber, setPageNumber] = useState(0);
 
-  const snapshotsPerPage = 10;
+  const snapshotsPerPage = 8;
   const pagesVisited = pageNumber * snapshotsPerPage;
 
   const displaySnapshots = snapshots
