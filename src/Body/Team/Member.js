@@ -43,10 +43,10 @@ export const members = [
     <div className="member">
       <Image src={ricardo} className="member-img" preview={false} />
       <p className="member-name">Ricardo Ferreira</p>
-      <p className="member-position">Operations Manager</p>
+      <p className="member-position">Business Development</p>
       <p className="member-description">
-        Ricardo is a co-founder of Notional and is responsible for overseeing
-        operations and assisting in client outreach.
+      Having vast commercial and contracts experience, Ricardo heads up Notional's
+      client engagement and ongoing success management of the B2B relationship lifecycle.
       </p>
     </div>
   </div>,
