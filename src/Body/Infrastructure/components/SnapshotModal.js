@@ -44,7 +44,7 @@ const ModalOverlay = (props) => {
         <button className = "download-btn">
           <a href={props.rockSnapshotInfo.addrbook}>Download</a>
         </button>
-      </div>
+      </div> <br />
       <div>
         <h3>Snapshot</h3>
         <p>
