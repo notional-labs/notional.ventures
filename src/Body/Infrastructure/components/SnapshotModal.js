@@ -15,10 +15,10 @@ const ModalOverlay = (props) => {
       <div>
         <h3>Addrbook.json</h3>
         <p>wget -O ~/.osmosisd/config/addrbook.json URL</p>
-        <button>
+        <button className = "download-btn">
           <a href={props.goSnapshotInfo.addrbook}>Download</a>
-        </button>
-      </div>
+        </button> 
+      </div> <br/>
       <div>
         <h3>Snapshot</h3>
         <p>
@@ -26,21 +26,22 @@ const ModalOverlay = (props) => {
           aria2c -x8 URL <br />
           tar -xvf file_name <br />
         </p>
-        <button>
+        <button className = "download-btn">
           <a href={props.goSnapshotInfo.data}>
             Download |{" "}
             {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
           </a>
-        </button>
+        </button> 
       </div>
     </div>
   );
+
   let rocklvdb_avl = (
     <div>
       <div>
         <h3>Addrbook.json</h3>
         <p>wget -O ~/.osmosisd/config/addrbook.json URL</p>
-        <button>
+        <button className = "download-btn">
           <a href={props.rockSnapshotInfo.addrbook}>Download</a>
         </button>
       </div>
@@ -51,27 +52,30 @@ const ModalOverlay = (props) => {
           aria2c -x8 URL <br />
           tar -xvf file_name <br />
         </p>
-        <button>
+        <button className = "download-btn">
           <a href={props.rockSnapshotInfo.data}>
             Download |{" "}
             {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}{" "}
             GB
           </a>
-        </button>
+        </button> 
       </div>
     </div>
   );
+
   let rocklvdb_unavl = <h1>unavailable at the moment</h1>;
   const rocklvdb_content =
     props.rockSnapshotInfo.addrbook === "NaN" ? rocklvdb_unavl : rocklvdb_avl;
+
   let instruction_content = (
     <div>
-      Chain ID <br />
-      GoLevelDB <br />
+
+      <h2>GoLevelDB</h2> 
       Date: {props.goSnapshotInfo.data_date} <br />
       Size: {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
       <br />
-      RockLevelDB <br />
+      <br />
+      <h2>RockDB</h2>
       {props.rockSnapshotInfo.addrbook === "NaN" ? (
         <div>Not available</div>
       ) : (
@@ -105,6 +109,7 @@ const ModalOverlay = (props) => {
       <div className="content">
         <div className="snapshot-type-modal-container">
           <div className="snapshot-name">
+            <img src = {props.image} />
             <p>{props.name}</p>
           </div>
           <ul className="snapshot-modal-navbar">

@@ -23,8 +23,6 @@ const SnapshotItem = (props) => {
       const res = await axios.get(`${props.api}/snapshot`);
       setLoadedGoSnapshotInfo(res.data.goleveldb);
       setLoadedRockSnapshotInfo(res.data.rocksdb);
-      console.log(loadedGoSnapshotInfo);
-      console.log(loadedRockSnapshotInfo);
     } catch (err) {
       console.log(err.message);
     }

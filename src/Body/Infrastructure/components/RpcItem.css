@@ -17,9 +17,9 @@
       opacity: 0;
     }
   }
-  
+
 .dropdown-container {
-    margin-bottom: 2rem;
+
 }
 
 .dropdown-btn {
@@ -52,7 +52,7 @@
     align-self: center;
 }
 
-.link-container {
+.dropdown-content {
     margin: 0 auto;
     margin-top: 0;
     width: 70%;
@@ -60,4 +60,15 @@
     margin-top: 0;
     padding: 20px 5px 5px 20px;
     border-radius: 0 0 10px 10px;
+}
+
+.dropdown-content_active {
+    visibility: visible;
+    animation: fadeIn ease-in-out 0.5s;
+}
+
+.dropdown-content_inactive {
+    visibility: hidden;
+    animation: fadeOut ease-in-out 0.5s;
+    transition: 0.5s linear;
 }

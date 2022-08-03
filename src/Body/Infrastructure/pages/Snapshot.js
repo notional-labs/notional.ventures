@@ -16,10 +16,6 @@ const Snapshot = () => {
                     Which included: <br />
                     Addressbook.json <br />
                     This will be used for <br />
-                    2. Statesync <br />
-                    This contains data files for statesync-supported chains. Use
-                    this for <br />
-                    faster catching up. <br />
                     3. data_YYYYMMDD.json <br />
                     This is default pruned data of the chain which is generated
                     at the specific time in filename. The <br />

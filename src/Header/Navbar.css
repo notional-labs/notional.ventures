@@ -14,7 +14,9 @@
 }
 
 .nav-bg {
-  background-color: rgba(0, 0, 0,.8);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 6px 20px #000;
 }
 
 .main-navigation-btn {

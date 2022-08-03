@@ -29,6 +29,19 @@
   justify-content: center;
   justify-items: center;
   font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.snapshot-name img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.snapshot-name p {
+  align-self: center;
+  margin: 0;
 }
 
 .snapshot-type-modal-container {
@@ -57,6 +70,21 @@
 
 .snapshot-modal-navbar li {
   list-style: none;
+}
+
+.download-btn {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.download-btn:hover {
+  background-color: rgb(79, 74, 74);
+  border-radius: 10px;
+}
+
+.download-btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .snapshot-modal-navbar-btn {
