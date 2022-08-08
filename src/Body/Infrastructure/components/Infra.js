@@ -1,6 +1,6 @@
 import React from "react";
 import "./Infra.css";
-// import Graph from "../components/Graph";
+import Graph from "../components/Graph";
 import { Link } from "react-router-dom";
 import { Image } from "antd";
 import RPC from "../../../media/background-logo/RPC.svg"
@@ -36,7 +36,7 @@ const Infra = () => {
                     </p>
                 </div>
 
-                {/* <Graph className="relayer-graph" /> */}
+                <Graph className="relayer-graph" />
             </div>
 
             <div className="services">

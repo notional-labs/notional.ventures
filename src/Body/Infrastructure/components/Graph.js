@@ -42,62 +42,124 @@
 //     return sprite;
 // }
 
-import React from "react";
+// import React from "react";
+// // import renderMindMap from "./renderMindMap";
+// import ForceGraph3D from "react-force-graph-3d";
+// import * as THREE from "three";
+
+// // import MindMap from "./MindMap";
+
+
+// // Random connected graph
+// const gData = {
+//     "nodes": [
+//         {"id": "billy", "img": "billy.jpg"},
+//         {"id": "chinh", "img": "chinh.jpg"},
+//         {"id": "du1", "img": "du1.jpg"},
+//         {"id": "Hieu1", "img": "Hieu1.jpg"},
+//         {"id": "Huy1", "img": "Huy1.jpg"},
+//         {"id": "khanh1", "img": "khanh1.jpg"},
+//         {"id": "long", "img": "long.jpg"},
+//         {"id": "minh", "img": "minh.jpg"},
+//         {"id": "son", "img": "son.jpg"},
+//         {"id": "vinh1", "img": "vinh1.jpg"},
+//         {"id": "vuong1", "img": "vuong.jpg"}
+//       ],
+//       "links": [
+//         {"source": "billy", "target": "son"},
+//         {"source": "long", "target": "son"},
+//         {"source": "vuong1", "target": "son"},
+//         {"source": "vuong1", "target": "long"},
+//         {"source": "minh", "target": "son"},
+//         {"source": "khanh1", "target": "son"},
+//         {"source": "du1", "target": "son"},
+//         {"source": "Huy1", "target": "son"},
+//         {"source": "chinh", "target": "son"},
+//         {"source": "chinh", "target": "son"},
+//         {"source": "Hieu1", "target": "du1"},
+//         {"source": "Hieu1", "target": "vuong1"},
+//         {"source": "Hieu1", "target": "long"},
+//         {"source": "Hieu1", "target": "son"},
+//         {"source": "minh", "target": "Hieu1"},
+//         {"source": "du1", "target": "Hieu1"},
+//         {"source": "chinh", "target": "Hieu1"},
+//         {"source": "long", "target": "Hieu1"},
+//         {"source": "long", "target": "chinh"},
+//         {"source": "long", "target": "chinh"},
+//         {"source": "vinh1", "target": "chinh"},
+//         {"source": "son", "target": "khanh1"},
+//         {"source": "son", "target": "long"}
+//       ]
+// };
+
+// const Graph = () => {
+//   return (
+//     <ForceGraph3D
+//       graphData={gData}
+//       nodeThreeObject={({ img }) => {
+//         const imgTexture = new THREE.TextureLoader().load(`./members/${img}`);
+//         const material = new THREE.SpriteMaterial({ map: imgTexture });
+//         const sprite = new THREE.Sprite(material);
+//         sprite.scale.set(12, 12);
+
+//         return sprite;
+//       }}
+//     />
+//   );
+// }
+
+// export default Graph
+
+import React, { createRef, useEffect } from "react";
 // import renderMindMap from "./renderMindMap";
 import ForceGraph3D from "react-force-graph-3d";
 import * as THREE from "three";
-
+// import "../../../media/members/"
 // import MindMap from "./MindMap";
 
+//         {"id": "billy", "img": "billy.jpg"},
+//         {"id": "chinh", "img": "chinh.jpg"},
+//         {"id": "du1", "img": "du1.jpg"},
+//         {"id": "Hieu1", "img": "Hieu1.jpg"},
+//         {"id": "Huy1", "img": "Huy1.jpg"},
+//         {"id": "khanh1", "img": "khanh1.jpg"},
+//         {"id": "long", "img": "long.jpg"},
+//         {"id": "minh", "img": "minh.jpg"},
+//         {"id": "son", "img": "son.jpg"},
+//         {"id": "vinh1", "img": "vinh1.jpg"},
+//         {"id": "vuong1", "img": "vuong.jpg"}
+const imgs = [
+  "billy.png",
+  "chinh.jpg",
+  "du1.jpg",
+  "Hieu1.jpg",
+  "khanh1.jpg",
+  "Huy1.jpg",
+  "long.jpg",
+  "minh.jpg",
+  "son.jpg",
+  "tiger.jpg",
+  "vinh1.jpg"
+];
 
 // Random connected graph
 const gData = {
-    "nodes": [
-        {"id": "billy", "img": "billy.jpg"},
-        {"id": "chinh", "img": "chinh.jpg"},
-        {"id": "du1", "img": "du1.jpg"},
-        {"id": "Hieu1", "img": "Hieu1.jpg"},
-        {"id": "Huy1", "img": "Huy1.jpg"},
-        {"id": "khanh1", "img": "khanh1.jpg"},
-        {"id": "long", "img": "long.jpg"},
-        {"id": "minh", "img": "minh.jpg"},
-        {"id": "son", "img": "son.jpg"},
-        {"id": "vinh1", "img": "vinh1.jpg"},
-        {"id": "vuong1", "img": "vuong.jpg"}
-      ],
-      "links": [
-        {"source": "billy", "target": "son"},
-        {"source": "long", "target": "son"},
-        {"source": "vuong1", "target": "son"},
-        {"source": "vuong1", "target": "long"},
-        {"source": "minh", "target": "son"},
-        {"source": "khanh1", "target": "son"},
-        {"source": "du1", "target": "son"},
-        {"source": "Huy1", "target": "son"},
-        {"source": "chinh", "target": "son"},
-        {"source": "chinh", "target": "son"},
-        {"source": "Hieu1", "target": "du1"},
-        {"source": "Hieu1", "target": "vuong1"},
-        {"source": "Hieu1", "target": "long"},
-        {"source": "Hieu1", "target": "son"},
-        {"source": "minh", "target": "Hieu1"},
-        {"source": "du1", "target": "Hieu1"},
-        {"source": "chinh", "target": "Hieu1"},
-        {"source": "long", "target": "Hieu1"},
-        {"source": "long", "target": "chinh"},
-        {"source": "long", "target": "chinh"},
-        {"source": "vinh1", "target": "chinh"},
-        {"source": "son", "target": "khanh1"},
-        {"source": "son", "target": "long"}
-      ]
+  nodes: imgs.map((img, id) => ({ id, img })),
+  links: [...Array(imgs.length).keys()]
+    .filter((id) => id)
+    .map((id) => ({
+      source: id,
+      target: Math.round(Math.random() * (id - 1))
+    }))
 };
 
-export default function App() {
+export default function Graph() {
   return (
     <ForceGraph3D
       graphData={gData}
       nodeThreeObject={({ img }) => {
-        const imgTexture = new THREE.TextureLoader().load(`./members/${img}`);
+        const imgTexture = new THREE.TextureLoader().load(`../../../media/members/${img}`);
+        console.log(imgTexture);
         const material = new THREE.SpriteMaterial({ map: imgTexture });
         const sprite = new THREE.Sprite(material);
         sprite.scale.set(12, 12);

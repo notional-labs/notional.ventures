@@ -7,8 +7,8 @@ import axios from "axios";
 const SnapshotItem = (props) => {
   const [showModal, setShowModal] = useState(false);
   // const [error, setError] = useState(false);
-  const [loadedGoSnapshotInfo, setLoadedGoSnapshotInfo] = useState([])
-  const [loadedRockSnapshotInfo, setLoadedRockSnapshotInfo] = useState([])
+  const [loadedGoSnapshotInfo, setLoadedGoSnapshotInfo] = useState([]);
+  const [loadedRockSnapshotInfo, setLoadedRockSnapshotInfo] = useState([]);
   const showHandler = () => {
     setShowModal(true);
   };
@@ -17,7 +17,7 @@ const SnapshotItem = (props) => {
   };
   useEffect(() => {
     fetchSnapshotInfo();
-}, [showModal]);
+  }, [showModal]);
   const fetchSnapshotInfo = async () => {
     try {
       const res = await axios.get(`${props.api}/snapshot`);
@@ -34,25 +34,24 @@ const SnapshotItem = (props) => {
         name={props.name}
         onCancel={closeHandler}
         show={showModal}
-        goSnapshotInfo = {loadedGoSnapshotInfo}
-        rockSnapshotInfo = {loadedRockSnapshotInfo}
+        goSnapshotInfo={loadedGoSnapshotInfo}
+        rockSnapshotInfo={loadedRockSnapshotInfo}
       />
-      <button onClick={showHandler} className="snapshot-items-btn">
-        <li key={props.id} className="snapshot-items">
-          <div className="snapshot-item__content">
-            <div className="snapshot-item__image">
-              <img
-                src={props.image}
-                alt={props.name}
-                className="snapshot-item__image__detail"
-              />
-            </div>
-            <div className="snapshot-item__info">
-              <h2>{props.name}</h2>
-            </div>
+
+      <li onClick={showHandler} key={props.id} className="snapshot-items">
+        <div className="snapshot-item__content">
+          <div className="snapshot-item__image">
+            <img
+              src={props.image}
+              alt={props.name}
+              className="snapshot-item__image__detail"
+            />
           </div>
-        </li>
-      </button>
+          <div className="snapshot-item__info">
+            <h2>{props.name}</h2>
+          </div>
+        </div>
+      </li>
     </>
   );
 };

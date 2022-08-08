@@ -42,7 +42,7 @@
 
 .infra-section .relayer {
   height: auto;
-  width: auto;
+  width: 80%;
   max-width: 1920px;
   margin: auto;
   position: relative;
@@ -71,7 +71,7 @@
 }
 
 .infra-section .relayer .relayer-graph {
-  z-index: -2;
+  z-index: 100;
 }
 
 .infra-section .services {
