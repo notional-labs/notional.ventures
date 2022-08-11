@@ -10,7 +10,6 @@ import vinh from "../../media/members/vinh1.jpg";
 import du from "../../media/members/du1.jpg";
 import hieu from "../../media/members/Hieu1.jpg";
 import huy from "../../media/members/Huy1.jpg";
-import chinh from "../../media/members/chinh.jpg";
 import brenhill from "../../media/members/Brenhill.jpeg";
 import "./Member.css";
 import { Image } from "antd";
@@ -157,13 +156,5 @@ export const members = [
       <p className="member-position">CosmWasm Developer</p>
       <p className="member-description"></p>
     </div>
-  </div>,
-  <div>
-    <div className="member">
-      <Image src={chinh} className="member-img" preview={false} />
-      <p className="member-name">Nguyen Duc Chinh</p>
-      <p className="member-position">CosmWasm Developer</p>
-      <p className="member-description"></p>
-    </div>
-  </div>,
+  </div>
 ];
