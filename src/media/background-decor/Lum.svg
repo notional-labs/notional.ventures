@@ -1,0 +1,31 @@
+<svg width = "477" height = "476" viewBox = "0 0 477 476" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+<g filter = "url(#filter0_d_65_94)">
+<rect x = "181.918" y = "177" width = "114" height = "114" rx = "19" fill = "url(#paint0_linear_65_94)"/>
+</g>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M231.628 206.674C231.628 202.734 234.824 199.54 238.765 199.54C242.707 199.54 245.902 202.734 245.902 206.674C245.902 210.614 242.707 213.808 238.765 213.808C234.824 213.808 231.628 210.614 231.628 206.674Z" fill = "#202B4E"/>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M215.286 213.074C215.286 210.599 217.293 208.593 219.769 208.593C222.245 208.593 224.252 210.599 224.252 213.074C224.252 215.549 222.245 217.555 219.769 217.555C217.293 217.555 215.286 215.549 215.286 213.074Z" fill = "#202B4E"/>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M215.286 253.316C215.286 250.833 217.293 248.819 219.769 248.819C222.245 248.819 224.252 250.833 224.252 253.316C224.252 255.799 222.245 257.812 219.769 257.812C217.293 257.812 215.286 255.799 215.286 253.316Z" fill = "#202B4E"/>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M252.709 253.316C252.709 250.833 254.716 248.819 257.192 248.819C259.668 248.819 261.675 250.833 261.675 253.316C261.675 255.799 259.668 257.812 257.192 257.812C254.716 257.812 252.709 255.799 252.709 253.316Z" fill = "#202B4E"/>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M252.709 213.074C252.709 210.599 254.716 208.593 257.192 208.593C259.668 208.593 261.675 210.599 261.675 213.074C261.675 215.549 259.668 217.555 257.192 217.555C254.716 217.555 252.709 215.549 252.709 213.074Z" fill = "#202B4E"/>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M231.628 234.731C231.628 230.791 234.824 227.597 238.765 227.597C242.707 227.597 245.902 230.791 245.902 234.731C245.902 238.671 242.707 241.865 238.765 241.865C234.824 241.865 231.628 238.671 231.628 234.731Z" fill = "#202B4E"/>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M231.628 261.559C231.628 257.619 234.824 254.425 238.765 254.425C242.707 254.425 245.902 257.619 245.902 261.559C245.902 265.499 242.707 268.693 238.765 268.693C234.824 268.693 231.628 265.499 231.628 261.559Z" fill = "#202B4E"/>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M260.356 234.731C260.356 230.791 263.544 227.597 267.477 227.597C271.411 227.597 274.599 230.791 274.599 234.731C274.599 238.671 271.411 241.865 267.477 241.865C263.544 241.865 260.356 238.671 260.356 234.731Z" fill = "#202B4E"/>
+<path fill-rule = "evenodd" clip-rule = "evenodd" d = "M203.591 234.731C203.591 230.791 206.786 227.597 210.728 227.597C214.669 227.597 217.865 230.791 217.865 234.731C217.865 238.671 214.669 241.865 210.728 241.865C206.786 241.865 203.591 238.671 203.591 234.731Z" fill = "#202B4E"/>
+<defs>
+<filter id = "filter0_d_65_94" x = "0.917969" y = "0" width = "476" height = "476" filterUnits = "userSpaceOnUse" color-interpolation-filters = "sRGB">
+<feFlood flood-opacity = "0" result = "BackgroundImageFix"/>
+<feColorMatrix in = "SourceAlpha" type = "matrix" values = "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result = "hardAlpha"/>
+<feMorphology radius = "49" operator = "dilate" in = "SourceAlpha" result = "effect1_dropShadow_65_94"/>
+<feOffset dy = "4"/>
+<feGaussianBlur stdDeviation = "66"/>
+<feComposite in2 = "hardAlpha" operator = "out"/>
+<feColorMatrix type = "matrix" values = "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.39 0"/>
+<feBlend mode = "normal" in2 = "BackgroundImageFix" result = "effect1_dropShadow_65_94"/>
+<feBlend mode = "normal" in = "SourceGraphic" in2 = "effect1_dropShadow_65_94" result = "shape"/>
+</filter>
+<linearGradient id = "paint0_linear_65_94" x1 = "238.918" y1 = "177" x2 = "238.918" y2 = "291" gradientUnits = "userSpaceOnUse">
+<stop stop-color = "#525F92"/>
+<stop offset = "1" stop-color = "#242C48"/>
+</linearGradient>
+</defs>
+</svg>

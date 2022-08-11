@@ -1,0 +1,6 @@
+.project-list {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0%;
+}
