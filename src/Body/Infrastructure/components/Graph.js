@@ -1,60 +1,4 @@
-// import React from "react";
-// import ForceGraph3D from "react-force-graph-3d";
-// import loadable from '@loadable/component'
-// // import SpriteText from "three-spritetext";
-// // import THREE from "react-three"
-// // import  from "three-spritetext"
-// import * as THREE from 'three';
-// import data from './test-img.jstargaze'
-// const Graph = () => {
-//     const img = data.nodes.map((id,img) => img)
-//     let ForceGraph3D = loadable(() => import(`./members/${img}`));
-//     const nodeToThree = ({img}) => {
-//         // console.log({img});
-//         const imgTexture = new THREE.TextureLoader().load(`./members/${img}`);
-//         // console.log(imgTexture);
-//         const material = new THREE.SpriteMaterial({ map: imgTexture });
-//         // console.log(material);
-//         const sprite = new THREE.Sprite(material);
-//         // console.log(sprite);
-//         sprite.scale.set(12, 12);
-//         return sprite;
-//     }
-//     return (
-//         <ForceGraph3D
-//             graphData={data}
-//             nodeThreeObject={nodeToThree}
-//         />
-//     )
-// }
-
-// export default Graph;
-
-// ({img}) => {
-//     console.log({img});
-//     const imgTexture = new THREE.TextureLoader().load(`./members/${img}`);
-//     console.log(imgTexture);
-//     const material = new THREE.SpriteMaterial({ map: imgTexture });
-//     console.log(material);
-//     const sprite = new THREE.Sprite(material);
-//     console.log(sprite);
-//     sprite.scale.set(12, 12);
-//     return sprite;
-// }
-
-// import React from "react";
-// // import renderMindMap from "./renderMindMap";
-// import ForceGraph3D from "react-force-graph-3d";
-// import * as THREE from "three";
-
-// // import MindMap from "./MindMap";
-
-
-// // Random connected graph
-
-
 import React, { createRef, useEffect } from "react";
-// import renderMindMap from "./renderMindMap";
 import ForceGraph3D from "react-force-graph-3d";
 import * as THREE from "three";
 
@@ -106,7 +50,6 @@ export default function Graph() {
         const material = new THREE.SpriteMaterial({ map: imgTexture });
         const sprite = new THREE.Sprite(material);
         sprite.scale.set(12, 12);
-
         return sprite;
       }}
     />
