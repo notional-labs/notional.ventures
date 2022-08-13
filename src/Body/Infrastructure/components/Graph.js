@@ -5,7 +5,7 @@ import * as THREE from "three";
 const gData = {
     "nodes": [
         {"id": "atom", "img": "atom.png"},
-        {"id": "dig", "img": "dig.png"},
+        {"id": "darc", "img": "darc.png"},
         {"id": "emoney", "img": "emoney.png"},
         {"id": "fetch", "img": "fetch.png"},
         {"id": "ixo", "img": "ixo.png"},
@@ -23,18 +23,18 @@ const gData = {
         {"source": "juno", "target": "stargaze"},
         {"source": "emoney", "target": "stargaze"},
         {"source": "ixo", "target": "stargaze"},
-        {"source": "dig", "target": "stargaze"},
-        {"source": "dig", "target": "stargaze"},
+        {"source": "darc", "target": "stargaze"},
+        {"source": "darc", "target": "stargaze"},
         {"source": "fetch", "target": "emoney"},
         {"source": "fetch", "target": "osmosis"},
         {"source": "fetch", "target": "stargaze"},
         {"source": "sifchain", "target": "fetch"},
         {"source": "emoney", "target": "fetch"},
-        {"source": "dig", "target": "fetch"},
+        {"source": "darc", "target": "fetch"},
         {"source": "osmosis", "target": "fetch"},
-        {"source": "osmosis", "target": "dig"},
-        {"source": "osmosis", "target": "dig"},
-        {"source": "umee", "target": "dig"},
+        {"source": "osmosis", "target": "darc"},
+        {"source": "osmosis", "target": "darc"},
+        {"source": "umee", "target": "darc"},
         {"source": "stargaze", "target": "juno"},
         {"source": "stargaze", "target": "osmosis"}
       ]
