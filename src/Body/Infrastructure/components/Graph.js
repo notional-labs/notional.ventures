@@ -46,16 +46,19 @@ export default function Graph() {
     <ForceGraph3D
       backgroundColor="black"
       linkOpacity={0.6}
-      linkDirectionalArrowLength={1}
       nodeOpacity = {0}
       // nodeResolution = {10}
       linkCurvature = {0.1}
-      width= {1500}             
+      width= {1000}     
+      height={700}    
+      linkDirectionalParticles = {4}
+      linkDirectionalParticleWidth = {1}
+      // linkColor="red"
       graphData={gData}
       nodeLabel = {gData.nodes.id}
       nodeThreeObject={({ img }) => {
         const imgTexture = new THREE.TextureLoader().load(`./nodes/${img}`);
-        const material = new THREE.SpriteMaterial({ map: imgTexture, depthWrite: false});
+        const material = new THREE.SpriteMaterial({ map: imgTexture});
         const sprite = new THREE.Sprite(material);
         sprite.scale.set(12, 12);
         return sprite;
