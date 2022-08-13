@@ -1,4 +1,4 @@
-import React, { createRef, useEffect } from "react";
+import React from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import * as THREE from "three";
 
@@ -8,7 +8,6 @@ const gData = {
         {"id": "darc", "img": "darc.png"},
         {"id": "emoney", "img": "emoney.png"},
         {"id": "fetch", "img": "fetch.png"},
-        {"id": "ixo", "img": "ixo.png"},
         {"id": "juno", "img": "juno.png"},
         {"id": "osmosis", "img": "osmosis.png"},
         {"id": "sifchain", "img": "sifchain.png"},
@@ -22,8 +21,7 @@ const gData = {
         {"source": "sifchain", "target": "stargaze"},
         {"source": "juno", "target": "stargaze"},
         {"source": "emoney", "target": "stargaze"},
-        {"source": "ixo", "target": "stargaze"},
-        {"source": "darc", "target": "stargaze"},
+        {"source": "starname", "target": "stargaze"},
         {"source": "darc", "target": "stargaze"},
         {"source": "fetch", "target": "emoney"},
         {"source": "fetch", "target": "osmosis"},
@@ -43,10 +41,17 @@ const gData = {
 export default function Graph() {
   return (
     <ForceGraph3D
+      backgroundColor="black"
+      linkOpacity={0.6}
+      linkDirectionalArrowLength={1}
+      nodeOpacity = {0}
+      // nodeRelSize={4}
+      linkCurvature = {0.1}
+      width= {1500}             
       graphData={gData}
+      nodeLabel = {gData.nodes.id}
       nodeThreeObject={({ img }) => {
         const imgTexture = new THREE.TextureLoader().load(`./nodes/${img}`);
-        console.log(imgTexture);
         const material = new THREE.SpriteMaterial({ map: imgTexture });
         const sprite = new THREE.Sprite(material);
         sprite.scale.set(12, 12);
