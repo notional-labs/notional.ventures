@@ -4,17 +4,17 @@ import * as THREE from "three";
 
 const gData = {
     "nodes": [
-        {"id": "atom", "img": "atom.jpg"},
-        {"id": "dig", "img": "dig.jpg"},
-        {"id": "emoney", "img": "emoney.jpg"},
-        {"id": "fetch", "img": "fetch.jpg"},
-        {"id": "ixo", "img": "ixo.jpg"},
-        {"id": "juno", "img": "juno.jpg"},
-        {"id": "osmosis", "img": "osmosis.jpg"},
-        {"id": "sifchain", "img": "sifchain.jpg"},
-        {"id": "stargaze", "img": "stargaze.jpg"},
-        {"id": "starname", "img": "starname.jpg"},
-        {"id": "umee", "img": "umee.jpg"},
+        {"id": "atom", "img": "atom.png"},
+        {"id": "dig", "img": "dig.png"},
+        {"id": "emoney", "img": "emoney.png"},
+        {"id": "fetch", "img": "fetch.png"},
+        {"id": "ixo", "img": "ixo.png"},
+        {"id": "juno", "img": "juno.png"},
+        {"id": "osmosis", "img": "osmosis.png"},
+        {"id": "sifchain", "img": "sifchain.png"},
+        {"id": "stargaze", "img": "stargaze.png"},
+        {"id": "starname", "img": "starname.png"},
+        {"id": "umee", "img": "umee.png"},
       ],
       "links": [
         {"source": "atom", "target": "stargaze"},
