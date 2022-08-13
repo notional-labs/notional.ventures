@@ -3,42 +3,43 @@ import ForceGraph3D from "react-force-graph-3d";
 import * as THREE from "three";
 
 const gData = {
-    "nodes": [
-        {"id": "atom", "img": "atom.svg"},
-        {"id": "darc", "img": "darc.svg"},
-        {"id": "emoney", "img": "emoney.svg"},
-        {"id": "fetch", "img": "fetch.svg"},
-        {"id": "axelar", "img": "axelar.svg"},
-        {"id": "juno", "img": "juno.svg"},
-        {"id": "osmosis", "img": "osmosis.svg"},
-        {"id": "sifchain", "img": "sifchain.svg"},
-        {"id": "stargaze", "img": "stargaze.svg"},
-        {"id": "starname", "img": "starname.svg"},
-        {"id": "umee", "img": "umee.svg"},
-      ],
-      "links": [
-        {"source": "atom", "target": "stargaze"},
-        {"source": "osmosis", "target": "stargaze"},
-        {"source": "sifchain", "target": "stargaze"},
-        {"source": "juno", "target": "stargaze"},
-        {"source": "emoney", "target": "stargaze"},
-        {"source": "axelar", "target": "stargaze"},
-        {"source": "darc", "target": "stargaze"},
-        {"source": "darc", "target": "stargaze"},
-        {"source": "fetch", "target": "emoney"},
-        {"source": "fetch", "target": "osmosis"},
-        {"source": "fetch", "target": "stargaze"},
-        {"source": "sifchain", "target": "fetch"},
-        {"source": "emoney", "target": "fetch"},
-        {"source": "darc", "target": "fetch"},
-        {"source": "osmosis", "target": "fetch"},
-        {"source": "osmosis", "target": "darc"},
-        {"source": "osmosis", "target": "darc"},
-        {"source": "umee", "target": "darc"},
-        {"source": "stargaze", "target": "juno"},
-        {"source": "stargaze", "target": "osmosis"}
-      ]
+  "nodes": [
+    {"id": "atom", "img": "atom.png"},
+    {"id": "emoney", "img": "emoney.png"},
+    {"id": "fetch", "img": "fetch.png"},
+    {"id": "axelar", "img": "axelar.png"},
+    {"id": "juno", "img": "juno.png"},
+    {"id": "osmosis", "img": "osmosis.png"},
+    {"id": "sifchain", "img": "sifchain.png"},
+    {"id": "omniflix", "img": "omniflix.png"},
+    {"id": "starname", "img": "starname.png"},
+    {"id": "dig", "img": "dig.png"},
+    {"id": "kava", "img": "kava.png"}
+  ],
+  "links": [
+    {"source": "atom", "target": "omniflix"},
+    {"source": "osmosis", "target": "omniflix"},
+    {"source": "sifchain", "target": "omniflix"},
+    {"source": "juno", "target": "omniflix"},
+    {"source": "emoney", "target": "omniflix"},
+    {"source": "axelar", "target": "omniflix"},
+    {"source": "dig", "target": "omniflix"},
+    {"source": "dig", "target": "omniflix"},
+    {"source": "fetch", "target": "emoney"},
+    {"source": "fetch", "target": "osmosis"},
+    {"source": "fetch", "target": "omniflix"},
+    {"source": "sifchain", "target": "fetch"},
+    {"source": "emoney", "target": "fetch"},
+    {"source": "dig", "target": "fetch"},
+    {"source": "osmosis", "target": "fetch"},
+    {"source": "osmosis", "target": "dig"},
+    {"source": "osmosis", "target": "dig"},
+    {"source": "kava", "target": "dig"},
+    {"source": "omniflix", "target": "juno"},
+    {"source": "omniflix", "target": "osmosis"}
+  ]
 };
+
 
 export default function Graph() {
   return (
@@ -47,14 +48,14 @@ export default function Graph() {
       linkOpacity={0.6}
       linkDirectionalArrowLength={1}
       nodeOpacity = {0}
-      // nodeRelSize={4}
+      // nodeResolution = {10}
       linkCurvature = {0.1}
       width= {1500}             
       graphData={gData}
       nodeLabel = {gData.nodes.id}
       nodeThreeObject={({ img }) => {
         const imgTexture = new THREE.TextureLoader().load(`./nodes/${img}`);
-        const material = new THREE.SpriteMaterial({ map: imgTexture });
+        const material = new THREE.SpriteMaterial({ map: imgTexture, depthWrite: false});
         const sprite = new THREE.Sprite(material);
         sprite.scale.set(12, 12);
         return sprite;
