@@ -129,17 +129,17 @@ import * as THREE from "three";
 //         {"id": "vinh1", "img": "vinh1.jpg"},
 //         {"id": "vuong1", "img": "vuong.jpg"}
 const imgs = [
-  "billy.png",
-  "chinh.jpg",
-  "du1.jpg",
-  "Hieu1.jpg",
-  "khanh1.jpg",
-  "Huy1.jpg",
-  "long.jpg",
-  "minh.jpg",
-  "son.jpg",
-  "tiger.jpg",
-  "vinh1.jpg"
+  "atom.jpg",
+  "dig.jpg",
+  "emoney.jpg",
+  "fetch.jpg",
+  "ixo.jpg",
+  "juno.jpg",
+  "osmosis.jpg",
+  "sifchain.jpg",
+  "stargaze.jpg",
+  "starname.jpg",
+  "umee.jpg"
 ];
 
 // Random connected graph
@@ -158,7 +158,7 @@ export default function Graph() {
     <ForceGraph3D
       graphData={gData}
       nodeThreeObject={({ img }) => {
-        const imgTexture = new THREE.TextureLoader().load(`../../../media/members/${img}`);
+        const imgTexture = new THREE.TextureLoader().load(`./nodes/${img}`);
         console.log(imgTexture);
         const material = new THREE.SpriteMaterial({ map: imgTexture });
         const sprite = new THREE.Sprite(material);
