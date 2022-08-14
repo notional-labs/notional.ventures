@@ -12,7 +12,7 @@ const gData = {
     {"id": "osmosis", "img": "osmosis.png"},
     {"id": "sifchain", "img": "sifchain.png"},
     {"id": "omniflix", "img": "omniflix.png"},
-    {"id": "starname", "img": "starname.png"},
+    {"id": "akash", "img": "akash.png"},
     {"id": "dig", "img": "dig.png"},
     {"id": "kava", "img": "kava.png"}
   ],
@@ -24,7 +24,7 @@ const gData = {
     {"source": "osmosis", "target": "juno"},
     {"source": "osmosis", "target": "sifchain"},
     {"source": "osmosis", "target": "omniflix"},
-    {"source": "osmosis", "target": "starname"},
+    {"source": "osmosis", "target": "akash"},
     {"source": "osmosis", "target": "dig"},
     {"source": "osmosis", "target": "kava"},
     {"source": "atom", "target": "omniflix"},
@@ -33,7 +33,7 @@ const gData = {
     {"source": "atom", "target": "axelar"},
     {"source": "atom", "target": "juno"},
     {"source": "atom", "target": "sifchain"},
-    {"source": "atom", "target": "starname"},
+    {"source": "atom", "target": "akash"},
     {"source": "atom", "target": "dig"},
     {"source": "atom", "target": "juno"},
     {"source": "atom", "target": "kava"}
@@ -50,7 +50,7 @@ export default function Graph() {
       linkOpacity={0.6}
       nodeOpacity = {0}
       // nodeResolution = {10}
-      onEngineStop={() => zoomRef.current.zoomToFit(50)}
+      onEngineStop={() => zoomRef.current.zoomToFit()}
       linkCurvature = {0.1}
       width= {1000}     
       height={700}    
