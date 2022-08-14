@@ -50,7 +50,7 @@ export default function Graph() {
       linkOpacity={0.6}
       nodeOpacity = {0}
       // nodeResolution = {10}
-      rendererConfig ={() => zoomRef.current.zoomToFit(50)}
+      onEngineStop={() => zoomRef.current.zoomToFit()}
       linkCurvature = {0.1}
       width= {1000}     
       height={700}    
