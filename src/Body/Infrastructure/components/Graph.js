@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import * as THREE from "three";
 
@@ -42,12 +42,15 @@ const gData = {
 
 
 export default function Graph() {
+  const zoomRef = useRef()
   return (
     <ForceGraph3D
+      ref={zoomRef}
       backgroundColor="black"
       linkOpacity={0.6}
       nodeOpacity = {0}
       // nodeResolution = {10}
+      rendererConfig = {() => zoomRef.current.zoomToFit(400)}
       linkCurvature = {0.1}
       width= {1000}     
       height={700}    
