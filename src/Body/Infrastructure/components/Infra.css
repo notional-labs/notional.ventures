@@ -110,3 +110,8 @@
   line-height: 2rem;
 }
 
+.service-item img:hover {
+  transform: translateY(-10px);
+  transition: 0.2s ease;
+}
+

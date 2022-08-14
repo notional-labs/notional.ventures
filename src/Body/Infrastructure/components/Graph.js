@@ -17,26 +17,26 @@ const gData = {
     {"id": "kava", "img": "kava.png"}
   ],
   "links": [
-    {"source": "atom", "target": "omniflix"},
-    {"source": "osmosis", "target": "omniflix"},
-    {"source": "sifchain", "target": "omniflix"},
-    {"source": "juno", "target": "omniflix"},
-    {"source": "emoney", "target": "omniflix"},
-    {"source": "axelar", "target": "omniflix"},
-    {"source": "dig", "target": "omniflix"},
-    {"source": "dig", "target": "omniflix"},
-    {"source": "fetch", "target": "emoney"},
-    {"source": "fetch", "target": "osmosis"},
-    {"source": "fetch", "target": "omniflix"},
-    {"source": "sifchain", "target": "fetch"},
-    {"source": "emoney", "target": "fetch"},
-    {"source": "dig", "target": "fetch"},
+    {"source": "osmosis", "target": "atom"},
+    {"source": "osmosis", "target": "emoney"},
     {"source": "osmosis", "target": "fetch"},
+    {"source": "osmosis", "target": "axelar"},
+    {"source": "osmosis", "target": "juno"},
+    {"source": "osmosis", "target": "sifchain"},
+    {"source": "osmosis", "target": "omniflix"},
+    {"source": "osmosis", "target": "starname"},
     {"source": "osmosis", "target": "dig"},
-    {"source": "osmosis", "target": "dig"},
-    {"source": "kava", "target": "dig"},
-    {"source": "omniflix", "target": "juno"},
-    {"source": "omniflix", "target": "osmosis"}
+    {"source": "osmosis", "target": "kava"},
+    {"source": "atom", "target": "omniflix"},
+    {"source": "atom", "target": "emoney"},
+    {"source": "atom", "target": "fetch"},
+    {"source": "atom", "target": "axelar"},
+    {"source": "atom", "target": "juno"},
+    {"source": "atom", "target": "sifchain"},
+    {"source": "atom", "target": "starname"},
+    {"source": "atom", "target": "dig"},
+    {"source": "atom", "target": "juno"},
+    {"source": "atom", "target": "kava"}
   ]
 };
 
@@ -58,7 +58,7 @@ export default function Graph() {
       nodeLabel = {gData.nodes.id}
       nodeThreeObject={({ img }) => {
         const imgTexture = new THREE.TextureLoader().load(`./nodes/${img}`);
-        const material = new THREE.SpriteMaterial({ map: imgTexture});
+        const material = new THREE.SpriteMaterial({ map: imgTexture, depthWrite: false});
         const sprite = new THREE.Sprite(material);
         sprite.scale.set(12, 12);
         return sprite;
