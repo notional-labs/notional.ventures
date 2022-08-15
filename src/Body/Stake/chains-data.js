@@ -371,6 +371,6 @@ export const STAKES = [
     keplr: "umee",
     ping: "umee",
     address: "umeevaloper1dmahqt84r9je3sqvljzjrttjj78cmrf39k5zhs",
-    rank: "1"
+    rank: "86"
   },
 ];
