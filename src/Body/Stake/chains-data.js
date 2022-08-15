@@ -24,6 +24,7 @@ import Vidulum from "../../media/stake/vidulum.svg";
 import Omniflix from "../../media/stake/omniflix.svg";
 import Chihuahua from "../../media/stake/chihuahua.svg";
 import Fetchai from "../../media/stake/Fetch.svg";
+import Umee from "../../media/stake/Umee.svg";
 
 export const STAKES = [
   {
@@ -359,5 +360,17 @@ export const STAKES = [
     ping: "fetchhub",
     address: "fetchvaloper1s9myentgxavnpw7648an2v6zvvpza0axa6dd0x",
     rank: "58"
+  },
+  {
+    id: "s27",
+    image: `${Umee}`,
+    name: "Umee",
+    rpc_service: "https://rpc-osmosis-ia.notional.ventures/",
+    api_service: "https://api-osmosis-ia.notional.ventures/swagger/",
+    api: "https://backend.notional.ventures/umee",
+    keplr: "umee",
+    ping: "umee",
+    address: "umeevaloper1dmahqt84r9je3sqvljzjrttjj78cmrf39k5zhs",
+    rank: "1"
   },
 ];

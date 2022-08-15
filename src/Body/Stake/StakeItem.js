@@ -3,7 +3,6 @@ import "./StakeItem.css";
 import Modal from "./StakeModal";
 import axios from "axios";
 import ErrorModal from "./ErrorModal";
-import { Link } from "react-router-dom";
 
 const StakeItem = (props) => {
     const [showHandler, setShowHandler] = useState(false);
