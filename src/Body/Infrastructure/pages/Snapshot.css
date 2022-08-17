@@ -1,8 +1,8 @@
 .snapshot-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../../../media/background-decor/BG1-01\ 1.jpg");
+    background-image: url("../../../media/background-decor/BackgroundRPC.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height:100vh;
+    height:150vh;
     color: white;
     justify-content: center;
 }

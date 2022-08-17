@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import * as THREE from "three";
+// import image from '../../../media/background-decor/BackgroundRPC.png'
 
 const gData = {
   "nodes": [
@@ -43,20 +44,25 @@ const gData = {
 
 export default function Graph() {
   const zoomRef = useRef()
+  // myScene.add(`../../../media/background-decor/BackgroundRPC.png`);
   return (
     <ForceGraph3D
+      
       ref={zoomRef}
       backgroundColor="black"
       linkOpacity={0.6}
       nodeOpacity = {0}
       // nodeResolution = {10}
       cooldownTicks={100}
+      
+      // onRenderFramePost = {() => zoomRef.current.scene().add(`../../../media/background-decor/BackgroundRPC.png`)}
       onEngineStop={() => zoomRef.current.zoomToFit()}
       linkCurvature = {0.1}
       width= {1000}     
       height={700}    
       linkDirectionalParticles = {4}
       linkDirectionalParticleWidth = {1}
+      linkDirectionalParticleSpeed = {0.0015}
       // linkColor="red"
       graphData={gData}
       nodeLabel = {gData.nodes.id}
