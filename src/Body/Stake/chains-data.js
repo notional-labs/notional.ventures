@@ -24,6 +24,7 @@ import Vidulum from "../../media/stake/vidulum.svg";
 import Omniflix from "../../media/stake/omniflix.svg";
 import Chihuahua from "../../media/stake/chihuahua.svg";
 import Fetchai from "../../media/stake/Fetch.svg";
+import Umee from "../../media/stake/Umee.svg";
 
 export const STAKES = [
   {
@@ -360,5 +361,4 @@ export const STAKES = [
     address: "fetchvaloper1s9myentgxavnpw7648an2v6zvvpza0axa6dd0x",
     rank: "58"
   },
-  
 ];
