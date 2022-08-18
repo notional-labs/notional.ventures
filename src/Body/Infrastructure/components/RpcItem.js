@@ -1,6 +1,7 @@
 import { Image } from "antd";
 import React, { useState } from "react";
 import "./RpcItem.css";
+import Dropdown from "../../../media/button/Vector.png"
 
 const RpcItem = (props) => {
   const [display, setDisplay] = useState(false);
@@ -18,7 +19,7 @@ const RpcItem = (props) => {
           />
           <div>{props.name}</div>
         </div>
-        <div className="dropdown-icon">Down</div>
+        <div className="dropdown-icon">{display === false ? <Image src={Dropdown} preview = {false} /> : <Image className="dropdown-btn_active" src={Dropdown} preview = {false} /> } </div>
       </div>
       <div
         className={

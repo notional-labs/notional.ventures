@@ -52,6 +52,18 @@
     align-self: center;
 }
 
+.dropdown-icon img {
+  height: 10px;
+  width: 20px;
+  margin-right: 10px;
+  transform: rotateZ(360deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-icon .dropdown-btn_active {
+  transform: rotateZ(180deg);
+}
+
 .dropdown-content {
     margin: 0 auto;
     margin-top: 0;
