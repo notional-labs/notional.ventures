@@ -46,7 +46,7 @@ export const STAKES = [
     rpc_service: "https://rpc-osmosis-ia.notional.ventures/",
     api_service: "https://api-osmosis-ia.notional.ventures/swagger/",
     api: "https://backend.notional.ventures/gaia",
-    keplr: "cosmoshub",
+    keplr: "cosmos-hub",
     ping: "cosmos",
     address: "cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj",
     rank: "67"
@@ -96,7 +96,7 @@ export const STAKES = [
     rpc_service: "https://rpc-osmosis-ia.notional.ventures/",
     api_service: "https://api-osmosis-ia.notional.ventures/swagger/",
     api: "https://backend.notional.ventures/akash",
-    keplr: "akashnet",
+    keplr: "akash",
     ping: "akash-network",
     address: "akashvaloper1083svrca4t350mphfv9x45wq9asrs60c0k5a63",
     rank: "41"
@@ -109,7 +109,7 @@ export const STAKES = [
     rpc_service: "https://rpc-osmosis-ia.notional.ventures/",
     api_service: "https://api-osmosis-ia.notional.ventures/swagger/",
     api: "https://backend.notional.ventures/emoney",
-    keplr: "emoney",
+    keplr: "e-money",
     ping: "e-money",
     address: "emoneyvaloper16dc379m0qj64g4pr4nkl7ewak52qy2srpe6lxp",
     rank: "18"

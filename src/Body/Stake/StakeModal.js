@@ -144,7 +144,7 @@ const ModalOverlay = (props) => {
                             <a
                                 onClick={() =>
                                     window.open(
-                                        `https://wallet.keplr.app/#/${props.keplr}/stake?modal=stake&validator=${props.address}`
+                                        `https://wallet.keplr.app/chains/${props.keplr}?tab=staking&validator=${props.address}`
                                     )
                                 }
                                 className="link"
@@ -159,7 +159,7 @@ const ModalOverlay = (props) => {
                             <a
                                 onClick={() =>
                                     window.open(
-                                        `https://wallet.keplr.app/#/${props.keplr}/stake?modal=stake&validator=${props.address}`
+                                        `https://wallet.keplr.app/chains/${props.keplr}?tab=staking&validator=${props.address}`
                                     )
                                 }
                                 className="link"
