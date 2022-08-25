@@ -92,7 +92,7 @@ const ServiceNav = () => {
               <a href="https://status.notional.ventures">Kuma</a>
             </li>
             <li>
-              <a href="/chain-upgrade">Chains Upgrade</a>
+              <Link to="/chain-upgrade">Chains Upgrade</Link>
             </li>
           </ul>
         </nav>

@@ -55,14 +55,14 @@ const Infra = () => {
                         <div >SNAPSHOTS</div>
                     </button>
                 </Link>
-                <a className="link">
+                <Link to="/chain-upgrade" className="link">
                     <button className="service-item">
                         <Image src={Upgrade} preview = {false} >26</Image>
                         <div >
                             CHAINS UPGRADE
                         </div>
                     </button>
-                </a>
+                </Link>
                 <a href="https://status.notional.ventures/status/cosmosia" className="link">
                     <button className="service-item">
                         <Image src={Uptime} preview = {false} >26</Image>
