@@ -6,17 +6,17 @@ import Backdrop from "../../Stake/Backdrop";
 import "./SnapshotModal.css";
 
 const ModalOverlay = (props) => {
-  const [golvdb, setGolvdb] = useState(false);
+  const [pebbledb, setPebbledb] = useState(false);
   // const [rocklvdb, setRocklvdb] = useState(false);
   const [instruction, setInstruction] = useState(true);
 
-  let golvdb_content = (
+  let pebbledb_content = (
     <div>
       <div>
         <h3>Addrbook.json</h3>
         <p>wget -O ~/.osmosisd/config/addrbook.json URL</p>
         <button className = "download-btn">
-          <a href={props.goSnapshotInfo.addrbook}>Download</a>
+          <a href={props.pebbleSnapshotInfo.addrbook}>Download</a>
         </button> 
       </div> <br/>
       <div>
@@ -27,9 +27,9 @@ const ModalOverlay = (props) => {
           tar -xvf file_name <br />
         </p>
         <button className = "download-btn">
-          <a href={props.goSnapshotInfo.data}>
+          <a href={props.pebbleSnapshotInfo.data}>
             Download |{" "}
-            {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
+            {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
           </a>
         </button> 
       </div>
@@ -70,9 +70,9 @@ const ModalOverlay = (props) => {
   let instruction_content = (
     <div>
 
-      <h2>GoLevelDB</h2> 
-      Date: {props.goSnapshotInfo.data_date} <br />
-      Size: {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
+      <h2>pebbleDB</h2> 
+      Date: {props.pebbleSnapshotInfo.data_date} <br />
+      Size: {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
       <br />
       <br />
       {/* <h2>RockDB</h2>
@@ -89,18 +89,18 @@ const ModalOverlay = (props) => {
       )} */}
     </div>
   );
-  const changeToGo = () => {
-    setGolvdb(true);
+  const changeToPebble = () => {
+    setPebbledb(true);
     // setRocklvdb(false);
     setInstruction(false);
   };
   // const changeToRock = () => {
-  //   setGolvdb(false);
+  //   setPebbledb(false);
   //   setRocklvdb(true);
   //   setInstruction(false);
   // };
   const changeToIns = () => {
-    setGolvdb(false);
+    setPebbledb(false);
     // setRocklvdb(false);
     setInstruction(true);
   };
@@ -127,14 +127,14 @@ const ModalOverlay = (props) => {
             </li>
             <li>
               <button
-                onClick={changeToGo}
+                onClick={changeToPebble}
                 className={
-                  golvdb
+                  pebbledb
                     ? "snapshot-modal-navbar-btn-focus"
                     : "snapshot-modal-navbar-btn"
                 }
               >
-                GoLevelDB
+                PebbleDB
               </button>
             </li>
             {/* <li>
@@ -152,7 +152,7 @@ const ModalOverlay = (props) => {
           </ul>
         </div>
         <div className="snapshot-modal-data">
-          {(golvdb && golvdb_content) ||
+          {(pebbledb && pebbledb_content) ||
             // (rocklvdb && rocklvdb_content) ||
             (instruction && instruction_content)}
         </div>

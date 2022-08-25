@@ -9,7 +9,7 @@ import Team from "./Body/Team/Team";
 import Contact from "./Body/Contact/Contact";
 import Footer from "./Footer/Footer";
 import RingLoader from "react-spinners/RingLoader";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Home = () => {
     return (
@@ -28,12 +28,12 @@ const Home = () => {
 
 function App() {
     const [isLoading, setIsLoading] = useState(false);
-    // useEffect (() => {
-    //   setIsLoading(true)
-    //   setTimeout(() => {
-    //     setIsLoading(false)
-    //   }, 4000)
-    // },[])
+    useEffect (() => {
+      setIsLoading(true)
+      setTimeout(() => {
+        setIsLoading(false)
+      }, 3000)
+    },[])
     return (
         <React.Fragment>
             {isLoading && (

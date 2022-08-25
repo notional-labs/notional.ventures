@@ -7,7 +7,7 @@ import axios from "axios";
 const SnapshotItem = (props) => {
   const [showModal, setShowModal] = useState(false);
   // const [error, setError] = useState(false);
-  const [loadedGoSnapshotInfo, setLoadedGoSnapshotInfo] = useState([]);
+  const [loadedPebbleSnapshotInfo, setLoadedPebbleSnapshotInfo] = useState([]);
   // const [loadedRockSnapshotInfo, setLoadedRockSnapshotInfo] = useState([]);
   const showHandler = () => {
     setShowModal(true);
@@ -21,7 +21,7 @@ const SnapshotItem = (props) => {
   const fetchSnapshotInfo = async () => {
     try {
       const res = await axios.get(`${props.api}/snapshot`);
-      setLoadedGoSnapshotInfo(res.data.goleveldb);
+      setLoadedPebbleSnapshotInfo(res.data.goleveldb);
       // setLoadedRockSnapshotInfo(res.data.rocksdb);
     } catch (err) {
       console.log(err.message);
@@ -34,7 +34,7 @@ const SnapshotItem = (props) => {
         name={props.name}
         onCancel={closeHandler}
         show={showModal}
-        goSnapshotInfo={loadedGoSnapshotInfo}
+        pebbleSnapshotInfo={loadedPebbleSnapshotInfo}
         // rockSnapshotInfo={loadedRockSnapshotInfo}
       />
 
