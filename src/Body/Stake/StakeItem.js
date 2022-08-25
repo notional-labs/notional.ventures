@@ -102,9 +102,7 @@ const StakeItem = (props) => {
                         <h2>{props.name}</h2>
                     </div>
                     <button
-                        onClick={() => {
-                            showModalHandler();
-                        }}
+                        onClick={showModalHandler}
                         className="stake-btn"
                     >
                         Stake

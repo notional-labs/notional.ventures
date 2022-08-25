@@ -200,7 +200,7 @@ export const STAKES = [
     rpc_service: "https://rpc-osmosis-ia.notional.ventures/",
     api_service: "https://api-osmosis-ia.notional.ventures/swagger/",
     api: "https://backend.notional.ventures/secret",
-    keplr: "secret",
+    keplr: "",
     ping: "secret",
     address: "secretvaloper18rchk5exp2vzcwrwuret5sjwpxhf4sq22ze4dr",
     rank: "63"

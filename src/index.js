@@ -6,6 +6,7 @@ import Snapshot from "./Body/Infrastructure/pages/Snapshot";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Rpc from "./Body/Infrastructure/pages/Rpc";
+import ChainUpgrade from "./Body/Infrastructure/pages/ChainUpgrade";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -16,6 +17,7 @@ root.render(
                 <Route path="/" element={<App />} />
                 <Route path="snapshot" element={<Snapshot />} />
                 <Route path="rpc" element={<Rpc />} />
+                <Route path="chain-upgrade" element={<ChainUpgrade />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

@@ -1,0 +1,29 @@
+.chain-upgrades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chain-upgrade-table {
+  color: white;
+  border: 1px solid white;
+  width: 80rem;
+  height: 200px;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+
+th {
+    padding: 1em;
+  background: rgba(82, 82, 82, 0.8);
+}
+
+td {
+    padding: 1em;
+  text-align: center;
+  background: rgba(188, 188, 188, 0.5);
+  border-bottom: 0.5px solid white;
+}
+

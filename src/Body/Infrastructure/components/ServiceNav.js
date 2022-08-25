@@ -44,7 +44,7 @@ const ServiceNav = () => {
               <a href="https://status.notional.ventures">Kuma</a>
             </li>
             <li>
-              <a href="#">Chains Upgrade</a>
+              <a href="/chain-upgrade">Chains Upgrade</a>
             </li>
           </ul>
         </nav>
@@ -92,7 +92,7 @@ const ServiceNav = () => {
               <a href="https://status.notional.ventures">Kuma</a>
             </li>
             <li>
-              <a href="#">Chains Upgrade</a>
+              <a href="/chain-upgrade">Chains Upgrade</a>
             </li>
           </ul>
         </nav>

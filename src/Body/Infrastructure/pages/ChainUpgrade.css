@@ -1,0 +1,22 @@
+.chain-upgrade-section {
+    background-image: url("../../../media/background-decor/BackgroundRPC.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-blend-mode: darken; */
+    height:100vh;
+    color: white;
+    justify-content: center;
+}
+
+.chain-upgrade-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.chain-upgrade-container .title {
+    font-size: 3rem;
+}
+
+.upgrades {
+    margin-top: 3rem;
+}
