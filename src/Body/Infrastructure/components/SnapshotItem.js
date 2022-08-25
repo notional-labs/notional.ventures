@@ -8,7 +8,7 @@ const SnapshotItem = (props) => {
   const [showModal, setShowModal] = useState(false);
   // const [error, setError] = useState(false);
   const [loadedGoSnapshotInfo, setLoadedGoSnapshotInfo] = useState([]);
-  const [loadedRockSnapshotInfo, setLoadedRockSnapshotInfo] = useState([]);
+  // const [loadedRockSnapshotInfo, setLoadedRockSnapshotInfo] = useState([]);
   const showHandler = () => {
     setShowModal(true);
   };
@@ -22,7 +22,7 @@ const SnapshotItem = (props) => {
     try {
       const res = await axios.get(`${props.api}/snapshot`);
       setLoadedGoSnapshotInfo(res.data.goleveldb);
-      setLoadedRockSnapshotInfo(res.data.rocksdb);
+      // setLoadedRockSnapshotInfo(res.data.rocksdb);
     } catch (err) {
       console.log(err.message);
     }
@@ -35,7 +35,7 @@ const SnapshotItem = (props) => {
         onCancel={closeHandler}
         show={showModal}
         goSnapshotInfo={loadedGoSnapshotInfo}
-        rockSnapshotInfo={loadedRockSnapshotInfo}
+        // rockSnapshotInfo={loadedRockSnapshotInfo}
       />
 
       <li onClick={showHandler} key={props.id} className="snapshot-items">

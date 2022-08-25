@@ -7,7 +7,7 @@ import "./SnapshotModal.css";
 
 const ModalOverlay = (props) => {
   const [golvdb, setGolvdb] = useState(false);
-  const [rocklvdb, setRocklvdb] = useState(false);
+  // const [rocklvdb, setRocklvdb] = useState(false);
   const [instruction, setInstruction] = useState(true);
 
   let golvdb_content = (
@@ -36,36 +36,36 @@ const ModalOverlay = (props) => {
     </div>
   );
 
-  let rocklvdb_avl = (
-    <div>
-      <div>
-        <h3>Addrbook.json</h3>
-        <p>wget -O ~/.osmosisd/config/addrbook.json URL</p>
-        <button className = "download-btn">
-          <a href={props.rockSnapshotInfo.addrbook}>Download</a>
-        </button>
-      </div> <br />
-      <div>
-        <h3>Snapshot</h3>
-        <p>
-          cd ~/.osmosisd <br />
-          aria2c -x8 URL <br />
-          tar -xvf file_name <br />
-        </p>
-        <button className = "download-btn">
-          <a href={props.rockSnapshotInfo.data}>
-            Download |{" "}
-            {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}{" "}
-            GB
-          </a>
-        </button> 
-      </div>
-    </div>
-  );
+  // let rocklvdb_avl = (
+  //   <div>
+  //     <div>
+  //       <h3>Addrbook.json</h3>
+  //       <p>wget -O ~/.osmosisd/config/addrbook.json URL</p>
+  //       <button className = "download-btn">
+  //         <a href={props.rockSnapshotInfo.addrbook}>Download</a>
+  //       </button>
+  //     </div> <br />
+  //     <div>
+  //       <h3>Snapshot</h3>
+  //       <p>
+  //         cd ~/.osmosisd <br />
+  //         aria2c -x8 URL <br />
+  //         tar -xvf file_name <br />
+  //       </p>
+  //       <button className = "download-btn">
+  //         <a href={props.rockSnapshotInfo.data}>
+  //           Download |{" "}
+  //           {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}{" "}
+  //           GB
+  //         </a>
+  //       </button> 
+  //     </div>
+  //   </div>
+  // );
 
-  let rocklvdb_unavl = <h1>unavailable at the moment</h1>;
-  const rocklvdb_content =
-    props.rockSnapshotInfo.addrbook === "NaN" ? rocklvdb_unavl : rocklvdb_avl;
+  // let rocklvdb_unavl = <h1>unavailable at the moment</h1>;
+  // const rocklvdb_content =
+  //   props.rockSnapshotInfo.addrbook === "NaN" ? rocklvdb_unavl : rocklvdb_avl;
 
   let instruction_content = (
     <div>
@@ -75,7 +75,7 @@ const ModalOverlay = (props) => {
       Size: {(props.goSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
       <br />
       <br />
-      <h2>RockDB</h2>
+      {/* <h2>RockDB</h2>
       {props.rockSnapshotInfo.addrbook === "NaN" ? (
         <div>Not available</div>
       ) : (
@@ -86,22 +86,22 @@ const ModalOverlay = (props) => {
           GB
           <br />
         </div>
-      )}
+      )} */}
     </div>
   );
   const changeToGo = () => {
     setGolvdb(true);
-    setRocklvdb(false);
+    // setRocklvdb(false);
     setInstruction(false);
   };
-  const changeToRock = () => {
-    setGolvdb(false);
-    setRocklvdb(true);
-    setInstruction(false);
-  };
+  // const changeToRock = () => {
+  //   setGolvdb(false);
+  //   setRocklvdb(true);
+  //   setInstruction(false);
+  // };
   const changeToIns = () => {
     setGolvdb(false);
-    setRocklvdb(false);
+    // setRocklvdb(false);
     setInstruction(true);
   };
   let content = (
@@ -137,7 +137,7 @@ const ModalOverlay = (props) => {
                 GoLevelDB
               </button>
             </li>
-            <li>
+            {/* <li>
               <button
                 onClick={changeToRock}
                 className={
@@ -148,12 +148,12 @@ const ModalOverlay = (props) => {
               >
                 Rocksdb
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="snapshot-modal-data">
           {(golvdb && golvdb_content) ||
-            (rocklvdb && rocklvdb_content) ||
+            // (rocklvdb && rocklvdb_content) ||
             (instruction && instruction_content)}
         </div>
       </div>

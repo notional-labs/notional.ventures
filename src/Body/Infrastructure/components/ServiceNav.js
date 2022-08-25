@@ -81,7 +81,7 @@ const ServiceNav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link onFocus={true} to="/rpc">
+              <Link to="/rpc">
                 RPC List
               </Link>
             </li>
