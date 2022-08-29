@@ -7,7 +7,7 @@ const ChainUpgradeList = (props) => {
   const upgrade = props.upgrade
   // console.log(upgrade[0].api);
   const [loadedUpgrade, setLoadedUpgrade] = useState([]);
-  // const [error, setError] = useState([]);
+  const [newState, setNewState] = useState([]);
   useEffect(() => {
     fetchUpgradeInfo();
   }, []);
@@ -17,25 +17,29 @@ const ChainUpgradeList = (props) => {
       for (let index = 0; index < upgrade.length; index++) {
 
           const res = await axios.get(`${upgrade[index].api}/upgrade`);
-          // const element = upgrade[index];
           if (res.data.name !== "NaN") {
-            loadedUpgrade.push(res.data)
-            console.log(index);
+            let obj = {...res.data}
+            const info = await axios.get(`${upgrade[index].api}/information`); 
+            obj["currentHeight"] = info.data.height
+            obj["blockTime"] = info.data.blockTime
+            obj["name"] = info.data.name
+            loadedUpgrade.push(obj)
+            // console.log(index);
           }
         }
         const seen = new Set();
         const filteredUpgrades = loadedUpgrade.filter(el => {
           const duplicate = seen.has(el.name);
+          // console.log(seen)
           seen.add(el.name);
           return !duplicate;
         });
-        console.log(filteredUpgrades);
+        setNewState([...filteredUpgrades])
     } catch (err) {
         console.log(err.message);
         // setError(true);
     }
 };
-
 
   return (
     <div className="chain-upgrades">
@@ -47,7 +51,16 @@ const ChainUpgradeList = (props) => {
           <th>VERSION</th>
           <th>ESTIMATED UPGRADE TIME</th>
         </tr>
-        <ChainUpgradeItem />
+          {newState.map((data) => (
+            <ChainUpgradeItem 
+              name = {data.name}
+              currentHeight = {data.currentHeight}
+              version = {data.version}
+              updateHeight = {data.height}
+              currentBlock = {data.currentBlock}
+              blockTime = {data.blockTime}
+            />
+          ))}
       </table>
     </div>
   );
