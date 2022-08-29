@@ -1,13 +1,16 @@
 import React from "react";
 import "./ChainUpgrade.css";
 import ServiceNav from "../components/ServiceNav";
+import { STAKES } from "../../Stake/chains-data";
 // import RpcList from "../components/RpcList";
 // import RingLoader from "react-spinners/RingLoader";
-import { useState, useEffect } from "react";
+// import { useState } from "react";
 import ChainUpgradeList from "../components/ChainUpgradeList";
 
+
 const ChainUpgrade = () => {
-  const [isLoading, setIsLoading] = useState(false);
+
+  // const [isLoading, setIsLoading] = useState(false);
 //   useEffect(() => {
 //     setIsLoading(true);
 //     setTimeout(() => {
@@ -30,7 +33,7 @@ const ChainUpgrade = () => {
             ante in nisi ultricies pharetra sed at metus.{" "}
           </p>
           <div className="upgrades">
-            <ChainUpgradeList />
+            <ChainUpgradeList upgrade = {STAKES}/>
           </div>
         </div>
       </div>

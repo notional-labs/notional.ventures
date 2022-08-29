@@ -1,0 +1,33 @@
+{
+    "sif": {
+        "name": "0.17.0",
+        "height": 8367070,
+        "version": [
+            "0.17.0"
+        ],
+        "description": "v0.17.0 includes the following:  \\nThis release replaces Sifchain’s slip-based swap fee with a fixed swap fee that can be set as a governance parameter. This change is necessary to re-enable asymmetric liquidity adds as well as avoid high-slip based fees in margin trading positions."
+    },
+    "stargaze": {
+        "name": "v7",
+        "height": 4448796,
+        "version": [
+            "7"
+        ],
+        "description": "# Stargaze V7 Upgrade\\n\\nThis upgrade enables Inter Chain Accounts as a host and includes some bugfixes.\\n\\n- Wasmd v0.28.0\\n- IBC 3.1.1\\n- ICA \\n\\n\\n# Details of upgrade time\\n\\nThis proposal suggests block #4448796 for the upgrade, which is estimated to be at Tuesday 30th August 17:30 UTC, using avg block time of 5.90 secs https://www.mintscan.io/stargaze/blocks/4448796\\n\\nWhen the network reaches the halt height, the state machine of the blockchain will be halted. Cosmovisor, if configured properly, will then switch the binary used for v6.0.0, and then the chain will continue to make progress.\\n\\nIn the event of an issue at upgrade time, we will coordinate via the #verified-validators channel in Discord.\\n\\n[Upgrade Instructions](https://github.com/public-awesome/mainnet/blob/main/stargaze-1/v7_0_0_UPGRADE.md)\\n"
+    },
+    "secret": {
+        "name": "v1.3",
+        "height": 3343000,
+        "version": [],
+        "description": "This proposal proposes that the chain elect to do a software upgrade to the v1.3.0 software version of the Secret Network codebase on block **3,343,000**, which is estimated to occur on **Wednesday, 11 May 2022 at 2:00PM UTC**. Block times have high variance, so please monitor the chain for more precise time estimates. You can monitor the ETA at [https://www.mintscan.io/secret/blocks/3343000](https://www.mintscan.io/secret/blocks/3343000).\n\n## Upgrade highlights\n\nThis upgrade adds the following features:\n\n- Backport API from CosmWasm v1:\n  - `ed25519_verify()`\n  - `ed25519_batch_verify()`\n  - `secp256k1_verify()`\n  - `secp256k1_recover_pubkey()`\n- Add new secret CosmWasm API:\n  - `ed25519_sign()`\n  - `secp256k1_sign()`\n- Upgrade cosmos-sdk to v0.45.4:\n  - Add the `secretd rollback` command\n  - Add the `~/.secretd/.compute` directory to state sync\n- Upgrade the ibc-go module to v3.0.0:\n  - Add interchain accounts (ICS27) host ([list of allowed messages](https://github.com/scrtlabs/SecretNetwork/blob/56fdaef168ee7d078514d87a356d4176e4b6df32/app/upgrades/v1.3/upgrades.go#L35-L55))\n\nFull changelog: [CHANGELOG.md](https://github.com/scrtlabs/SecretNetwork/blob/master/CHANGELOG.md#130)\n\n## Getting prepared for the upgrade\n\nSee [https://docs.scrt.network/shockwave-alpha-upgrade-secret-4.html](https://docs.scrt.network/shockwave-alpha-upgrade-secret-4.html) for upgrade instructions."
+    },
+    "kava": {
+        "name": "Kava IBC Upgrade",
+        "height": 1803250,
+        "version": [
+            "9"
+        ],
+        "description": "This proposal specifies that the kava-9 upgrade will occur at block height 1803250, which is January 19th, 2022 at approximately 14:00 UTC. See full proposal at https://gateway.pinata.cloud/ipfs/QmPThCDQ2nAQC3Y2vvKc6nmcoDUxsMm5AnGQjWcMspQRo9?preview=1."
+    },
+    "total": 4
+}

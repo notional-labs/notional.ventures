@@ -15,15 +15,8 @@
 }
 
 
-th {
-    padding: 1em;
-  background: rgba(82, 82, 82, 0.8);
-}
 
-td {
-    padding: 1em;
-  text-align: center;
-  background: rgba(188, 188, 188, 0.5);
-  border-bottom: 0.5px solid white;
+.chain-upgrades-title th {
+  padding: 1em;
+background: rgba(82, 82, 82, 0.8);
 }
-

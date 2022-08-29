@@ -105,7 +105,7 @@ const ModalOverlay = (props) => {
     setInstruction(true);
   };
   let content = (
-    <div className={`modal ${props.className}`}>
+    <div className={`snapshot-modal ${props.className}`}>
       <div className="content">
         <div className="snapshot-type-modal-container">
           <div className="snapshot-name">
