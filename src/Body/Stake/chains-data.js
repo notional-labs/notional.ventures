@@ -387,4 +387,14 @@ export const STAKES = [
     address: "fetchvaloper1s9myentgxavnpw7648an2v6zvvpza0axa6dd0x",
     rank: "58"
   },
+  {
+    id: "s27",
+    image: `${Umee}`,
+    name: "Umee",
+    api: "https://backend.notional.ventures/umee",
+    keplr: "umee",
+    ping: "umee",
+    address: "umeevaloper1dmahqt84r9je3sqvljzjrttjj78cmrf39k5zhs",
+    rank: "86"
+  },
 ];
