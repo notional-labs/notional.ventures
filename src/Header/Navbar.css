@@ -76,7 +76,7 @@
   align-items: center;
   gap: 1rem;
   width: auto;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   background-color: transparent;
   margin: auto;
 }
@@ -104,9 +104,6 @@
   z-index: 5;
   display: block;
 }
-
-
-
 
 @media only screen and (min-width: 360px) and (max-width: 1155px) {
   .nav {
