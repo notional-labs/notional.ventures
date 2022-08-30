@@ -1,10 +1,10 @@
 .infra-section {
     height: auto;
     width: auto;
-    /* background-image: url(../../../media/background-decor/infrastructe-background.png);
+    background-image: url(../../../media/background-decor/infrastructe-background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center; */
+    background-position: center; 
   }
 
 .infra-section .title {

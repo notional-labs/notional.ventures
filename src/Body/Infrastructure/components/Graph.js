@@ -43,14 +43,13 @@ const gData = {
 
 
 export default function Graph() {
-  const zoomRef = useRef()
+  const zoomRef = useRef();
   // myScene.add(`../../../media/background-decor/BackgroundRPC.png`);
   return (
     <ForceGraph3D
-      
       ref={zoomRef}
-      backgroundColor="black"
-      linkOpacity={0.6}
+      backgroundColor={"rgba(0,0,0,0)"}
+      linkOpacity={0.2}
       nodeOpacity = {0}
       // nodeResolution = {10}
       cooldownTicks={100}
@@ -58,11 +57,11 @@ export default function Graph() {
       // onRenderFramePost = {() => zoomRef.current.scene().add(`../../../media/background-decor/BackgroundRPC.png`)}
       onEngineStop={() => zoomRef.current.zoomToFit()}
       linkCurvature = {0.1}
-      width= {1000}     
+      width= {1200}     
       height={700}    
-      linkDirectionalParticles = {4}
-      linkDirectionalParticleWidth = {1}
-      linkDirectionalParticleSpeed = {0.0015}
+      linkDirectionalParticles = {1}
+      linkDirectionalParticleWidth = {0.3}
+      linkDirectionalParticleSpeed = {0.015}
       // linkColor="red"
       graphData={gData}
       nodeLabel = {gData.nodes.id}
