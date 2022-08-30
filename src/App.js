@@ -8,8 +8,15 @@ import Project from "./Body/Project/Project";
 import Team from "./Body/Team/Team";
 import Contact from "./Body/Contact/Contact";
 import Footer from "./Footer/Footer";
-import RingLoader from "react-spinners/RingLoader";
+import GifLoader from "react-gif-loader";
 import { useState, useEffect } from "react";
+import Loading from "./media/background-decor/loading.gif";
+
+const facts = [
+    "Notional has only 10 people", 
+    "All Notional's machine are bought by Minh", 
+    "Minh is so handsome"
+];
 
 const Home = () => {
     return (
@@ -28,17 +35,24 @@ const Home = () => {
 
 function App() {
     const [isLoading, setIsLoading] = useState(false);
+    const randomText = facts[Math.floor(Math.random() * facts.length)];
     useEffect (() => {
       setIsLoading(true)
       setTimeout(() => {
         setIsLoading(false)
-      }, 3000)
+      }, 5000)
     },[])
     return (
         <React.Fragment>
             {isLoading && (
                 <div className="loader-container">
-                    <RingLoader color="#eaebed" size={130} />
+                    <GifLoader 
+                        className="loading-logo"
+                        loading={true}
+                        imageSrc={Loading}
+                    />
+                    <p className="loading-title">DID YOU KNOW</p>
+                    <p className="loading-text">{randomText}</p>
                 </div>
             )}
             {!isLoading && (

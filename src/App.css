@@ -20,18 +20,51 @@ html {
 }
 
 .loader-container {
-  width: 100%;
+  width: 100vw;
   height:100vh;
   text-align: center;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
 }
 
-.loader-container > .loader {
-  height: 90px;
-  width: 90px;
+.loader-container img {
+  margin-top: calc(100vh * 2 / 8) !important;
+  max-width: 500px;
+  width: calc(100vw * 500 / 1920)
+}
+
+.loading-text {
+  z-index: 100000;
+  margin-top: -0.5%;
+  font-family: "Segoe UI Light";
+  font-size: 20px;
+  color: white;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 3s;
+}
+
+.loading-title {
+  z-index: 100000;
+  margin-top: 7%;
+  font-family: "Segoe UI Semibold";
+  font-size: 25px;
+  color: white;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .root {
