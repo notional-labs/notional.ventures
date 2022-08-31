@@ -1,7 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import * as THREE from "three";
 // import image from '../../../media/background-decor/BackgroundRPC.png'
+import {
+
+  UnrealBloomPass
+
+} from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 const gData = {
   "nodes": [
@@ -44,24 +49,27 @@ const gData = {
 
 export default function Graph() {
   const zoomRef = useRef();
-  // myScene.add(`../../../media/background-decor/BackgroundRPC.png`);
+  useEffect(() => {
+    const bloomPass = new UnrealBloomPass();
+    bloomPass.strength = 3;
+    bloomPass.radius = 1;
+    bloomPass.threshold = 0.1;
+    zoomRef.current.postProcessingComposer().addPass(bloomPass);
+  }, []);
+
   return (
     <ForceGraph3D
       ref={zoomRef}
       backgroundColor={"rgba(0,0,0,0)"}
-      linkOpacity={0.2}
+      linkOpacity={0.4}
       nodeOpacity = {0}
-      // nodeResolution = {10}
       cooldownTicks={100}
-      
-      // onRenderFramePost = {() => zoomRef.current.scene().add(`../../../media/background-decor/BackgroundRPC.png`)}
       onEngineStop={() => zoomRef.current.zoomToFit()}
       linkCurvature = {0.1}
-      width= {1200}     
+      width= {"calc(100vw * 1200 / 1920"}     
       height={700}    
       linkDirectionalParticles = {1}
-      linkDirectionalParticleWidth = {0.3}
-      linkDirectionalParticleSpeed = {0.015}
+      linkDirectionalParticleWidth = {0.2}
       // linkColor="red"
       graphData={gData}
       nodeLabel = {gData.nodes.id}
