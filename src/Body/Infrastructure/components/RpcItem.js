@@ -30,8 +30,9 @@ const RpcItem = (props) => {
       >
         {display && (
           <>
-            <p>{props.rpc_service}</p>
-            <p>{props.api_service}</p>
+            <p>RPC: {props.rpc_service}</p>
+            <p>API: {props.api_service}</p>
+            <p>GRPC: {props.grpc_service}</p>
           </>
         )}
       </div>
