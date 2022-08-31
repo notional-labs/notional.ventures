@@ -1,12 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import * as THREE from "three";
-// import image from '../../../media/background-decor/BackgroundRPC.png'
-import {
-
-  UnrealBloomPass
-
-} from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 const gData = {
   "nodes": [
@@ -49,13 +43,6 @@ const gData = {
 
 export default function Graph() {
   const zoomRef = useRef();
-  useEffect(() => {
-    const bloomPass = new UnrealBloomPass();
-    bloomPass.strength = 1;
-    bloomPass.radius = 2;
-    bloomPass.threshold = 0.1;
-    zoomRef.current.postProcessingComposer().addPass(bloomPass);
-  }, []);
 
   return (
     <ForceGraph3D
