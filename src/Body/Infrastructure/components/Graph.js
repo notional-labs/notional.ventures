@@ -51,8 +51,8 @@ export default function Graph() {
   const zoomRef = useRef();
   useEffect(() => {
     const bloomPass = new UnrealBloomPass();
-    bloomPass.strength = 3;
-    bloomPass.radius = 1;
+    bloomPass.strength = 1;
+    bloomPass.radius = 2;
     bloomPass.threshold = 0.1;
     zoomRef.current.postProcessingComposer().addPass(bloomPass);
   }, []);
