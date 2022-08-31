@@ -1,16 +1,16 @@
 .infra-section {
-    height: auto;
-    width: auto;
-    /* background-image: url(../../../media/background-decor/infrastructe-background.png);
+  height: auto;
+  width: auto;
+  /* background-image: url(../../../media/background-decor/infrastructe-background.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;  */
-  }
+}
 
 .infra-section .title {
   text-align: center;
   width: 100%;
-  height: 25rem;
+  height: 21rem;
   align-items: center;
   margin-top: 5rem;
 }
@@ -31,7 +31,7 @@
 
 .infra-section .title .text {
   font-family: "Segoe UI Light";
-  font-size: 22px;
+  font-size: 20px;
   width: 60%;
   margin: 1rem auto;
   align-items: center;
@@ -83,24 +83,18 @@
   margin-top: 2rem;
 }
 
-.infra-section .services .service-item{
-  /* width: 90%; */
-  height: 15rem;
-  width: 25rem;
-}
-
-.link{
-  color: black;
+.link {
+  color: white;
 }
 
 .link:hover {
-  color: bisque;
+  color: rgb(180, 162, 219);
 }
 .service-item {
   border-radius: 30px;
   background-color: rgba(162, 157, 157, 0.8);
-  height: 250px;
-  width: 450px;
+  height: 190px;
+  width: 370px;
   /* backdrop-filter: blur(5px); */
   box-shadow: 4px 8px 30px 2px rgb(255, 255, 255, 0.15);
   cursor: pointer;
@@ -112,3 +106,63 @@
   transition: 0.2s ease;
 }
 
+.service-item div img {
+  max-width: 110px;
+  max-height: 110px;
+}
+
+.service-item-name {
+  font-size: 15px;
+  margin-top: 0;
+  height: 32px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .service-item {
+    width: calc(100vw / 1920 * 370);
+    height: calc(100vw / 1920 * 190);
+    border-radius: calc(100vw / 1920 * 30);
+  }
+  .service-item div img {
+    max-width: calc(100vw / 1920 * 110);
+    max-height: calc(100vw / 1920 * 110);
+  }
+  .infra-section .services {
+    gap: calc(100vw / 1920 * (5 * 18));
+  }
+  .service-item-name {
+    font-size: calc(100vw * 15 / 1920);
+    height: calc(100vw / 1920 * 32);
+  }
+  .stake-section .title {
+    height: auto;
+  }
+  .infra-section .title .bar {
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
+  }
+  
+  .infra-section .title .name {
+    font-size: calc(100vw * 60 / 1920);
+  }
+  .infra-section .title .text { 
+    display: block;
+    font-size: calc(100vw * 20*1.5 / 1920);
+  }
+  .infra-section .title {
+    height: calc(100vw / 1920 * (16*22));
+
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1360px) {
+  .infra-section .relayer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 618.75px) {
+  .service-item-name {
+    display: none;
+  }
+}
