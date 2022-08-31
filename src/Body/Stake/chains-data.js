@@ -24,7 +24,7 @@ import Vidulum from "../../media/stake/Vidulum.svg";
 import Omniflix from "../../media/stake/Omniflix.svg";
 import Chihuahua from "../../media/stake/Chihuahua.svg";
 import Fetchai from "../../media/stake/Fetch.svg";
-import Umee from "../../media/stake/Umee.svg";
+import Umee from "../../media/stake/umee.svg";
 
 export const STAKES = [
   {

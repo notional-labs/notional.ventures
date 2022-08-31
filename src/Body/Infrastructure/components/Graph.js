@@ -47,13 +47,13 @@ export default function Graph() {
   return (
     <ForceGraph3D
       ref={zoomRef}
-      backgroundColor={"rgba(0,0,0,0)"}
+      backgroundColor={"black"}
       linkOpacity={0.4}
       nodeOpacity = {0}
       cooldownTicks={100}
       onEngineStop={() => zoomRef.current.zoomToFit()}
       linkCurvature = {0.1}
-      width= {"calc(100vw * 1200 / 1920"}     
+      width= {1200}
       height={700}    
       linkDirectionalParticles = {1}
       linkDirectionalParticleWidth = {0.2}
