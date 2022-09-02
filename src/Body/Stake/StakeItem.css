@@ -101,7 +101,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: red solid 1px;
+  /* border: red solid 1px; */
 }
 
 .stake-item__image img {
@@ -112,7 +112,7 @@
 
 .stake-item__info {
   font-family: "Segoe UI Semibold";
-  border: yellow 1px solid;
+  /* border: yellow 1px solid; */
   color: white;
   z-index: inherit;
   font-size: 35px;
@@ -173,7 +173,7 @@
   .stake-item__info {
     font-size: calc(100vw * 35 / 1920);
   }
-  
+
   .stake-btn {
     width: calc(100vw / 1920 * (10 * 16));
     height: calc(100vw / 1920 * (3 * 16));
