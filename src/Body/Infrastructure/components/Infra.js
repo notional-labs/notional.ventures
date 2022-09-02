@@ -43,7 +43,7 @@ const Infra = () => {
                 <Link to="/rpc" className="link">
                     <button className="service-item">
                         <Image src={RPC} preview = {false} ></Image>
-                        <div >RPC LISTS</div>
+                        <div className="service-item-name">RPC LISTS</div>
                     </button>
                 </Link>
                 <Link
@@ -52,13 +52,13 @@ const Infra = () => {
                 >
                     <button className="service-item">
                         <Image src={Snapshots} preview = {false} >26</Image>
-                        <div >SNAPSHOTS</div>
+                        <div className="service-item-name">SNAPSHOTS</div>
                     </button>
                 </Link>
                 <Link to="/chain-upgrade" className="link">
                     <button className="service-item">
                         <Image src={Upgrade} preview = {false} >26</Image>
-                        <div >
+                        <div className="service-item-name">
                             CHAINS UPGRADE
                         </div>
                     </button>
@@ -66,7 +66,7 @@ const Infra = () => {
                 <a href="https://status.notional.ventures/status/cosmosia" className="link">
                     <button className="service-item">
                         <Image src={Uptime} preview = {false} >26</Image>
-                        <div >UPTIME KUMA</div>
+                        <div className="service-item-name">UPTIME KUMA</div>
                     </button>
                 </a>
             </div>

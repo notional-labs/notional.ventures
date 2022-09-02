@@ -11,6 +11,9 @@
   z-index: 5;
   transition-timing-function: ease-in;
   transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 6px 25px #000;
 }
 
 .nav-bg {

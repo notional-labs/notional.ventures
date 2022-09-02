@@ -13,11 +13,11 @@
 }
 
 .snapshot-list-container {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .paginationBttns {
-  width: 80%;
+  width: 1219.17px;
   height: 40px;
   list-style: none;
   display: flex;
@@ -33,6 +33,7 @@
   border: 1px solid white;
   color: white;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .paginationBttns a:hover {
@@ -48,4 +49,14 @@
 .paginationDisabled a {
   color: grey;
   background-color: rgb(63, 61, 61);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .paginationBttns {
+    width: calc(100vw * 1219.17 / 1920);
+    height: calc(100vw * 40 / 1920);
+  }
+  .paginationBttns a {
+    font-size: calc(100vw * 15 / 1920);
+  }
 }

@@ -7,10 +7,7 @@
   list-style: none;
   transition: transform 0.4s;
   text-align: center;
-  z-index: inherit;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -22,46 +19,40 @@
   backdrop-filter: blur(22px);
 }
 
-.stake-item__image {
-  margin-top: -30px;
-  height: 9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: red solid 1px; */
-}
-
-.stake-item__image img {
-  max-width: 7rem;
-  max-height: 7rem;
-}
-
-.stake-item__info {
+.stake-item__info h2 {
   font-family: "Segoe UI Semibold";
-  /* border: yellow 1px solid; */
   color: white;
+  margin-top: 15px;
   font-size: 35px;
   align-items: center;
 }
 
 .stake-btn {
+  margin-top: 1.5rem;
   width: 10rem;
-  height: 3rem;  
-  margin-top: 20px;
+  height: 3rem;
+  background-color: #ffff;
+  color: black;
+  cursor: pointer;
   border: 1px solid white;
   border-radius: 8px;
-  background-color: rgba(255,255,255,0);
-  color: white;
-  font-family: "Segoe UI Light";
   font-size: 30px;
-  cursor: pointer;
 }
 
 .stake-btn:hover {
   box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.4);
-  background-color: white;
-  color: black;
-  transition: 0.5s;
+}
+
+.stake-item__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+
+.stake-item__image__detail {
+  max-width: 7rem;
+  max-height: 7rem;
 }
 
 @media only screen and (min-width:360px) and (max-width: 1920px){

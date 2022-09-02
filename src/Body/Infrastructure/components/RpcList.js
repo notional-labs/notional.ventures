@@ -12,6 +12,7 @@ const RpcList = (props) => {
                         name={stake.name}
                         rpc_service={stake.rpc_service}
                         api_service={stake.api_service}
+                        grpc_service={stake.grpc_service}
                     />
                 ))}
             </ul>

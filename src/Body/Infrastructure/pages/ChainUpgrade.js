@@ -2,41 +2,39 @@ import React from "react";
 import "./ChainUpgrade.css";
 import ServiceNav from "../components/ServiceNav";
 import { STAKES } from "../../Stake/chains-data";
-// import RpcList from "../components/RpcList";
-// import RingLoader from "react-spinners/RingLoader";
-// import { useState } from "react";
+import RingLoader from "react-spinners/RingLoader";
+import { useState, useEffect } from "react";
 import ChainUpgradeList from "../components/ChainUpgradeList";
 
 
 const ChainUpgrade = () => {
 
-  // const [isLoading, setIsLoading] = useState(false);
-//   useEffect(() => {
-//     setIsLoading(true);
-//     setTimeout(() => {
-//       setIsLoading(false);
-//     }, 1000);
-//   }, []);
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, []);
   return (
     <>
-    {/* {isLoading && (
+    {isLoading && (
                 <div className="loader-container">
                     <RingLoader color="#eaebed" size={130} />
                 </div>
-            )} */}
-      <div className="chain-upgrade-section">
+            )}
+     {!isLoading && <div className="chain-upgrade-section">
         <ServiceNav />
         <div className="chain-upgrade-container">
           <div className="title">Chain Upgrade</div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-            ante in nisi ultricies pharetra sed at metus.{" "}
+            Automatically query upgrade info for chain that we validate
           </p>
           <div className="upgrades">
             <ChainUpgradeList upgrade = {STAKES}/>
           </div>
         </div>
-      </div>
+      </div>}
     </>
   );
 };

@@ -13,9 +13,7 @@ import { useState, useEffect } from "react";
 import Loading from "./media/background-decor/loading.gif";
 
 const facts = [
-    "Notional has only 10 people", 
-    "All Notional's machine are bought by Minh", 
-    "Minh is so handsome"
+    "Notional are happy to make our customer sastified", 
 ];
 
 const Home = () => {

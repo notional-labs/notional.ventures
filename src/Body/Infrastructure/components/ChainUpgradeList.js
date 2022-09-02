@@ -3,19 +3,27 @@ import ChainUpgradeItem from "./ChainUpgradeItem";
 import "./ChainUpgradeList.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import ReactLoading from "react-loading"
+import { purple } from "@mui/material/colors";
+import { margin } from "@mui/system";
+import { Content } from "antd/lib/layout/layout";
+import { withTheme } from "@emotion/react";
+
 const ChainUpgradeList = (props) => {
   const upgrade = props.upgrade
   // console.log(upgrade[0].api);
   const [loadedUpgrade, setLoadedUpgrade] = useState([]);
   const [newState, setNewState] = useState([]);
+  const [isLoading, setIsLoading] = useState(false)
   useEffect(() => {
     fetchUpgradeInfo();
   }, []);
 
   const fetchUpgradeInfo = async () => {
     try {
+      // setIsLoading(true)
       for (let index = 0; index < upgrade.length; index++) {
-
+        setIsLoading(true)
           const res = await axios.get(`${upgrade[index].api}/upgrade`);
           if (res.data.name !== "NaN") {
             let obj = {...res.data}
@@ -35,6 +43,7 @@ const ChainUpgradeList = (props) => {
           return !duplicate;
         });
         setNewState([...filteredUpgrades])
+        setIsLoading(false)
     } catch (err) {
         console.log(err.message);
         // setError(true);
@@ -51,13 +60,13 @@ const ChainUpgradeList = (props) => {
           <th>VERSION</th>
           <th>ESTIMATED UPGRADE TIME</th>
         </tr>
-          {newState.map((data) => (
-            <ChainUpgradeItem 
+          {isLoading && <ReactLoading type="spin" color="#F0FFFF" style = {{margin : "0 auto", position:"relative", left: "490px" }}  />}
+           {!isLoading && newState.map((data) => (
+             (parseInt(data.currentHeight) < data.height) && <ChainUpgradeItem 
               name = {data.name}
               currentHeight = {data.currentHeight}
               version = {data.version}
               updateHeight = {data.height}
-              currentBlock = {data.currentBlock}
               blockTime = {data.blockTime}
             />
           ))}

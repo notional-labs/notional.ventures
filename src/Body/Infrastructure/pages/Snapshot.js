@@ -27,7 +27,7 @@ const Snapshot = () => {
           <div className="snapshot-container">
             <div className="test">Snapshots</div>
             <p className="text">
-              ovinsdonvoisdnvios v siodj vdiosjv sdov soijvds voisd
+              We are providing snapshot for all the chain that we validate
             </p>
             <div className="snapshot-instruction">
               Which included: <br />
