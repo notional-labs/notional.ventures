@@ -3,7 +3,6 @@ import "./StakeItem.css";
 import Modal from "./StakeModal";
 import axios from "axios";
 import ErrorModal from "./ErrorModal";
-import { Link } from "react-router-dom";
 
 const StakeItem = (props) => {
   const [showHandler, setShowHandler] = useState(false);
@@ -34,6 +33,7 @@ const StakeItem = (props) => {
     try {
       const res = await axios.get(`${props.api}/information`);
       setLoadedChainInfo(res);
+      // console.log(loadedChainInfo);
     } catch (err) {
       console.log(err.message);
       setError(true);
@@ -90,26 +90,15 @@ const StakeItem = (props) => {
         ></Modal>
       )}
       <li className="stake-item">
-        <div className="stake-item__content">
-          <div className="stake-item__image">
-            <img
-              src={props.image}
-              alt={props.name}
-              className="stake-item__image__detail"
-            />
-          </div>
-          <div className="stake-item__info">
-            <h2>{props.name}</h2>
-          </div>
-          <button
-            onClick={() => {
-              showModalHandler();
-            }}
-            className="stake-btn"
-          >
-            Stake
-          </button>
+        <div className="stake-item__image">
+          <img src={props.image} alt={props.name} />
         </div>
+
+        <h2 className="stake-item__info">{props.name}</h2>
+
+        <button onClick={showModalHandler} className="stake-btn">
+          Stake
+        </button>
       </li>
     </React.Fragment>
   );

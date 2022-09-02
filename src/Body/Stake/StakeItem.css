@@ -1,82 +1,185 @@
 .stake-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 22rem;
   width: 17rem;
-  border: 1px solid white;
-  border-radius: 15px;
-  box-sizing: border-box;
-  list-style: none;
-  transition: transform 0.4s;
-  text-align: center;
   margin: 0 auto;
   justify-content: center;
+  text-align: center;
   align-items: center;
+  transition: transform 0.4s;
+  z-index: 1;
 }
 
 .stake-item:hover {
   background-color: rgba(211, 211, 211, 0.3);
-  transform: scale(1.1);
-  box-shadow: 0px 0px 30px -2px rgb(0, 0, 0, 0.6);
   backdrop-filter: blur(22px);
+  transform: scale(1.1);
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px -2px rgb(0, 0, 0, 0.6);
 }
 
-.stake-item__info h2 {
+.stake-item::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px;
+  border-radius: 15px;
+  background: white;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.stake-item:hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 3px;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    #ff8038 0%,
+    #ff0099 30.43%,
+    #00ebeb 68.23%,
+    #db00ff 100%
+  );
+  background-size: 600% 600%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-animation: AnimateBorder 4s ease infinite;
+  -moz-animation: AnimateBorder 4s ease infinite;
+  animation: AnimateBorder 4s ease infinite;
+  transition: filter 1s ease-in;
+  filter: blur(22px);
+}
+
+@-webkit-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.stake-item__image {
+  margin-top: -30px;
+  z-index: inherit;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: red solid 1px;
+}
+
+.stake-item__image img {
+  max-width: 7rem;
+  z-index: inherit;
+  max-height: 7rem;
+}
+
+.stake-item__info {
   font-family: "Segoe UI Semibold";
+  border: yellow 1px solid;
   color: white;
-  margin-top: 15px;
+  z-index: inherit;
   font-size: 35px;
   align-items: center;
 }
 
 .stake-btn {
-  margin-top: 1.5rem;
   width: 10rem;
+  z-index: inherit;
   height: 3rem;
-  background-color: #ffff;
-  color: black;
-  cursor: pointer;
+  margin-top: 20px;
   border: 1px solid white;
   border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-family: "Segoe UI Light";
   font-size: 30px;
+  cursor: pointer;
 }
 
 .stake-btn:hover {
   box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  color: black;
+  z-index: inherit;
+  transition: 0.5s;
 }
 
-.stake-item__image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10rem;
-}
-
-.stake-item__image__detail {
-  max-width: 7rem;
-  max-height: 7rem;
-}
-
-@media only screen and (min-width:360px) and (max-width: 1920px){
-  .stake-item{
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .stake-item {
     width: calc(100vw / 1920 * (17 * 16));
     height: calc(100vw / 1920 * (22 * 16));
   }
-  .stake-item__image__detail {
-    margin-top: calc(100vw * (5*22) / 1920);
+
+  .stake-item:hover {
+    border-radius: calc(100vw / 1920 * 15);
+  }
+
+  .stake-item::before {
+    border-radius: calc(100vw / 1920 * 15);
+  }
+
+  .stake-item:hover::before {
+    border-radius: calc(100vw / 1920 * 15);
+    padding: calc(100vw / 1920 * 3);
+  }
+
+  .stake-item__image {
+    margin-top: calc(100vw / 1920 * (0 - 30));
+    height: calc(100vw / 1920 * (9 * 16));
+  }
+
+  .stake-item__image img {
     max-width: calc(100vw / 1920 * (7 * 16));
     max-height: calc(100vw / 1920 * (7 * 16));
   }
 
-  .stake-item__info h2 {
+  .stake-item__info {
     font-size: calc(100vw * 35 / 1920);
-    margin-top: calc(100vw * 90 / 1920);  
   }
+  
   .stake-btn {
     width: calc(100vw / 1920 * (10 * 16));
     height: calc(100vw / 1920 * (3 * 16));
-    margin-top: calc(100vw * (2*22) / 1920);
+    margin-top: calc(100vw / 1920 * 20);
+    border-radius: calc(100vw / 1920 * 8);
     font-size: calc(100vw * 30 / 1920);
   }
-  .stake-item__image{
-        height: calc(100vw / 1920 * (3 * 16));
-  }
+
 }
