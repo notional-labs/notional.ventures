@@ -64,7 +64,7 @@ export default function Graph() {
         const imgTexture = new THREE.TextureLoader().load(`./nodes/${img}`);
         const material = new THREE.SpriteMaterial({ map: imgTexture, depthWrite: false});
         const sprite = new THREE.Sprite(material);
-        sprite.scale.set(12, 12);
+        sprite.scale.set(50, 50);
         return sprite;
       }}
     />
