@@ -6,7 +6,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .stake-section .title {
+  z-index: 1;
   text-align: center;
   width: 100%;
   height: 25rem;
@@ -15,6 +17,7 @@
 
 .stake-section .title .bar {
   width: 100px;
+  z-index: inherit;
   height: 8px;
   border: none;
   background-color: #3a71fd;
@@ -25,32 +28,29 @@
   font-family: "Segoe UI Light";
   font-size: 60px;
   color: white;
+  z-index: inherit;
 }
 
 .stake-section .title .text {
   font-family: "Segoe UI Light";
-  font-size: 20px;
+  font-size: 22px;
   color: white;
   width: 60%;
-  margin: 1rem auto;
+  z-index: inherit; 
+  margin: auto;
   align-items: center;
   text-align: center;
-  font-size: 1.5rem;
 }
 
 .stake {
+  z-index: 1;
   width: 90%;
   max-width: 100rem;
   margin: 0 auto;
 }
 
 
-@media only screen and (min-width:360px) and (max-width: 1920px){
-  .stake-section {
-    background-size: 82%;
-    background-position: center;
-    
-  }
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
   .stake-section .title {
     height: auto;
   }

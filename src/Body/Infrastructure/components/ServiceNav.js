@@ -1,10 +1,10 @@
 import "./ServiceNav.css";
-import React, { useState } from "react";
-import { Image } from "antd";
 import NotionalLogo from "../../../media/logo/notional.png";
-import { Link } from "react-router-dom";
-import NavBtn from "../../../media/button/nav-btn.png";
 import SideDrawer from "../../../Header/SideDrawer";
+import React, { useState } from "react";
+import NavBtn from "../../../media/button/nav-btn.png";
+import { Image } from "antd";
+import { Link } from "react-router-dom";
 
 const ServiceNav = () => {
   const [drawerHandler, setDrawerHandler] = useState(false);
@@ -33,24 +33,25 @@ const ServiceNav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/snapshot">Snapshot</Link>
+              <Link onFocus={true} to="/rpc">
+                RPC
+              </Link>
+>>>>>>> f61eeaf361fb47632503419ad88fa41fa367a72f
             </li>
             <li>
-              <Link onFocus={true} to="/rpc">
-                Endpoints
-              </Link>
+              <Link to="/snapshot">Snapshot</Link>
             </li>
             <li>
               <a href="https://status.notional.ventures">Kuma</a>
             </li>
             <li>
-              <a href="/chain-upgrade">Chains Upgrade</a>
+              <a href="/chain-upgrade">Chan Upgrade</a>
             </li>
           </ul>
         </nav>
       </SideDrawer>
 
-      <div className={color ? "service-nav nav-bg" : "service-nav"}>
+      <div className={color ? "nav nav-bg" : "nav"}>
         <button className="main-navigation-btn" onClick={openDrawerHandler}>
           <Image
             className="btn-img"
@@ -65,14 +66,16 @@ const ServiceNav = () => {
           />
         </button>
 
-        <div href="#" className="logo" style={{ cursor: "pointer" }}>
-          <Image
-            style={{ width: "200px" }}
-            className="logo-img"
-            src={NotionalLogo}
-            alt="Logo"
-            preview={false}
-          />
+        <div className="logo" style={{ cursor: "pointer" }}>
+          <Link to="/">
+            <Image
+              style={{ width: "200px" }}
+              className="logo-img"
+              src={NotionalLogo}
+              alt="Logo"
+              preview={false}
+            />
+          </Link>
         </div>
 
         <nav className="main-nav">
@@ -81,15 +84,16 @@ const ServiceNav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/snapshot">Snapshot</Link>
-            </li>
-            <li>
               <Link to="/rpc">
-              Endpoints
+                RPC List
               </Link>
             </li>
             <li>
-              <a href="https://status.notional.ventures">Kuma</a>
+              <a
+                onClick={() => window.open("https://status.notional.ventures")}
+              >
+                Kuma
+              </a>
             </li>
             <li>
               <Link to="/chain-upgrade">Chains Upgrade</Link>

@@ -3,16 +3,20 @@ import "./Rpc.css";
 import { STAKES } from "../../Stake/chains-data";
 import ServiceNav from "../components/ServiceNav";
 import RpcList from "../components/RpcList";
-import RingLoader from "react-spinners/RingLoader";
 import { useState, useEffect } from "react";
+import GifLoader from "react-gif-loader";
+import Loading from "../../../media/background-decor/loading.gif";
+
+const facts = ["Notional are happy to make our customer sastified"];
 
 const Rpc = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const randomText = facts[Math.floor(Math.random() * facts.length)];
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 5000);
   }, []);
   return (
     <>
@@ -24,15 +28,16 @@ const Rpc = () => {
       {!isLoading && <div className="rpc-section">
         <ServiceNav />
         <div className="rpc-container">
-          <div className="endpoints-title">Endpoints list</div>
-          <p className="text">
-            We provide public rpc, api and grpc, if you want to icrease the access to unlimited please contact us through contact@notional.ventures or on twitter @notionaldao
+          <div>RPC list</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+            ante in nisi ultricies pharetra sed at metus.{" "}
           </p>
           <div>
             <RpcList rpc={STAKES} />
           </div>
         </div>
-      </div>}
+      )}
     </>
   );
 };

@@ -1,5 +1,6 @@
 .infra-section {
   height: auto;
+  margin-top: 100px;
   width: auto;
   /* background-image: url(../../../media/background-decor/infrastructe-background.png);
     background-repeat: no-repeat;
@@ -75,12 +76,10 @@
   height: auto;
   width: auto;
   display: flex;
-  margin: auto;
   flex-wrap: wrap;
   gap: 5rem;
   margin-top: 2rem;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .link {
@@ -91,12 +90,13 @@
   color: rgb(180, 162, 219);
 }
 .service-item {
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 8px 30px 5px rgb(255, 255, 255, 0.15);
   border-radius: 30px;
-  background-color: rgba(162, 157, 157, 0.8);
+  background-color: #ffffff33;
   height: 190px;
   width: 370px;
-  /* backdrop-filter: blur(5px); */
-  box-shadow: 4px 8px 30px 2px rgb(255, 255, 255, 0.15);
+  border:none;
   cursor: pointer;
   line-height: 2rem;
 }

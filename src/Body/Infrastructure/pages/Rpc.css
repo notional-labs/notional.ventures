@@ -1,25 +1,14 @@
 .rpc-section {
-    background-image: url("../../../media/background-decor/BackgroundRPC.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-blend-mode: darken; */
-    height:auto;
-    color: white;
-    justify-content: center;
+  background-image: url("../../../media/background-decor/BackgroundRPC.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  justify-content: center;
 }
 
 .rpc-container {
     width: 80%;
     margin: 0 auto;
 }
-
-.endpoints-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-@media only screen and (min-width: 360px) and (max-width: 1920px) {
-    .endpoints-title {
-      font-size: calc(100vw * 45 / 1920);
-    }
-  }
