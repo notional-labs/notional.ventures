@@ -24,7 +24,8 @@ import Vidulum from "../../media/stake/Vidulum.svg";
 import Omniflix from "../../media/stake/Omniflix.svg";
 import Chihuahua from "../../media/stake/Chihuahua.svg";
 import Fetchai from "../../media/stake/Fetch.svg";
-import Umee from "../../media/stake/Umee.svg";
+import Umee from "../../media/stake/umee.svg";
+import Injective from "../../media/stake/Injective.svg";
 
 export const STAKES = [
   {
@@ -425,5 +426,15 @@ export const STAKES = [
     ping: "umee",
     address: "umeevaloper1dmahqt84r9je3sqvljzjrttjj78cmrf39k5zhs",
     rank: "86"
+  },
+  {
+    id: "s28",
+    image: `${Injective}`,
+    name: "Injective",
+    api: "https://backend.notional.ventures/injective",
+    keplr: "",
+    ping: "injective",
+    address: "injvaloper16eg6wf2k6v0lzwu2vsrhxhe0tcycgr7jm98nyz",
+    rank: "15"
   },
 ];
