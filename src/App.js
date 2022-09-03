@@ -38,7 +38,7 @@ function App() {
       setIsLoading(true)
       setTimeout(() => {
         setIsLoading(false)
-      }, 5000)
+      }, 4000)
     },[])
     return (
         <React.Fragment>

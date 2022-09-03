@@ -17,7 +17,7 @@ const Rpc = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 4000);
   }, []);
   return (
     <>
@@ -37,10 +37,10 @@ const Rpc = () => {
           <ServiceNav />
           <div className="rpc-container">
             <p className="rpc-title">
-              RPC list
+              Chain Endpoints
             </p>
             <p className="rpc-text">
-              asdfsjkfnsfn sdfnadmsfn.ma,n.,dsnf. asdf
+            We provide public RPC, gRPC, and API services for all the chains we are validating. If you want to access non-rate-limited endpoints, please contact us through contact@notional.ventures or on Twitter @notionaldao.
             </p>
             <RpcList rpc={STAKES} />
           </div>

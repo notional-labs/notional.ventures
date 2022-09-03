@@ -103,7 +103,7 @@ const ModalOverlay = (props) => {
                                 title={copyFeedback}
                             >
                                 {smartTrim(props.address, 25)}
-                            </Tooltip>
+                                </Tooltip>
                         </td>
                     </tr>
                     <tr>

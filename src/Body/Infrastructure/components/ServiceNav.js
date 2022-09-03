@@ -33,8 +33,8 @@ const ServiceNav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link onFocus={true} to="/rpc">
-                RPC
+              <Link onFocus={true} to="/endpoint">
+                Endpoint
               </Link>
             </li>
             <li>
@@ -48,7 +48,7 @@ const ServiceNav = () => {
               </a>
             </li>
             <li>
-              <a href="/chain-upgrade">Chan Upgrade</a>
+              <a href="/upgrade">Chan Upgrade</a>
             </li>
           </ul>
         </nav>
@@ -87,7 +87,7 @@ const ServiceNav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/rpc">RPC List</Link>
+              <Link to="/endpoint">Endpoint</Link>
             </li>
             <li>
               <Link to="/snapshot">Snapshot</Link>
@@ -100,7 +100,7 @@ const ServiceNav = () => {
               </a>
             </li>
             <li>
-              <Link to="/chain-upgrade">Chains Upgrade</Link>
+              <Link to="/upgrade">Chains Upgrade</Link>
             </li>
           </ul>
         </nav>

@@ -16,8 +16,8 @@ root.render(
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="snapshot" element={<Snapshot />} />
-                <Route path="rpc" element={<Rpc />} />
-                <Route path="chain-upgrade" element={<ChainUpgrade />} />
+                <Route path="endpoint" element={<Rpc />} />
+                <Route path="upgrade" element={<ChainUpgrade />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

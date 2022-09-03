@@ -1,6 +1,16 @@
 .rpc-list {
-    width: auto;
+    width: 100%;
     height: auto;
     z-index: inherit;
     padding: 0;
+    list-style: none;
+}
+
+.rpc-item {
+    background-color: #ffffff33;
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 10px;
+
 }

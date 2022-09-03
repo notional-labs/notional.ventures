@@ -40,7 +40,7 @@ const Infra = () => {
             </div>
 
             <div className="services">
-                <Link to="/rpc" className="link">
+                <Link to="/endpoint" className="link">
                     <button className="service-item">
                         <Image src={RPC} preview = {false} ></Image>
                         <div className="service-item-name">ENDPOINTS</div>
@@ -55,7 +55,7 @@ const Infra = () => {
                         <div className="service-item-name">SNAPSHOTS</div>
                     </button>
                 </Link>
-                <Link to="/chain-upgrade" className="link">
+                <Link to="/upgrade" className="link">
                     <button className="service-item">
                         <Image src={Upgrade} preview = {false} >26</Image>
                         <div className="service-item-name">

@@ -16,10 +16,10 @@
 }
 
 .rpc-title {
-  margin-top: 200px;
+  margin-top: 150px;
   font-family: "Segoe UI Semibold";
   font-size: 60px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .rpc-text {
