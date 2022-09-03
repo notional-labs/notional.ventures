@@ -36,7 +36,6 @@ const ServiceNav = () => {
               <Link onFocus={true} to="/rpc">
                 RPC
               </Link>
->>>>>>> f61eeaf361fb47632503419ad88fa41fa367a72f
             </li>
             <li>
               <Link to="/snapshot">Snapshot</Link>

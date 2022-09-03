@@ -21,9 +21,15 @@ const Rpc = () => {
   return (
     <>
     {isLoading && (
-                <div className="loader-container">
-                    <RingLoader color="#eaebed" size={130} />
-                </div>
+                   <div className="loader-container">
+                   <GifLoader
+                     className="loading-logo"
+                     loading={true}
+                     imageSrc={Loading}
+                   />
+                   <p className="loading-title">DID YOU KNOW</p>
+                   <p className="loading-text">{randomText}</p>
+                 </div>
             )}
       {!isLoading && <div className="rpc-section">
         <ServiceNav />
@@ -37,8 +43,9 @@ const Rpc = () => {
             <RpcList rpc={STAKES} />
           </div>
         </div>
-      )}
-    </>
+        </div>
+      }
+      </>
   );
 };
 
