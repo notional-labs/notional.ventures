@@ -40,17 +40,17 @@ const Snapshot = () => {
           <div className="snapshot-container">
             <p className="snapshot-title">Snapshots</p>
             <p className="snapshot-text">
-              We are providing snapshot for all the chain that we validate
+            Notional considerably improves the time it takes to re-sync nodes to the current block. We achieve this by creating various compressed archives that we deliver from high-performance services. The service is crucial for validators and other service providers who require fast deployments or quick recovery of existing services.
             </p>
-            <div className="snapshot-instruction">
-              Which included: <br />
+            {/* <div className="snapshot-instruction">
+              <p className="snapshot-header">Which included:</p>
               Addressbook.json <br />
               This will be used for <br />
               3. data_YYYYMMDD.json <br />
               This is default pruned data of the chain which is generated at the
               specific time in filename. The <br />
               data will be pruned within 14-day period <br />
-            </div>
+            </div> */}
             <div className="snapshots">
               <SnapshotList snapshots={STAKES} />
             </div>

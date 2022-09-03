@@ -48,7 +48,7 @@ const ServiceNav = () => {
               </a>
             </li>
             <li>
-              <a href="/upgrade">Chan Upgrade</a>
+              <a href="/upgrade">Chains Upgrade</a>
             </li>
           </ul>
         </nav>

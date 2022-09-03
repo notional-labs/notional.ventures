@@ -1,29 +1,101 @@
+@-webkit-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .snapshot-items {
   height: auto;
   width: 18rem;
-  border: 1px solid white;
   border-radius: 15px;
   box-sizing: border-box;
+  border: 1px white solid;
   list-style: none;
-  /* transition: transform 0.4s; */
+  transition: transform 0.4s;
   text-align: center;
   z-index: inherit;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   padding: 0;
 }
 
 .snapshot-items:hover {
+  background-color: rgba(211, 211, 211, 0.3);
+  backdrop-filter: blur(22px);
+  border: none;
   cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px -2px rgb(0, 0, 0, 0.6);
 }
 
-.snapshot-items:hover {
-  background-color: rgba(211, 211, 211, 0.3);
-  transform: scale(1.1);
-  /* box-shadow: 0px 0px 30px -2px rgb(0, 0, 0, 0.6); */
-  backdrop-filter: blur(22px);
+.snapshot-items::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px;
+  border-radius: 15px;
+  background: white;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.snapshot-items:hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 3px;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    #ff8038 0%,
+    #ff0099 30.43%,
+    #00ebeb 68.23%,
+    #db00ff 100%
+  );
+  background-size: 600% 600%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-animation: AnimateBorder 4s ease infinite;
+  -moz-animation: AnimateBorder 4s ease infinite;
+  animation: AnimateBorder 4s ease infinite;
+  transition: filter 1s ease-in;
+  filter: blur(22px);
 }
 
 .snapshot-item__info h2 {
@@ -33,18 +105,6 @@
   font-size: 35px;
   align-items: center;
 }
-
-/* .snapshot-btn {
-    margin-top: 1.5rem;
-    width: 10rem;
-    height: 3rem;
-    background-color: #ffff;
-    color: black;
-    cursor: pointer;
-    border: 1px solid white;
-    border-radius: 8px;
-    font-size: 30px;
-  } */
 
 .snapshot-item__image {
   display: flex;

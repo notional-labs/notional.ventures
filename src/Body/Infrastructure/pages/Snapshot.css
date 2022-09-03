@@ -29,10 +29,16 @@
 
 .snapshot-instruction {
   margin-top: 2rem;
-  border: 1px solid white;
+  background-color: #ffffff33;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff33;
   border-radius: 20px;
-  font-size: 1rem;
   padding: 1rem;
+}
+
+.snapshot-header {
+  font-family: "Segoe UI Semibold";
+  font-size: 25px;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
