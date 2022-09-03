@@ -21,8 +21,7 @@ html {
 
 .loader-container {
   width: 100vw;
-  height:100vh;
-  text-align: center;
+  height: 100vh;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -37,9 +36,8 @@ html {
 }
 
 .loader-container img {
-  margin-top: calc(100vh * 2 / 8) !important;
-  max-width: 500px;
-  width: calc(100vw * 500 / 1920)
+  height: 100%;
+  margin: auto !important;
 }
 
 .loading-title {
@@ -54,31 +52,23 @@ html {
 
 .loading-text {
   z-index: 100000;
-  margin-top: 7%;
-  font-family: "Segoe UI Semibold";
-  font-size: 25px;
+  font-family: "Segoe UI Light";
+  margin-top: -20px;
+  font-size: 20px;
   color: white;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
   animation: fadein 3s;
 }
 
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .root {
@@ -87,12 +77,10 @@ html {
   background-color: black;
   height: auto;
   min-width: 100%;
-  max-height: max-content;
+  max-height: max-content; 
   overflow-x: hidden !important;
 }
 
-/* @media only screen and (min-width:360px) and (max-width: 1920px){ 
-  .root {
-    overflow-x: hidden !important;
-  }
-} */
+@media only screen and (min-width:360px) and (max-width: 1920px){ 
+
+}

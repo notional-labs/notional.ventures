@@ -41,7 +41,11 @@ const ServiceNav = () => {
               <Link to="/snapshot">Snapshot</Link>
             </li>
             <li>
-              <a href="https://status.notional.ventures">Kuma</a>
+              <a
+                onClick={() => window.open("https://status.notional.ventures")}
+              >
+                Kuma
+              </a>
             </li>
             <li>
               <a href="/chain-upgrade">Chan Upgrade</a>
@@ -83,9 +87,10 @@ const ServiceNav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/rpc">
-                RPC List
-              </Link>
+              <Link to="/rpc">RPC List</Link>
+            </li>
+            <li>
+              <Link to="/snapshot">Snapshot</Link>
             </li>
             <li>
               <a

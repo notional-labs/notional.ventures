@@ -20,32 +20,32 @@ const Rpc = () => {
   }, []);
   return (
     <>
-    {isLoading && (
-                   <div className="loader-container">
-                   <GifLoader
-                     className="loading-logo"
-                     loading={true}
-                     imageSrc={Loading}
-                   />
-                   <p className="loading-title">DID YOU KNOW</p>
-                   <p className="loading-text">{randomText}</p>
-                 </div>
-            )}
-      {!isLoading && <div className="rpc-section">
-        <ServiceNav />
-        <div className="rpc-container">
-          <div>RPC list</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-            ante in nisi ultricies pharetra sed at metus.{" "}
-          </p>
-          <div>
+      {isLoading && (
+        <div className="loader-container">
+          <GifLoader
+            className="loading-logo"
+            loading={true}
+            imageSrc={Loading}
+          />
+          <p className="loading-title">DID YOU KNOW</p>
+          <p className="loading-text">{randomText}</p>
+        </div>
+      )}
+      {!isLoading && (
+        <div className="rpc-section">
+          <ServiceNav />
+          <div className="rpc-container">
+            <p className="rpc-title">
+              RPC list
+            </p>
+            <p className="rpc-text">
+              asdfsjkfnsfn sdfnadmsfn.ma,n.,dsnf. asdf
+            </p>
             <RpcList rpc={STAKES} />
           </div>
         </div>
-        </div>
-      }
-      </>
+      )}
+    </>
   );
 };
 

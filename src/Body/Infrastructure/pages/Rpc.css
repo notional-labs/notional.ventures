@@ -9,6 +9,20 @@
 }
 
 .rpc-container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.rpc-title {
+  margin-top: 200px;
+  font-family: "Segoe UI Semibold";
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.rpc-text {
+  font-family: "Segoe UI Light";
+  font-size: 20px;
 }
