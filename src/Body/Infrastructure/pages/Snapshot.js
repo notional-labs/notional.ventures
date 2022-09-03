@@ -6,7 +6,11 @@ import SnapshotList from "../components/SnapshotList";
 import GifLoader from "react-gif-loader";
 import Loading from "../../../media/background-decor/loading.gif";
 import { useState, useEffect } from "react";
-const facts = ["Notional are happy to make our customer sastified"];
+const facts = [
+  "We currently support PebbleDB snapshot",
+  "Tired of waiting the node to catch up? Using our snapshot or state-sync!",
+  "State-sync is only supported in specific chains",
+];
 
 const Snapshot = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -34,8 +38,8 @@ const Snapshot = () => {
         <div className="snapshot-section">
           <ServiceNav />
           <div className="snapshot-container">
-            <div className="test">Snapshots</div>
-            <p className="text">
+            <p className="snapshot-title">Snapshots</p>
+            <p className="snapshot-text">
               We are providing snapshot for all the chain that we validate
             </p>
             <div className="snapshot-instruction">

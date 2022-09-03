@@ -1,23 +1,30 @@
 .snapshot-section {
   background-image: url("../../../media/background-decor/BackgroundRPC.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 150vh;
+  height: 100vh ;
   color: white;
   justify-content: center;
 }
 
-.test {
-  font-size: 3rem;
-}
-
-.text {
-  font-size: 1rem;
-}
-
 .snapshot-container {
-  width: 1523.98px;
+  width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.snapshot-title {
+  margin-top: 150px;
+  font-family: "Segoe UI Semibold";
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.snapshot-text {
+  font-family: "Segoe UI Light";
+  font-size: 20px;
 }
 
 .snapshot-instruction {
@@ -29,13 +36,5 @@
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
-  .snapshot-container {
-    width: calc(100vw * 1523.98 / 1980);
-  }
-  .test {
-    font-size: calc(100vw * 45 / 1920);
-  }
-  .snapshot-instruction {
-    font-size: calc(100vw * 30 / 1920);
-  }
+
 }
