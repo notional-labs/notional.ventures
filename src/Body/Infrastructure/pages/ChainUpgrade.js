@@ -27,7 +27,7 @@ const ChainUpgrade = () => {
         <ServiceNav />
         <div className="chain-upgrade-container">
           <div className="title">Chain Upgrade</div>
-          <p>
+          <p className="text no idea">
             Automatically query upgrade info for chain that we validate
           </p>
           <div className="upgrades">

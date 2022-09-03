@@ -24,10 +24,9 @@ const Rpc = () => {
       {!isLoading && <div className="rpc-section">
         <ServiceNav />
         <div className="rpc-container">
-          <div>RPC list</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-            ante in nisi ultricies pharetra sed at metus.{" "}
+          <div className="endpoints-title">Endpoints list</div>
+          <p className="text">
+            We provide public rpc, api and grpc, if you want to icrease the access to unlimited please contact us through contact@notional.ventures or on twitter @notionaldao
           </p>
           <div>
             <RpcList rpc={STAKES} />

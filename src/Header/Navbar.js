@@ -51,6 +51,15 @@ const Navbar = () => {
       </SideDrawer>
 
       <div className={color ? "nav nav-bg" : "nav"}>
+        <div href="#" className="logo" style={{ cursor: "pointer" }}>
+          <Image
+            style={{ width: "200px" }}
+            className="logo-img"
+            src={NotionalLogo}
+            alt="Logo"
+            preview={false}
+          />
+        </div>
         <button className="main-navigation-btn" onClick={openDrawerHandler}>
           <Image
             className="btn-img"
@@ -64,16 +73,6 @@ const Navbar = () => {
             preview={false}
           />
         </button>
-
-        <div href="#" className="logo" style={{ cursor: "pointer" }}>
-          <Image
-            style={{ width: "200px" }}
-            className="logo-img"
-            src={NotionalLogo}
-            alt="Logo"
-            preview={false}
-          />
-        </div>
 
         <nav className="main-nav">
           <ul className="main-nav-list">

@@ -14,24 +14,26 @@ const ModalOverlay = (props) => {
     <div>
       <div>
         <h3>Addrbook.json</h3>
-        <p>wget -O ~/.osmosisd/config/addrbook.json URL</p>
-        <button className = "download-btn">
+        <p>wget -O ~/.{props.daenom}/config/addrbook.json URL</p>
+        <button className="download-btn">
           <a href={props.pebbleSnapshotInfo.addrbook}>Download</a>
-        </button> 
-      </div> <br/>
+        </button>
+      </div>{" "}
+      <br />
       <div>
         <h3>Snapshot</h3>
         <p>
-          cd ~/.osmosisd <br />
+          cd ~/.{props.daenom} <br />
           aria2c -x8 URL <br />
           tar -xvf file_name <br />
         </p>
-        <button className = "download-btn">
+        <button className="download-btn">
           <a href={props.pebbleSnapshotInfo.data}>
             Download |{" "}
-            {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
+            {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}{" "}
+            GB
           </a>
-        </button> 
+        </button>
       </div>
     </div>
   );
@@ -58,7 +60,7 @@ const ModalOverlay = (props) => {
   //           {(props.rockSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}{" "}
   //           GB
   //         </a>
-  //       </button> 
+  //       </button>
   //     </div>
   //   </div>
   // );
@@ -69,12 +71,24 @@ const ModalOverlay = (props) => {
 
   let instruction_content = (
     <div>
-
-      <h2>pebbleDB</h2> 
+      <h2>pebbleDB</h2>
       Date: {props.pebbleSnapshotInfo.data_date} <br />
-      Size: {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)} GB
+      Size: {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(
+        2
+      )}{" "}
+      GB
       <br />
       <br />
+      <h2>How to compile pebbledb? </h2>
+      Example with sifchain : <br />
+      "git reset --hard" <br />
+      "git checkout v0.14.0 go mod edit -replace
+      github.com/tendermint/tm-db=github.com/baabeetaa/tm-db@pebble" <br />
+      "go mod tidy"<br />
+      "go install -tags pebbledb -ldflags "-w -s -X
+      github.com/cosmos/cosmos-sdk/types.DBBackend=pebbledb -X
+      github.com/tendermint/tm-db.ForceSync=1" ./cmd/sifnoded" <br />
+      "$HOME/go/bin/sifnoded start --db_backend=pebbledb" <br />
       {/* <h2>RockDB</h2>
       {props.rockSnapshotInfo.addrbook === "NaN" ? (
         <div>Not available</div>
@@ -109,7 +123,7 @@ const ModalOverlay = (props) => {
       <div className="content">
         <div className="snapshot-type-modal-container">
           <div className="snapshot-name">
-            <img src = {props.image} />
+            <img src={props.image} />
             <p>{props.name}</p>
           </div>
           <ul className="snapshot-modal-navbar">

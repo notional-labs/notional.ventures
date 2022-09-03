@@ -59,6 +59,7 @@
 .snapshot-modal-navbar {
   line-height: 4rem;
   padding: 0;
+  margin: 0 auto;
 }
 
 .snapshot-modal-data {
@@ -66,6 +67,10 @@
     padding-left: 2rem;
     margin-top: 18rem;
     color: black;
+}
+
+.snapshot-modal-data div {
+  width: 400px;
 }
 
 .snapshot-modal-navbar li {
@@ -93,6 +98,7 @@
   cursor: pointer;
   font-size: 20px;
   width: 10rem;
+  margin: 0 auto;
 }
 
 .snapshot-modal-navbar-btn-focus {

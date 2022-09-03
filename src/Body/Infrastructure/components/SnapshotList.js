@@ -20,6 +20,7 @@ const SnapshotList = (props) => {
           image={snapshot.image}
           name={snapshot.name}
           api={snapshot.api}
+          daenom={snapshot.daenom}
         />
       );
     });

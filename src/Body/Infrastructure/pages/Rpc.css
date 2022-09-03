@@ -12,3 +12,14 @@
     width: 80%;
     margin: 0 auto;
 }
+
+.endpoints-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+    .endpoints-title {
+      font-size: calc(100vw * 45 / 1920);
+    }
+  }

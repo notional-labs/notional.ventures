@@ -33,12 +33,12 @@ const ServiceNav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link onFocus={true} to="/rpc">
-                RPC List
-              </Link>
+              <Link to="/snapshot">Snapshot</Link>
             </li>
             <li>
-              <Link to="/snapshot">Snapshot</Link>
+              <Link onFocus={true} to="/rpc">
+                Endpoints
+              </Link>
             </li>
             <li>
               <a href="https://status.notional.ventures">Kuma</a>
@@ -81,12 +81,12 @@ const ServiceNav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/rpc">
-                RPC List
-              </Link>
+              <Link to="/snapshot">Snapshot</Link>
             </li>
             <li>
-              <Link to="/snapshot">Snapshot</Link>
+              <Link to="/rpc">
+              Endpoints
+              </Link>
             </li>
             <li>
               <a href="https://status.notional.ventures">Kuma</a>

@@ -32,6 +32,7 @@ const SnapshotItem = (props) => {
       <SnapshotModal
         image={props.image}
         name={props.name}
+        daenom={props.daenom}
         onCancel={closeHandler}
         show={showModal}
         pebbleSnapshotInfo={loadedPebbleSnapshotInfo}

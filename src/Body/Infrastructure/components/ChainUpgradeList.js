@@ -60,7 +60,7 @@ const ChainUpgradeList = (props) => {
           <th>VERSION</th>
           <th>ESTIMATED UPGRADE TIME</th>
         </tr>
-          {isLoading && <ReactLoading type="spin" color="#F0FFFF" style = {{margin : "0 auto", position:"relative", left: "490px" }}  />}
+          {isLoading && <ReactLoading type="spin" color="#F0FFFF" style = {{margin : "0 auto", "margin-top":"1rem", position:"relative", left: "490px" }}  />}
            {!isLoading && newState.map((data) => (
              (parseInt(data.currentHeight) < data.height) && <ChainUpgradeItem 
               name = {data.name}
