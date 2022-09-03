@@ -1,14 +1,28 @@
 .rpc-section {
-    background-image: url("../../../media/background-decor/BackgroundRPC.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-blend-mode: darken; */
-    height:auto;
-    color: white;
-    justify-content: center;
+  background-image: url("../../../media/background-decor/BackgroundRPC.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  justify-content: center;
 }
 
 .rpc-container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.rpc-title {
+  margin-top: 200px;
+  font-family: "Segoe UI Semibold";
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.rpc-text {
+  font-family: "Segoe UI Light";
+  font-size: 20px;
 }

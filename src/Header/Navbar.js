@@ -23,6 +23,7 @@ const Navbar = () => {
     }
   };
   window.addEventListener("scroll", changeColor);
+  
   return (
     <div className="nav-container">
       <SideDrawer show={drawerHandler} onCancel={closeDrawerHandler}>

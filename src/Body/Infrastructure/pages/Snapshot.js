@@ -3,11 +3,14 @@ import "./Snapshot.css";
 import ServiceNav from "../components/ServiceNav";
 import { STAKES } from "../../Stake/chains-data";
 import SnapshotList from "../components/SnapshotList";
-import RingLoader from "react-spinners/RingLoader";
+import GifLoader from "react-gif-loader";
+import Loading from "../../../media/background-decor/loading.gif";
 import { useState, useEffect } from "react";
+const facts = ["Notional are happy to make our customer sastified"];
 
 const Snapshot = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const randomText = facts[Math.floor(Math.random() * facts.length)];
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
@@ -18,7 +21,13 @@ const Snapshot = () => {
     <>
       {isLoading && (
         <div className="loader-container">
-          <RingLoader color="#eaebed" size={130} />
+          <GifLoader
+            className="loading-logo"
+            loading={true}
+            imageSrc={Loading}
+          />
+          <p className="loading-title">DID YOU KNOW</p>
+          <p className="loading-text">{randomText}</p>
         </div>
       )}
       {!isLoading && (
