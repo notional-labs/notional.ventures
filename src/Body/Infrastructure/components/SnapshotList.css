@@ -15,7 +15,7 @@
 }
 
 .paginationBttns {
-  width: 600px;
+  width: auto;
   height: 80px;
   list-style: none;
   display: flex;
@@ -64,6 +64,10 @@
   font-size: 15px;
 }
 
+.previousBttn:after {
+  display: none;
+}
+
 .nextBttn {
   width: 120px;
   border-radius: 5px;
@@ -74,10 +78,15 @@
   font-size: 15px;
 }
 
+.nextBttn:after {
+  display: none;
+}
+
 .paginationActive {
   color: white;
   box-shadow: inset 5px 5px 10px #251f2d, inset -5px -5px 10px #41374f;
 }
+
 .paginationActive a:after {
   display: none;
 }
@@ -86,7 +95,7 @@
   color: white;
   width: 120px;
   background-color: red;
-  box-shadow: inset 5px 5px 10px #251f2d, inset -5px -5px 10px #41374f;
+  box-shadow:  5px 5px 10px red,  -5px -5px 10px #41374f;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
