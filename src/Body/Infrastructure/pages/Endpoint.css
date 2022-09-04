@@ -1,4 +1,4 @@
-.rpc-section {
+.endpoint-section {
   background-image: url("../../../media/imgs/Infrastructure/Endpoints/Background.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.rpc-container {
+.endpoint-container {
   width: 80%;
   max-width: 1600px;
   margin: 0 auto;
@@ -16,14 +16,14 @@
   flex-direction: column;
 }
 
-.rpc-title {
+.endpoint-title {
   margin-top: 150px;
   font-family: "Segoe UI Semibold";
   font-size: 60px;
   margin-bottom: 10px;
 }
 
-.rpc-text {
+.endpoint-text {
   font-family: "Segoe UI Light";
   font-size: 20px;
 }

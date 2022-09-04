@@ -1,6 +1,6 @@
 import React from "react";
 import EndpointItem from "./EndpointItem";
-import "./EndpointItem.css";
+import "./EndpointList.css";
 
 const EndpointList = (props) => {
   return (

@@ -33,13 +33,13 @@ const Endpoint = () => {
         </div>
       )}
       {!isLoading && (
-        <div className="rpc-section">
+        <div className="endpoint-section">
           <ServiceNav />
-          <div className="rpc-container">
-            <p className="rpc-title">
+          <div className="endpoint-container">
+            <p className="endpoint-title">
               Chain Endpoints
             </p>
-            <p className="rpc-text">
+            <p className="endpoint-text">
             We provide public RPC, gRPC, and API services for all the chains we are validating. If you want to access non-rate-limited endpoints, please contact us through contact@notional.ventures or on Twitter @notionaldao.
             </p>
             <EndpointList rpc={STAKES} />
