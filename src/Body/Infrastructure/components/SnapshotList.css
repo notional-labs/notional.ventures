@@ -15,7 +15,7 @@
 }
 
 .paginationBttns {
-  width: 600px;
+  width: auto;
   height: 80px;
   list-style: none;
   display: flex;
@@ -63,6 +63,10 @@
   font-size: 15px;
 }
 
+.previousBttn:after {
+  display: none;
+}
+
 .nextBttn {
   width: 120px;
   border-radius: 5px;
@@ -73,10 +77,15 @@
   font-size: 15px;
 }
 
+.nextBttn:after {
+  display: none;
+}
+
 .paginationActive {
   color: white;
   box-shadow: inset 6px 6px 12px #060118, inset -6px -6px 12px #12034d;
 }
+
 .paginationActive a:after {
   display: none;
 }

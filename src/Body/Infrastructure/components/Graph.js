@@ -77,8 +77,8 @@ export default function Graph() {
       onEngineStop={() => zoomRef.current.zoomToFit()}
       linkCurvature = {0.1}
       width= {1100}
-      height={700}    
-      linkDirectionalParticles = {1}
+      height={1000}    
+      linkDirectionalParticles = {2}
       linkDirectionalParticleWidth = {0.2}
       linkDirectionalParticleSpeed = {0.003}
       // linkColor="red"

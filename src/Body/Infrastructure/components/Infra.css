@@ -66,6 +66,7 @@
   width: 40%;
   height: auto;
   align-items: center;
+  align-self: center;
 }
 
 .infra-section .relayer .relayer-graph {
