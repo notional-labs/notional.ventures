@@ -23,7 +23,6 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: 3rem;
-  background: #332b3e;
   outline: none;
   box-sizing: border-box;
   padding: 20px;
@@ -40,8 +39,8 @@
 .pageBttn {
   border-radius: 5px;
   width: 50px;
-  background: #332b3e;
-  box-shadow: 5px 5px 10px #251f2d,  -5px -5px 10px #41374f;
+  background: #0c0232;
+  box-shadow: 6px 6px 12px #060118, -6px -6px 12px #12034d;
   color: white;
   cursor: pointer;
   flex-shrink: 2;
@@ -50,15 +49,15 @@
 
 .pageBttn:hover {
   color: white;
-  box-shadow: inset 5px 5px 10px #251f2d, inset -5px -5px 10px #41374f;
+  box-shadow: inset 6px 6px 12px #060118, inset -6px -6px 12px #12034d;
   transition: filter 1s ease-in;
 }
 
 .previousBttn {
   width: 120px;
   border-radius: 5px;
-  background: #332b3e;
-  box-shadow: 5px 5px 10px #251f2d,  -5px -5px 10px #41374f;
+  background: #0c0232;
+  box-shadow: 6px 6px 12px #060118, -6px -6px 12px #12034d;
   color: white;
   cursor: pointer;
   font-size: 15px;
@@ -67,8 +66,8 @@
 .nextBttn {
   width: 120px;
   border-radius: 5px;
-  background: #332b3e;
-  box-shadow: 5px 5px 10px #251f2d,  -5px -5px 10px #41374f;
+  background: #0c0232;
+  box-shadow: 6px 6px 12px #060118, -6px -6px 12px #12034d;
   color: white;
   cursor: pointer;
   font-size: 15px;
@@ -76,7 +75,7 @@
 
 .paginationActive {
   color: white;
-  box-shadow: inset 5px 5px 10px #251f2d, inset -5px -5px 10px #41374f;
+  box-shadow: inset 6px 6px 12px #060118, inset -6px -6px 12px #12034d;
 }
 .paginationActive a:after {
   display: none;
@@ -86,7 +85,7 @@
   color: white;
   width: 120px;
   background-color: red;
-  box-shadow: inset 5px 5px 10px #251f2d, inset -5px -5px 10px #41374f;
+  box-shadow: inset 6px 6px 12px #060118, inset -6px -6px 12px #12034d;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
