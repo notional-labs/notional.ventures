@@ -1,4 +1,4 @@
-.rpc-list {
+.endpoint-list {
     width: 100%;
     height: auto;
     z-index: inherit;
@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-.rpc-item {
+.endpoint-item {
     background-color: #ffffff33;
     backdrop-filter: blur(10px);
     margin-bottom: 10px;

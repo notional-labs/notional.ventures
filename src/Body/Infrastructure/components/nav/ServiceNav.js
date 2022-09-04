@@ -1,8 +1,8 @@
 import "./ServiceNav.css";
-import NotionalLogo from "../../../media/logo/notional.png";
-import SideDrawer from "../../../Header/SideDrawer";
+import NotionalLogo from "../../../../media/logo/notional.png";
+import SideDrawer from "../../../../Header/SideDrawer";
 import React, { useState } from "react";
-import NavBtn from "../../../media/button/nav-btn.png";
+import NavBtn from "../../../../media/button/nav-btn.png";
 import { Image } from "antd";
 import { Link } from "react-router-dom";
 

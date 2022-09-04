@@ -91,12 +91,11 @@
   text-decoration: none;
   color: white;
   font-size: 27px;
-  font-weight: 700;
 }
 
 .main-nav-list li a:hover {
+  font-family: "Segoe UI Semibold";
   color: #dfc3ff;
-  font-weight: 900;
   transform: translateY(5px);
   transition: 0.2s ease;
   cursor: pointer;

@@ -3,7 +3,7 @@ import "../src/App.css";
 import Header from "./Header/Header";
 import Contributions from "./Body/Contribute/Contributions";
 import Stake from "./Body/Stake/Stake";
-import Infrastructure from "./Body/Infrastructure//components/Infra";
+import Infrastructure from "./Body/Infrastructure/Infra";
 import Project from "./Body/Project/Project";
 import Team from "./Body/Team/Team";
 import Contact from "./Body/Contact/Contact";

@@ -5,7 +5,7 @@ import App from "./App";
 import Snapshot from "./Body/Infrastructure/pages/Snapshot";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Rpc from "./Body/Infrastructure/pages/Rpc";
+import Endpoint from "./Body/Infrastructure/pages/Endpoint";
 import ChainUpgrade from "./Body/Infrastructure/pages/ChainUpgrade";
 
 const container = document.getElementById("root");
@@ -16,7 +16,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="snapshot" element={<Snapshot />} />
-                <Route path="endpoint" element={<Rpc />} />
+                <Route path="endpoint" element={<Endpoint />} />
                 <Route path="upgrade" element={<ChainUpgrade />} />
             </Routes>
         </BrowserRouter>

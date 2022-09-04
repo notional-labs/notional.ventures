@@ -1,26 +1,32 @@
 .chain-upgrade-section {
     background-image: url("../../../media/imgs/Infrastructure/Endpoints/Background.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    /* background-blend-mode: darken; */
-    height:100vh;
+    height: 100vh;
+    width: 100%;
     color: white;
     justify-content: center;
 }
 
 .chain-upgrade-container {
     width: 80%;
+    max-width: 1600px;
     margin: 0 auto;
-    position: relative;
-    top: 130px
+    display: flex;
+    flex-direction: column;
 }
 
-.title {
-    font-size: 3rem;
+.chain-upgrade-title {
+    margin-top: 150px;
+    font-family: "Segoe UI Semibold";
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
-.upgrades {
-    margin-top: 3rem;
+.chain-upgrade-text {
+    font-family: "Segoe UI Light";
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {

@@ -1,13 +1,13 @@
 import React from "react";
-import RpcItem from "./RpcItem";
-import "./RpcList.css";
+import EndpointItem from "./EndpointItem";
+import "./EndpointItem.css";
 
-const RpcList = (props) => {
+const EndpointList = (props) => {
   return (
-    <ol className="rpc-list">
+    <ol className="endpoint-list">
       {props.rpc.map((stake) => (
-        <li class="rpc-item">
-          <RpcItem
+        <li class="endpoint-item">
+          <EndpointItem
             key={stake.id}
             id={stake.id}
             image={stake.image}
@@ -22,4 +22,4 @@ const RpcList = (props) => {
   );
 };
 
-export default RpcList;
+export default EndpointList;

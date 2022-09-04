@@ -1,12 +1,12 @@
 import React from "react";
 import "./Infra.css";
-import Graph from "../components/Graph";
+import Graph from "./components/graph/Graph";
 import { Link } from "react-router-dom";
 import { Image } from "antd";
-import RPC from "../../../media/imgs/Infrastructure/Logo/RPC.svg"
-import Snapshots from "../../../media/imgs/Infrastructure/Logo/Snapshot.svg"
-import Upgrade from "../../../media/imgs/Infrastructure/Logo/Update.svg"
-import Uptime from "../../../media/imgs/Infrastructure/Logo/Uptime1.svg"
+import Endpoint from "../../media/imgs/Infrastructure/Logo/Endpoint.svg"
+import Snapshots from "../../media/imgs/Infrastructure/Logo/Snapshot.svg"
+import Upgrade from "../../media/imgs/Infrastructure/Logo/Update.svg"
+import Uptime from "../../media/imgs/Infrastructure/Logo/Uptime1.svg"
 // import Background from "../../media/imgs/infrastructe-background.png"
 
 const Infra = () => {
@@ -42,7 +42,7 @@ const Infra = () => {
             <div className="services">
                 <Link to="/endpoint" className="link">
                     <button className="service-item">
-                        <Image src={RPC} preview = {false} ></Image>
+                        <Image src={Endpoint} preview = {false} ></Image>
                         <div className="service-item-name">ENDPOINTS</div>
                     </button>
                 </Link>

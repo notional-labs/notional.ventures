@@ -2,10 +2,10 @@ import { Image, Tooltip } from "antd";
 import Zoom from "@mui/material/Zoom";
 import React from "react";
 import { useState } from "react";
-import "./RpcItem.css";
-import Dropdown from "../../../media/button/Vector.png";
+import "./EndpointItem.css";
+import Dropdown from "../../../../media/button/Vector.png";
 
-const RpcItem = (props) => {
+const EndpointItem = (props) => {
   const [copyFeedback, setCopyFeedback] = useState("Click to copy");
   const [copyState, setCopyState] = useState(false);
   const copyToClipboard = async (copyMe) => {
@@ -89,4 +89,4 @@ const RpcItem = (props) => {
   );
 };
 
-export default RpcItem;
+export default EndpointItem;

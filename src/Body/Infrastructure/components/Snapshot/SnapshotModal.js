@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
-import Backdrop from "../../Stake/Backdrop";
+import Backdrop from "../../../Stake/Backdrop";
 import "./SnapshotModal.css";
-import Modal_divisor from "../../../media/imgs/Stake/modal-divisor.png";
-import Info_divisor from "../../../media/imgs/Stake/info-divisor.png";
+import Modal_divisor from "../../../../media/imgs/Stake/modal-divisor.png";
+import Info_divisor from "../../../../media/imgs/Stake/info-divisor.png";
 
 const ModalOverlay = (props) => {
   const [pebbledb, setPebbledb] = useState(false);
