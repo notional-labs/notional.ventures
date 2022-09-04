@@ -4,7 +4,7 @@ import * as THREE from "three";
 
 const gData = {
   "nodes": [
-    {"id": "atom", "img": "atom.png"},
+    {"id": "atom", "img": "gaia.png"},
     {"id": "emoney", "img": "emoney.png"},
     {"id": "fetch", "img": "fetch.png"},
     {"id": "axelar", "img": "axelar.png"},
@@ -13,8 +13,15 @@ const gData = {
     {"id": "sifchain", "img": "sifchain.png"},
     {"id": "omniflix", "img": "omniflix.png"},
     {"id": "akash", "img": "akash.png"},
-    {"id": "dig", "img": "dig.png"},
-    {"id": "kava", "img": "kava.png"}
+    {"id": "dig", "img": "digchain.png"},
+    {"id": "kava", "img": "kava.png"},
+    {"id": "evmos", "img": "evmos.png"},
+    {"id": "regen", "img": "regen.png"},
+    {"id": "iris", "img": "iris.png"},
+    {"id": "injective", "img": "injective.png"},
+    {"id": "sentinel", "img": "sentinel.png"},
+    {"id": "konstellation", "img": "konstellation.png"},
+    {"id": "cryptoorg", "img": "cryto-org.png"},
   ],
   "links": [
     {"source": "osmosis", "target": "atom"},
@@ -27,6 +34,14 @@ const gData = {
     {"source": "osmosis", "target": "akash"},
     {"source": "osmosis", "target": "dig"},
     {"source": "osmosis", "target": "kava"},
+    {"source": "osmosis", "target": "evmos"},
+    {"source": "osmosis", "target": "iris"},
+    {"source": "osmosis", "target": "regen"},
+    {"source": "osmosis", "target": "injective"},
+    {"source": "osmosis", "target": "sentinel"},
+    {"source": "osmosis", "target": "konstellation"},
+    {"source": "osmosis", "target": "cryptoorg"},
+    {"source": "atom", "target": "cryptoorg"},
     {"source": "atom", "target": "omniflix"},
     {"source": "atom", "target": "emoney"},
     {"source": "atom", "target": "fetch"},
@@ -36,7 +51,15 @@ const gData = {
     {"source": "atom", "target": "akash"},
     {"source": "atom", "target": "dig"},
     {"source": "atom", "target": "juno"},
-    {"source": "atom", "target": "kava"}
+    {"source": "atom", "target": "kava"},
+    {"source": "atom", "target": "evmos"},
+    {"source": "atom", "target": "regen"},
+    {"source": "atom", "target": "injective"},
+    {"source": "atom", "target": "iris"},
+    {"source": "atom", "target": "sentinel"},
+    {"source": "axelar", "target": "sifchain"},
+    {"source": "axelar", "target": "evmos"},
+
   ]
 };
 
@@ -53,10 +76,11 @@ export default function Graph() {
       cooldownTicks={100}
       onEngineStop={() => zoomRef.current.zoomToFit()}
       linkCurvature = {0.1}
-      width= {1200}
+      width= {1100}
       height={700}    
       linkDirectionalParticles = {1}
       linkDirectionalParticleWidth = {0.2}
+      linkDirectionalParticleSpeed = {0.003}
       // linkColor="red"
       graphData={gData}
       nodeLabel = {gData.nodes.id}

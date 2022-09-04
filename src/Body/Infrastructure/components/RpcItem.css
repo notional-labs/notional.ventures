@@ -150,16 +150,16 @@ ol .sub-menu li {
 }
 
 ol .sub-menu li:hover,
-ol .sub-menu li a:focus {
+ol .sub-menu li .menu-item-text:focus {
   background: rgba(60, 60, 60, 0.2);
 }
 
-ol .sub-menu li a:after {
+ol .sub-menu li .menu-item-text:after {
   bottom: 5px;
   height: 1px;
 }
 
-ol .sub-menu li a:hover:after,
-ol .sub-menu li a:focus:after {
+ol .sub-menu li .menu-item-text:hover:after,
+ol .sub-menu li .menu-item-text:focus:after {
   width: 15px;
 }

@@ -8,8 +8,8 @@ import Loading from "../../../media/background-decor/loading.gif";
 import { useState, useEffect } from "react";
 const facts = [
   "We currently support PebbleDB snapshot",
-  "Tired of waiting the node to catch up? Using our snapshot or state-sync!",
-  "State-sync is only supported in specific chains",
+  "Tired of waiting the node to catch up? Snapshot will boost your ass!",
+  "State-sync is only supported in some specific chains",
 ];
 
 const Snapshot = () => {

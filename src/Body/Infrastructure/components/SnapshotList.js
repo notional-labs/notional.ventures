@@ -39,6 +39,7 @@ const SnapshotList = (props) => {
         containerClassName={"paginationBttns"}
         previousLinkClassName={"previousBttn"}
         nextLinkClassName={"nextBttn"}
+        pageClassName={"pageBttn"}
         disabledClassName={"paginationDisabled"}
         activeClassName={"paginationActive"}
       />

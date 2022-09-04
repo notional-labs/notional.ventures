@@ -11,12 +11,20 @@
 .chain-upgrade-container {
     width: 80%;
     margin: 0 auto;
+    position: relative;
+    top: 130px
 }
 
-.chain-upgrade-container .title {
+.title {
     font-size: 3rem;
 }
 
 .upgrades {
     margin-top: 3rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+    .title {
+        font-size: calc(100vw * 3*16 / 1920);
+    }
 }

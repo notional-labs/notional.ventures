@@ -1,6 +1,7 @@
 .stake-list {
   width: auto;
   max-width: 90%;
+  margin: 0 auto;
   height: auto;
   display: flex;
   flex-wrap: wrap;

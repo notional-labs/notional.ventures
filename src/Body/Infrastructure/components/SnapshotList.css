@@ -15,46 +15,79 @@
 }
 
 .paginationBttns {
-  width: 1219.17px;
-  height: 40px;
+  width: 600px;
+  height: 80px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
   margin-top: 3rem;
+  background: #332b3e;
+  outline: none;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5);
 }
 
-.paginationBttns a {
-  padding: 10px;
-  margin: 8px;
+.paginationBttns li {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.pageBttn {
   border-radius: 5px;
-  border: 1px solid white;
+  width: 50px;
+  background: #332b3e;
+  box-shadow: 5px 5px 10px #251f2d,  -5px -5px 10px #41374f;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 2;
+  font-size: 15px;
+}
+
+.pageBttn:hover {
+  color: white;
+  box-shadow: inset 5px 5px 10px #251f2d, inset -5px -5px 10px #41374f;
+  transition: filter 1s ease-in;
+}
+
+.previousBttn {
+  width: 120px;
+  border-radius: 5px;
+  background: #332b3e;
+  box-shadow: 5px 5px 10px #251f2d,  -5px -5px 10px #41374f;
   color: white;
   cursor: pointer;
   font-size: 15px;
 }
 
-.paginationBttns a:hover {
+.nextBttn {
+  width: 120px;
+  border-radius: 5px;
+  background: #332b3e;
+  box-shadow: 5px 5px 10px #251f2d,  -5px -5px 10px #41374f;
   color: white;
-  background-color: rgb(78, 76, 73);
+  cursor: pointer;
+  font-size: 15px;
 }
 
-.paginationActive a {
+.paginationActive {
   color: white;
-  background-color: rgb(78, 76, 73);
+  box-shadow: inset 5px 5px 10px #251f2d, inset -5px -5px 10px #41374f;
+}
+.paginationActive a:after {
+  display: none;
 }
 
-.paginationDisabled a {
-  color: grey;
-  background-color: rgb(63, 61, 61);
+.paginationDisabled {
+  color: white;
+  width: 120px;
+  background-color: red;
+  box-shadow: inset 5px 5px 10px #251f2d, inset -5px -5px 10px #41374f;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
-  .paginationBttns {
-    width: calc(100vw * 1219.17 / 1920);
-    height: calc(100vw * 40 / 1920);
-  }
-  .paginationBttns a {
-    font-size: calc(100vw * 15 / 1920);
-  }
 }

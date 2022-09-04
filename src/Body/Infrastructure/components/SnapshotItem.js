@@ -6,8 +6,9 @@ import axios from "axios";
 
 const SnapshotItem = (props) => {
   const [showModal, setShowModal] = useState(false);
-  // const [error, setError] = useState(false);
   const [loadedPebbleSnapshotInfo, setLoadedPebbleSnapshotInfo] = useState([]);
+  // RocksDB
+  // const [error, setError] = useState(false);
   // const [loadedRockSnapshotInfo, setLoadedRockSnapshotInfo] = useState([]);
   const showHandler = () => {
     setShowModal(true);

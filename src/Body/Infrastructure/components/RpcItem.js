@@ -1,20 +1,31 @@
 import { Image, Tooltip } from "antd";
 import Zoom from "@mui/material/Zoom";
 import React from "react";
+import { useState } from "react";
 import "./RpcItem.css";
 import Dropdown from "../../../media/button/Vector.png";
 
 const RpcItem = (props) => {
-  const [copyFeedback, setCopyFeedback] = React.useState("Click to copy");
+  const [copyFeedback, setCopyFeedback] = useState("Click to copy");
+  const [copyState, setCopyState] = useState(false);
   const copyToClipboard = async (copyMe) => {
     try {
-      await navigator.clipboard.writeText(copyMe);
+      navigator.clipboard.writeText(copyMe);
       setCopyFeedback("Copied!");
+      setCopyState(true);
     } catch (err) {
       setCopyFeedback("Failed to copy!");
+      setCopyState(false);
     }
   };
-
+  const setCopyMessage = () => {
+    if (copyState === true) {
+      setTimeout(() => {
+        setCopyFeedback("Click to copy");
+        setCopyState(false);
+      }, 200);
+    }
+  };
 
   return (
     <li className="dropdown-container">
@@ -28,15 +39,11 @@ const RpcItem = (props) => {
         <p className="dropdown-chain-name">{props.name}</p>
 
         <div className="dropdown-icon">
-          {/* {display === false ? (
-            <Image src={Dropdown} preview={false} />
-          ) : ( */}
           <Image
             className="dropdown-btn_active"
             src={Dropdown}
             preview={false}
           />
-          {/* )} */}
         </div>
       </a>
 
@@ -45,6 +52,7 @@ const RpcItem = (props) => {
           <a
             href="#0"
             className="menu-item-text"
+            onMouseOver={() => setCopyMessage()}
             onClick={() => copyToClipboard(props.rpc_service)}
           >
             <Tooltip TransitionComponent={Zoom} title={copyFeedback}>
@@ -56,6 +64,7 @@ const RpcItem = (props) => {
           <a
             href="#0"
             className="menu-item-text"
+            onMouseOver={() => setCopyMessage()}
             onClick={() => copyToClipboard(props.api_service)}
           >
             <Tooltip TransitionComponent={Zoom} title={copyFeedback}>
@@ -67,6 +76,7 @@ const RpcItem = (props) => {
           <a
             href="#0"
             className="menu-item-text"
+            onMouseOver={() => setCopyMessage()}
             onClick={() => copyToClipboard(props.grpc_service)}
           >
             <Tooltip TransitionComponent={Zoom} title={copyFeedback}>
