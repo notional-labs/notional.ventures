@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import ContactBackground from "../../media/background-decor/Contact.svg";
+import ContactBackground from "../../media/imgs/Contact/image-contact.svg";
 import Email from "../../media/icon/mail.png";
 import Github from "../../media/icon/github.png";
 import Twitter from "../../media/icon/twitter.png";

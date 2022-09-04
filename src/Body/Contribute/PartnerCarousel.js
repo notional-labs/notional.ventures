@@ -1,12 +1,12 @@
 import React from "react";
-import Osmosis from "../../media/logo/osmosis.png";
-import Juno from "../../media/logo/juno.png";
-import Cosmos from "../../media/logo/cosmos.png";
-// import Stargaze from "../../media/logo/stargaze.png";
-// import Cheq from "../../media/logo/cheqd.png";
-import Omniflix from "../../media/logo/omniflix.png";
-import Sifchain from "../../media/logo/sifchain.png";
-import Evmos from "../../media/logo/evmos.png";
+import Osmosis from "../../media/imgs/Contribution/Carousel/osmosis.png";
+import Juno from "../../media/imgs/Contribution/Carousel/juno.png";
+import Cosmos from "../../media/imgs/Contribution/Carousel/cosmos.png";
+// import Stargaze from "../../media/imgs/Contribution/Carousel/stargaze.png";
+// import Cheq from "../../media/imgs/Contribution/Carousel/cheqd.png";
+import Omniflix from "../../media/imgs/Contribution/Carousel/omniflix.png";
+import Sifchain from "../../media/imgs/Contribution/Carousel/sifchain.png";
+import Evmos from "../../media/imgs/Contribution/Carousel/evmos.png";
 import "./PartnerCarousel.css";
 
 const AutoSlide = () => {

@@ -2,7 +2,6 @@ import "./Footer.css";
 import React from "react";
 import NotionalLogo from "../media/logo/notional.png";
 import { Image } from "antd";
-// import Discord from "../media/icon/discord.png";
 import Github from "../media/icon/github.png";
 import Twitter from "../media/icon/twitter.png";
 import Telegram from "../media/icon/telegram.png";

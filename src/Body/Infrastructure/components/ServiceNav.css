@@ -12,3 +12,7 @@
     transition-timing-function: ease-in;
     transition: 0.5s;
 }
+
+.service-nav a {
+    display: none;
+}

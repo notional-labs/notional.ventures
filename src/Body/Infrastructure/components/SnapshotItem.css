@@ -36,8 +36,9 @@
   height: auto;
   width: 18rem;
   border-radius: 15px;
+  background-color: rgba(12, 12, 12, 0.2);
+  backdrop-filter: blur(22px);
   box-sizing: border-box;
-  border: 1px white solid;
   list-style: none;
   transition: transform 0.4s;
   text-align: center;

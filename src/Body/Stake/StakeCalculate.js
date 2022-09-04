@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Slider } from "antd";
 import "antd/dist/antd.less";
 import "antd/dist/antd.css";
-import Reward_divisor from "../../media/stake/reward-divisor.png";
+import Reward_divisor from "../../media/imgs/Stake/reward-divisor.png";
 
 const StakeCalculate = (props) => {
     let price = props.price;

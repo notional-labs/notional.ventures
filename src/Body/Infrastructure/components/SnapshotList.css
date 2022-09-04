@@ -26,21 +26,24 @@
   outline: none;
   box-sizing: border-box;
   padding: 20px;
-  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 .paginationBttns li {
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 3px;
 }
 
 .pageBttn {
-  border-radius: 5px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: "Segoe UI Light";
+  align-content: center;
   width: 50px;
-  background: #0c0232;
-  box-shadow: 6px 6px 12px #060118, -6px -6px 12px #12034d;
+  background: linear-gradient(145deg, #1f014b, #1a013f);
+  box-shadow: 6px 6px 12px #110129, -6px -6px 12px #290163;
   color: white;
   cursor: pointer;
   flex-shrink: 2;
@@ -49,15 +52,21 @@
 
 .pageBttn:hover {
   color: white;
-  box-shadow: inset 6px 6px 12px #060118, inset -6px -6px 12px #12034d;
+  background: linear-gradient(145deg, #1a013f, #1f014b);
+  /* box-shadow: inset 6px 6px 12px #110129, inset -6px -6px 12px #290163; */
   transition: filter 1s ease-in;
 }
 
 .previousBttn {
   width: 120px;
-  border-radius: 5px;
-  background: #0c0232;
-  box-shadow: 6px 6px 12px #060118, -6px -6px 12px #12034d;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: "Segoe UI Light";
+  align-content: center;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1f014b, #1a013f);
+  box-shadow: 6px 6px 12px #110129, -6px -6px 12px #290163;
   color: white;
   cursor: pointer;
   font-size: 15px;
@@ -69,9 +78,14 @@
 
 .nextBttn {
   width: 120px;
-  border-radius: 5px;
-  background: #0c0232;
-  box-shadow: 6px 6px 12px #060118, -6px -6px 12px #12034d;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: "Segoe UI Light";
+  align-content: center;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1f014b, #1a013f);
+  box-shadow: 6px 6px 12px #110129, -6px -6px 12px #290163;
   color: white;
   cursor: pointer;
   font-size: 15px;
@@ -83,7 +97,8 @@
 
 .paginationActive {
   color: white;
-  box-shadow: inset 6px 6px 12px #060118, inset -6px -6px 12px #12034d;
+  font-family: "Segoe UI Bold";
+  box-shadow: inset 6px 6px 12px #110129, inset -6px -6px 12px #290163;
 }
 
 .paginationActive a:after {
@@ -94,7 +109,7 @@
   color: white;
   width: 120px;
   background-color: red;
-  box-shadow: inset 6px 6px 12px #060118, inset -6px -6px 12px #12034d;
+  box-shadow: inset 6px 6px 12px #110129, inset -6px -6px 12px #290163;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {

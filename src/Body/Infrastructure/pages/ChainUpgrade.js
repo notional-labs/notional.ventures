@@ -5,7 +5,7 @@ import { STAKES } from "../../Stake/chains-data";
 import { useState, useEffect } from "react";
 import ChainUpgradeList from "../components/ChainUpgradeList";
 import GifLoader from "react-gif-loader";
-import Loading from "../../../media/background-decor/loading.gif";
+import Loading from "../../../media/imgs/loading.gif";
 
 const facts = ["Notional are happy to make our customer sastified"];
 

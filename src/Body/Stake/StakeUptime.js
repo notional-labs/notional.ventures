@@ -4,7 +4,7 @@ import StakeUptimeBlock from "./StakeUptimeBlock";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Divisor from "../../media/stake/uptime-divisor.png";
+import Divisor from "../../media/imgs/Stake/uptime-divisor.png";
 
 const Uptime = (props) => {
     let { height, uptime } = props;

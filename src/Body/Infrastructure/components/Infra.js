@@ -3,11 +3,11 @@ import "./Infra.css";
 import Graph from "../components/Graph";
 import { Link } from "react-router-dom";
 import { Image } from "antd";
-import RPC from "../../../media/background-logo/RPC.svg"
-import Snapshots from "../../../media/background-logo/Snapshot.svg"
-import Upgrade from "../../../media/background-logo/Update.svg"
-import Uptime from "../../../media/background-logo/Uptime1.svg"
-// import Background from "../../media/background-decor/infrastructe-background.png"
+import RPC from "../../../media/imgs/Infrastructure/Logo/RPC.svg"
+import Snapshots from "../../../media/imgs/Infrastructure/Logo/Snapshot.svg"
+import Upgrade from "../../../media/imgs/Infrastructure/Logo/Update.svg"
+import Uptime from "../../../media/imgs/Infrastructure/Logo/Uptime1.svg"
+// import Background from "../../media/imgs/infrastructe-background.png"
 
 const Infra = () => {
     return (

@@ -5,11 +5,11 @@ import { Image, Tooltip } from "antd";
 import Backdrop from "./Backdrop";
 import Zoom from "@mui/material/Zoom";
 import StakeUptime from "./StakeUptime";
-import Ping from "../../media/stake/ping.png";
-import Keplr from "../../media/stake/keplr.png";
+import Ping from "../../media/imgs/Stake/explorers/ping.png";
+import Keplr from "../../media/imgs/Stake/explorers/keplr.png";
 import Close from "../../media/button/x-btn.svg";
-import Modal_divisor from "../../media/stake/modal-divisor.png";
-import Info_divisor from "../../media/stake/info-divisor.png";
+import Modal_divisor from "../../media/imgs/Stake/modal-divisor.png";
+import Info_divisor from "../../media/imgs/Stake/info-divisor.png";
 import StakeCalculate from "./StakeCalculate";
 import "./StakeModal.css";
 

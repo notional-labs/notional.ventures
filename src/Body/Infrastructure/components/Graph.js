@@ -4,24 +4,24 @@ import * as THREE from "three";
 
 const gData = {
   "nodes": [
-    {"id": "atom", "img": "gaia.png"},
-    {"id": "emoney", "img": "emoney.png"},
-    {"id": "fetch", "img": "fetch.png"},
-    {"id": "axelar", "img": "axelar.png"},
-    {"id": "juno", "img": "juno.png"},
-    {"id": "osmosis", "img": "osmosis.png"},
-    {"id": "sifchain", "img": "sifchain.png"},
-    {"id": "omniflix", "img": "omniflix.png"},
-    {"id": "akash", "img": "akash.png"},
-    {"id": "dig", "img": "digchain.png"},
-    {"id": "kava", "img": "kava.png"},
-    {"id": "evmos", "img": "evmos.png"},
-    {"id": "regen", "img": "regen.png"},
-    {"id": "iris", "img": "iris.png"},
-    {"id": "injective", "img": "injective.png"},
-    {"id": "sentinel", "img": "sentinel.png"},
-    {"id": "konstellation", "img": "konstellation.png"},
-    {"id": "cryptoorg", "img": "cryto-org.png"},
+    {"id": "atom", "img": "gaia.png", "weight": "2"},
+    {"id": "emoney", "img": "emoney.png", "weight": "1"},
+    {"id": "fetch", "img": "fetch.png", "weight": "1"},
+    {"id": "axelar", "img": "axelar.png", "weight": "1"},
+    {"id": "juno", "img": "juno.png", "weight": "1"},
+    {"id": "osmosis", "img": "osmosis.png", "weight": "3"},
+    {"id": "sifchain", "img": "sifchain.png", "weight": "1"},
+    {"id": "omniflix", "img": "omniflix.png", "weight": "1"},
+    {"id": "akash", "img": "akash.png", "weight": "1"},
+    {"id": "dig", "img": "digchain.png", "weight": "1"},
+    {"id": "kava", "img": "kava.png", "weight": "1"},
+    {"id": "evmos", "img": "evmos.png", "weight": "1"},
+    {"id": "regen", "img": "regen.png", "weight": "1"},
+    {"id": "iris", "img": "iris.png", "weight": "1"},
+    {"id": "injective", "img": "injective.png", "weight": "1"},
+    {"id": "sentinel", "img": "sentinel.png", "weight": "1"},
+    {"id": "konstellation", "img": "konstellation.png", "weight": "1"},
+    {"id": "cryptoorg", "img": "cryto-org.png", "weight": "1"},
   ],
   "links": [
     {"source": "osmosis", "target": "atom"},
@@ -41,6 +41,7 @@ const gData = {
     {"source": "osmosis", "target": "sentinel"},
     {"source": "osmosis", "target": "konstellation"},
     {"source": "osmosis", "target": "cryptoorg"},
+
     {"source": "atom", "target": "cryptoorg"},
     {"source": "atom", "target": "omniflix"},
     {"source": "atom", "target": "emoney"},
@@ -57,8 +58,11 @@ const gData = {
     {"source": "atom", "target": "injective"},
     {"source": "atom", "target": "iris"},
     {"source": "atom", "target": "sentinel"},
+
     {"source": "axelar", "target": "sifchain"},
     {"source": "axelar", "target": "evmos"},
+
+    {"source": "evmos", "target": "injective"},
 
   ]
 };
@@ -84,11 +88,11 @@ export default function Graph() {
       // linkColor="red"
       graphData={gData}
       nodeLabel = {gData.nodes.id}
-      nodeThreeObject={({ img }) => {
+      nodeThreeObject={({ img, weight }) => {
         const imgTexture = new THREE.TextureLoader().load(`./nodes/${img}`);
         const material = new THREE.SpriteMaterial({ map: imgTexture, depthWrite: false});
         const sprite = new THREE.Sprite(material);
-        sprite.scale.set(12, 12);
+        sprite.scale.set(12 * weight, 12 * weight);
         return sprite;
       }}
     />

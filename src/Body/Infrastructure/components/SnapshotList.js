@@ -3,6 +3,7 @@ import SnapshotItem from "./SnapshotItem";
 import "./SnapshotList.css";
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
+
 const SnapshotList = (props) => {
   const [snapshots, setSnapshots] = useState(props.snapshots);
   const [pageNumber, setPageNumber] = useState(0);

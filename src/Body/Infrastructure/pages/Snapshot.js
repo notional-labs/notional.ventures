@@ -4,7 +4,7 @@ import ServiceNav from "../components/ServiceNav";
 import { STAKES } from "../../Stake/chains-data";
 import SnapshotList from "../components/SnapshotList";
 import GifLoader from "react-gif-loader";
-import Loading from "../../../media/background-decor/loading.gif";
+import Loading from "../../../media/imgs/loading.gif";
 import { useState, useEffect } from "react";
 const facts = [
   "We currently support PebbleDB snapshot",

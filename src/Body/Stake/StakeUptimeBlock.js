@@ -1,6 +1,6 @@
 import { Image, Tooltip } from "antd";
-import miss from "../../media/stake/miss.png";
-import nomiss from "../../media/stake/no-miss.png";
+import miss from "../../media/imgs/Stake/miss.png";
+import nomiss from "../../media/imgs/Stake/no-miss.png";
 import Zoom from "@mui/material/Zoom";
 import "./StakeUptimeBlock.css";
 

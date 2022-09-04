@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./ErrorModal.css";
 import { CSSTransition } from "react-transition-group";
 import Backdrop from "./Backdrop";
-import line_divisor from "../../media/stake/line-divide.png";
+import line_divisor from "../../media/imgs/Stake/line-divide.png";
 import { Image } from "antd";
 
 const ModalOverlay = (props) => {

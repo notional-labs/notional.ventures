@@ -1,22 +1,22 @@
 import "./Header.css";
 import Navbar from "./Navbar";
 import React from "react";
-import { ReactComponent as Group17 } from "../media/background-decor/abstract.svg";
-import Abstract from "../media/background-decor/Background.png";
-import { ReactComponent as Osmosis } from "../media/background-logo/Osmosis.svg";
-import { ReactComponent as Juno } from "../media/background-logo/Juno.svg";
-import { ReactComponent as Atom } from "../media/background-logo/Atom.svg";
-import { ReactComponent as Evmos } from "../media/background-logo/Evmos.svg";
-import { ReactComponent as Secret } from "../media/background-logo/Secret.svg";
-import { ReactComponent as Omniflix } from "../media/background-logo/Omniflix.svg";
-import { ReactComponent as Sif } from "../media/background-logo/Sif.svg";
-import { ReactComponent as Akash } from "../media/background-logo/Akash.svg";
-import { ReactComponent as Orange } from "../media/background-decor/Rectangle13.svg";
-import { ReactComponent as Yellow } from "../media/background-decor/Rectangle14.svg";
-import { ReactComponent as Purple } from "../media/background-decor/Rectangle15.svg";
-import { ReactComponent as Red } from "../media/background-decor/Rectangle16.svg";
-import { ReactComponent as Blue } from "../media/background-decor/Rectangle17.svg";
-import { ReactComponent as Green } from "../media/background-decor/Rectangle18.svg";
+import { ReactComponent as Group17 } from "../media/imgs/Header/abstract-2.svg";
+import Abstract from "../media/imgs/Header/abstract-1.png";
+import { ReactComponent as Osmosis } from "../media/logo/Header/Osmosis.svg";
+import { ReactComponent as Juno } from "../media/logo/Header/Juno.svg";
+import { ReactComponent as Atom } from "../media/logo/Header/Atom.svg";
+import { ReactComponent as Evmos } from "../media/logo/Header/Evmos.svg";
+import { ReactComponent as Secret } from "../media/logo/Header/Secret.svg";
+import { ReactComponent as Omniflix } from "../media/logo/Header/Omniflix.svg";
+import { ReactComponent as Sif } from "../media/logo/Header/Sif.svg";
+import { ReactComponent as Akash } from "../media/logo/Header/Akash.svg";
+import { ReactComponent as Orange } from "../media/imgs/Header/orange.svg";
+import { ReactComponent as Yellow } from "../media/imgs/Header/yellow.svg";
+import { ReactComponent as Purple } from "../media/imgs/Header/purple.svg";
+import { ReactComponent as Red } from "../media/imgs/Header/red.svg";
+import { ReactComponent as Blue } from "../media/imgs/Header/blue.svg";
+import { ReactComponent as Green } from "../media/imgs/Header/green.svg";
 
 const Header = () => {
     return (

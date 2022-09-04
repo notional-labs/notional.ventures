@@ -1,8 +1,8 @@
 import "./Contributions.css";
 import React from "react";
 import AutoSlide from "./PartnerCarousel";
-import Filter from "../../media/background-decor/background-contribution.png";
-import Abstract from "../../media/background-decor/Circle_mesh1 1.png";
+import Filter from "../../media/imgs/Contribution/filter-contribution.png";
+import Abstract from "../../media/imgs/Contribution/abstract-contribution.png";
 
 const Contributions = () => {
     return (

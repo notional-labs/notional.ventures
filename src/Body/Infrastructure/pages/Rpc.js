@@ -5,7 +5,7 @@ import ServiceNav from "../components/ServiceNav";
 import RpcList from "../components/RpcList";
 import { useState, useEffect } from "react";
 import GifLoader from "react-gif-loader";
-import Loading from "../../../media/background-decor/loading.gif";
+import Loading from "../../../media/imgs/loading.gif";
 
 const facts = ["Notional are happy to make our customer sastified",
 "We use rate-limit endpoints to protect our service from attacks"];

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
-import Diglogo from "../../media/logo/dig-logo.png";
-import Craft from "../../media/logo/economy-logo.png";
+import Diglogo from "../../media/imgs/Projects/dig-logo.png";
+import Craft from "../../media/imgs/Projects/economy-logo.png";
 import ProjectList from "./ProjectList";
 
 const Project = () => {
