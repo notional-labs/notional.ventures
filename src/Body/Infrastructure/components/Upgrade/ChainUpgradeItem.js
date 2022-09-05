@@ -1,6 +1,7 @@
 import React from "react";
 import "./ChainUpgradeItem.css";
 
+
 const ChainUpgradeItem = (props) => {
   const estimatedHours = ((props.updateHeight - parseInt(props.currentHeight)) * props.blockTime) / 3600
   return (
@@ -10,7 +11,7 @@ const ChainUpgradeItem = (props) => {
         <td>{props.currentHeight}</td>
         <td>{props.updateHeight}</td>
         <td>{props.version}</td>
-        <td>{estimatedHours.toFixed(1)}h</td>
+        <td>{props.estimateTime}</td>
       </tr>
     </>
   );

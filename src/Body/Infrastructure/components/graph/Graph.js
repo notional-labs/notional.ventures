@@ -9,7 +9,7 @@ const gData = {
     {"id": "fetch", "img": "fetch.png", "weight": "1"},
     {"id": "axelar", "img": "axelar.png", "weight": "1"},
     {"id": "juno", "img": "juno.png", "weight": "1"},
-    {"id": "osmosis", "img": "osmosis.png", "weight": "3"},
+    {"id": "osmosis", "img": "osmosis.png", "weight": "2"},
     {"id": "sifchain", "img": "sifchain.png", "weight": "1"},
     {"id": "omniflix", "img": "omniflix.png", "weight": "1"},
     {"id": "akash", "img": "akash.png", "weight": "1"},

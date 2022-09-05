@@ -3,10 +3,11 @@ import EndpointItem from "./EndpointItem";
 import "./EndpointList.css";
 
 const EndpointList = (props) => {
+  console.log(props)
   return (
     <ol className="endpoint-list">
       {props.rpc.map((stake) => (
-        <li class="endpoint-item">
+        <li className="endpoint-item">
           <EndpointItem
             key={stake.id}
             id={stake.id}
