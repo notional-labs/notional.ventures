@@ -1,10 +1,10 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-name: New UI
+name: Deploy
 
 on:
   push:
-    branches: [ new_ui ]
+    branches: [ main ]
 
 jobs:
   deploy:
@@ -46,7 +46,7 @@ jobs:
       uses: garygrossgarten/github-action-scp@release
       with:
         local: build
-        remote: /root/beta.notional.ventures
+        remote: /root/notional.ventures
         host: ${{ secrets.WEB_SERVER }}
         username: ${{ secrets.USERNAME }}
         privateKey: ${{ secrets.PRIV_KEY }}
