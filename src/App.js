@@ -13,7 +13,7 @@ import { useState, useEffect } from "react";
 import Loading from "./media/imgs/loading.gif";
 
 const facts = [
-    "Notional are happy to make our customer sastified", 
+    "Notional is happy to make our customer sastified", 
 ];
 
 const Home = () => {
