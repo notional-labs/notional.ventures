@@ -21,7 +21,7 @@ const gData = {
     {"id": "injective", "img": "injective.png", "weight": "1"},
     {"id": "sentinel", "img": "sentinel.png", "weight": "1"},
     {"id": "konstellation", "img": "konstellation.png", "weight": "1"},
-    {"id": "cryptoorg", "img": "cryto-org.png", "weight": "1"},
+    {"id": "crypto", "img": "cryto-org.png", "weight": "1"},
   ],
   "links": [
     {"source": "osmosis", "target": "atom"},
@@ -40,9 +40,9 @@ const gData = {
     {"source": "osmosis", "target": "injective"},
     {"source": "osmosis", "target": "sentinel"},
     {"source": "osmosis", "target": "konstellation"},
-    {"source": "osmosis", "target": "cryptoorg"},
+    {"source": "osmosis", "target": "crypto"},
 
-    {"source": "atom", "target": "cryptoorg"},
+    {"source": "atom", "target": "crypto"},
     {"source": "atom", "target": "omniflix"},
     {"source": "atom", "target": "emoney"},
     {"source": "atom", "target": "fetch"},
@@ -74,7 +74,7 @@ export default function Graph() {
   return (
     <ForceGraph3D
       ref={zoomRef}
-      backgroundColor={"black"}
+      backgroundColor={"rgba(0,0,0,0)"}
       linkOpacity={0.4}
       nodeOpacity = {0}
       cooldownTicks={100}
