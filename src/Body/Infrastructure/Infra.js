@@ -1,7 +1,6 @@
 import React from "react";
 import "./Infra.css";
 import Graph from "./components/graph/Graph";
-
 import { Link } from "react-router-dom";
 import { Image } from "antd";
 import Endpoint from "../../media/imgs/Infrastructure/Logo/Endpoint.svg"
