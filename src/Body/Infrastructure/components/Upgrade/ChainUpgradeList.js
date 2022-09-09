@@ -46,6 +46,14 @@ const ChainUpgradeList = (props) => {
     }
   };
 
+  const ConvertHourToDay = (numberOfHours) => {
+    var Days=Math.floor(numberOfHours/24);
+    var Remainder=numberOfHours % 24;
+    var Hours=Math.floor(Remainder);
+    var Minutes=Math.floor(60*(Remainder-Hours));
+    return `${Days} Days ${Hours} Hours ${Minutes} Minutes`
+}
+
   return (
     <div className="chain-upgrades">
       <table className="chain-upgrade-table">
@@ -66,11 +74,11 @@ const ChainUpgradeList = (props) => {
                   version={data.version}
                   updateHeight={data.height}
                   blockTime={data.blockTime}
-                  estimateTime={(
+                  estimateTime={ConvertHourToDay((
                     ((data.height - parseInt(data.currentHeight)) *
                       data.blockTime) /
                     3600
-                  ).toFixed(2)+ "h"}
+                  ).toFixed(2))}
                 />
               )
           )

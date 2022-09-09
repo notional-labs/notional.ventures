@@ -37,7 +37,7 @@ const ChainUpgrade = () => {
           <div className="chain-upgrade-container">
             <p className="chain-upgrade-title">Chain Upgrade</p>
             <p className="chain-upgrade-text">
-              Automatically query upgrade info for chain that we validate
+              Automatically query upgrade information for chains that we validate
             </p>
             <div className="upgrades">
               <ChainUpgradeList upgrade={STAKES} />
