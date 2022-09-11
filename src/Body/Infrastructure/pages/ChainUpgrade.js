@@ -7,7 +7,7 @@ import ChainUpgradeList from "../components/Upgrade/ChainUpgradeList";
 import GifLoader from "react-gif-loader";
 import Loading from "../../../media/imgs/loading.gif";
 
-const facts = ["Notional is happy to make our customer sastified"];
+const facts = ["Notional strives to satisfy our customers"];
 
 const ChainUpgrade = () => {
   const [isLoading, setIsLoading] = useState(false);

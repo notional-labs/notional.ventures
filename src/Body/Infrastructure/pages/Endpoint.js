@@ -7,8 +7,10 @@ import { useState, useEffect } from "react";
 import GifLoader from "react-gif-loader";
 import Loading from "../../../media/imgs/loading.gif";
 
-const facts = ["Notional are happy to make our customer sastified",
-"We use rate-limit endpoints to protect our service from attacks"];
+const facts = ["Notional strives to satisfy our customers",
+"We use rate-limit endpoints to protect our service from attacks",
+"We are changing our Endpoint services, and the old ones will only work for few days left."
+];
 
 const Endpoint = () => {
   const [isLoading, setIsLoading] = useState(false);
