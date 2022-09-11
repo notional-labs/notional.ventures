@@ -13,7 +13,8 @@ import { useState, useEffect } from "react";
 import Loading from "./media/imgs/loading.gif";
 
 const facts = [
-    "Notional are happy to make our customer sastified", 
+    "Notional strives to satisfy our customers", 
+    "We are changing our Endpoint services, please go to Endpoints section to see the new endpoints"
 ];
 
 const Home = () => {

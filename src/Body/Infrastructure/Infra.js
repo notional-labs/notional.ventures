@@ -9,6 +9,7 @@ import Snapshots from "../../media/imgs/Infrastructure/Logo/Snapshot.svg";
 import Upgrade from "../../media/imgs/Infrastructure/Logo/Update.svg";
 import Uptime from "../../media/imgs/Infrastructure/Logo/Uptime1.svg";
 import Abstract from "../../media/imgs/Infrastructure/abstract.png";
+import Background from "../../media/imgs/Infrastructure/background.png";
 
 const Infra = () => {
   return (
@@ -40,23 +41,19 @@ const Infra = () => {
       <div className="services">
         <Link to="/endpoint" className="link">
           <button className="service-item">
-            <Image src={Endpoint} preview={false}></Image>
+            <Image src={Endpoint} preview={false}/>
             <div className="service-item-name">ENDPOINTS</div>
           </button>
         </Link>
         <Link to="/snapshot" className="link">
           <button className="service-item">
-            <Image src={Snapshots} preview={false}>
-              26
-            </Image>
+            <Image src={Snapshots} preview={false}/>
             <div className="service-item-name">SNAPSHOTS</div>
           </button>
         </Link>
         <Link to="/upgrade" className="link">
           <button className="service-item">
-            <Image src={Upgrade} preview={false}>
-              26
-            </Image>
+            <Image src={Upgrade} preview={false}/>
             <div className="service-item-name">CHAINS UPGRADE</div>
           </button>
         </Link>
@@ -65,9 +62,7 @@ const Infra = () => {
           className="link"
         >
           <button className="service-item">
-            <Image src={Uptime} preview={false}>
-              26
-            </Image>
+            <Image src={Uptime} preview={false}/>
             <div className="service-item-name">UPTIME KUMA</div>
           </button>
         </a>

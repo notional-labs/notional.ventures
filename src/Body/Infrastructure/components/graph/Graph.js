@@ -89,7 +89,7 @@ const Graph = () => {
         height={800}
         width={displayWidth}
         linkDirectionalParticles={1}
-        linkDirectionalParticleWidth={0.2}
+        linkDirectionalParticleWidth={0.3}
         linkDirectionalParticleSpeed={0.003}
         // linkColor="red"
         graphData={gData}

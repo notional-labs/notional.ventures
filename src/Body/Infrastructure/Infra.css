@@ -4,16 +4,18 @@
   margin-top: 100px;
   width: auto;
   position: relative;
+
   background-image: url(../../media/imgs/Infrastructure/background.png);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
 }
 
 .infra-section .infra-abstract {
   position: absolute;
-  border: 1px orange solid;
   width: 100%;
+  right: 0px;
+  max-height: 100%;
 }
 
 .infra-section .title {
@@ -50,7 +52,6 @@
 
 .infra-section .relayer {
   height: 800px;
-  border: 1px red solid;
   width: 80%;
   max-width: 1700px;
   margin: auto;
@@ -64,11 +65,10 @@
   height: auto;
   align-items: center;
   align-self: center;
-  border: 1px white solid;
 }
 
 .infra-section .relayer .relayer-info .relayer-title {
-  font-family: "Segoe UI Light";
+  font-family: "Segoe UI Semibold";
   color: white;
   font-size: 40px;
 }
@@ -79,10 +79,7 @@
   font-size: 20px;
 }
 
-
-
 .infra-section .relayer .relayer-graph {
-  border: 1px yellow solid;
   width: 60%;
 }
 
@@ -106,20 +103,27 @@
 
 .service-item {
   backdrop-filter: blur(10px);
-  box-shadow: 4px 8px 30px 5px rgb(255, 255, 255, 0.15);
+  box-shadow: 4px 8px 30px 5px rgb(0, 0, 0, 0.15);
   border-radius: 30px;
-  background-color: #ffffff33;
+  background-color: #ffffff10;
   height: 190px;
   width: 370px;
   border: none;
   cursor: pointer;
+  transition: 0.3s ease;
   line-height: 2rem;
 }
 
-.service-item img:hover {
-  transform: translateY(-10px);
-  transition: 0.2s ease;
+.service-item:hover {
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 8px 30px 5px rgb(255, 255, 255, 0.15);
+  border-radius: 30px;
+  background-color: #ffffff20;
+  height: 200px;
+  width: 390px;
+  transition: 0.3s ease;
 }
+
 
 .service-item div img {
   max-width: 110px;
