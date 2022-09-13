@@ -26,6 +26,7 @@ import Chihuahua from "../../media/logo/chains-data/Chihuahua.svg";
 import Fetchai from "../../media/logo/chains-data/Fetch.svg";
 import Umee from "../../media/logo/chains-data/Umee.svg";
 import Injective from "../../media/logo/chains-data/Injective.svg";
+import Passage from "../../media/logo/chains-data/Passage.svg";
 
 export const STAKES = [
   {
@@ -439,6 +440,20 @@ export const STAKES = [
     daenom: "injective",
     keplr: "",
     ping: "injective",
+    address: "injvaloper16eg6wf2k6v0lzwu2vsrhxhe0tcycgr7jm98nyz",
+    rank: "15"
+  },
+  {
+    id: "s29",
+    image: `${Passage}`,
+    name: "Passage",
+    rpc_service: "https://rpc-passage-ia.cosmosia.notional.ventures/",
+    api_service: "https://api-passage-ia.cosmosia.notional.ventures/",
+    grpc_service: "https://grpc-passage-ia.cosmosia.notional.ventures/",
+    api: "https://backend.notional.ventures/passage",
+    daenom: "passage",
+    keplr: "",
+    ping: "passage",
     address: "injvaloper16eg6wf2k6v0lzwu2vsrhxhe0tcycgr7jm98nyz",
     rank: "15"
   },
