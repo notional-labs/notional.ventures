@@ -454,7 +454,7 @@ export const STAKES = [
     daenom: "passage",
     keplr: "",
     ping: "passage",
-    address: "injvaloper16eg6wf2k6v0lzwu2vsrhxhe0tcycgr7jm98nyz",
-    rank: "15"
+    address: "pasgvaloper14npnd73z5qjwz4az2dpw6vcdvkj29qg0cgar4j",
+    rank: "27"
   },
 ];
