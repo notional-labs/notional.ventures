@@ -118,7 +118,7 @@ const ModalOverlay = (props) => {
                     </tr>
                     <tr>
                         <td className="validatorLabel">Voting Power:</td>
-                        <td className="validatorValue">{props.votingPower}</td>
+                        <td className="validatorValue">{props.votingPower.toLocaleString('en-US')}</td>
                     </tr>
                 </table>
             </div>
@@ -171,7 +171,7 @@ const ModalOverlay = (props) => {
                         </button>
                     )}
                     <button className="delegate-btn ping">
-                        <a
+                        <a 
                             onClick={() =>
                                 window.open(
                                     `https://ping.pub/${props.ping}/staking/${props.address}`

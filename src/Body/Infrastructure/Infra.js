@@ -35,35 +35,46 @@ const Infra = () => {
           </p>
         </div>
 
-          <Graph />
+        <Graph />
       </div>
 
       <div className="services">
         <Link to="/endpoint" className="link">
           <button className="service-item">
-            <Image src={Endpoint} preview={false}/>
+            <Image src={Endpoint} preview={false} />
             <div className="service-item-name">ENDPOINTS</div>
           </button>
         </Link>
         <Link to="/snapshot" className="link">
           <button className="service-item">
-            <Image src={Snapshots} preview={false}/>
+            <Image src={Snapshots} preview={false} />
             <div className="service-item-name">SNAPSHOTS</div>
           </button>
         </Link>
         <Link to="/upgrade" className="link">
           <button className="service-item">
-            <Image src={Upgrade} preview={false}/>
+            <Image src={Upgrade} preview={false} />
             <div className="service-item-name">CHAINS UPGRADE</div>
           </button>
         </Link>
         <a
-          href="https://status.notional.ventures/status/cosmosia"
+          onClick={() =>
+            window.open(`https://status.notional.ventures/status/cosmosia`)
+          }
           className="link"
         >
           <button className="service-item">
-            <Image src={Uptime} preview={false}/>
+            <Image src={Uptime} preview={false} />
             <div className="service-item-name">UPTIME KUMA</div>
+          </button>
+        </a>
+        <a
+          onClick={() => window.open(`https://tenderduty.notional.ventures`)}
+          className="link"
+        >
+          <button className="service-item">
+            <Image src={Uptime} preview={false} />
+            <div className="service-item-name">TENDERDUTY</div>
           </button>
         </a>
       </div>
