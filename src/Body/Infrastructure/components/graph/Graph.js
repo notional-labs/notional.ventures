@@ -73,7 +73,7 @@ const Graph = () => {
 
   window.addEventListener('resize', () => {
     setDisplayWidth(window.innerWidth < 2125 ? window.innerWidth * 0.48 : 1700 * 0.6);
-    console.log(window.innerWidth, displayWidth);
+    // console.log(window.innerWidth, displayWidth);
   });
 
   return (

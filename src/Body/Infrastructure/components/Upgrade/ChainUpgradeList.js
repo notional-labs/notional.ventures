@@ -48,7 +48,7 @@ const ChainUpgradeList = (props) => {
       // setError(true);
     }
   };
-
+  
   const ConvertHourToDay = (numberOfHours) => {
     var Days = Math.floor(numberOfHours / 24);
     var Remainder = numberOfHours % 24;
@@ -56,7 +56,7 @@ const ChainUpgradeList = (props) => {
     var Minutes = Math.floor(60 * (Remainder - Hours));
     return `${Days} Days ${Hours} Hours ${Minutes} Minutes`;
   };
-
+  
   return (
     <div className="chain-upgrades">
       <table className="chain-upgrade-table">
@@ -72,7 +72,7 @@ const ChainUpgradeList = (props) => {
             (data) =>
               parseInt(data.currentHeight) < data.height && (
                 <ChainUpgradeItem
-                  name={data.name}
+                  name={data.votingPeriod === "True" ? (data.name + " (Voting Period)"): data.name }
                   currentHeight={data.currentHeight}
                   version={data.version}
                   updateHeight={data.height}
