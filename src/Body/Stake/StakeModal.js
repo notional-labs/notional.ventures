@@ -174,12 +174,12 @@ const ModalOverlay = (props) => {
                         <a 
                             onClick={() =>
                                 window.open(
-                                    `https://ping.pub/${props.ping}/staking/${props.address}`
+                                    `https://explorer.notional.ventures/${props.ping}/staking/${props.address}`
                                 )
                             }
                             className="link"
                         >
-                            Delegate with Ping.pub
+                            Delegate with Notional Dasboard
                         </a>
                         <img src={Ping} className="iconsasd" />
                     </button>
