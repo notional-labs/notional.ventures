@@ -164,11 +164,11 @@
 }
 
 .modal .ping {
-  background: rgba(121, 63, 215, 0.3);
+  background: rgba(214, 44, 47, 0.3);
 }
 
 .modal .ping:hover {
-  background: rgba(101, 34, 209, 0.3);
+  background: rgba(143, 30, 32, 0.3);
 }
 
 .close-btn-pc {
