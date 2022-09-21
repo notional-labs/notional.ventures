@@ -24,7 +24,7 @@ const ChainUpgradeList = (props) => {
           continue;
         }
         const res = await axios.get(`${upgrade[index].api}/upgrade`);
-        if (res.data.name !== "NaN") {
+        if (res.data.version !== "NaN") {
           let obj = { ...res.data };
           const info = await axios.get(`${upgrade[index].api}/information`);
           obj["currentHeight"] = info.data.height;
