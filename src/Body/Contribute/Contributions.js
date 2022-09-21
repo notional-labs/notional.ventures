@@ -68,7 +68,7 @@ const Contributions = () => {
         <div className="companyinfo-item companyinfo-item__5">
           <div className="infoStyle">
             <div className="info-number">{data.annualReward}</div>
-            <div className="info-text">Annual Rewards</div>
+            <div className="info-text">Annual Growth</div>
           </div>
         </div>
       </div>
