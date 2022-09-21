@@ -5,7 +5,7 @@ import { Image, Tooltip } from "antd";
 import Backdrop from "./Backdrop";
 import Zoom from "@mui/material/Zoom";
 import StakeUptime from "./StakeUptime";
-import Ping from "../../media/imgs/Stake/explorers/ping.png";
+import Notional from "../../media/logo/logo.png";
 import Keplr from "../../media/imgs/Stake/explorers/keplr.png";
 import Close from "../../media/button/x-btn.svg";
 import Modal_divisor from "../../media/imgs/Stake/modal-divisor.png";
@@ -179,9 +179,9 @@ const ModalOverlay = (props) => {
                             }
                             className="link"
                         >
-                            Delegate with Notional Dasboard
+                            Delegate with Notional
                         </a>
-                        <img src={Ping} className="iconsasd" />
+                        <img src={Notional} className="iconsasd" />
                     </button>
                 </div>
             </div>
