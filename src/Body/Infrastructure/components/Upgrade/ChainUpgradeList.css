@@ -8,7 +8,7 @@
   color: white;
   border: 1px solid white;
   width: 80rem;
-  height: 200px;
+  height: auto;
   border-collapse: collapse;
   border-radius: 1em;
   overflow: hidden;
@@ -18,6 +18,6 @@
 
 .chain-upgrades-title th {
   padding: 1em;
-background: rgba(82, 82, 82, 0.8);
+  height: 70px;
+  background: rgba(82, 82, 82, 0.6);
 }
-

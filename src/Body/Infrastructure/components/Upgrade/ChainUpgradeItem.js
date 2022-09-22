@@ -1,9 +1,7 @@
 import React from "react";
 import "./ChainUpgradeItem.css";
 
-
 const ChainUpgradeItem = (props) => {
-  const estimatedHours = ((props.updateHeight - parseInt(props.currentHeight)) * props.blockTime) / 3600
   return (
     <>
       <tr className="chain-upgrade-items">

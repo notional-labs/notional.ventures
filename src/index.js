@@ -12,14 +12,14 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="snapshot" element={<Snapshot />} />
-                <Route path="endpoint" element={<Endpoint />} />
-                <Route path="upgrade" element={<ChainUpgrade />} />
-            </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="snapshot" element={<Snapshot />} />
+          <Route path="endpoint" element={<Endpoint />} />
+          <Route path="upgrade" element={<ChainUpgrade />} />
+        </Routes>
+      </BrowserRouter>
     </React.StrictMode>
 );
 
