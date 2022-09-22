@@ -18,6 +18,8 @@
 
 .chain-upgrades-title th {
   padding: 1em;
+  backdrop-filter: blur(10px);
   height: 70px;
+  font-family: "Segoe Ui Bold";
   background: rgba(82, 82, 82, 0.6);
 }

@@ -29,7 +29,8 @@ const Infra = () => {
         <div className="relayer-info">
           <p className="relayer-title">Our IBC Relayer</p>
           <p className="relayer-text">
-            We provide IBC relayers to support the Cosmos ecosystem. If you want to support our works please delegate to our validators 
+            We provide IBC relayers to support the Cosmos ecosystem. If you want
+            to support our works please delegate to our validators
           </p>
         </div>
 

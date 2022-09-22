@@ -28,6 +28,7 @@ const ChainUpgradeList = (props) => {
           let obj = { ...res.data };
           const info = await axios.get(`${upgrade[index].api}/information`);
           obj["currentHeight"] = info.data.height;
+          obj["ping"] = upgrade[index].ping;
           obj["blockTime"] = info.data.blockTime;
           obj["name"] = upgrade[index].name;
           loadedUpgrade.push(obj);
@@ -67,6 +68,8 @@ const ChainUpgradeList = (props) => {
                       : data.name
                   }
                   currentHeight={data.currentHeight}
+                  id={data.id}
+                  ping={data.ping}
                   version={data.version}
                   updateHeight={data.height}
                   estimateTime={
