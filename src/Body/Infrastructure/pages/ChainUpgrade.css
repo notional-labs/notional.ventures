@@ -30,7 +30,10 @@
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1920px) {
-    .title {
-        font-size: calc(100vw * 3*16 / 1920);
+    .chain-upgrade-title {
+        font-size: calc(100vw * 60 / 1920);
+    }
+    .chain-upgrade-text {
+        font-size: calc(100vw * 30 / 1920);
     }
 }

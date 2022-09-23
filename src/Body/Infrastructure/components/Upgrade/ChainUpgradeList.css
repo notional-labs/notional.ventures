@@ -18,8 +18,18 @@
 
 .chain-upgrades-title th {
   padding: 1em;
-  backdrop-filter: blur(10px);
   height: 70px;
   font-family: "Segoe Ui Bold";
+  font-weight: 500;
+  font-size: 15px;
   background: rgba(82, 82, 82, 0.6);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1027px) {
+  /* .chain-upgrade-table {
+    width: calc(100vw / 1920 * 80);
+  } */
+  .chain-upgrades-title th {
+    font-size: calc(100vw * 30 / 1920);
+  }
 }
