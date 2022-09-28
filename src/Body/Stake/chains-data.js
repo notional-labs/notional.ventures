@@ -1,5 +1,6 @@
 import Atom from "../../media/logo/chains-data/Gaia.svg";
-import Osmosis from "../../media/logo/chains-data/Osmosis.svg";
+import 
+from "../../media/logo/chains-data/Osmosis.svg";
 import Juno from "../../media/logo/chains-data/Juno.svg";
 import Cyber from "../../media/logo/chains-data/Cyber.svg";
 import Starname from "../../media/logo/chains-data/Starname.svg";
@@ -41,7 +42,7 @@ export const STAKES = [
     keplr: "osmosis",
     ping: "osmosis",
     address: "osmovaloper1083svrca4t350mphfv9x45wq9asrs60c6rv0j5",
-    rank: "8"
+    rank: "16"
   },
   {
     id: "s2",
