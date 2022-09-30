@@ -41,7 +41,7 @@ export const STAKES = [
     keplr: "osmosis",
     ping: "osmosis",
     address: "osmovaloper1083svrca4t350mphfv9x45wq9asrs60c6rv0j5",
-    rank: "8"
+    rank: "16"
   },
   {
     id: "s2",
