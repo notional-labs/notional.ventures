@@ -1,6 +1,5 @@
 import Atom from "../../media/logo/chains-data/Gaia.svg";
-import 
-from "../../media/logo/chains-data/Osmosis.svg";
+import Osmosis from "../../media/logo/chains-data/Osmosis.svg";
 import Juno from "../../media/logo/chains-data/Juno.svg";
 import Cyber from "../../media/logo/chains-data/Cyber.svg";
 import Starname from "../../media/logo/chains-data/Starname.svg";
