@@ -42,28 +42,23 @@ function App() {
       }, 4000)
     },[])
     return (
-        // <React.Fragment>
-        //     {isLoading && (
-        //         <div className="loader-container">
-        //             <GifLoader 
-        //                 className="loading-logo"
-        //                 loading={true}
-        //                 imageSrc={Loading}
-        //             />
-        //             <p className="loading-title">DID YOU KNOW</p>
-        //             <p className="loading-text">{randomText}</p>
-        //         </div>
-        //     )}
-        //     {!isLoading && (
-        //         <div className="root">
-        //             <Home />
-        //         </div>
-        //     )}
-        // </React.Fragment>
         <React.Fragment>
-            <div className="root">
-                <Home />
-            </div>
+            {isLoading && (
+                <div className="loader-container">
+                    <GifLoader 
+                        className="loading-logo"
+                        loading={true}
+                        imageSrc={Loading}
+                    />
+                    <p className="loading-title">DID YOU KNOW</p>
+                    <p className="loading-text">{randomText}</p>
+                </div>
+            )}
+            {!isLoading && (
+                <div className="root">
+                    <Home />
+                </div>
+            )}
         </React.Fragment>
     );
 }
