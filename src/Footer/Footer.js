@@ -1,6 +1,5 @@
 import "./Footer.css";
 import React from "react";
-import NotionalLogo from "../media/logo/notional.png";
 import { Image } from "antd";
 import Github from "../media/icon/github.png";
 import Twitter from "../media/icon/twitter.png";
@@ -9,9 +8,13 @@ import Telegram from "../media/icon/telegram.png";
 const Footer = () => {
     return (
         <div className="footer">
-            <Image className="footer-img" src={NotionalLogo} preview={false} />
-            <p className="footer-text">Meet the global social commnuity:</p>
+            <div className="policy">
+                <div>2022 © Notional</div>
+                <a href="https://forest-couch-240.notion.site/Terms-of-Service-1db7fb3fe55448d6838b1ad1900d353b" className="policy-links">Terms of Service</a>
+                <a href="https://www.notion.so/Privacy-Policy-Notional-e360313466d5407584e446a502d546db" className="policy-links">Privacy Policy</a>
+            </div>
             <div className="media-link">
+            <p className="footer-text">Meet the global social commnuity:</p>
                 {/* <a><Image className="icon-footer__img" preview ={false} src={Discord}/></a> */}
                 <a href="https://github.com/notional-labs">
                     <Image
