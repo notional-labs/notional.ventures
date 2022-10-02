@@ -4,7 +4,7 @@ import SideDrawer from "./SideDrawer";
 import React, { useState } from "react";
 import NavBtn from "../media/button/nav-btn.png";
 import { Image } from "antd";
-// import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [drawerHandler, setDrawerHandler] = useState(false);
@@ -22,8 +22,9 @@ const Navbar = () => {
       setColor(false);
     }
   };
+
   window.addEventListener("scroll", changeColor);
-  
+
   return (
     <div className="nav-container">
       <SideDrawer show={drawerHandler} onCancel={closeDrawerHandler}>
@@ -35,8 +36,13 @@ const Navbar = () => {
             <li>
               <a href="#Delegate">Delegate</a>
             </li>
-            <li>
+            <li className="dropdown-menu">
               <a href="#Infra">Infrastructure</a>
+              <div className="navigation-content">
+                <Link to="/endpoint">Endpoints</Link>
+                <Link to="/snapshot">Snapshots</Link>
+                <Link to="/upgrade">Chains Upgrade</Link>
+              </div>
             </li>
             <li>
               <a href="#Project">Projects</a>
@@ -83,8 +89,13 @@ const Navbar = () => {
             <li>
               <a href="#Delegate">Delegate</a>
             </li>
-            <li>
+            <li className="dropdown-menu">
               <a href="#Infra">Infrastructure</a>
+              <div className="navigation-content">
+                <Link to="/endpoint">Endpoints</Link>
+                <Link to="/snapshot">Snapshots</Link>
+                <Link to="/upgrade">Chains Upgrade</Link>
+              </div>
             </li>
             <li>
               <a href="#Project">Projects</a>
