@@ -60,7 +60,7 @@ const ChainUpgradeList = (props) => {
         {!isLoading ? (
           newState.map(
             (data) =>
-              parseInt(data.currentHeight) < data.height && (
+              parseInt(data.currentHeight) <= data.height && (
                 <ChainUpgradeItem
                   name={
                     data.votingPeriod === "True"
