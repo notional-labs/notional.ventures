@@ -29,7 +29,6 @@
   justify-content: space-around;
   margin-right: 2rem;
   cursor: pointer;
-  /* z-index: 100; */
 }
 
 .main-navigation-btn {
@@ -65,7 +64,6 @@
   text-decoration: none;
   font-size: 45px;
   position: relative;
-  font-weight: 700;
 }
 
 .dropdown-menu:hover .navigation-content {
@@ -77,7 +75,7 @@
   position: absolute;
   background-color: #48484855;
   backdrop-filter: blur(30px);
-  min-width: 250px;
+  min-width: 200px;
   border-radius: 8px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.384);
   z-index: 1;
@@ -108,8 +106,8 @@
 }
 
 .main-nav-list li a:hover {
-  font-weight: 1000;
-  color: #dfc3ff;
+  font-family: "Segoe UI Semibold";
+  color: #c897ff;
   cursor: pointer;
   position: relative;
   z-index: 5;
