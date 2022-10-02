@@ -8,8 +8,8 @@ import Endpoint from "../../media/imgs/Infrastructure/Logo/Endpoint.svg";
 import Snapshots from "../../media/imgs/Infrastructure/Logo/Snapshot.svg";
 import Upgrade from "../../media/imgs/Infrastructure/Logo/Update.svg";
 import Uptime from "../../media/imgs/Infrastructure/Logo/Uptime1.svg";
+import Tenderduty from "../../media/imgs/Infrastructure/Logo/Tenderduty.svg";
 import Abstract from "../../media/imgs/Infrastructure/abstract.png";
-import Background from "../../media/imgs/Infrastructure/background.png";
 
 const Infra = () => {
   return (
@@ -29,9 +29,8 @@ const Infra = () => {
         <div className="relayer-info">
           <p className="relayer-title">Our IBC Relayer</p>
           <p className="relayer-text">
-            We provide services for various chains in Cosmos Ecosystem, from
-            RPC, gRPC, WebSocket and API to snapshot services and our service
-            uptime monitor status. Feel free to checkout all service.
+            We provide IBC relayers to support the Cosmos ecosystem. If you want
+            to support our works please delegate to our validators
           </p>
         </div>
 
@@ -73,7 +72,7 @@ const Infra = () => {
           className="link"
         >
           <button className="service-item">
-            <Image src={Uptime} preview={false} />
+            <Image src={Tenderduty} preview={false} />
             <div className="service-item-name">TENDERDUTY</div>
           </button>
         </a>

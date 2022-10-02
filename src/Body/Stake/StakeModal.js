@@ -5,8 +5,9 @@ import { Image, Tooltip } from "antd";
 import Backdrop from "./Backdrop";
 import Zoom from "@mui/material/Zoom";
 import StakeUptime from "./StakeUptime";
-import Notional from "../../media/logo/logo.png";
+// import Notional from "../../media/logo/logo.png";
 import Keplr from "../../media/imgs/Stake/explorers/keplr.png";
+import PingPub from "../../media/imgs/Stake/explorers/ping.png";
 import Close from "../../media/button/x-btn.svg";
 import Modal_divisor from "../../media/imgs/Stake/modal-divisor.png";
 import Info_divisor from "../../media/imgs/Stake/info-divisor.png";
@@ -174,14 +175,14 @@ const ModalOverlay = (props) => {
                         <a 
                             onClick={() =>
                                 window.open(
-                                    `https://explorer.notional.ventures/${props.ping}/staking/${props.address}`
+                                    `https://ping.pub/${props.ping}/staking/${props.address}`
                                 )
                             }
                             className="link"
                         >
-                            Delegate with Notional
+                            Delegate with PingPub
                         </a>
-                        <img src={Notional} className="iconsasd" />
+                        <img src={PingPub} className="iconsasd" />
                     </button>
                 </div>
             </div>

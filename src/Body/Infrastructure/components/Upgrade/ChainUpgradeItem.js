@@ -1,17 +1,30 @@
 import React from "react";
 import "./ChainUpgradeItem.css";
 
-
 const ChainUpgradeItem = (props) => {
-  const estimatedHours = ((props.updateHeight - parseInt(props.currentHeight)) * props.blockTime) / 3600
-  return (
+  return props !== "undefined" ? (
     <>
       <tr className="chain-upgrade-items">
-        <td>{props.name}</td>
+        <td
+          onClick={() =>
+            window.open(
+              `https://explorer.notional.ventures/${props.ping}/gov/${props.id}`
+            )
+          }
+          style={{ cursor: "pointer" }}
+        >
+          {props.name}
+        </td>
         <td>{props.currentHeight}</td>
         <td>{props.updateHeight}</td>
         <td>{props.version}</td>
         <td>{props.estimateTime}</td>
+      </tr>
+    </>
+  ) : (
+    <>
+      <tr className="chain-upgrade-items">
+        <td className="not-found" colSpan={5}>We didn't find any chain-upgrades available right now.</td>
       </tr>
     </>
   );

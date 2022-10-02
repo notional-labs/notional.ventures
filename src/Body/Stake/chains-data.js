@@ -41,7 +41,7 @@ export const STAKES = [
     keplr: "osmosis",
     ping: "osmosis",
     address: "osmovaloper1083svrca4t350mphfv9x45wq9asrs60c6rv0j5",
-    rank: "8"
+    rank: "16"
   },
   {
     id: "s2",
@@ -69,7 +69,7 @@ export const STAKES = [
     keplr: "juno",
     ping: "juno",
     address: "junovaloper1083svrca4t350mphfv9x45wq9asrs60cpqzg0y",
-    rank: "16"
+    rank: "18"
   },
   {
     id: "s4",
@@ -143,7 +143,7 @@ export const STAKES = [
     keplr: "evmos",
     ping: "evmos",
     address: "evmosvaloper1rv94jqhlhx6makfwl6qs390e4shg32m6w6dxzy",
-    rank: "9"
+    rank: "17"
 
   },
   {

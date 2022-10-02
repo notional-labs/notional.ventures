@@ -6,9 +6,9 @@
 
 .chain-upgrade-table {
   color: white;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 80rem;
-  height: 200px;
+  height: auto;
   border-collapse: collapse;
   border-radius: 1em;
   overflow: hidden;
@@ -18,6 +18,18 @@
 
 .chain-upgrades-title th {
   padding: 1em;
-background: rgba(82, 82, 82, 0.8);
+  height: 70px;
+  font-family: "Segoe Ui Bold";
+  font-weight: 500;
+  font-size: 15px;
+  background: rgba(82, 82, 82, 0.6);
 }
 
+@media only screen and (min-width: 360px) and (max-width: 1027px) {
+  /* .chain-upgrade-table {
+    width: calc(100vw / 1920 * 80);
+  } */
+  .chain-upgrades-title th {
+    font-size: calc(100vw * 30 / 1920);
+  }
+}
