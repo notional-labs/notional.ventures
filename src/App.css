@@ -1,22 +1,6 @@
 @font-face {
-  font-family: 'SegoeUI-Italic';
-  src: url('./media/fonts/SegoeUI-Italic.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'SegoeUI-Bold';
   src: url('./media/fonts/SegoeUI-Bold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SegoeUI-BoldItalic';
-  src: url('./media/fonts/SegoeUI-BoldItalic.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -31,32 +15,8 @@
 }
 
 @font-face {
-  font-family: 'SegoeUI-SemilightItalic';
-  src: url('./media/fonts/SegoeUI-SemilightItalic.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'SegoeUI-LightItalic';
   src: url('./media/fonts/SegoeUI-LightItalic.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SegoeUI-Semilight';
-  src: url('./media/fonts/SegoeUI-Semilight.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SegoeUI-SemiboldItalic';
-  src: url('./media/fonts/SegoeUI-SemiboldItalic.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -77,8 +37,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-
 
 html {
   scroll-behavior: smooth;
