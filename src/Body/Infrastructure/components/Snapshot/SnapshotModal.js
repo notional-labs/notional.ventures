@@ -179,7 +179,7 @@ const ModalOverlay = (props) => {
   let content = (
     <div className="snapshot-modal">
       <div className="modal-top">
-        <img src={props.image} />
+        <img src={props.image} alt="An modal image" />
         <p>{props.name}</p>
       </div>
       <div className="modal-bottom">

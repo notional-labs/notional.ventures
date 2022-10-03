@@ -20,7 +20,7 @@ const ModalOverlay = (props) => {
       </div>
       <ol className="nav-menu">
         {Object.keys(props).map((key, index) => (
-          <li style={{listStyle: "none"}}>
+          <li style={{ listStyle: "none" }}>
             <a className="nav-menu-option">{props[key]}</a>
           </li>
         ))}

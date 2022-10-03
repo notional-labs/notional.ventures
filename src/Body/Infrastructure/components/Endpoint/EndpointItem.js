@@ -41,6 +41,7 @@ const EndpointItem = (props) => {
         <div className="dropdown-icon">
           <Image
             className="dropdown-btn_active"
+            alt="An dropdown image"
             src={Dropdown}
             preview={false}
           />

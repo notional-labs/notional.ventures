@@ -24,7 +24,7 @@ const Contributions = () => {
 
   return (
     <div className="contributions">
-      <img src={Filter} className="filter" />
+      <img src={Filter} alt="Just a filter" className="filter" />
       <div id="Contribution" className="title">
         <hr className="bar"></hr>
         <p className="name">Contributions</p>
@@ -37,7 +37,7 @@ const Contributions = () => {
           Osmosis, Juno, and Sifchain.{" "}
         </p>
       </div>
-      <img src={Abstract} className="abstract-contribution" />
+      <img src={Abstract} alt="An abstract image" className="abstract-contribution" />
       <AutoSlide />
 
       <div className="companyinfo">

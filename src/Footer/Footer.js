@@ -15,17 +15,18 @@ const Footer = () => {
             </div>
             <div className="media-link">
             <p className="footer-text">Meet the global social commnuity:</p>
-                {/* <a><Image className="icon-footer__img" preview ={false} src={Discord}/></a> */}
                 <a href="https://github.com/notional-labs">
                     <Image
                         className="icon-footer__img"
                         preview={false}
+                        alt="An github image"
                         src={Github}
                     />
                 </a>
                 <a href="https://twitter.com/notionaldao">
                     <Image
                         className="icon-footer__img"
+                        alt="An twitter image"
                         preview={false}
                         src={Twitter}
                     />
@@ -33,6 +34,7 @@ const Footer = () => {
                 <a href="https://web.telegram.org/z/#-542022627">
                     <Image
                         className="icon-footer__img"
+                        alt="An telegram image"
                         preview={false}
                         src={Telegram}
                     />

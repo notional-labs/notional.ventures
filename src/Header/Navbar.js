@@ -39,9 +39,15 @@ const Navbar = () => {
             <li className="dropdown-menu">
               <a href="#Infra">Infrastructure</a>
               <div className="navigation-content">
-                <Link to="/endpoint" style={{fontSize:"20px"}}>Endpoints</Link>
-                <Link to="/snapshot" style={{fontSize:"20px"}}>Snapshots</Link>
-                <Link to="/upgrade" style={{fontSize:"20px"}}>Chains Upgrade</Link>
+                <Link to="/endpoint" style={{ fontSize: "20px" }}>
+                  Endpoints
+                </Link>
+                <Link to="/snapshot" style={{ fontSize: "20px" }}>
+                  Snapshots
+                </Link>
+                <Link to="/upgrade" style={{ fontSize: "20px" }}>
+                  Chains Upgrade
+                </Link>
               </div>
             </li>
             <li>
@@ -76,6 +82,7 @@ const Navbar = () => {
               margin: "1rem",
               marginLeft: "0",
             }}
+            alt="An image"
             src={NavBtn}
             preview={false}
           />
@@ -92,9 +99,15 @@ const Navbar = () => {
             <li className="dropdown-menu">
               <a href="#Infra">Infrastructure</a>
               <div className="navigation-content">
-                <Link to="/endpoint" style={{fontSize:"20px"}}>Endpoints</Link>
-                <Link to="/snapshot" style={{fontSize:"20px"}}>Snapshots</Link>
-                <Link to="/upgrade" style={{fontSize:"20px"}}>Chains Upgrade</Link>
+                <Link to="/endpoint" style={{ fontSize: "20px" }}>
+                  Endpoints
+                </Link>
+                <Link to="/snapshot" style={{ fontSize: "20px" }}>
+                  Snapshots
+                </Link>
+                <Link to="/upgrade" style={{ fontSize: "20px" }}>
+                  Chains Upgrade
+                </Link>
               </div>
             </li>
             <li>

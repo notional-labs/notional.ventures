@@ -14,7 +14,7 @@ import Abstract from "../../media/imgs/Infrastructure/abstract.avif";
 const Infra = () => {
   return (
     <div id="Infra" className="infra-section">
-      <img src={Abstract} className="infra-abstract" />
+      <img src={Abstract} alt="An abstract image" className="infra-abstract" />
       <div className="title">
         <hr className="bar"></hr>
         <p className="name">Infrastructure</p>
@@ -40,19 +40,19 @@ const Infra = () => {
       <div className="services">
         <Link to="/endpoint" className="link">
           <button className="service-item">
-            <Image src={Endpoint} preview={false} />
+            <Image src={Endpoint} alt="An endpoint image" preview={false} />
             <div className="service-item-name">ENDPOINTS</div>
           </button>
         </Link>
-        <Link to="/snapshot" className="link">
+        <Link to="/snapshot"  className="link">
           <button className="service-item">
-            <Image src={Snapshots} preview={false} />
+            <Image src={Snapshots} alt="An snapshot image" preview={false} />
             <div className="service-item-name">SNAPSHOTS</div>
           </button>
         </Link>
         <Link to="/upgrade" className="link">
           <button className="service-item">
-            <Image src={Upgrade} preview={false} />
+            <Image src={Upgrade} alt="An upgrade image" preview={false} />
             <div className="service-item-name">CHAINS UPGRADE</div>
           </button>
         </Link>
@@ -63,7 +63,7 @@ const Infra = () => {
           className="link"
         >
           <button className="service-item">
-            <Image src={Uptime} preview={false} />
+            <Image src={Uptime} alt="An uptime image" preview={false} />
             <div className="service-item-name">UPTIME KUMA</div>
           </button>
         </a>
@@ -72,7 +72,7 @@ const Infra = () => {
           className="link"
         >
           <button className="service-item">
-            <Image src={Tenderduty} preview={false} />
+            <Image src={Tenderduty} alt="An tenderduty image" preview={false} />
             <div className="service-item-name">TENDERDUTY</div>
           </button>
         </a>

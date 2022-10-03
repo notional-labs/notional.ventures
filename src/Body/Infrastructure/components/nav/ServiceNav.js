@@ -65,6 +65,7 @@ const ServiceNav = () => {
               "margin-left": "0",
             }}
             src={NavBtn}
+            alt="An nav image"
             preview={false}
           />
         </button>

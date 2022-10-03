@@ -23,7 +23,7 @@ const Header = () => {
         <div className="header">
             <Navbar />
             <Group17 className="lines" />
-            <img src={Abstract} className="abstract" />
+            <img src={Abstract} alt="An abstract image" className="abstract" />
             <Akash className="akash" />
             <Osmosis className="osmosis" />
             <Secret className="secret" />
