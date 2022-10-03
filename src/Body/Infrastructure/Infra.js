@@ -58,7 +58,7 @@ const Infra = () => {
         </Link>
         <a
           onClick={() =>
-            window.open(`https://status.notional.ventures/status/cosmosia`)
+            window.open(`https://status.notional.ventures`)
           }
           className="link"
         >
