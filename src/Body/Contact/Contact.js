@@ -62,7 +62,8 @@ const Contact = () => {
               onClick={() => window.open(`https://github.com/notional-labs`)}
               style={{ cursor: "pointer" }}
             >
-              <Image className="img-icon" src={Github} preview={false} />
+              <Image className="img-icon"
+              alt="An image" src={Github} preview={false} />
               <p>github.com/notional-labs</p>
             </div>
           </div>

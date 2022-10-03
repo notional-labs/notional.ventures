@@ -6,7 +6,6 @@ import "./StakeUptimeBlock.css";
 
 const UptimeBlock = (props) => {
   let { height, uptime } = props;
-  // console.log(height, uptime);
   if (uptime.length === 0) {
     return (
       <Tooltip TransitionComponent={Zoom} title={height}>

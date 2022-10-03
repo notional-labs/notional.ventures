@@ -16,7 +16,6 @@ const Contributions = () => {
     try {
       const res = await axios.get(`https://backend.notional.ventures`);
       setData(res.data);
-      console.log(data); 
     } catch (err) {
       console.log(err.message);
     }
