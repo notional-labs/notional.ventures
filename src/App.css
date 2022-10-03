@@ -100,9 +100,9 @@ html {
   max-height: 400px;
 }
 
-.loader-container img {
-  height: 100%;
-  margin: auto !important;
+.loader-container video {
+  height: 30%;
+  margin-bottom: -5%;
 }
 
 .loading-title {

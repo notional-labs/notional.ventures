@@ -4,8 +4,7 @@ import { STAKES } from "../../Stake/chains-data";
 import ServiceNav from "../components/nav/ServiceNav";
 import EndpointList from "../components/Endpoint/EndpointList";
 import { useState, useEffect } from "react";
-import GifLoader from "react-gif-loader";
-import Loading from "../../../media/imgs/loading.gif";
+import Loading from "../../../media/imgs/loading.webm";
 
 const facts = ["Notional strives to satisfy our customers",
 "We use rate-limit endpoints to protect our service from attacks",
@@ -25,11 +24,9 @@ const Endpoint = () => {
     <>
       {isLoading && (
         <div className="loader-container">
-          <GifLoader
-            className="loading-logo"
-            loading={true}
-            imageSrc={Loading}
-          />
+          <video autoPlay loop muted playsInline>
+            <source src={Loading} type="video/webm" />
+          </video>
           <p className="loading-title">DID YOU KNOW</p>
           <p className="loading-text">{randomText}</p>
         </div>

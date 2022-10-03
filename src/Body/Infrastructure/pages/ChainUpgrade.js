@@ -4,8 +4,7 @@ import ServiceNav from "../components/nav/ServiceNav";
 import { STAKES } from "../../Stake/chains-data";
 import { useState, useEffect } from "react";
 import ChainUpgradeList from "../components/Upgrade/ChainUpgradeList";
-import GifLoader from "react-gif-loader";
-import Loading from "../../../media/imgs/loading.gif";
+import Loading from "../../../media/imgs/loading.webm";
 
 const facts = ["Notional strives to satisfy our customers"];
 
@@ -22,11 +21,9 @@ const ChainUpgrade = () => {
     <>
       {isLoading && (
         <div className="loader-container">
-          <GifLoader
-            className="loading-logo"
-            loading={true}
-            imageSrc={Loading}
-          />
+          <video autoPlay loop muted playsInline>
+            <source src={Loading} type="video/webm" />
+          </video>
           <p className="loading-title">DID YOU KNOW</p>
           <p className="loading-text">{randomText}</p>
         </div>

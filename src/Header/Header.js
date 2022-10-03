@@ -2,7 +2,7 @@ import "./Header.css";
 import Navbar from "./Navbar";
 import React from "react";
 import { ReactComponent as Group17 } from "../media/imgs/Header/abstract-2.svg";
-import Abstract from "../media/imgs/Header/abstract-1.png";
+import Abstract from "../media/imgs/Header/abstract-1.avif";
 import { ReactComponent as Osmosis } from "../media/logo/Header/Osmosis.svg";
 import { ReactComponent as Juno } from "../media/logo/Header/Juno.svg";
 import { ReactComponent as Atom } from "../media/logo/Header/Atom.svg";

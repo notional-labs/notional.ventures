@@ -3,8 +3,7 @@ import "./Snapshot.css";
 import ServiceNav from "../components/nav/ServiceNav";
 import { STAKES } from "../../Stake/chains-data";
 import SnapshotList from "../components//Snapshot/SnapshotList";
-import GifLoader from "react-gif-loader";
-import Loading from "../../../media/imgs/loading.gif";
+import Loading from "../../../media/imgs/loading.webm";
 import { useState, useEffect } from "react";
 const facts = [
   "We currently support PebbleDB snapshot",
@@ -25,11 +24,9 @@ const Snapshot = () => {
     <>
       {isLoading && (
         <div className="loader-container">
-          <GifLoader
-            className="loading-logo"
-            loading={true}
-            imageSrc={Loading}
-          />
+          <video autoPlay loop muted playsInline>
+            <source src={Loading} type="video/webm" />
+          </video>
           <p className="loading-title">DID YOU KNOW</p>
           <p className="loading-text">{randomText}</p>
         </div>

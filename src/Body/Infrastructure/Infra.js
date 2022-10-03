@@ -9,7 +9,7 @@ import Snapshots from "../../media/imgs/Infrastructure/Logo/Snapshot.svg";
 import Upgrade from "../../media/imgs/Infrastructure/Logo/Update.svg";
 import Uptime from "../../media/imgs/Infrastructure/Logo/Uptime1.svg";
 import Tenderduty from "../../media/imgs/Infrastructure/Logo/Tenderduty.svg";
-import Abstract from "../../media/imgs/Infrastructure/abstract.png";
+import Abstract from "../../media/imgs/Infrastructure/abstract.avif";
 
 const Infra = () => {
   return (

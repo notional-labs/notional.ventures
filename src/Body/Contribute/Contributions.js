@@ -1,9 +1,9 @@
 import "./Contributions.css";
 import React, { useState, useEffect } from "react";
 import AutoSlide from "./PartnerCarousel";
-import Filter from "../../media/imgs/Contribution/filter-contribution.png";
+import Filter from "../../media/imgs/Contribution/filter-contribution.avif";
 import axios from "axios";
-import Abstract from "../../media/imgs/Contribution/abstract-contribution.png";
+import Abstract from "../../media/imgs/Contribution/abstract-contribution.avif";
 
 const Contributions = () => {
   const [data, setData] = useState([]);
