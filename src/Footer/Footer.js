@@ -19,14 +19,14 @@ const Footer = () => {
                     <Image
                         className="icon-footer__img"
                         preview={false}
-                        alt="An github image"
+                        alt="An github"
                         src={Github}
                     />
                 </a>
                 <a href="https://twitter.com/notionaldao">
                     <Image
                         className="icon-footer__img"
-                        alt="An twitter image"
+                        alt="An twitter"
                         preview={false}
                         src={Twitter}
                     />
@@ -34,7 +34,7 @@ const Footer = () => {
                 <a href="https://web.telegram.org/z/#-542022627">
                     <Image
                         className="icon-footer__img"
-                        alt="An telegram image"
+                        alt="An telegram"
                         preview={false}
                         src={Telegram}
                     />

@@ -18,7 +18,7 @@ export const members = [
     <div className="member">
       <Image
         src={jacob}
-        alt="An image"
+        alt="An"
         className="member-img"
         preview={false}
       />
@@ -35,7 +35,7 @@ export const members = [
     <div className="member">
       <Image
         src={khanh}
-        alt="An image"
+        alt="An"
         className="member-img"
         preview={false}
       />
@@ -52,7 +52,7 @@ export const members = [
     <div className="member">
       <Image
         src={ricardo}
-        alt="An image"
+        alt="An"
         className="member-img"
         preview={false}
       />
@@ -69,7 +69,7 @@ export const members = [
     <div className="member">
       <Image
         src={billy}
-        alt="An image"
+        alt="An"
         className="member-img"
         preview={false}
       />
@@ -84,7 +84,7 @@ export const members = [
   </div>,
   <div>
     <div className="member">
-      <Image src={long} alt="An image" className="member-img" preview={false} />
+      <Image src={long} alt="An" className="member-img" preview={false} />
       <p className="member-name">Long Mai Gia</p>
       <p className="member-position">Infrastructure Lead</p>
       <p className="member-description">
@@ -95,7 +95,7 @@ export const members = [
   </div>,
   <div>
     <div className="member">
-      <Image src={son} alt="An image" className="member-img" preview={false} />
+      <Image src={son} alt="An" className="member-img" preview={false} />
       <p className="member-name">Son Trinh</p>
       <p className="member-position">Blockchain Engineer</p>
       <p className="member-description">
@@ -109,7 +109,7 @@ export const members = [
     <div className="member">
       <Image
         src={vuong}
-        alt="An image"
+        alt="An"
         className="member-img"
         preview={false}
       />
@@ -123,7 +123,7 @@ export const members = [
   </div>,
   <div>
     <div className="member">
-      <Image src={minh} alt="An image" className="member-img" preview={false} />
+      <Image src={minh} alt="An" className="member-img" preview={false} />
       <p className="member-name">Minh Vu Le Nhat</p>
       <p className="member-position">
         Service Technician and Customer Engineer
@@ -137,7 +137,7 @@ export const members = [
   </div>,
   <div>
     <div className="member">
-      <Image src={vinh} alt="An image" className="member-img" preview={false} />
+      <Image src={vinh} alt="An" className="member-img" preview={false} />
       <p className="member-name">Vinh Nguyen</p>
       <p className="member-position">Project Manager</p>
       <p className="member-description">
@@ -149,7 +149,7 @@ export const members = [
   </div>,
   <div>
     <div className="member">
-      <Image src={du} alt="An image" className="member-img" preview={false} />
+      <Image src={du} alt="An" className="member-img" preview={false} />
       <p className="member-name">Du Nguyen</p>
       <p className="member-position">Infrastructure</p>
       <p className="member-description">
@@ -163,7 +163,7 @@ export const members = [
     <div className="member">
       <Image
         src={brenhill}
-        alt="An image"
+        alt="An"
         className="member-img"
         preview={false}
       />
@@ -174,7 +174,7 @@ export const members = [
   </div>,
   <div>
     <div className="member">
-      <Image src={huy} alt="An image" className="member-img" preview={false} />
+      <Image src={huy} alt="An" className="member-img" preview={false} />
       <p className="member-name">Huy Nguyen</p>
       <p className="member-position">Designer</p>
       <p className="member-description"></p>
@@ -182,7 +182,7 @@ export const members = [
   </div>,
   <div>
     <div className="member">
-      <Image src={hieu} alt="An image" className="member-img" preview={false} />
+      <Image src={hieu} alt="An" className="member-img" preview={false} />
       <p className="member-name">Hieu Vu</p>
       <p className="member-position">CosmWasm Developer</p>
       <p className="member-description"></p>

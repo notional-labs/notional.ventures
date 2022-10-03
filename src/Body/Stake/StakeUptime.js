@@ -26,10 +26,10 @@ const Uptime = (props) => {
   ];
 
   return (
-    <div class="uptime">
+    <div className="uptime">
       <div className="uptime-header">Uptime</div>
 
-      <img src={Divisor} alt="An image" className="divisor" />
+      <img src={Divisor} alt="An divisor" className="divisor" />
 
       <div className="label">
         <p>Last 100 blocks</p>
@@ -38,7 +38,7 @@ const Uptime = (props) => {
       <Container className="chart">
         <Row className="row">
           {idr1.map((id) => (
-            <Col className="col">
+            <Col key={id} className="col">
               <StakeUptimeBlock
                 height={height - id}
                 uptime={uptime}
@@ -49,7 +49,7 @@ const Uptime = (props) => {
         </Row>
         <Row className="row">
           {idr2.map((id) => (
-            <Col className="col">
+            <Col key={id} className="col">
               <StakeUptimeBlock
                 height={height - id}
                 uptime={uptime}
@@ -60,7 +60,7 @@ const Uptime = (props) => {
         </Row>
         <Row className="row">
           {idr3.map((id) => (
-            <Col className="col">
+            <Col key={id} className="col">
               <StakeUptimeBlock
                 height={height - id}
                 uptime={uptime}
@@ -71,7 +71,7 @@ const Uptime = (props) => {
         </Row>
         <Row className="row">
           {idr4.map((id) => (
-            <Col className="col">
+            <Col key={id} className="col">
               <StakeUptimeBlock
                 height={height - id}
                 uptime={uptime}

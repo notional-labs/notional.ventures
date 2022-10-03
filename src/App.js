@@ -1,5 +1,5 @@
-import React from "react";
-import "../src/App.css";
+import React, { useState, useEffect } from "react";
+import "./App.css";
 import Header from "./Header/Header";
 import Contributions from "./Body/Contribute/Contributions";
 import Stake from "./Body/Stake/Stake";
@@ -8,28 +8,12 @@ import Project from "./Body/Project/Project";
 import Team from "./Body/Team/Team";
 import Contact from "./Body/Contact/Contact";
 import Footer from "./Footer/Footer";
-import { useState, useEffect } from "react";
 import Loading from "./media/imgs/loading.webm";
 
 const facts = [
   "Notional strives to satisfy our customers",
   "We are changing our Endpoint services, please go to Endpoints section to see the new endpoints",
 ];
-
-const Home = () => {
-  return (
-    <>
-      <Header />
-      <Contributions />
-      <Stake />
-      <Infrastructure />
-      <Project />
-      <Team />
-      <Contact />
-      <Footer />
-    </>
-  );
-};
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -38,7 +22,7 @@ function App() {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 3000);
   }, []);
   return (
     <React.Fragment>
@@ -53,7 +37,14 @@ function App() {
       )}
       {!isLoading && (
         <div className="root">
-          <Home />
+          <Header />
+          <Contributions />
+          <Stake />
+          <Infrastructure />
+          <Project />
+          <Team />
+          <Contact />
+          <Footer />
         </div>
       )}
     </React.Fragment>

@@ -19,35 +19,34 @@ import { ReactComponent as Blue } from "../media/imgs/Header/blue.svg";
 import { ReactComponent as Green } from "../media/imgs/Header/green.svg";
 
 const Header = () => {
-    return (
-        <div className="header">
-            <Navbar />
-            <Group17 className="lines" />
-            <img src={Abstract} alt="An abstract image" className="abstract" />
-            <Akash className="akash" />
-            <Osmosis className="osmosis" />
-            <Secret className="secret" />
-            <Juno className="juno" />
-            <Atom className="atom" />
-            <Evmos className="evmos" />
-            <Omniflix className="omniflix" />
-            <Sif className="sifchain" />
-            <Orange className="orange" />
-            <Yellow className="yellow" />
-            <Purple className="purple" />
-            <Red className="red" />
-            <Blue className="blue" />
-            <Green className="green" />
+  return (
+    <div id="Header" className="header">
+      <Navbar />
+      <Group17 className="lines" />
+      <img src={Abstract} alt="An abstract" className="abstract" />
+      <Akash className="akash" />
+      <Osmosis className="osmosis" />
+      <Secret className="secret" />
+      <Juno className="juno" />
+      <Atom className="atom" />
+      <Evmos className="evmos" />
+      <Omniflix className="omniflix" />
+      <Sif className="sifchain" />
+      <Orange className="orange" />
+      <Yellow className="yellow" />
+      <Purple className="purple" />
+      <Red className="red" />
+      <Blue className="blue" />
+      <Green className="green" />
 
-            <div className="description">
-                <hr className="bar"></hr>
-                <p className="greetings">
-                    Edge Validation, Relaying, and Open-Source Software
-                    Development
-                </p>
-            </div>
-        </div>
-    );
+      <div className="description">
+        <hr className="bar"></hr>
+        <p className="greetings">
+          Edge Validation, Relaying, and Open-Source Software Development
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Header;

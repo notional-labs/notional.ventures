@@ -45,7 +45,7 @@ const ModalOverlay = (props) => {
         onClick={props.onCancel}
         preview={false}
         className="close-btn-mobile"
-        alt="An close image"
+        alt="An close"
         src={Close}
       />
 
@@ -55,7 +55,7 @@ const ModalOverlay = (props) => {
             <Image
               preview={false}
               className="chainLogo"
-              alt="An chain image"
+              alt="An chain"
               src={props.image}
             />
             <div className="chainLabel">{props.name}</div>
@@ -63,69 +63,73 @@ const ModalOverlay = (props) => {
 
           <img
             src={Info_divisor}
-            alt="An divisor image"
+            alt="An divisor"
             className="info-divisor"
           />
 
           <table className="chainDetail">
-            <tr>
-              <td className="detailLabel">Chain ID:</td>
-              <td className="detailValue">{props.chainid}</td>
-            </tr>
-            <tr>
-              <td className="detailLabel">Block Height:</td>
-              <td className="detailValue">
-                {props.blockheight.toLocaleString()}
-              </td>
-            </tr>
-            <tr>
-              <td className="detailLabel">Block Time:</td>
-              <td className="detailValue">{props.blocktime.toFixed(2)}s</td>
-            </tr>
-            <tr>
-              <td className="detailLabel">Price:</td>
-              <td className="detailValue">$ {props.price.toFixed(2)}</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className="detailLabel">Chain ID:</td>
+                <td className="detailValue">{props.chainid}</td>
+              </tr>
+              <tr>
+                <td className="detailLabel">Block Height:</td>
+                <td className="detailValue">
+                  {props.blockheight.toLocaleString()}
+                </td>
+              </tr>
+              <tr>
+                <td className="detailLabel">Block Time:</td>
+                <td className="detailValue">{props.blocktime.toFixed(2)}s</td>
+              </tr>
+              <tr>
+                <td className="detailLabel">Price:</td>
+                <td className="detailValue">$ {props.price.toFixed(2)}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
         <table className="validator-section">
-          <tr>
-            <td className="validatorLabel">Validator:</td>
-            <td className="validatorValue">Notional</td>
-          </tr>
-          <tr>
-            <td className="validatorLabel">Address:</td>
-            <td
-              className="validatorValue"
-              style={{ cursor: "pointer" }}
-              onClick={() => copyToClipboard(props.address)}
-            >
-              <Tooltip TransitionComponent={Zoom} title={copyFeedback}>
-                {smartTrim(props.address, 25)}
-              </Tooltip>
-            </td>
-          </tr>
-          <tr>
-            <td className="validatorLabel">Rank:</td>
-            <td className="validatorValue">{props.rank}</td>
-          </tr>
-          <tr>
-            <td className="validatorLabel">Commission:</td>
-            <td className="validatorValue">{props.commission * 100}%</td>
-          </tr>
-          <tr>
-            <td className="validatorLabel">Voting Power:</td>
-            <td className="validatorValue">
-              {props.votingPower.toLocaleString("en-US")}
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="validatorLabel">Validator:</td>
+              <td className="validatorValue">Notional</td>
+            </tr>
+            <tr>
+              <td className="validatorLabel">Address:</td>
+              <td
+                className="validatorValue"
+                style={{ cursor: "pointer" }}
+                onClick={() => copyToClipboard(props.address)}
+              >
+                <Tooltip TransitionComponent={Zoom} title={copyFeedback}>
+                  {smartTrim(props.address, 25)}
+                </Tooltip>
+              </td>
+            </tr>
+            <tr>
+              <td className="validatorLabel">Rank:</td>
+              <td className="validatorValue">{props.rank}</td>
+            </tr>
+            <tr>
+              <td className="validatorLabel">Commission:</td>
+              <td className="validatorValue">{props.commission * 100}%</td>
+            </tr>
+            <tr>
+              <td className="validatorLabel">Voting Power:</td>
+              <td className="validatorValue">
+                {props.votingPower.toLocaleString("en-US")}
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
 
       <img
         src={Modal_divisor}
-        alt="An divisor image"
+        alt="An divisor"
         className="modal-divisor"
       />
 
@@ -160,7 +164,7 @@ const ModalOverlay = (props) => {
                 Delegate with Keplr
               </a>
 
-              <img src={Keplr} alt="An keplr image" className="iconsasd" />
+              <img src={Keplr} alt="An keplr" className="iconsasd" />
             </button>
           ) : (
             <button className="delegate-btn keplr">
@@ -179,7 +183,7 @@ const ModalOverlay = (props) => {
                 Delegate with Keplr
               </a>
 
-              <img src={Keplr} alt="An keplr image" className="iconsasd" />
+              <img src={Keplr} alt="An keplr" className="iconsasd" />
             </button>
           )}
           <button className="delegate-btn ping">
@@ -193,14 +197,14 @@ const ModalOverlay = (props) => {
             >
               Delegate with PingPub
             </a>
-            <img src={PingPub} alt="An ping image" className="iconsasd" />
+            <img src={PingPub} alt="An ping" className="iconsasd" />
           </button>
         </div>
       </div>
       <Image
         onClick={props.onCancel}
         preview={false}
-        alt="An close image"
+        alt="An close"
         className="close-btn-pc"
         src={Close}
       />

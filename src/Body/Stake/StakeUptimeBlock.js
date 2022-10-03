@@ -9,7 +9,7 @@ const UptimeBlock = (props) => {
   if (uptime.length === 0) {
     return (
       <Tooltip TransitionComponent={Zoom} title={height}>
-        <Image className="block" alt="An image" preview={false} src={nomiss} />
+        <Image className="block" alt="An" preview={false} src={nomiss} />
       </Tooltip>
     );
   } else {
@@ -20,7 +20,7 @@ const UptimeBlock = (props) => {
           <Tooltip TransitionComponent={Zoom} title={height}>
             <Image
               className="block"
-              alt="An image"
+              alt="An"
               preview={false}
               src={miss}
             />
@@ -30,7 +30,7 @@ const UptimeBlock = (props) => {
     }
     return (
       <Tooltip TransitionComponent={Zoom} title={height}>
-        <Image className="block" alt="An image" src={nomiss} preview={false} />
+        <Image className="block" alt="An" src={nomiss} preview={false} />
       </Tooltip>
     );
   }

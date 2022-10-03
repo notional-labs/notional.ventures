@@ -20,7 +20,7 @@ const Contact = () => {
       <div className="contact">
         <Image
           className="img-contact"
-          alt="An contact image"
+          alt="An contact"
           src={ContactBackground}
           preview={false}
         />
@@ -30,7 +30,7 @@ const Contact = () => {
             <div className="contact-items">
               <Image
                 className="img-icon"
-                alt="An mail image"
+                alt="An mail"
                 src={Email}
                 preview={false}
               />
@@ -51,7 +51,7 @@ const Contact = () => {
             >
               <Image
                 className="img-icon"
-                alt="An twitter image"
+                alt="An twitter"
                 src={Twitter}
                 preview={false}
               />
@@ -63,7 +63,7 @@ const Contact = () => {
               style={{ cursor: "pointer" }}
             >
               <Image className="img-icon"
-              alt="An image" src={Github} preview={false} />
+              alt="An" src={Github} preview={false} />
               <p>github.com/notional-labs</p>
             </div>
           </div>

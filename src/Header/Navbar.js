@@ -43,7 +43,7 @@ const Navbar = () => {
                   Endpoints
                 </Link>
                 <Link to="/snapshot" style={{ fontSize: "20px" }}>
-                  Snapshots
+                  Snapshot
                 </Link>
                 <Link to="/upgrade" style={{ fontSize: "20px" }}>
                   Chains Upgrade
@@ -64,7 +64,7 @@ const Navbar = () => {
       </SideDrawer>
 
       <div className={color ? "nav nav-bg" : "nav"}>
-        <div href="#" className="logo" style={{ cursor: "pointer" }}>
+        <a href="#Header" className="logo" style={{ cursor: "pointer" }}>
           <Image
             style={{ width: "200px" }}
             className="logo-img"
@@ -72,7 +72,7 @@ const Navbar = () => {
             alt="Logo"
             preview={false}
           />
-        </div>
+        </a>
         <button className="main-navigation-btn" onClick={openDrawerHandler}>
           <Image
             className="btn-img"
@@ -82,7 +82,7 @@ const Navbar = () => {
               margin: "1rem",
               marginLeft: "0",
             }}
-            alt="An image"
+            alt="An"
             src={NavBtn}
             preview={false}
           />
@@ -103,7 +103,7 @@ const Navbar = () => {
                   Endpoints
                 </Link>
                 <Link to="/snapshot" style={{ fontSize: "20px" }}>
-                  Snapshots
+                  Snapshot
                 </Link>
                 <Link to="/upgrade" style={{ fontSize: "20px" }}>
                   Chains Upgrade

@@ -5,7 +5,7 @@ import Graph from "./components/graph/Graph";
 import { Link } from "react-router-dom";
 import { Image } from "antd";
 import Endpoint from "../../media/imgs/Infrastructure/Logo/Endpoint.svg";
-import Snapshots from "../../media/imgs/Infrastructure/Logo/Snapshot.svg";
+import Snapshot from "../../media/imgs/Infrastructure/Logo/Snapshot.svg";
 import Upgrade from "../../media/imgs/Infrastructure/Logo/Update.svg";
 import Uptime from "../../media/imgs/Infrastructure/Logo/Uptime1.svg";
 import Tenderduty from "../../media/imgs/Infrastructure/Logo/Tenderduty.svg";
@@ -14,7 +14,7 @@ import Abstract from "../../media/imgs/Infrastructure/abstract.avif";
 const Infra = () => {
   return (
     <div id="Infra" className="infra-section">
-      <img src={Abstract} alt="An abstract image" className="infra-abstract" />
+      <img src={Abstract} alt="An abstract" className="infra-abstract" />
       <div className="title">
         <hr className="bar"></hr>
         <p className="name">Infrastructure</p>
@@ -40,19 +40,19 @@ const Infra = () => {
       <div className="services">
         <Link to="/endpoint" className="link">
           <button className="service-item">
-            <Image src={Endpoint} alt="An endpoint image" preview={false} />
+            <Image src={Endpoint} alt="An endpoint" preview={false} />
             <div className="service-item-name">ENDPOINTS</div>
           </button>
         </Link>
         <Link to="/snapshot"  className="link">
           <button className="service-item">
-            <Image src={Snapshots} alt="An snapshot image" preview={false} />
-            <div className="service-item-name">SNAPSHOTS</div>
+            <Image src={Snapshot} alt="An snapshot" preview={false} />
+            <div className="service-item-name">SNAPSHOT</div>
           </button>
         </Link>
         <Link to="/upgrade" className="link">
           <button className="service-item">
-            <Image src={Upgrade} alt="An upgrade image" preview={false} />
+            <Image src={Upgrade} alt="An upgrade" preview={false} />
             <div className="service-item-name">CHAINS UPGRADE</div>
           </button>
         </Link>
@@ -63,7 +63,7 @@ const Infra = () => {
           className="link"
         >
           <button className="service-item">
-            <Image src={Uptime} alt="An uptime image" preview={false} />
+            <Image src={Uptime} alt="An uptime" preview={false} />
             <div className="service-item-name">UPTIME KUMA</div>
           </button>
         </a>
@@ -72,7 +72,7 @@ const Infra = () => {
           className="link"
         >
           <button className="service-item">
-            <Image src={Tenderduty} alt="An tenderduty image" preview={false} />
+            <Image src={Tenderduty} alt="An tenderduty" preview={false} />
             <div className="service-item-name">TENDERDUTY</div>
           </button>
         </a>

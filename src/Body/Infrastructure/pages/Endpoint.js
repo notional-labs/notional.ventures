@@ -14,7 +14,9 @@ const facts = ["Notional strives to satisfy our customers",
 const Endpoint = () => {
   const [isLoading, setIsLoading] = useState(false);
   const randomText = facts[Math.floor(Math.random() * facts.length)];
+
   useEffect(() => {
+    document.title = "Endpoints | Notional";
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
@@ -36,7 +38,7 @@ const Endpoint = () => {
           <ServiceNav />
           <div className="endpoint-container">
             <p className="endpoint-title">
-              Chain Endpoints
+              Public Endpoints
             </p>
             <p className="endpoint-text">
             We provide public RPC, gRPC, and API services for all the chains we are validating. If you want to access non-rate-limited endpoints, please contact us through contact@notional.ventures or on Twitter @notionaldao.

@@ -36,7 +36,7 @@ const Contributions = () => {
           Osmosis, Juno, and Sifchain.{" "}
         </p>
       </div>
-      <img src={Abstract} alt="An abstract image" className="abstract-contribution" />
+      <img src={Abstract} alt="An abstract" className="abstract-contribution" />
       <AutoSlide />
 
       <div className="companyinfo">
