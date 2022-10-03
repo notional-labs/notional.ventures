@@ -25,14 +25,14 @@
 
 .stake-section .title .name {
   /* margin-top: 20px; */
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 60px;
   color: white;
   z-index: inherit;
 }
 
 .stake-section .title .text {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 22px;
   color: white;
   width: 60%;

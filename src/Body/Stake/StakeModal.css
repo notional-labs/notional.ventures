@@ -42,7 +42,7 @@
 }
 
 .modal .chain-section .chainInfo .chainLabel {
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
   font-weight: 500;
   font-size: 30px;
 }
@@ -64,12 +64,12 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUI";
 }
 
 .modal .chain-section .chainDetail .detailValue {
   text-align: right;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
 }
 
 .modal .validator-section {
@@ -80,7 +80,7 @@
 }
 
 .modal .validator-section .validatorLabel {
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUI";
   max-width: 150px;
   min-width: 150px;
   padding-top: 20px;
@@ -89,7 +89,7 @@
 }
 
 .modal .validator-section .validatorValue {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   max-width: 400px;
   min-width: 400px;
   text-align: right;
@@ -235,7 +235,7 @@
   }
   
   .modal .leftModule .chain-section .chainInfo .chainLabel {
-    font-family: "Segoe UI Semibold";
+    font-family: "SegoeUI-Semibold";
     font-size: calc(100vw / 1920 * 40);
   }
   
@@ -256,12 +256,12 @@
     padding-top: calc(100vw / 1920 * 12);
     padding-bottom: calc(100vw / 1920 * 12);
     text-align: left;
-    font-family: "Segoe UI Regular";
+    font-family: "SegoeUI";
   }
   
   .modal .leftModule .chain-section .chainDetail .detailValue {
     text-align: right;
-    font-family: "Segoe UI Light";
+    font-family: "SegoeUI-Light";
   }
 
   .modal .validator-section {
@@ -271,7 +271,7 @@
   }
 
   .modal .validator-section .validatorLabel {
-    font-family: "Segoe UI Regular";
+    font-family: "SegoeUI";
     max-width: calc(100vw / 1920 * 150);
     min-width: calc(100vw / 1920 * 150);
     padding-top: 0px;
@@ -280,7 +280,7 @@
   }
   
   .modal .validator-section .validatorValue {
-    font-family: "Segoe UI Light";
+    font-family: "SegoeUI-Light";
     max-width: calc(100vw / 1920 * 400);
     min-width: calc(100vw / 1920 * 400);
     text-align: right;

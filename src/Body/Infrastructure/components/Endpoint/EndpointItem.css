@@ -111,7 +111,7 @@ li:after {
 .dropdown-chain-name {
   color: #fbfbfb;
   align-self: center;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 25px;
   margin: 10px;
   z-index: 1;
@@ -144,7 +144,7 @@ ol .sub-menu {
 
 ol .sub-menu li {
   margin-bottom: 5px;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 20px;
   color: white;
 }

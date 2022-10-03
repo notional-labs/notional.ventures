@@ -83,7 +83,7 @@
 
 .main-nav-list {
   list-style: none;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -106,7 +106,7 @@
 }
 
 .main-nav-list li a:hover {
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
   color: #c897ff;
   cursor: pointer;
   position: relative;

@@ -35,13 +35,13 @@
 
 .infra-section .title .name {
   /* margin-top: 20px; */
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 60px;
   color: white;
 }
 
 .infra-section .title .text {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 20px;
   width: 60%;
   margin: 1rem auto;
@@ -68,13 +68,13 @@
 }
 
 .infra-section .relayer .relayer-info .relayer-title {
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
   color: white;
   font-size: 40px;
 }
 
 .infra-section .relayer .relayer-info .relayer-text {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   color: white;
   font-size: 20px;
 }

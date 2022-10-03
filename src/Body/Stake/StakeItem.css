@@ -121,7 +121,7 @@
 }
 
 .stake-item__info {
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
   /* border: yellow 1px solid; */
   color: white;
   z-index: inherit;
@@ -139,7 +139,7 @@
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 30px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
