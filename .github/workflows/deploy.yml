@@ -47,6 +47,7 @@ jobs:
       with:
         local: build
         remote: /root/notional.ventures
+        rmRemote: true
         host: ${{ secrets.WEB_SERVER_2 }}
         username: ${{ secrets.USERNAME }}
         privateKey: ${{ secrets.PRIV_KEY_2 }}
