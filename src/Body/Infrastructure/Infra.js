@@ -56,7 +56,7 @@ const Infra = () => {
             <div className="service-item-name">CHAINS UPGRADE</div>
           </button>
         </Link>
-        <a
+        <div
           onClick={() =>
             window.open(`https://status.notional.ventures`)
           }
@@ -66,8 +66,8 @@ const Infra = () => {
             <Image src={Uptime} alt="An uptime" preview={false} />
             <div className="service-item-name">UPTIME KUMA</div>
           </button>
-        </a>
-        <a
+        </div>
+        <div
           onClick={() => window.open(`https://tenderduty.notional.ventures`)}
           className="link"
         >
@@ -75,7 +75,7 @@ const Infra = () => {
             <Image src={Tenderduty} alt="An tenderduty" preview={false} />
             <div className="service-item-name">TENDERDUTY</div>
           </button>
-        </a>
+        </div>
       </div>
     </div>
   );
