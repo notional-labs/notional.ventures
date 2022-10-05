@@ -6,7 +6,6 @@ import ErrorModal from "./ErrorModal";
 import { Link} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-
 const StakeItem = (props) => {
   let history = useNavigate()
   const [showHandler, setShowHandler] = useState(false);
@@ -30,7 +29,6 @@ const StakeItem = (props) => {
 
   const showModalHandler = () => {
     setShowHandler(true);
-
   };
 
   const closeErrorHandler = () => {

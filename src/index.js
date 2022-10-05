@@ -11,7 +11,6 @@ import ChainUpgrade from "./Body/Infrastructure/pages/ChainUpgrade";
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
-    <React.StrictMode>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
@@ -19,10 +18,8 @@ root.render(
           <Route path="endpoint" element={<Endpoint />} />
           <Route path="upgrade" element={<ChainUpgrade />} />
           <Route path="stake/:id" element={<App showModal={true} />} />
-
         </Routes>
       </BrowserRouter>
-    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
