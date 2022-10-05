@@ -39,13 +39,13 @@
 }
 
 .contributions .title .name {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 60px;
   color: white;
 }
 
 .contributions .title .text {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 22px;
   color: white;
   width: 70%;
@@ -56,13 +56,13 @@
 }
 
 .info-number {
-  font-family: "Segoe UI Bold";
+  font-family: "SegoeUI-Bold";
   text-align: center;
   font-size: 100px;
 }
 
 .info-text {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   text-align: center;
   font-size: 32px;
 }

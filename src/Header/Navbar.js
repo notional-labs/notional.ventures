@@ -39,9 +39,15 @@ const Navbar = () => {
             <li className="dropdown-menu">
               <a href="#Infra">Infrastructure</a>
               <div className="navigation-content">
-                <Link to="/endpoint" style={{fontSize:"20px"}}>Endpoints</Link>
-                <Link to="/snapshot" style={{fontSize:"20px"}}>Snapshots</Link>
-                <Link to="/upgrade" style={{fontSize:"20px"}}>Chains Upgrade</Link>
+                <Link to="/endpoint" style={{ fontSize: "20px" }}>
+                  Endpoints
+                </Link>
+                <Link to="/snapshot" style={{ fontSize: "20px" }}>
+                  Snapshot
+                </Link>
+                <Link to="/upgrade" style={{ fontSize: "20px" }}>
+                  Chains Upgrade
+                </Link>
               </div>
             </li>
             <li>
@@ -58,7 +64,7 @@ const Navbar = () => {
       </SideDrawer>
 
       <div className={color ? "nav nav-bg" : "nav"}>
-        <div href="#" className="logo" style={{ cursor: "pointer" }}>
+        <a href="#Header" className="logo" style={{ cursor: "pointer" }}>
           <Image
             style={{ width: "200px" }}
             className="logo-img"
@@ -66,7 +72,7 @@ const Navbar = () => {
             alt="Logo"
             preview={false}
           />
-        </div>
+        </a>
         <button className="main-navigation-btn" onClick={openDrawerHandler}>
           <Image
             className="btn-img"
@@ -76,6 +82,7 @@ const Navbar = () => {
               margin: "1rem",
               marginLeft: "0",
             }}
+            alt="An"
             src={NavBtn}
             preview={false}
           />
@@ -92,9 +99,15 @@ const Navbar = () => {
             <li className="dropdown-menu">
               <a href="#Infra">Infrastructure</a>
               <div className="navigation-content">
-                <Link to="/endpoint" style={{fontSize:"20px"}}>Endpoints</Link>
-                <Link to="/snapshot" style={{fontSize:"20px"}}>Snapshots</Link>
-                <Link to="/upgrade" style={{fontSize:"20px"}}>Chains Upgrade</Link>
+                <Link to="/endpoint" style={{ fontSize: "20px" }}>
+                  Endpoints
+                </Link>
+                <Link to="/snapshot" style={{ fontSize: "20px" }}>
+                  Snapshot
+                </Link>
+                <Link to="/upgrade" style={{ fontSize: "20px" }}>
+                  Chains Upgrade
+                </Link>
               </div>
             </li>
             <li>

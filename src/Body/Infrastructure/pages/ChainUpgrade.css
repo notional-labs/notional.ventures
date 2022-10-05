@@ -1,5 +1,5 @@
 .chain-upgrade-section {
-    background-image: url("../../../media/imgs/Infrastructure/Endpoints/Background.png");
+    background-image: url("../../../media/imgs/Infrastructure/Endpoints/Background.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,13 +19,13 @@
 
 .chain-upgrade-title {
     margin-top: 150px;
-    font-family: "Segoe UI Semibold";
+    font-family: "SegoeUI-Semibold";
     font-size: 60px;
     margin-bottom: 10px;
 }
 
 .chain-upgrade-text {
-    font-family: "Segoe UI Light";
+    font-family: "SegoeUI-Light";
     font-size: 20px;
 }
 

@@ -23,7 +23,7 @@
 
 .project .title .name {
   /* margin-top: 20px; */
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 60px;
   color: white;
 
@@ -49,7 +49,7 @@
   }
   
   .project .title .name {
-    font-family: "Segoe UI Light";
+    font-family: "SegoeUI-Light";
     font-size: calc(100vw * 60 / 1920);
     color: white;
   }

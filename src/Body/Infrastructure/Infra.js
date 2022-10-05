@@ -5,16 +5,16 @@ import Graph from "./components/graph/Graph";
 import { Link } from "react-router-dom";
 import { Image } from "antd";
 import Endpoint from "../../media/imgs/Infrastructure/Logo/Endpoint.svg";
-import Snapshots from "../../media/imgs/Infrastructure/Logo/Snapshot.svg";
+import Snapshot from "../../media/imgs/Infrastructure/Logo/Snapshot.svg";
 import Upgrade from "../../media/imgs/Infrastructure/Logo/Update.svg";
 import Uptime from "../../media/imgs/Infrastructure/Logo/Uptime1.svg";
 import Tenderduty from "../../media/imgs/Infrastructure/Logo/Tenderduty.svg";
-import Abstract from "../../media/imgs/Infrastructure/abstract.png";
+import Abstract from "../../media/imgs/Infrastructure/abstract.avif";
 
 const Infra = () => {
   return (
     <div id="Infra" className="infra-section">
-      <img src={Abstract} className="infra-abstract" />
+      <img src={Abstract} alt="An abstract" className="infra-abstract" />
       <div className="title">
         <hr className="bar"></hr>
         <p className="name">Infrastructure</p>
@@ -40,42 +40,42 @@ const Infra = () => {
       <div className="services">
         <Link to="/endpoint" className="link">
           <button className="service-item">
-            <Image src={Endpoint} preview={false} />
+            <Image src={Endpoint} alt="An endpoint" preview={false} />
             <div className="service-item-name">ENDPOINTS</div>
           </button>
         </Link>
-        <Link to="/snapshot" className="link">
+        <Link to="/snapshot"  className="link">
           <button className="service-item">
-            <Image src={Snapshots} preview={false} />
-            <div className="service-item-name">SNAPSHOTS</div>
+            <Image src={Snapshot} alt="An snapshot" preview={false} />
+            <div className="service-item-name">SNAPSHOT</div>
           </button>
         </Link>
         <Link to="/upgrade" className="link">
           <button className="service-item">
-            <Image src={Upgrade} preview={false} />
+            <Image src={Upgrade} alt="An upgrade" preview={false} />
             <div className="service-item-name">CHAINS UPGRADE</div>
           </button>
         </Link>
-        <a
+        <div
           onClick={() =>
-            window.open(`https://status.notional.ventures/status/cosmosia`)
+            window.open(`https://status.notional.ventures`)
           }
           className="link"
         >
           <button className="service-item">
-            <Image src={Uptime} preview={false} />
+            <Image src={Uptime} alt="An uptime" preview={false} />
             <div className="service-item-name">UPTIME KUMA</div>
           </button>
-        </a>
-        <a
+        </div>
+        <div
           onClick={() => window.open(`https://tenderduty.notional.ventures`)}
           className="link"
         >
           <button className="service-item">
-            <Image src={Tenderduty} preview={false} />
+            <Image src={Tenderduty} alt="An tenderduty" preview={false} />
             <div className="service-item-name">TENDERDUTY</div>
           </button>
-        </a>
+        </div>
       </div>
     </div>
   );

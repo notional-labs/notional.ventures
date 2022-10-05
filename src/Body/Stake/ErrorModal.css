@@ -16,13 +16,13 @@
 }
 
 .errormodal h1 {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 35px;
   color: white;
 }
 
 .errormodal p {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 20px;
   width: 25rem;
   margin: 0 auto;
@@ -33,7 +33,7 @@
   font-size: 200px;
   line-height: 50%;
   margin-bottom: 0;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
 }
 
 /* .error-btn {

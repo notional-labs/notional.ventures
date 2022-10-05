@@ -28,7 +28,7 @@ const EndpointItem = (props) => {
   };
 
   return (
-    <li className="dropdown-container">
+    <li key={props.id} className="dropdown-container">
       <a className="dropdown-btn" href="#0">
         <img
           className="dropdown-chain-icon"
@@ -41,14 +41,15 @@ const EndpointItem = (props) => {
         <div className="dropdown-icon">
           <Image
             className="dropdown-btn_active"
+            alt="An dropdown"
             src={Dropdown}
             preview={false}
           />
         </div>
       </a>
 
-      <ol class="sub-menu">
-        <li class="menu-item-1">
+      <ol className="sub-menu">
+        <li key="rpc" className="menu-item-1">
           <a
             href="#0"
             className="menu-item-text"
@@ -60,7 +61,7 @@ const EndpointItem = (props) => {
             </Tooltip>
           </a>
         </li>
-        <li class="menu-item-2">
+        <li key="api" className="menu-item-2">
           <a
             href="#0"
             className="menu-item-text"
@@ -72,7 +73,7 @@ const EndpointItem = (props) => {
             </Tooltip>
           </a>
         </li>
-        <li class="menu-item-3">
+        <li key="grpc" className="menu-item-3">
           <a
             href="#0"
             className="menu-item-text"

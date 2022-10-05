@@ -50,33 +50,36 @@ const ChainUpgradeList = (props) => {
   return (
     <div className="chain-upgrades">
       <table className="chain-upgrade-table">
-        <tr className="chain-upgrades-title">
-          <th>NETWORK</th>
-          <th>CURRENT BLOCK</th>
-          <th>UPDATE BLOCK</th>
-          <th>VERSION</th>
-          <th>ESTIMATED TIME LEFT</th>
-        </tr>
+        <thead className="chain-upgrades-title">
+          <tr>
+            <th>NETWORK</th>
+            <th>CURRENT BLOCK</th>
+            <th>UPDATE BLOCK</th>
+            <th>VERSION</th>
+            <th>ESTIMATED TIME LEFT</th>
+          </tr>
+        </thead>
         {!isLoading ? (
           newState.map(
             (data) =>
               parseInt(data.currentHeight) <= data.height && (
                 <ChainUpgradeItem
+                  key={data.id}
                   name={
                     data.votingPeriod === "True"
                       ? data.name + " (Voting Period)"
                       : data.name
                   }
                   currentHeight={data.currentHeight}
-                  id={data.id}
                   ping={data.ping}
                   version={data.version}
                   updateHeight={data.height}
                   estimateTime={
                     <EstimateTime
-                      estimatedTime={
-                        ((data.height - data.currentHeight) * data.blockTime).toFixed(0)
-                      }
+                      estimatedTime={(
+                        (data.height - data.currentHeight) *
+                        data.blockTime
+                      ).toFixed(0)}
                     />
                   }
                 />

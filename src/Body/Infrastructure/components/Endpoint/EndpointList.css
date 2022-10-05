@@ -11,6 +11,6 @@
     backdrop-filter: blur(10px);
     margin-bottom: 10px;
     position: relative;
+    list-style: none;
     border-radius: 10px;
-
 }

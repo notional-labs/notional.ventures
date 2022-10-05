@@ -51,7 +51,7 @@
 }
 
 .modal-top p {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 30px;
   margin: 0;
   margin-right: auto;
@@ -81,7 +81,7 @@
 .modal-navbar li {
   margin: 10px 0px;
   list-style: none;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 20px;
 }
 
@@ -94,7 +94,7 @@
 .modal-navbar li .modal-navbar-option-focus {
   background: rgba(163, 163, 163, 0.2);
   border-radius: 10px;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
 }
 
 .modal-navbar li .modal-navbar-option-focus:after {
@@ -118,18 +118,18 @@
 
 .modal-right .h1 {
   color: white;
-  font-family: "Segoe UI Bold";
+  font-family: "SegoeUI-Bold";
   font-size: 30px;
   line-height: 2rem;
 }
 
 .modal-right .h2 {
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
   color: white;
 }
 
 .modal-right .p-content {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   color: white;
   font-size: 15px;
 }
@@ -170,7 +170,7 @@
 
 .download-btn .download-btn-text {
   padding: 15px 30px;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 15px;
@@ -192,7 +192,7 @@
 
 .download-btn:hover .download-btn-text {
   animation: scaleUp 0.3s ease-in-out;
-  font-family: "Segoe UI Bold";
+  font-family: "SegoeUI-Bold";
   color: white;
 }
 

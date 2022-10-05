@@ -4,24 +4,24 @@ import * as THREE from "three";
 
 const gData = {
   nodes: [
-    { id: "atom", img: "gaia.png", weight: "2" },
-    { id: "emoney", img: "emoney.png", weight: "1" },
-    { id: "fetch", img: "fetch.png", weight: "1" },
-    { id: "axelar", img: "axelar.png", weight: "1" },
-    { id: "juno", img: "juno.png", weight: "1" },
-    { id: "osmosis", img: "osmosis.png", weight: "2" },
-    { id: "sifchain", img: "sifchain.png", weight: "1" },
-    { id: "omniflix", img: "omniflix.png", weight: "1" },
-    { id: "akash", img: "akash.png", weight: "1" },
-    { id: "dig", img: "digchain.png", weight: "1" },
-    { id: "kava", img: "kava.png", weight: "1" },
-    { id: "evmos", img: "evmos.png", weight: "1" },
-    { id: "regen", img: "regen.png", weight: "1" },
-    { id: "iris", img: "iris.png", weight: "1" },
-    { id: "injective", img: "injective.png", weight: "1" },
-    { id: "sentinel", img: "sentinel.png", weight: "1" },
-    { id: "konstellation", img: "konstellation.png", weight: "1" },
-    { id: "crypto", img: "cryto-org.png", weight: "1" },
+    { id: "atom", img: "gaia.avif", weight: "2" },
+    { id: "emoney", img: "emoney.avif", weight: "1" },
+    { id: "fetch", img: "fetch.avif", weight: "1" },
+    { id: "axelar", img: "axelar.avif", weight: "1" },
+    { id: "juno", img: "juno.avif", weight: "1" },
+    { id: "osmosis", img: "osmosis.avif", weight: "2" },
+    { id: "sifchain", img: "sifchain.avif", weight: "1" },
+    { id: "omniflix", img: "omniflix.avif", weight: "1" },
+    { id: "akash", img: "akash.avif", weight: "1" },
+    { id: "dig", img: "digchain.avif", weight: "1" },
+    { id: "kava", img: "kava.avif", weight: "1" },
+    { id: "evmos", img: "evmos.avif", weight: "1" },
+    { id: "regen", img: "regen.avif", weight: "1" },
+    { id: "iris", img: "iris.avif", weight: "1" },
+    { id: "injective", img: "injective.avif", weight: "1" },
+    { id: "sentinel", img: "sentinel.avif", weight: "1" },
+    { id: "konstellation", img: "konstellation.avif", weight: "1" },
+    { id: "crypto", img: "cryto-org.avif", weight: "1" },
   ],
   links: [
     { source: "osmosis", target: "atom" },
@@ -73,7 +73,6 @@ const Graph = () => {
 
   window.addEventListener('resize', () => {
     setDisplayWidth(window.innerWidth < 2125 ? window.innerWidth * 0.48 : 1700 * 0.6);
-    // console.log(window.innerWidth, displayWidth);
   });
 
   return (

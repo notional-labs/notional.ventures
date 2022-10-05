@@ -3,13 +3,11 @@ import EndpointItem from "./EndpointItem";
 import "./EndpointList.css";
 
 const EndpointList = (props) => {
-  console.log(props)
   return (
     <ol className="endpoint-list">
       {props.rpc.map((stake) => (
-        <li className="endpoint-item">
+        <dd key={stake.id} className="endpoint-item">
           <EndpointItem
-            key={stake.id}
             id={stake.id}
             image={stake.image}
             name={stake.name}
@@ -17,7 +15,7 @@ const EndpointList = (props) => {
             api_service={stake.api_service}
             grpc_service={stake.grpc_service}
           />
-        </li>
+        </dd>
       ))}
     </ol>
   );

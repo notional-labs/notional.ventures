@@ -15,12 +15,12 @@
 }
 
 .calculate .info .label {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 20px;
 }
 
 .calculate .info .value {
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
   font-size: 55px;
 }
 
@@ -82,13 +82,13 @@ div.ant-slider-handle {
 .reward-table .name {
   min-width: 70px;
   max-width: 70px;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 20px;
   text-align: left;
 }
 
 .reward-table .token {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   min-width: 70px;
   max-width: 70px;
   font-size: 20px;
@@ -96,7 +96,7 @@ div.ant-slider-handle {
 }
 
 .reward-table .usd {
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   font-size: 20px;
   text-align: right;
 }

@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   align-self: center;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   align-content: center;
   width: 50px;
   background: linear-gradient(145deg, #1f014b, #1a013f);
@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
   align-self: center;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   align-content: center;
   border-radius: 10px;
   background: linear-gradient(145deg, #1f014b, #1a013f);
@@ -81,7 +81,7 @@
   align-items: center;
   justify-content: center;
   align-self: center;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   align-content: center;
   border-radius: 10px;
   background: linear-gradient(145deg, #1f014b, #1a013f);
@@ -97,7 +97,7 @@
 
 .paginationActive {
   color: white;
-  font-family: "Segoe UI Bold";
+  font-family: "SegoeUI-Bold";
   box-shadow: inset 6px 6px 12px #110129, inset -6px -6px 12px #290163;
 }
 

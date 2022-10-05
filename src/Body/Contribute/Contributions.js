@@ -1,9 +1,9 @@
 import "./Contributions.css";
 import React, { useState, useEffect } from "react";
 import AutoSlide from "./PartnerCarousel";
-import Filter from "../../media/imgs/Contribution/filter-contribution.png";
+import Filter from "../../media/imgs/Contribution/filter-contribution.avif";
 import axios from "axios";
-import Abstract from "../../media/imgs/Contribution/abstract-contribution.png";
+import Abstract from "../../media/imgs/Contribution/abstract-contribution.avif";
 
 const Contributions = () => {
   const [data, setData] = useState([]);
@@ -23,7 +23,7 @@ const Contributions = () => {
 
   return (
     <div className="contributions">
-      <img src={Filter} className="filter" />
+      <img src={Filter} alt="Just a filter" className="filter" />
       <div id="Contribution" className="title">
         <hr className="bar"></hr>
         <p className="name">Contributions</p>
@@ -36,7 +36,7 @@ const Contributions = () => {
           Osmosis, Juno, and Sifchain.{" "}
         </p>
       </div>
-      <img src={Abstract} className="abstract-contribution" />
+      <img src={Abstract} alt="An abstract" className="abstract-contribution" />
       <AutoSlide />
 
       <div className="companyinfo">

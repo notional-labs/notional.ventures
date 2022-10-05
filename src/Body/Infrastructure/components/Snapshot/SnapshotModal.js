@@ -130,7 +130,7 @@ const ModalOverlay = (props) => {
           period.
         </p>
         <h1 className="h1">How to compile PebbleDB? </h1>
-        <p className="p-content">
+        <div className="p-content">
           To get PebbleDB snapshot work with your node, you must compile
           PebbleDb first. This is an example code with Sifchain:
           <p className="code">
@@ -144,7 +144,7 @@ const ModalOverlay = (props) => {
             github.com/tendermint/tm-db.ForceSync=1" ./cmd/sifnoded <br />
             $HOME/go/bin/sifnoded start --db_backend=pebbledb <br />
           </p>
-        </p>
+        </div>
         {/* <h2>RockDB</h2>
       {props.rockSnapshotInfo.addrbook === "NaN" ? (
         <div>Not available</div>
@@ -179,7 +179,7 @@ const ModalOverlay = (props) => {
   let content = (
     <div className="snapshot-modal">
       <div className="modal-top">
-        <img src={props.image} />
+        <img src={props.image} alt="An modal" />
         <p>{props.name}</p>
       </div>
       <div className="modal-bottom">

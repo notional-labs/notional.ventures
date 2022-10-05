@@ -9,7 +9,7 @@ import "./SideDrawer.css";
 const ModalOverlay = (props) => {
   const content = (
     <div className="nav-mobile">
-      <div href="#" className="logo" style={{ cursor: "pointer" }}>
+      <div href="#Header" className="logo" style={{ cursor: "pointer" }}>
         <Image
           style={{ width: "250px" }}
           className="logo-img"
@@ -20,7 +20,7 @@ const ModalOverlay = (props) => {
       </div>
       <ol className="nav-menu">
         {Object.keys(props).map((key, index) => (
-          <li style={{listStyle: "none"}}>
+          <li style={{ listStyle: "none" }}>
             <a className="nav-menu-option">{props[key]}</a>
           </li>
         ))}

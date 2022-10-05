@@ -5,13 +5,13 @@ import { useState } from "react";
 import ReactPaginate from "react-paginate";
 
 const SnapshotList = (props) => {
-  const [snapshots, setSnapshots] = useState(props.snapshots);
+  const [snapshot] = useState(props.snapshot);
   const [pageNumber, setPageNumber] = useState(0);
 
   const snapshotsPerPage = 10;
   const pagesVisited = pageNumber * snapshotsPerPage;
 
-  const displaySnapshots = snapshots
+  const displaySnapshot = snapshot
     .slice(pagesVisited, pagesVisited + snapshotsPerPage)
     .map((snapshot) => {
       return (
@@ -25,13 +25,13 @@ const SnapshotList = (props) => {
         />
       );
     });
-  const pageCount = Math.ceil(snapshots.length / snapshotsPerPage);
+  const pageCount = Math.ceil(snapshot.length / snapshotsPerPage);
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
   return (
     <div className="snapshot-list-container">
-      <ul className="snapshot-list">{displaySnapshots}</ul>
+      <ul className="snapshot-list">{displaySnapshot}</ul>
       <ReactPaginate
         previousLabel={"Previous"}
         nextLabel={"Next"}

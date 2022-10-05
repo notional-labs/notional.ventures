@@ -1,22 +1,41 @@
 @font-face {
-  font-family: "Segoe UI Light";
-  src: url("/src/media/Segoe\ UI/Segoe\ UI\ Light.woff2") format(woff2);
+  font-family: 'SegoeUI-Bold';
+  src: url('./media/fonts/SegoeUI-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "Segoe UI Regular";
-  src: url("/src/media/Segoe\ UI/Segoe\ UI.woff2") format(woff2);
+  font-family: 'SegoeUI-Semibold';
+  src: url('./media/fonts/SegoeUI-Semibold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "Segoe UI Semibold";
-  src: url("/src/media/Segoe\ UI/Segoe\ UI\ Semibold.woff2") format(woff2);
+  font-family: 'SegoeUI-LightItalic';
+  src: url('./media/fonts/SegoeUI-LightItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "Segoe UI Bold";
-  src: url("/src/media/Segoe\ UI/Segoe\ UI\ Bold.woff2") format(woff2);
+  font-family: 'SegoeUI';
+  src: url('./media/fonts/SegoeUI.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "Segoe UI Light Italic";
-  src: url("/src/media/Segoe\ UI/Segoe\ UI\ Light\ Italic.woff2") format(woff2);
+  font-family: 'SegoeUI-Light';
+  src: url('./media/fonts/SegoeUI-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -39,15 +58,15 @@ html {
   max-height: 400px;
 }
 
-.loader-container img {
-  height: 100%;
-  margin: auto !important;
+.loader-container video {
+  height: 30%;
+  margin-bottom: -5%;
 }
 
 .loading-title {
   z-index: 100000;
   margin-top: 100px;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUI-Semibold";
   font-size: 25px;
   color: white;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -56,7 +75,7 @@ html {
 
 .loading-text {
   z-index: 100000;
-  font-family: "Segoe UI Light";
+  font-family: "SegoeUI-Light";
   margin-top: -20px;
   font-size: 20px;
   color: white;
