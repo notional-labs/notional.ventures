@@ -39,7 +39,6 @@ const Home = (props) => {
 
 function App(props) {
     let {id} = useParams();
-    console.log(id);
     const [isLoading, setIsLoading] = useState(false);
     const randomText = facts[Math.floor(Math.random() * facts.length)];
     useEffect (() => {

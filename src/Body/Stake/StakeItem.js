@@ -18,18 +18,10 @@ const StakeItem = (props) => {
     (async () => {
       await fetchChainInfo();
       await getValidatorData()
-    })();
-    // callApiContinously();
-  }, [showHandler]);
-
-  useEffect(() => {
-    (async () => {
-      await fetchChainInfo();
-      await getValidatorData()
       props.showModal === true && props.ping === props.chainName && setShowHandler(true)
     })();
-
-  }, [props.showModal])
+    // callApiContinously();
+  }, [showHandler, props.showModal]);
 
   const closeModalHandler = () => {
     setShowHandler(false);
