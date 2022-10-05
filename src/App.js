@@ -9,7 +9,7 @@ import Contact from "./Body/Contact/Contact";
 import Footer from "./Footer/Footer";
 import GifLoader from "react-gif-loader";
 import { useState, useEffect } from "react";
-import Loading from "./media/imgs/loading.gif";
+import Loading from "./media/imgs/loading.webm";
 import { useParams } from "react-router-dom";
 import React from "react";
 
