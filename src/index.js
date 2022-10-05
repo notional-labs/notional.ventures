@@ -18,6 +18,8 @@ root.render(
           <Route path="snapshot" element={<Snapshot />} />
           <Route path="endpoint" element={<Endpoint />} />
           <Route path="upgrade" element={<ChainUpgrade />} />
+          <Route path="stake/:id" element={<App showModal={true} />} />
+
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

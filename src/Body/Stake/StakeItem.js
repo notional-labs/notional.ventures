@@ -3,25 +3,42 @@ import "./StakeItem.css";
 import Modal from "./StakeModal";
 import axios from "axios";
 import ErrorModal from "./ErrorModal";
+import { Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const StakeItem = (props) => {
+  let history = useNavigate()
   const [showHandler, setShowHandler] = useState(false);
   const [error, setError] = useState(false);
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
   const [validator, setValidator] = useState([]);
 
   useEffect(() => {
-    fetchChainInfo();
-    getValidatorData();
+    (async () => {
+      await fetchChainInfo();
+      await getValidatorData()
+    })();
     // callApiContinously();
   }, [showHandler]);
 
+  useEffect(() => {
+    (async () => {
+      await fetchChainInfo();
+      await getValidatorData()
+      props.showModal === true && props.ping === props.chainName && setShowHandler(true)
+    })();
+
+  }, [props.showModal])
+
   const closeModalHandler = () => {
     setShowHandler(false);
+    history('/')
   };
 
   const showModalHandler = () => {
     setShowHandler(true);
+
   };
 
   const closeErrorHandler = () => {
@@ -49,7 +66,6 @@ const StakeItem = (props) => {
       setError(true);
     }
   };
-
   // const callApiContinously = () => {
   //   setInterval(fetchChainInfo, 12000);
   // };
@@ -96,9 +112,9 @@ const StakeItem = (props) => {
 
         <h2 className="stake-item__info">{props.name}</h2>
 
-        <button onClick={showModalHandler} className="stake-btn">
+        <Link to={`stake/${props.ping}`} onClick={showModalHandler} className="stake-btn">
           Stake
-        </button>
+        </Link>
       </li>
     </React.Fragment>
   );

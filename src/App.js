@@ -11,18 +11,23 @@ import Footer from "./Footer/Footer";
 import GifLoader from "react-gif-loader";
 import { useState, useEffect } from "react";
 import Loading from "./media/imgs/loading.gif";
+import { useParams } from "react-router-dom";
+
 
 const facts = [
     "Notional strives to satisfy our customers", 
     "We are changing our Endpoint services, please go to Endpoints section to see the new endpoints"
 ];
 
-const Home = () => {
+const Home = (props) => {
     return (
         <>
             <Header />
             <Contributions />
-            <Stake />
+            <Stake 
+            showModal = {props.showModal}
+            id = {props.id}
+            />
             <Infrastructure />
             <Project />
             <Team />
@@ -32,7 +37,9 @@ const Home = () => {
     );
 };
 
-function App() {
+function App(props) {
+    let {id} = useParams();
+    console.log(id);
     const [isLoading, setIsLoading] = useState(false);
     const randomText = facts[Math.floor(Math.random() * facts.length)];
     useEffect (() => {
@@ -56,7 +63,10 @@ function App() {
             )}
             {!isLoading && (
                 <div className="root">
-                    <Home />
+                    <Home 
+                        showModal = {props.showModal}
+                        id = {id}
+                    />
                 </div>
             )}
         </React.Fragment>

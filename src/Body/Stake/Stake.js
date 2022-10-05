@@ -3,7 +3,7 @@ import "./Stake.css";
 import { STAKES } from "./chains-data";
 import StakeList from "./StakeList";
 
-const Stake = () => {
+const Stake = (props) => {
   return (
     <div id="Delegate" className="stake-section">
       <div className="title">
@@ -18,7 +18,11 @@ const Stake = () => {
         </p>
       </div>
       <div className="stake">
-        <StakeList stakes={STAKES} />
+        <StakeList 
+          stakes={STAKES} 
+          showModal = {props.showModal}
+          chainName = {props.id}
+        />
       </div>
     </div>
   );

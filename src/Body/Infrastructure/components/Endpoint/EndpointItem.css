@@ -56,7 +56,7 @@ a:after {
 li a {
   color: #fbfbfb;
   display: block;
-  padding: 10px;
+  /* padding: 10px; */
   position: relative;
   text-decoration: none;
   z-index: 1;
