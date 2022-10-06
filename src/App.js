@@ -9,13 +9,15 @@ import Team from "./Body/Team/Team";
 import Contact from "./Body/Contact/Contact";
 import Footer from "./Footer/Footer";
 import Loading from "./media/imgs/loading.webm";
+import { useParams } from "react-router-dom";
 
 const facts = [
   "Notional strives to satisfy our customers",
   "We are changing our Endpoint services, please go to Endpoints section to see the new endpoints",
 ];
 
-function App() {
+function App(props) {
+  let { id } = useParams();
   const [isLoading, setIsLoading] = useState(false);
   const randomText = facts[Math.floor(Math.random() * facts.length)];
   useEffect(() => {
@@ -39,7 +41,7 @@ function App() {
         <div className="root">
           <Header />
           <Contributions />
-          <Stake />
+          <Stake showModal={props.showModal} id={id} />
           <Infrastructure />
           <Project />
           <Team />
