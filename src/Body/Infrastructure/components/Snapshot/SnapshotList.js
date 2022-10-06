@@ -16,7 +16,10 @@ const SnapshotList = (props) => {
     .map((snapshot) => {
       return (
         <SnapshotItem
+          showModal={props.showModal}
+          chainName = {props.chainName}
           key={snapshot.id}
+          ping={snapshot.ping}
           id={snapshot.id}
           image={snapshot.image}
           name={snapshot.name}

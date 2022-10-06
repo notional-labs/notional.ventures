@@ -20,7 +20,7 @@ const StakeItem = (props) => {
       props.showModal === true && props.ping === props.chainName && setShowHandler(true)
     })();
     // callApiContinously();
-  }, [showHandler, props.showModal]);
+  }, [showHandler]);
 
   const closeModalHandler = () => {
     setShowHandler(false);

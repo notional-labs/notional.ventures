@@ -3,8 +3,10 @@ import "./SnapshotItem.css";
 import "./SnapshotModal";
 import SnapshotModal from "./SnapshotModal";
 import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
 
 const SnapshotItem = (props) => {
+  let history = useNavigate();
   const [showModal, setShowModal] = useState(false);
   const [loadedPebbleSnapshotInfo, setLoadedPebbleSnapshotInfo] = useState([]);
   // RocksDB
@@ -15,9 +17,15 @@ const SnapshotItem = (props) => {
   };
   const closeHandler = () => {
     setShowModal(false);
+    history("/snapshot");
   };
   useEffect(() => {
-    fetchSnapshotInfo();
+    (async () => {
+      await fetchSnapshotInfo();
+      props.showModal === true &&
+        props.ping === props.chainName &&
+        setShowModal(true);
+    })();
   }, [showModal]);
   const fetchSnapshotInfo = async () => {
     try {
@@ -40,7 +48,12 @@ const SnapshotItem = (props) => {
         // rockSnapshotInfo={loadedRockSnapshotInfo}
       />
 
-      <li onClick={showHandler} key={props.id} className="snapshot-items">
+      <Link
+        to={`/snapshot/${props.ping}`}
+        onClick={showHandler}
+        key={props.id}
+        className="snapshot-items"
+      >
         <div className="snapshot-item__content">
           <div className="snapshot-item__image">
             <img
@@ -53,7 +66,7 @@ const SnapshotItem = (props) => {
             <h2>{props.name}</h2>
           </div>
         </div>
-      </li>
+      </Link>
     </>
   );
 };
