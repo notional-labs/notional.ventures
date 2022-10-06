@@ -12,8 +12,10 @@ const ChainUpgradeList = (props) => {
   const [loadedUpgrade] = useState([]);
   const [newState, setNewState] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  useEffect( () => {
-    fetchUpgradeInfo();
+  useEffect(() => {
+    (async () => {
+      await fetchUpgradeInfo();
+    })();
   }, [loadedUpgrade]);
 
   const fetchUpgradeInfo = async () => {
