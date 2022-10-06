@@ -8,7 +8,7 @@ const ChainUpgradeItem = (props) => {
         <td
           onClick={() =>
             window.open(
-              `https://explorer.notional.ventures/${props.ping}/gov/${props.id}`
+              `https://ping.pub/${props.ping}/gov/${props.id}`
             )
           }
           style={{ cursor: "pointer" }}
