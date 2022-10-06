@@ -20,9 +20,6 @@ const ChainUpgradeList = (props) => {
     try {
       // setIsLoading(true)
       for (let index = 0; index < upgrade.length; index++) {
-        if (upgrade[index].name === "Kava") {
-          continue;
-        }
         const res = await axios.get(`${upgrade[index].api}/upgrade`);
         if (res.data.version !== "NaN") {
           let obj = { ...res.data };
