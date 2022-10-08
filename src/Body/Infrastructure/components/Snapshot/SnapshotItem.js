@@ -12,6 +12,16 @@ const SnapshotItem = (props) => {
   // RocksDB
   // const [error, setError] = useState(false);
   // const [loadedRockSnapshotInfo, setLoadedRockSnapshotInfo] = useState([]);
+  useEffect(() => {
+    (async () => {
+      await fetchSnapshotInfo();
+      if (props.showModal === true && props.ping === props.chainName) {
+        setShowModal(true);
+      } else {
+        setShowModal(false);
+      }
+    })();
+  }, []);
   const showHandler = () => {
     setShowModal(true);
   };
@@ -19,14 +29,6 @@ const SnapshotItem = (props) => {
     setShowModal(false);
     history("/snapshot");
   };
-  useEffect(() => {
-    (async () => {
-      await fetchSnapshotInfo();
-      props.showModal === true &&
-        props.ping === props.chainName &&
-        setShowModal(true);
-    })();
-  }, [showModal]);
   const fetchSnapshotInfo = async () => {
     try {
       const res = await axios.get(`${props.api}/snapshot`);
@@ -38,7 +40,7 @@ const SnapshotItem = (props) => {
   };
   return (
     <>
-      <SnapshotModal
+      {showModal && <SnapshotModal
         image={props.image}
         name={props.name}
         daenom={props.daenom}
@@ -46,7 +48,7 @@ const SnapshotItem = (props) => {
         show={showModal}
         pebbleSnapshotInfo={loadedPebbleSnapshotInfo}
         // rockSnapshotInfo={loadedRockSnapshotInfo}
-      />
+      />}
 
       <Link
         to={`/snapshot/${props.ping}`}

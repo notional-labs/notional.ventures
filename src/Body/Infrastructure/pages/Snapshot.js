@@ -6,6 +6,7 @@ import SnapshotList from "../components//Snapshot/SnapshotList";
 import Loading from "../../../media/imgs/loading.webm";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Footer from "../../../Footer/Footer";
 const facts = [
   "We currently support PebbleDB snapshot",
   "Tired of waiting the node to catch up? Snapshot will boost your work!",
@@ -56,6 +57,7 @@ const Snapshot = (props) => {
               />
             </div>
           </div>
+          <Footer/>
         </div>
       )}
     </>

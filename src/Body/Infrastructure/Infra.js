@@ -8,7 +8,6 @@ import Endpoint from "../../media/imgs/Infrastructure/Logo/Endpoint.svg";
 import Snapshot from "../../media/imgs/Infrastructure/Logo/Snapshot.svg";
 import Upgrade from "../../media/imgs/Infrastructure/Logo/Update.svg";
 import Uptime from "../../media/imgs/Infrastructure/Logo/Uptime1.svg";
-import Tenderduty from "../../media/imgs/Infrastructure/Logo/Tenderduty.svg";
 import Abstract from "../../media/imgs/Infrastructure/abstract.avif";
 
 const Infra = () => {
@@ -65,15 +64,6 @@ const Infra = () => {
           <button className="service-item">
             <Image src={Uptime} alt="An uptime" preview={false} />
             <div className="service-item-name">UPTIME KUMA</div>
-          </button>
-        </div>
-        <div
-          onClick={() => window.open(`https://tenderduty.notional.ventures`)}
-          className="link"
-        >
-          <button className="service-item">
-            <Image src={Tenderduty} alt="An tenderduty" preview={false} />
-            <div className="service-item-name">TENDERDUTY</div>
           </button>
         </div>
       </div>

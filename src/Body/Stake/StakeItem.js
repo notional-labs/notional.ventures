@@ -3,11 +3,11 @@ import "./StakeItem.css";
 import Modal from "./StakeModal";
 import axios from "axios";
 import ErrorModal from "./ErrorModal";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const StakeItem = (props) => {
-  let history = useNavigate()
+  let history = useNavigate();
   const [showHandler, setShowHandler] = useState(false);
   const [error, setError] = useState(false);
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
@@ -16,15 +16,19 @@ const StakeItem = (props) => {
   useEffect(() => {
     (async () => {
       await fetchChainInfo();
-      await getValidatorData()
-      props.showModal === true && props.ping === props.chainName && setShowHandler(true)
+      await getValidatorData();
+      if (props.showModal === true && props.ping === props.chainName) {
+        setShowHandler(true);
+      }
+      else {
+        setShowHandler(false);
+      }
     })();
-    // callApiContinously();
-  }, [showHandler]);
+  }, []);
 
   const closeModalHandler = () => {
     setShowHandler(false);
-    history('/')
+    history("/");
   };
 
   const showModalHandler = () => {
@@ -87,7 +91,7 @@ const StakeItem = (props) => {
           address={props.address}
           height={loadedChainInfo.data.height}
           uptime={loadedChainInfo.data.uptime}
-          commission={validator.data.commission}
+          commission={validator.data.commission * 100}
           apr={loadedChainInfo.data.apr}
           price={loadedChainInfo.data.prices}
           votingPower={validator.data.power}
@@ -101,7 +105,11 @@ const StakeItem = (props) => {
 
         <h2 className="stake-item__info">{props.name}</h2>
 
-        <Link to={`stake/${props.ping}`} onClick={showModalHandler} className="stake-btn">
+        <Link
+          to={`stake/${props.ping}`}
+          onClick={showModalHandler}
+          className="stake-btn"
+        >
           Stake
         </Link>
       </li>

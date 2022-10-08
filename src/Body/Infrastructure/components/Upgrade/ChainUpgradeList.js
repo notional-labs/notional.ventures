@@ -20,7 +20,6 @@ const ChainUpgradeList = (props) => {
 
   const fetchUpgradeInfo = async () => {
     try {
-      // setIsLoading(true)
       for (let index = 0; index < upgrade.length; index++) {
         const res = await axios.get(`${upgrade[index].api}/upgrade`);
         if (res.data.version !== "NaN") {

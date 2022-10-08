@@ -5,6 +5,7 @@ import ServiceNav from "../components/nav/ServiceNav";
 import EndpointList from "../components/Endpoint/EndpointList";
 import { useState, useEffect } from "react";
 import Loading from "../../../media/imgs/loading.webm";
+import Footer from "../../../Footer/Footer";
 
 const facts = ["Notional strives to satisfy our customers",
 "We use rate-limit endpoints to protect our service from attacks",
@@ -45,6 +46,7 @@ const Endpoint = () => {
             </p>
             <EndpointList rpc={STAKES} />
           </div>
+          <Footer/>
         </div>
       )}
     </>
