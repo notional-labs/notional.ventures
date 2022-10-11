@@ -19,7 +19,7 @@ root.render(
           <Route exact path="snapshot/:id" element={<Snapshot showModal={true}/>} />
           <Route exact path="endpoint" element={<Endpoint />} />
           <Route exact path="upgrade" element={<ChainUpgrade />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route exact path="stake/:id" element={<App showModal={true} />} />
         </Routes>
       </BrowserRouter>
 );
