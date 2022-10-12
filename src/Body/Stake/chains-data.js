@@ -350,7 +350,7 @@ export const STAKES = [
     grpc_service: "https://grpc-konstellation-ia.cosmosia.notional.ventures/",
     api: "https://backend.notional.ventures/konstellation",
     daenom: "konstellation",
-    keplr: "",
+    keplr: "konstellation",
     ping: "",
     address: "darcvaloper1fndgrsqmmq68ppl42wjkxh32nwpuj7vqtgep38",
     rank: "6"

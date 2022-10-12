@@ -11,11 +11,10 @@ const ChainUpgradeList = (props) => {
   const upgrade = props.upgrade;
   const [loadedUpgrade] = useState([]);
   const [newState, setNewState] = useState([]);
+  // const [newStates, setNewStates] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    (async () => {
-      await fetchUpgradeInfo();
-    })();
+    fetchUpgradeInfo();
   }, [loadedUpgrade]);
 
   const fetchUpgradeInfo = async () => {
@@ -32,6 +31,7 @@ const ChainUpgradeList = (props) => {
           loadedUpgrade.push(obj);
         }
       }
+      console.log(loadedUpgrade);
       const seen = new Set();
       const filteredUpgrades = loadedUpgrade.filter((el) => {
         const duplicate = seen.has(el.name);
@@ -39,10 +39,40 @@ const ChainUpgradeList = (props) => {
         return !duplicate;
       });
       setNewState([...filteredUpgrades]);
+      console.log(newState);
       setIsLoading(false);
     } catch (err) {
       console.log(err.message);
     }
+    // try {
+    //   const res = await axios.get(`https://backend.notional.ventures/upgrade`);
+    //   setNewState(res.data);
+    //   for (let i = 0; i < newState.length; i++) {
+    //     // console.log(newState[i].key);
+    //     for (let j = 0; j < upgrade.length; j++) {
+    //         if (newState[i].key === upgrade[j].daenom && newState[i].version !== "NaN") {
+    //         let obj = { ...newState };
+    //         const info = await axios.get(`${upgrade[j].api}/information`);
+    //         obj[i]["currentHeight"] = info.data.height;
+    //         obj[i]["blockTime"] = info.data.blockTime;
+    //         loadedUpgrade.push(obj);
+    //       }
+    //     }
+    //   }
+    //   console.log(loadedUpgrade);
+    //   console.log(loadedUpgrade.length);
+    //   const seen = new Set();
+    //   const filteredUpgrades = loadedUpgrade.filter((el) => {
+    //     const duplicate = seen.has(el.name);
+    //     seen.add(el.name);
+    //     return !duplicate;
+    //   });
+    //   setNewStates([...filteredUpgrades]);
+    //   console.log(newStates);
+    //   setIsLoading(false);
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   return (

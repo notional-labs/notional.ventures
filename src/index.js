@@ -6,7 +6,6 @@ import Snapshot from "./Body/Infrastructure/pages/Snapshot";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Endpoint from "./Body/Infrastructure/pages/Endpoint";
-import { Navigate } from "react-router-dom";
 import ChainUpgrade from "./Body/Infrastructure/pages/ChainUpgrade";
 
 
@@ -21,7 +20,6 @@ root.render(
           <Route exact path="endpoint" element={<Endpoint />} />
           <Route exact path="upgrade" element={<ChainUpgrade />} />
           <Route exact path="stake/:id" element={<App showModal={true} />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
 );

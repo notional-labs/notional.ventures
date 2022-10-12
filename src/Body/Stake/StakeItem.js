@@ -5,6 +5,8 @@ import axios from "axios";
 import ErrorModal from "./ErrorModal";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Skeleton from "react-loading-skeleton";
+
 
 const StakeItem = (props) => {
   let history = useNavigate();
@@ -15,8 +17,7 @@ const StakeItem = (props) => {
 
   useEffect(() => {
     (async () => {
-      await fetchChainInfo();
-      await getValidatorData();
+      await fetchData();
       if (props.showModal === true && props.ping === props.chainName) {
         setShowHandler(true);
       }
@@ -40,25 +41,18 @@ const StakeItem = (props) => {
     setShowHandler(false);
   };
 
-  const fetchChainInfo = async () => {
+  const fetchData = async () => {
     try {
       const res = await axios.get(`${props.api}/information`);
       setLoadedChainInfo(res);
+      const res1 = await axios.get(`${props.api}/validator`);
+      setValidator(res1);
     } catch (err) {
       console.log(err.message);
       setError(true);
     }
   };
 
-  const getValidatorData = async () => {
-    try {
-      const res = await axios.get(`${props.api}/validator`);
-      setValidator(res);
-    } catch (err) {
-      console.log(err.message);
-      setError(true);
-    }
-  };
   // const callApiContinously = () => {
   //   setInterval(fetchChainInfo, 12000);
   // };
@@ -74,7 +68,7 @@ const StakeItem = (props) => {
       {showHandler && error && (
         <ErrorModal show={error} onCancel={closeErrorHandler} />
       )}
-      {showHandler && !error && (
+      {showHandler && !error &&(
         <Modal
           key={loadedChainInfo.data.chainID}
           chainid={loadedChainInfo.data.chainID}
