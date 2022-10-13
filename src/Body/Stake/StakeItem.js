@@ -5,8 +5,7 @@ import axios from "axios";
 import ErrorModal from "./ErrorModal";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import Skeleton from "react-loading-skeleton";
-
+import LoadingModal from "./LoadingModal";
 
 const StakeItem = (props) => {
   let history = useNavigate();
@@ -14,17 +13,9 @@ const StakeItem = (props) => {
   const [error, setError] = useState(false);
   const [loadedChainInfo, setLoadedChainInfo] = useState([]);
   const [validator, setValidator] = useState([]);
-
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    (async () => {
-      await fetchData();
-      if (props.showModal === true && props.ping === props.chainName) {
-        setShowHandler(true);
-      }
-      else {
-        setShowHandler(false);
-      }
-    })();
+    fetchData();
   }, []);
 
   const closeModalHandler = () => {
@@ -39,14 +30,22 @@ const StakeItem = (props) => {
   const closeErrorHandler = () => {
     setError(false);
     setShowHandler(false);
+    history("/");
   };
 
   const fetchData = async () => {
     try {
+      setIsLoading(true)
       const res = await axios.get(`${props.api}/information`);
       setLoadedChainInfo(res);
       const res1 = await axios.get(`${props.api}/validator`);
       setValidator(res1);
+      if (props.showModal === true && props.ping === props.chainName) {
+        setShowHandler(true);
+      } else {
+        setShowHandler(false);
+      }
+      setIsLoading(false);
     } catch (err) {
       console.log(err.message);
       setError(true);
@@ -65,10 +64,10 @@ const StakeItem = (props) => {
 
   return (
     <React.Fragment>
-      {showHandler && error && (
+      {showHandler && error && !isLoading && (
         <ErrorModal show={error} onCancel={closeErrorHandler} />
       )}
-      {showHandler && !error &&(
+      {showHandler && !error && !isLoading && (
         <Modal
           key={loadedChainInfo.data.chainID}
           chainid={loadedChainInfo.data.chainID}
@@ -91,6 +90,11 @@ const StakeItem = (props) => {
           votingPower={validator.data.power}
           rank={props.rank}
         ></Modal>
+      )}
+      {showHandler && !error && isLoading && (
+        <LoadingModal 
+        onCancel={closeModalHandler}
+        show={showHandler}/>
       )}
       <li className="stake-item">
         <div className="stake-item__image">
