@@ -7,11 +7,15 @@
   border: 1px solid black;
   height: 100%;
   margin-bottom: -4rem;
+  align-items: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .error-title {
-  margin-top: 400px;
+  /* margin-top: 400px; */
   font-family: "SegoeUI-Bold";
   font-size: 90px;
   color: white;
