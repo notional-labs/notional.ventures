@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Endpoint from "./Body/Infrastructure/pages/Endpoint";
 import ChainUpgrade from "./Body/Infrastructure/pages/ChainUpgrade";
+import { Navigate } from "react-router-dom";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -19,6 +20,10 @@ root.render(
           <Route path="endpoint" element={<Endpoint />} />
           <Route path="upgrade" element={<ChainUpgrade />} />
           <Route path="stake/:id" element={<App showModal={true} />} />
+          <Route
+            path="*"
+            element={<Navigate to="/" replace />}
+          />
         </Routes>
       </BrowserRouter>
 );
