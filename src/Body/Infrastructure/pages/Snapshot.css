@@ -13,6 +13,7 @@
   width: 80%;
   max-width: 1600px;
   margin: 0 auto;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
 }

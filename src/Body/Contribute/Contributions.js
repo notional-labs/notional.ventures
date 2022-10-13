@@ -33,7 +33,7 @@ const Contributions = () => {
           chain to ensure dependable, genuine communication with project
           stakeholders. We also commit code to every chain we validate and have
           members on the core teams of several major projects, including
-          Osmosis, Juno, and Sifchain.{" "}
+          Osmosis, Juno, and Sifchain.
         </p>
       </div>
       <img src={Abstract} alt="An abstract" className="abstract-contribution" />

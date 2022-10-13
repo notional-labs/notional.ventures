@@ -4,6 +4,7 @@ import ServiceNav from "../components/nav/ServiceNav";
 import { STAKES } from "../../Stake/chains-data";
 import ChainUpgradeList from "../components/Upgrade/ChainUpgradeList";
 import Loading from "../../../media/imgs/loading.webm";
+import Footer from "../../../Footer/Footer";
 
 const facts = ["Notional strives to satisfy our customers"];
 
@@ -41,6 +42,7 @@ const ChainUpgrade = () => {
               <ChainUpgradeList upgrade={STAKES} />
             </div>
           </div>
+          <Footer />
         </div>
       )}
     </>

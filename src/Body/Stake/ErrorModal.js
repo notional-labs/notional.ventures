@@ -11,10 +11,10 @@ const ModalOverlay = (props) => {
     <div className="errormodal">
       <label>404</label>
       <Image src={line_divisor} alt="An" preview={false} />
-      <h1>It looks like you’re lost in space. Sorry, we’re either.</h1>
+      <h1>It looks like you're lost in space. Sorry, we're either.</h1>
       <p>
-        While we are calling aliens for help, why don’t you return to home and
-        reload the page?{" "}
+        While we are calling aliens for help, why don't you return to home and
+        reload the page?
       </p>
     </div>
   );

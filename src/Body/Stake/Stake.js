@@ -14,7 +14,7 @@ const Stake = (props) => {
           on shifts to quickly respond to issues as they arise. Validating
           outside of the cloud increases decentralization and dramatically
           improves epoch time, meaning we miss less blocks, and you get better
-          rewards.{" "}
+          rewards.
         </p>
       </div>
       <div className="stake">

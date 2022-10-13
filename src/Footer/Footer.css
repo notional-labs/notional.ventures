@@ -2,9 +2,7 @@
   position: relative;
   bottom: 0;
   justify-content: center;
-  width: auto;
-  min-width: auto;
-  margin-top: 3rem;
+  width: 100%;
   height: auto;
   min-height: auto;
   background-color: #0C0E18;

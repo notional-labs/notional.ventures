@@ -14,7 +14,7 @@ const Contact = () => {
         <p className="name">Contacts</p>
         <p className="text">
           Want to inquire about Notional's services? Contact us and we'll
-          happily help you.{" "}
+          happily help you.
         </p>
       </div>
       <div className="contact">

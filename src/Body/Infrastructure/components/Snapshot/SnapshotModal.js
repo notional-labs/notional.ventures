@@ -91,7 +91,7 @@ const ModalOverlay = (props) => {
   //     <button className="download-btn">
   //       <a href={props.pebbleSnapshotInfo.data}>
   //         Download |{" "}
-  //         {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}{" "}
+  //         {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}
   //         GB
   //       </a>
   //     </button>
@@ -123,7 +123,7 @@ const ModalOverlay = (props) => {
           Size:{" "}
           {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(
             2
-          )}{" "}
+          )}
           GB <br />
           This is default pruned data of the chain which is generated at the
           specific time in filename. The data will be pruned within 14-day
