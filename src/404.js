@@ -2,14 +2,18 @@ import React from "react";
 import "./404.css";
 import Navbar from "./Header/Navbar";
 import Footer from "./Footer/Footer";
-
+import NotFound from "./media/imgs/404.png"
+import { Link } from "react-router-dom";
 function Error() {
   return (
     <div className="error">
       <Navbar />
       <div className="error-content">
-        <h1 className="error-title">It looks like you're lost in space. Sorry, we're either.</h1>
-        <p className="error-text">While we are calling aliens for help, why don't you return to home or check the link?</p>
+        <img src={NotFound}/>
+        <p className="error-text">Page not found, can you return home and check the url?</p>
+        <button className="notfound-btn">
+          <Link className="notfound-link" to={"/"}> Back to Home </Link>
+        </button>
       </div>
       <Footer />
     </div>

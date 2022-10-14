@@ -38,10 +38,10 @@
 }
 
 
-a:focus:after {
+.dropdown-btn:focus:after {
   width: 100px;
 }
-a:after {
+.dropdown-btn:after {
   content: "";
   background: #fbfbfb;
   position: absolute;
@@ -53,9 +53,8 @@ a:after {
   transition-delay: 0.2s;
 }
 
-li a {
+.dropdown-container .dropdown-btn {
   color: #fbfbfb;
-  display: block;
   padding: 10px;
   position: relative;
   text-decoration: none;

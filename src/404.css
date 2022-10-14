@@ -1,5 +1,6 @@
 .error {
-  background-color: black;
+  background-image: url(./media/imgs/background404-01.png);
+  background-size: cover;
   height: 100vh;
 }
 
@@ -14,15 +15,27 @@
   justify-content: center;
 }
 
-.error-title {
-  /* margin-top: 400px; */
-  font-family: "SegoeUI-Bold";
-  font-size: 90px;
-  color: white;
-}
-
 .error-text {
   color: white;
   font-family: "SegoeUI-Light";
   font-size: 30px;
+  font-weight: 600;
+}
+
+.notfound-btn {
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 250px;
+  height: 50px;
+}
+
+.notfound-link {
+  color: rgb(86, 49, 120);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.notfound-link:hover {
+  text-decoration: none;
+  color: rgb(41, 3, 77);
 }

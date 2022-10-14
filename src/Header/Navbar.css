@@ -66,6 +66,11 @@
   position: relative;
 }
 
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
 .dropdown-menu:hover .navigation-content {
   display: block;
 }
@@ -73,12 +78,13 @@
 .navigation-content {
   display: none;
   position: absolute;
-  background-color: #48484855;
-  backdrop-filter: blur(30px);
-  min-width: 200px;
+  background-color: rgba(72, 72, 72, 0.9);
+  min-width: 160px;
   border-radius: 8px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.384);
+  padding: 12px 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0), 0.333;
   z-index: 1;
+  gap: 2rem;
 }
 
 .main-nav-list {
@@ -100,6 +106,7 @@
 }
 
 .main-nav-list li a {
+  display: block;
   text-decoration: none;
   color: white;
   font-size: 27px;
