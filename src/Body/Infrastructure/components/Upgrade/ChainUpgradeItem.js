@@ -8,10 +8,10 @@ const ChainUpgradeItem = (props) => {
         <td
           onClick={() =>
             window.open(
-              `https://ping.pub/${props.ping}/gov/${props.key}`
+              `https://ping.pub/${props.ping}/gov/${props.proposalID}`
             )
           }
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer", textDecoration: "underline" }}
         >
           {props.name}
         </td>
