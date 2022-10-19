@@ -16,7 +16,7 @@ const StakeItem = (props) => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [showHandler]);
 
   const closeModalHandler = () => {
     setShowHandler(false);

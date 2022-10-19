@@ -21,6 +21,7 @@ function App(props) {
   const [isLoading, setIsLoading] = useState(false);
   const randomText = facts[Math.floor(Math.random() * facts.length)];
   useEffect(() => {
+    document.title = "Notional";
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
