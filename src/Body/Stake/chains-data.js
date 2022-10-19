@@ -457,4 +457,32 @@ export const STAKES = [
     address: "pasgvaloper14npnd73z5qjwz4az2dpw6vcdvkj29qg0cgar4j",
     rank: "27"
   },
+  {
+    id: "s30",
+    image: `${Secret}`,
+    name: "Bitsong",
+    rpc_service: "https://rpc-bitsong-ia.cosmosia.notional.ventures/",
+    api_service: "https://api-bitsong-ia.cosmosia.notional.ventures/",
+    grpc_service: "https://grpc-bitsong-ia.cosmosia.notional.ventures/",
+    api: "https://backend.notional.ventures/bitsong",
+    daenom: "bitsong",
+    keplr: "",
+    ping: "bitsong",
+    address: "bitsongvaloper1je872m97uce2ttztkh8pdx6zezw5kr03dj3lff",
+    rank: "27"
+  },
+  {
+    id: "s31",
+    image: `${Secret}`,
+    name: "Stride",
+    rpc_service: "https://rpc-stride-ia.cosmosia.notional.ventures/",
+    api_service: "https://api-stride-ia.cosmosia.notional.ventures/",
+    grpc_service: "https://grpc-stride-ia.cosmosia.notional.ventures/",
+    api: "https://backend.notional.ventures/stride",
+    daenom: "stride",
+    keplr: "stride",
+    ping: "stride",
+    address: "stridevaloper1kvwpcr45lh7wn53wp9ac42ypr3t8zjqy6ks9au",
+    rank: "27"
+  },
 ];
