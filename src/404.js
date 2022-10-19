@@ -2,7 +2,7 @@ import React from "react";
 import "./404.css";
 import Navbar from "./Header/Navbar";
 import Footer from "./Footer/Footer";
-import NotFound from "./media/imgs/404.png"
+import NotFound from "./media/imgs/404/icon.avif"
 import { Link } from "react-router-dom";
 function Error() {
   return (
