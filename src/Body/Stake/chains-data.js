@@ -27,6 +27,8 @@ import Fetchai from "../../media/logo/chains-data/Fetch.svg";
 import Umee from "../../media/logo/chains-data/Umee.svg";
 import Injective from "../../media/logo/chains-data/Injective.svg";
 import Passage from "../../media/logo/chains-data/Passage.svg";
+import Bitsong from "../../media/logo/chains-data/Bitsong.svg";
+import Stride from "../../media/logo/chains-data/Stride.svg";
 
 export const STAKES = [
   {
@@ -459,7 +461,7 @@ export const STAKES = [
   },
   {
     id: "s30",
-    image: `${Secret}`,
+    image: `${Bitsong}`,
     name: "Bitsong",
     rpc_service: "https://rpc-bitsong-ia.cosmosia.notional.ventures/",
     api_service: "https://api-bitsong-ia.cosmosia.notional.ventures/",
@@ -473,7 +475,7 @@ export const STAKES = [
   },
   {
     id: "s31",
-    image: `${Secret}`,
+    image: `${Stride}`,
     name: "Stride",
     rpc_service: "https://rpc-stride-ia.cosmosia.notional.ventures/",
     api_service: "https://api-stride-ia.cosmosia.notional.ventures/",
