@@ -46,7 +46,7 @@ jobs:
       uses: garygrossgarten/github-action-scp@release
       with:
         local: build
-        remote: /root/beta.notional.ventures
+        remote: /root/test.notional.ventures
         rmRemote: true
         host: ${{ secrets.WEB_SERVER_2 }}
         username: ${{ secrets.USERNAME }}
