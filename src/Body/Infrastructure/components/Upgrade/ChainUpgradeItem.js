@@ -5,7 +5,7 @@ const ChainUpgradeItem = (props) => {
   return props !== "undefined" ? (
     <tbody>
       <tr className="chain-upgrade-items">
-        <td
+        <td className="link-upgrade"
           onClick={() =>
             window.open(
               `https://ping.pub/${props.ping}/gov/${props.proposalID}`
@@ -16,7 +16,16 @@ const ChainUpgradeItem = (props) => {
           {props.name}
         </td>
         <td>{props.currentHeight}</td>
-        <td>{props.updateHeight}</td>
+        <td className="link-upgrade"
+          onClick={() =>
+            window.open(
+              `https://www.mintscan.io/${props.ping}/blocks/${props.updateHeight}`
+            )
+          }
+          style={{ cursor: "pointer", textDecoration: "underline"}}
+        >
+          {props.updateHeight}
+        </td>
         <td>{props.version}</td>
         <td>{props.estimateTime}</td>
       </tr>
