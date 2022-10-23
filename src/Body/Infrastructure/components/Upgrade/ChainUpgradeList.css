@@ -6,15 +6,13 @@
 
 .chain-upgrade-table {
   color: white;
-  /* border: 1px solid white; */
+  backdrop-filter: blur(20px);
   width: 80rem;
   height: auto;
   border-collapse: collapse;
   border-radius: 1em;
   overflow: hidden;
 }
-
-
 
 .chain-upgrades-title th {
   padding: 1em;
