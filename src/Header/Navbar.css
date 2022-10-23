@@ -15,8 +15,19 @@
 
 .nav-bg {
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
   box-shadow: 5px 6px 25px #000;
+  position: fixed;
+}
+
+.nav-bg:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(30px);
 }
 
 .main-navigation-btn {
@@ -66,25 +77,21 @@
   position: relative;
 }
 
-.dropdown-menu {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-menu:hover .navigation-content {
+  backdrop-filter: blur(30px);
   display: block;
+  position: absolute;
+  background-color: #48484855;
+  min-width: 180px;
+  border-radius: 8px;
+  line-height: 60px;
+  padding: 12px 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.384);
+  z-index: 1;
 }
 
 .navigation-content {
   display: none;
-  position: absolute;
-  background-color: rgba(72, 72, 72, 0.9);
-  min-width: 160px;
-  border-radius: 8px;
-  padding: 12px 16px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0), 0.333;
-  z-index: 1;
-  gap: 2rem;
 }
 
 .main-nav-list {

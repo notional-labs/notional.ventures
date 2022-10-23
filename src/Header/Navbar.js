@@ -99,13 +99,13 @@ const Navbar = () => {
             <li className="dropdown-menu">
               <a href="#Infra">Infrastructure</a>
               <div className="navigation-content">
-                <Link to="/endpoint" style={{ fontSize: "20px", textAlign: "center" }}>
+                <Link to="/endpoint" /*style={{ fontSize: "20px", textAlign: "center" }}*/>
                   Endpoints
                 </Link>
-                <Link to="/snapshot" style={{ fontSize: "20px", textAlign: "center" }}>
+                <Link to="/snapshot" /*style={{ fontSize: "20px", textAlign: "center" }}*/>
                   Snapshot
                 </Link>
-                <Link to="/upgrade" style={{ fontSize: "20px", textAlign: "center" }}>
+                <Link to="/upgrade" /*style={{ fontSize: "20px", textAlign: "center" }}*/>
                   Upgrade
                 </Link>
               </div>

@@ -41,12 +41,10 @@ const SnapshotItem = (props) => {
       console.log(err.message);
     }
     setIsLoading(false);
- 
   };
   return (
     <>
-      {showModal && isLoading && <LoadingModal 
-          show={showModal}/>}
+      {showModal && isLoading && <LoadingModal show={showModal} />}
       {showModal && !isLoading && (
         <SnapshotModal
           image={props.image}

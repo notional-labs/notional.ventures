@@ -37,10 +37,10 @@
   flex-direction: row;
 }
 
-
 .dropdown-btn:focus:after {
   width: 100px;
 }
+
 .dropdown-btn:after {
   content: "";
   background: #fbfbfb;
