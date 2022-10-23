@@ -20,8 +20,10 @@ const gData = {
     { id: "iris", img: "iris.avif", weight: "1" },
     { id: "injective", img: "injective.avif", weight: "1" },
     { id: "sentinel", img: "sentinel.avif", weight: "1" },
-    { id: "konstellation", img: "konstellation.avif", weight: "1" },
     { id: "crypto", img: "cryto-org.avif", weight: "1" },
+    { id: "chihuahua", img: "chihuahua.avif", weight: "1" },
+    { id: "persistent", img: "persistence.avif", weight: "1" },
+    { id: "konstellation", img: "konstellation.avif", weight: "1" },
   ],
   links: [
     { source: "osmosis", target: "atom" },
@@ -39,15 +41,14 @@ const gData = {
     { source: "osmosis", target: "regen" },
     { source: "osmosis", target: "injective" },
     { source: "osmosis", target: "sentinel" },
-    { source: "osmosis", target: "konstellation" },
     { source: "osmosis", target: "crypto" },
+    { source: "osmosis", target: "konstellation" },
 
     { source: "atom", target: "crypto" },
     { source: "atom", target: "omniflix" },
     { source: "atom", target: "emoney" },
     { source: "atom", target: "fetch" },
     { source: "atom", target: "axelar" },
-    { source: "atom", target: "juno" },
     { source: "atom", target: "sifchain" },
     { source: "atom", target: "akash" },
     { source: "atom", target: "dig" },
@@ -61,6 +62,12 @@ const gData = {
 
     { source: "axelar", target: "sifchain" },
     { source: "axelar", target: "evmos" },
+    { source: "axelar", target: "injective" },
+    { source: "axelar", target: "juno" },
+
+    { source: "juno", target: "chihuahua" },
+    { source: "juno", target: "akash" },
+    { source: "juno", target: "persistent" },
 
     { source: "evmos", target: "injective" },
   ],
