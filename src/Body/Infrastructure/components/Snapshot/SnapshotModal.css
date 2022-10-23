@@ -52,8 +52,9 @@
 
 .modal-top p {
   font-family: "SegoeUI-Light";
-  font-size: 30px;
+  font-size: 35px;
   margin: 0;
+  margin-left: 8px;
   margin-right: auto;
 }
 
@@ -67,6 +68,7 @@
   padding: 20px;
   flex-direction: column;
   width: 18%;
+  max-width: 300px;
   border-right: 1px solid white;
   align-items: center;
 }
@@ -78,26 +80,48 @@
   margin: 0 auto;
 }
 
-.modal-navbar li {
+.modal-navbar .modal-item {
   margin: 10px 0px;
   list-style: none;
   font-family: "SegoeUI-Light";
-  font-size: 20px;
+  font-size: 30px;
+  display: block;
+  height: 100px;
 }
 
-.modal-navbar li:hover {
+.modal-navbar .modal-item:hover {
   background: rgba(60, 60, 60, 0.2);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
-.modal-navbar li .modal-navbar-option:focus, 
-.modal-navbar li .modal-navbar-option-focus {
+.modal-navbar .modal-item {
+  display: flex;  
+  align-items: center;
+}
+
+.modal-navbar .modal-item .modal-navbar-option {
+  padding-left: 15px;
+  color: white;
+}
+
+.modal-navbar .modal-item .modal-navbar-option:hover {
+  color: #40a9ff;
+}
+
+.modal-navbar .modal-item .modal-navbar-option:focus, 
+.modal-navbar .modal-item .modal-navbar-option-focus {
   background: rgba(163, 163, 163, 0.2);
-  border-radius: 10px;
+  border-radius: 15px;
+  color: white;    
+  display: flex;  
+  align-items: center;
+  padding-left: 15px;
+  height: 100%;
+  width: 100%;
   font-family: "SegoeUI-Semibold";
 }
 
-.modal-navbar li .modal-navbar-option-focus:after {
+.modal-navbar .modal-item .modal-navbar-option-focus:after {
   display: none;
 }
 
@@ -119,25 +143,27 @@
 .modal-right .h1 {
   color: white;
   font-family: "SegoeUI-Bold";
-  font-size: 30px;
+  font-size: 40px;
   line-height: 2rem;
 }
 
 .modal-right .h2 {
   font-family: "SegoeUI-Semibold";
   color: white;
+  font-size: 25px;
 }
 
 .modal-right .p-content {
   font-family: "SegoeUI-Light";
   color: white;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .modal-right .code {
   font-family: "Courier New", Courier, monospace;
   color: white;
   margin-top: 10px;
+  font-size: 20px;
   padding: 8px;
   white-space: nowrap;
   border: 1px white solid;
@@ -173,7 +199,7 @@
   font-family: "SegoeUI-Light";
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 15px;
+  font-size: 20px;
   margin: 0;
   color: #1890ff;
   z-index: 20;

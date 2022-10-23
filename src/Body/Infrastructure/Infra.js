@@ -52,7 +52,7 @@ const Infra = () => {
         <Link to="/upgrade" className="link">
           <button className="service-item">
             <Image src={Upgrade} alt="An upgrade" preview={false} />
-            <div className="service-item-name">CHAINS UPGRADE</div>
+            <div className="service-item-name">UPGRADE</div>
           </button>
         </Link>
         <div

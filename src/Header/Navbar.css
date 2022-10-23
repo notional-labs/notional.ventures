@@ -27,7 +27,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(20px);
 }
 
 .main-navigation-btn {
@@ -78,7 +78,7 @@
 }
 
 .dropdown-menu:hover .navigation-content {
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(20px);
   display: block;
   position: absolute;
   background-color: #48484855;

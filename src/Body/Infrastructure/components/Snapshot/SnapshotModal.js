@@ -121,30 +121,28 @@ const ModalOverlay = (props) => {
         <p className="p-content">
           Date: {props.pebbleSnapshotInfo.data_date} <br />
           Size:{" "}
-          {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(
-            2
-          )}
+          {(props.pebbleSnapshotInfo.data_size * (1 / 1000000000)).toFixed(2)}
           GB <br />
           This is default pruned data of the chain which is generated at the
           specific time in filename. The data will be pruned within 14-day
           period.
         </p>
         <h1 className="h1">How to compile PebbleDB? </h1>
-        <div className="p-content">
+        <p className="p-content">
           To get PebbleDB snapshot work with your node, you must compile
           PebbleDb first. This is an example code with Sifchain:
-          <p className="code">
-            git reset --hard <br />
-            git checkout v0.14.0 <br />
-            go mod edit -replace
-            github.com/tendermint/tm-db=github.com/baabeetaa/tm-db@pebble <br />
-            go mod tidy <br />
-            go install -tags pebbledb -ldflags "-w -s -X
-            github.com/cosmos/cosmos-sdk/types.DBBackend=pebbledb -X
-            github.com/tendermint/tm-db.ForceSync=1" ./cmd/sifnoded <br />
-            $HOME/go/bin/sifnoded start --db_backend=pebbledb <br />
-          </p>
-        </div>
+        </p>
+        <p className="code">
+          git reset --hard <br />
+          git checkout v0.14.0 <br />
+          go mod edit -replace
+          github.com/tendermint/tm-db=github.com/baabeetaa/tm-db@pebble <br />
+          go mod tidy <br />
+          go install -tags pebbledb -ldflags "-w -s -X
+          github.com/cosmos/cosmos-sdk/types.DBBackend=pebbledb -X
+          github.com/tendermint/tm-db.ForceSync=1" ./cmd/sifnoded <br />
+          $HOME/go/bin/sifnoded start --db_backend=pebbledb <br />
+        </p>
         {/* <h2>RockDB</h2>
       {props.rockSnapshotInfo.addrbook === "NaN" ? (
         <div>Not available</div>
@@ -185,7 +183,7 @@ const ModalOverlay = (props) => {
       <div className="modal-bottom">
         <div className="modal-left">
           <ul className="modal-navbar">
-            <li>
+            <li className="modal-item">
               <a
                 href="#0"
                 onClick={changeToIns}
@@ -198,7 +196,7 @@ const ModalOverlay = (props) => {
                 Instruction
               </a>
             </li>
-            <li>
+            <li className="modal-item">
               <a
                 href="#0"
                 onClick={changeToPebble}
