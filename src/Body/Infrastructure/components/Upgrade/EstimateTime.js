@@ -8,7 +8,7 @@ const useCountdown = (estimatedTime) => {
     }, 1000);
     return () => clearInterval(interval);
   }, [estimatedTime]);
-  
+
   const days = Math.floor(countDown / (60 * 60 * 24));
   const hours = Math.floor((countDown % (60 * 60 * 24)) / (60 * 60));
   const minutes = Math.floor((countDown % (60 * 60)) / 60);
@@ -21,21 +21,31 @@ const ExpiredNotice = () => {
 };
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
-  let res = days + " Days : " + hours + " Hours : " + minutes + " Minutes : " + seconds + " Seconds"
+  let res = "About " + days + " days and " + hours + " hours left";
   if (days === 0) {
-    res = hours + " Hours : " + minutes + " Minutes : " + seconds + " Seconds"
     if (hours === 0) {
-      res = minutes + " Minutes : " + seconds + " Seconds"
       if (minutes === 0) {
-        res = seconds + " Seconds"
+        res = seconds + " Seconds";
+      } else {
+        if (seconds === 0) {
+          res = minutes + " minutes left";
+        } else {
+          res = minutes + " minutes and " + seconds + " seconds left";
+        }
+      }
+    } else {
+      if (minutes === 0) {
+        res = "About " + hours + " hours left";
+      } else {
+        res = "About " + hours + " hours and " + minutes + " minutes left";
       }
     }
+  } else {
+    if (hours === 0) {
+      res = "About " + days + " days left";
+    }
   }
-  return (
-    <>
-      {res}
-    </>
-  );
+  return <>{res}</>;
 };
 
 const EstimateTime = ({ estimatedTime }) => {
