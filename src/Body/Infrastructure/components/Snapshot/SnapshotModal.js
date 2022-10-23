@@ -212,8 +212,8 @@ const ModalOverlay = (props) => {
                 onClick={changeToRock}
                 className={
                   rocklvdb
-                    ? "modal-navbar-btn-focus"
-                    : "modal-navbar-btn"
+                    ? "modal-navbar-option-focus"
+                    : "modal-navbar-option"
                 }
               >
                 Rocksdb

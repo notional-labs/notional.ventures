@@ -2,31 +2,39 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 @-moz-keyframes AnimateBorder {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 @keyframes AnimateBorder {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -37,13 +45,13 @@
   flex-direction: row;
 }
 
-.dropdown-btn:focus:after {
+a:focus:after {
   width: 100px;
 }
 
 .dropdown-btn:after {
   content: "";
-  background: #fbfbfb;
+  background: white;
   position: absolute;
   bottom: 5px;
   left: 15px;
@@ -53,8 +61,9 @@
   transition-delay: 0.2s;
 }
 
-.dropdown-container .dropdown-btn {
+li a {
   color: #fbfbfb;
+  display: block;
   padding: 10px;
   position: relative;
   text-decoration: none;
@@ -64,13 +73,11 @@
 .dropdown-container:focus:after,
 .dropdown-container:focus-within:after,
 .dropdown-container:hover:after {
-  background: linear-gradient(
-    90deg,
-    #ff8038 0%,
-    #ff0099 33.33%,
-    #0047eb 66.67%,
-    #db00ff 100%
-  );
+  background: linear-gradient(90deg,
+      #ff8038 0%,
+      #ff0099 33.33%,
+      #0047eb 66.67%,
+      #db00ff 100%);
   background-size: 600% 600%;
   box-shadow: 4px 8px 30px 5px rgb(255, 255, 255, 0.2);
   -webkit-animation: AnimateBorder 8s ease infinite;
@@ -87,7 +94,6 @@ li:focus-within .sub-menu {
 }
 
 li:after {
-  background: #3c3c3c;
   content: "";
   position: absolute;
   left: 0;
@@ -156,6 +162,13 @@ ol .sub-menu li .menu-item-text:focus {
 ol .sub-menu li .menu-item-text:after {
   bottom: 5px;
   height: 1px;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  background: white;
+  position: absolute;
+  left: 15px;
+  content: "";
+  width: 0;
 }
 
 ol .sub-menu li .menu-item-text:hover:after,
