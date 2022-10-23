@@ -155,12 +155,14 @@
   bottom: -1px;
   z-index: -1;
   border-radius: 8px;
+  color: white !important;
   transition: 1s;
 }
 
 .stake-btn:hover {
   animation: ani 8s linear infinite;
   background: linear-gradient(90deg,#03a9f4,#f441a5,#6ba323,#03a9f4);
+  color: white !important;
   background-size: 300%;
   border: none;
   transform: translateY(-7px);
@@ -168,6 +170,7 @@
 
 .stake-btn:hover::before {
   background: linear-gradient(90deg, #03a9f4, #f441a5, #6ba323, #03a9f4);
+  color: white !important;
   background-size: 400%;
   animation: ani 8s linear infinite;
   filter: blur(20px);
