@@ -4,7 +4,7 @@ name: Main
 
 on:
   push:
-    branches: [ main ]
+    branches: [ fix_cache ]
 
 jobs:
   deploy:
@@ -46,9 +46,9 @@ jobs:
       uses: garygrossgarten/github-action-scp@release
       with:
         local: build
-        remote: /root/notional.ventures
+        remote: /root/cache.notional.ventures
         rmRemote: true
-        host: ${{ secrets.WEB_SERVER_2 }}
+        host: ${{ secrets.WEB_SERVER }}
         username: ${{ secrets.USERNAME }}
-        privateKey: ${{ secrets.PRIV_KEY_2 }}
+        privateKey: ${{ secrets.PRIV_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
