@@ -67,15 +67,6 @@ const Infra = () => {
             <div className="service-item-name">UPTIME KUMA</div>
           </button>
         </div>
-        <div
-          onClick={() => window.open(`https://tenderduty.notional.ventures`)}
-          className="link"
-        >
-          <button className="service-item">
-            <Image src={Tenderduty} alt="An tenderduty" preview={false} />
-            <div className="service-item-name">TENDERDUTY</div>
-          </button>
-        </div>
       </div>
     </div>
   );
