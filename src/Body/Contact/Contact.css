@@ -1,0 +1,150 @@
+.contact-container {
+  height: auto;
+  width: auto;
+}
+.contact-container .title {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.contact-container .title .text {
+  font-family: "SegoeUI-Light";
+  font-size: 20px;
+  color: white;
+  width: 60%;
+  margin: 1rem auto;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact-container .title .bar {
+  width: 100px;
+  height: 8px;
+  border: none;
+  background-color: #f33df6;
+}
+
+.contact-container .title .name {
+  /* margin-top: 20px; */
+  font-family: "SegoeUI-Light";
+  font-size: 60px;
+  color: white;
+}
+
+.contact {
+  align-items: center;
+  /* align-self: center; */
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+}
+
+.img-contact {
+  width: "1000px";
+  height: "360px";
+}
+
+.img-icon {
+  height: 28px;
+  width: 32px;
+}
+
+.contact-items_container div {
+  line-height: 3rem;
+  gap: 1rem;
+}
+
+.contact-items {
+  display: flex;
+  gap: 15px;
+  color: white;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.contact-items:hover {
+  color: rgb(189, 189, 253);
+  text-decoration: underline;
+}
+
+.contact-title {
+  color: #945cd4;
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1920px) { 
+  .contact-container .title {
+    margin-top: calc(100vw * (5*22) / 1920);
+
+  }
+  .contact-container .title .bar {
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
+  }
+  .contact-container .title .name {
+    margin-top: 10px;
+    font-family: "SegoeUI-Light";
+    font-size: calc(100vw * 60 / 1920);
+  }
+  .contact-container .title {
+    margin-top: calc(100vw * (8*22) / 1920);
+
+  }
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 1300px) {
+  .text {
+    display: none;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .img-contact {
+    max-width: calc(100vw / 1300 * 1000);
+    max-height: calc(100vw / 1300 * 626);
+  }
+
+  .contact-items_container div {
+    line-height: 2rem;
+    gap: 0.5rem;
+  }
+
+  .contact-container .title {
+    margin-top: calc(100vw * (5*22) / 1920);
+
+  }
+  .contact-container .title .bar {
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
+  }
+  .contact-container .title .name {
+    margin-top: 10px;
+    font-family: "SegoeUI-Light";
+    font-size: calc(100vw * 60 / 1920);
+  }
+  .contact-items_container {
+    display: flex;
+    gap: calc(100vw * (5*22) / 1920);
+  }
+  .contact-items {
+    display: flex;
+    gap: 10px;
+    color: white;
+    line-height: 10px;
+    font-size: calc(100vw * 35 / 1920);
+  }
+  .contact-title {
+    font-size: calc(100vw * 45 / 1920);
+
+  }
+  .img-icon {
+    max-width: calc(100vw / 1920 * 32);
+    max-height: calc(100vw / 1920 * 28);
+  }
+}

@@ -2,24 +2,22 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Snapshot from "./Body/Infrastructure/pages/Snapshot";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Navigate } from "react-router-dom";
-import Error from "./404";
+import Endpoint from "./Body/Infrastructure/pages/Endpoint";
+import ChainUpgrade from "./Body/Infrastructure/pages/ChainUpgrade";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<App />} />
-          <Route exact path="snapshot" element={<Snapshot />} />
-          <Route exact path="snapshot/:id" element={<Snapshot showModal={true}/>} />
-          <Route exact path="endpoint" element={<Endpoint />} />
-          <Route exact path="upgrade" element={<ChainUpgrade />} />
-          <Route exact path="stake/:id" element={<App showModal={true} />} />
-          <Route exact path="404" element={<Error />} />
-          <Route path="*" element={<Navigate to="/404" replace />} />
+          <Route path="/" element={<App />} />
+          <Route path="snapshot" element={<Snapshot />} />
+          <Route path="endpoint" element={<Endpoint />} />
+          <Route path="upgrade" element={<ChainUpgrade />} />
+          <Route path="stake/:id" element={<App showModal={true} />} />
         </Routes>
       </BrowserRouter>
 );

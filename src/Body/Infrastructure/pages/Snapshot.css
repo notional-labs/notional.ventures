@@ -1,0 +1,39 @@
+.snapshot-section {
+  background-image: url("../../../media/imgs/Infrastructure/Endpoints/Background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  justify-content: center;
+}
+
+.snapshot-container {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.snapshot-title {
+  margin-top: 150px;
+  font-family: "SegoeUI-Semibold";
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.snapshot-text {
+  font-family: "SegoeUI-Light";
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .snapshot-title {
+    font-size: calc(100vw * 60 / 1920);
+  }
+  .snapshot-text {
+    font-size: calc(100vw * 30 / 1920);
+  }
+}

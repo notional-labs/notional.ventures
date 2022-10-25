@@ -1,0 +1,56 @@
+.project {
+  margin-top: 10rem;
+  height: 1129;
+  width: auto;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+.project .title {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.project .title .bar {
+  margin-top: 150px;
+  width: 100px;
+  height: 8px;
+  border: none;
+  background-color: #ff4040;
+}
+
+.project .title .name {
+  /* margin-top: 20px; */
+  font-family: "SegoeUI-Light";
+  font-size: 60px;
+  color: white;
+
+}
+
+@media only screen and (min-width:360px) and (max-width: 1920px){
+  .project {
+    height: calc(100vw * 800 / 1920);
+  }
+  .project .title {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  .project .title .bar {
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
+    border: none;
+    background-color: #ff4040;
+  }
+  
+  .project .title .name {
+    font-family: "SegoeUI-Light";
+    font-size: calc(100vw * 60 / 1920);
+    color: white;
+  }
+}

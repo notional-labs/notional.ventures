@@ -1,0 +1,16 @@
+.stake-list {
+  width: auto;
+  max-width: 90%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .stake-list {
+    gap: 1rem;
+  }
+}

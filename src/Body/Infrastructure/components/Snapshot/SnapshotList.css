@@ -1,0 +1,116 @@
+.snapshot-list-container {
+  margin-top: 2rem;
+}
+
+.snapshot-list {
+  width: auto;
+  height: auto;
+  z-index: inherit;
+  display: flex;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.paginationBttns {
+  width: auto;
+  height: 80px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  outline: none;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.paginationBttns li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pageBttn {
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: "SegoeUI-Light";
+  align-content: center;
+  width: 50px;
+  background: linear-gradient(145deg, #1f014b, #1a013f);
+  box-shadow: 6px 6px 12px #110129, -6px -6px 12px #290163;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 2;
+  font-size: 15px;
+}
+
+.pageBttn:hover {
+  color: white;
+  background: linear-gradient(145deg, #1a013f, #1f014b);
+  /* box-shadow: inset 6px 6px 12px #110129, inset -6px -6px 12px #290163; */
+  transition: filter 1s ease-in;
+}
+
+.previousBttn {
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: "SegoeUI-Light";
+  align-content: center;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1f014b, #1a013f);
+  box-shadow: 6px 6px 12px #110129, -6px -6px 12px #290163;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.previousBttn:after {
+  display: none;
+}
+
+.nextBttn {
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: "SegoeUI-Light";
+  align-content: center;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1f014b, #1a013f);
+  box-shadow: 6px 6px 12px #110129, -6px -6px 12px #290163;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nextBttn:after {
+  display: none;
+}
+
+.paginationActive {
+  color: white;
+  font-family: "SegoeUI-Bold";
+  box-shadow: inset 6px 6px 12px #110129, inset -6px -6px 12px #290163;
+}
+
+.paginationActive a:after {
+  display: none;
+}
+
+.paginationDisabled {
+  color: white;
+  width: 120px;
+  background-color: red;
+  box-shadow: inset 6px 6px 12px #110129, inset -6px -6px 12px #290163;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+}

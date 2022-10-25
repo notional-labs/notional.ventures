@@ -1,0 +1,193 @@
+.infra-section {
+  height: auto;
+  padding-bottom: 10rem;
+  margin-top: 100px;
+  width: auto;
+  position: relative;
+
+  background-image: url(../../media/imgs/Infrastructure/background.avif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infra-section .infra-abstract {
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  max-height: 100%;
+}
+
+.infra-section .title {
+  text-align: center;
+  width: 100%;
+  height: 21rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.infra-section .title .bar {
+  width: 100px;
+  height: 8px;
+  border: none;
+  background-color: #3a71fd;
+}
+
+.infra-section .title .name {
+  /* margin-top: 20px; */
+  font-family: "SegoeUI-Light";
+  font-size: 60px;
+  color: white;
+}
+
+.infra-section .title .text {
+  font-family: "SegoeUI-Light";
+  font-size: 20px;
+  width: 60%;
+  margin: 1rem auto;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.infra-section .relayer {
+  height: 800px;
+  width: 80%;
+  max-width: 1700px;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+
+.infra-section .relayer .relayer-info {
+  text-align: center;
+  width: 40%;
+  height: auto;
+  align-items: center;
+  align-self: center;
+}
+
+.infra-section .relayer .relayer-info .relayer-title {
+  font-family: "SegoeUI-Semibold";
+  color: white;
+  font-size: 40px;
+}
+
+.infra-section .relayer .relayer-info .relayer-text {
+  font-family: "SegoeUI-Light";
+  color: white;
+  font-size: 20px;
+}
+
+.infra-section .relayer .relayer-graph {
+  width: 60%;
+}
+
+.infra-section .services {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  color: rgb(180, 162, 219);
+}
+
+.service-item {
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 8px 30px 5px rgb(0, 0, 0, 0.15);
+  border-radius: 30px;
+  background-color: #ffffff10;
+  height: 190px;
+  width: 300px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  line-height: 2rem;
+}
+
+.service-item:hover {
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 8px 30px 5px rgb(255, 255, 255, 0.15);
+  border-radius: 30px;
+  background-color: #ffffff20;
+  height: 192px;
+  width: 372px;
+  transition: 0.3s ease;
+}
+
+.service-item div img {
+  max-width: 110px;
+  max-height: 110px;
+}
+
+.service-item-name {
+  font-size: 15px;
+  margin-top: 0;
+  height: 32px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .service-item {
+    width: calc(100vw / 1920 * 370);
+    height: calc(100vw / 1920 * 190);
+    border-radius: calc(100vw / 1920 * 30);
+  }
+
+  .service-item div img {
+    max-width: calc(100vw / 1920 * 110);
+    max-height: calc(100vw / 1920 * 110);
+  }
+
+  .infra-section .services {
+    gap: calc(100vw / 1920 * (5 * 18));
+  }
+
+  .service-item-name {
+    font-size: calc(100vw * 15 / 1920);
+    height: calc(100vw / 1920 * 32);
+  }
+
+  .stake-section .title {
+    height: auto;
+  }
+
+  .infra-section .title .bar {
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
+  }
+
+  .infra-section .title .name {
+    font-size: calc(100vw * 60 / 1920);
+  }
+
+  .infra-section .title .text {
+    display: block;
+    font-size: calc(100vw * 20*1.5 / 1920);
+  }
+
+  .infra-section .title {
+    height: calc(100vw / 1920 * (16*22));
+
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1360px) {
+  .infra-section .relayer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 618.75px) {
+  .service-item-name {
+    display: none;
+  }
+}

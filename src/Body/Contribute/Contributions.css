@@ -1,0 +1,200 @@
+.contributions {
+  position: relative;
+  height: 1500px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contributions .filter {
+  top: -15rem;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+}
+
+.contributions .abstract-contribution {
+  z-index: 1;
+  height: 60%;
+  position: inherit;
+  top: 20rem;
+  left: -25rem;
+}
+
+.contributions .title {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  top: 10rem;
+  max-width: 2000px;
+  align-items: center;
+}
+
+.contributions .title .bar {
+  width: 100px;
+  height: 8px;
+  border: none;
+  background-color: #3a71fd;
+}
+
+.contributions .title .name {
+  font-family: "SegoeUI-Light";
+  font-size: 60px;
+  color: white;
+}
+
+.contributions .title .text {
+  font-family: "SegoeUI-Light";
+  font-size: 22px;
+  color: white;
+  width: 70%;
+  z-index: 1;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.info-number {
+  font-family: "SegoeUI-Bold";
+  text-align: center;
+  font-size: 100px;
+}
+
+.info-text {
+  font-family: "SegoeUI-Light";
+  text-align: center;
+  font-size: 32px;
+}
+
+.companyinfo {
+  display: grid;
+  position: absolute;
+  z-index: 1;
+  width: 1510px;
+  top: 45rem;
+  gap: 80px;
+  row-gap: 40px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5 2vh);
+}
+
+.companyinfo-item {
+  border-radius: 30px;
+  background-color: #ffffff33;
+  height: 250px;
+  width: 450px;
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 8px 30px 5px rgb(255, 255, 255, 0.15);
+}
+
+.companyinfo-item__1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+.companyinfo-item__2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+.companyinfo-item__3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+.companyinfo-item__4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+.companyinfo-item__5 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+
+/* tablets device */
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .contributions {
+    background-size: contain;
+    height: calc(100vw * 1500 / 1920);
+  }
+
+  .contributions .filter {
+    top: calc(100vw * -15 * 16 / 1920);
+  }
+
+  .contributions .abstract-contribution {
+    top: calc(100vw * 20 * 16 / 1920);
+    left: calc(100vw * -25 * 16 / 1920);
+  }
+
+  .contributions .title {
+    top: calc(100vw * 10 * 16 / 1920);
+  }
+  .contributions .title .bar {
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
+  }
+
+  .contributions .title .name {
+    font-size: calc(100vw * 60 / 1920);
+  }
+
+  .contributions .title .contributions-text {
+    font-size: calc(100vw * 22 / 1920);
+  }
+
+  .companyinfo {
+    top: calc(100vw * 45 * 16 / 1920);
+    width: calc(100vw * 1510 / 1920);
+    gap: calc(100vw * 80 / 1920);
+    row-gap: calc(100vw * 40 / 1920);
+  }
+
+  .companyinfo-item {
+    border-radius: calc(100vw * 30 / 1920);
+    background-color: #ffffff33;
+    height: calc(100vw * 250 / 1920);
+    width: calc(100vw * 450 / 1920);
+    box-shadow: 4px 8px 30px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .info-number {
+    font-size: calc(100vw * 100 / 1920);
+  }
+  
+  .info-text {
+    font-size: calc(100vw * 32 / 1920);
+  }
+}
+
+
+/* tablets device */
+@media only screen and (min-width: 360px) and (max-width: 1299px) {
+  .companyinfo {
+    top: calc(100vw * 35 * 16 / 1920);
+
+  }
+}

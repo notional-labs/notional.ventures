@@ -1,0 +1,158 @@
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 6rem;
+  margin: auto;
+  padding: 1rem 4rem;
+  background-color: transparent; 
+  z-index: 5;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.nav-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 6px 25px #000;
+}
+
+.main-navigation-btn {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.main-navigation-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.main-nav-drawer {
+  height: 100%;
+}
+
+.main-nav-drawer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav-list-drawer {
+  margin: 0 0.5rem;
+  list-style: none;
+}
+
+.main-nav-list-drawer li a {
+  color: white;
+  text-decoration: none;
+  font-size: 45px;
+  position: relative;
+}
+
+.dropdown-menu:hover .navigation-content {
+  display: block;
+}
+
+.navigation-content {
+  display: none;
+  position: absolute;
+  background-color: #48484855;
+  backdrop-filter: blur(30px);
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.384);
+  z-index: 1;
+}
+
+.main-nav-list {
+  list-style: none;
+  font-family: "SegoeUI-Light";
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: auto;
+  /* font-size: 1.6rem; */
+  background-color: transparent;
+  margin: auto;
+}
+
+.main-nav-list li {
+  padding: 15px;
+  position: relative;
+  z-index: 5;
+}
+
+.main-nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 27px;
+}
+
+.main-nav-list li a:hover {
+  font-family: "SegoeUI-Semibold";
+  color: #c897ff;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  display: block;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1155px) {
+  .nav {
+    background-color:rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+    max-height: calc(100vw / 1155 * 96);
+    flex-direction: row-reverse;
+    padding: 1rem 1rem;
+  }
+
+  .nav-drawer {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav-list-drawer li a {
+    font-size: calc(100vw / 1155 * 96);
+  }
+
+  .main-navigation-btn {
+    display: block;
+    margin: 0;
+  }
+
+  .main-navigation-btn span {
+    display: block;
+  }
+
+  .logo-img {
+    max-width: calc(100vw / 1155 * 250);
+  }
+
+  .btn-img {
+    max-height: calc(100vw / 1155 * 80);
+    max-width: calc(100vw / 1155 * 80);
+    margin: calc(100vw / 1155 * 80);
+  }
+}

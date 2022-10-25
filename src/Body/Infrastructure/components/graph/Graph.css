@@ -1,0 +1,9 @@
+.infra-graph {
+    background-color: red;
+    
+    width: fit-content;
+}
+
+div > div >div div .scene-container {
+    background-image: url('../../../media/imgs/Infrastructure/Endpoints/Background.webp');
+}

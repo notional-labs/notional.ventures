@@ -1,0 +1,28 @@
+export const Data = {
+    nodes: [
+        { id: "Akash", name: "Akash", logo: "Akash.avif", neighbors: [], links: [] },
+        { id: "Axelar", name: "Axelar", logo: "Axelar.avif", neighbors: [], links: [] },
+        { id: "Band", name: "Band", logo: "Band.avif", neighbors: [], links: [] },
+        { id: "Cheq", name: "Cheq", logo: "Cheq.avif", neighbors: [], links: [] },
+        { id: "Cosmoshub", name: "Cosmoshub", logo: "Cosmoshub.avif", neighbors: [], links: [] },
+        { id: "Evmos", name: "Evmos", logo: "Evmos.avif", neighbors: [], links: [] },
+        { id: "Juno", name: "Juno", logo: "Juno.avif", neighbors: [], links: [] },
+        { id: "Kichain", name: "Kichain", logo: "Kichain.avif", neighbors: [], links: [] },
+        { id: "Lum", name: "Lum", logo: "Lum.avif", neighbors: [], links: [] },
+        { id: "Omniflixhub", name: "Omniflixhub", logo: "Omniflixhub.avif", neighbors: [], links: [] },
+        { id: "Osmosis", name: "Osmosis", logo: "Osmosis.avif", neighbors: [], links: [] },
+        { id: "Sifchain", name: "Sifchain", logo: "Sifchain.avif", neighbors: [], links: [] },
+        { id: "Sommelier", name: "Sommelier", logo: "Sommelier.avif", neighbors: [], links: [] },
+        { id: "Terra", name: "Terra", logo: "Terra.avif", neighbors: [], links: [] },
+        { id: "Umee", name: "Umee", logo: "Umee.avif", neighbors: [], links: [] },
+    ],
+    links: [
+        { source: "Omniflixhub", target: "Sommelier" },
+        { source: "Sifchain", target: "Sommelier" },
+        { source: "Evmos", target: "Lum" },
+        { source: "Terra", target: "Cheq" },
+        { source: "Axelar", target: "Akash" },
+        { source: "Band", target: "Akash" },
+        { source: "Osmosis", target: "Cosmoshub" },
+    ],
+};

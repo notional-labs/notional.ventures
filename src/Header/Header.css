@@ -1,0 +1,286 @@
+.header {
+  position: relative;
+  justify-content: center;
+  width: auto;
+  min-width: auto;
+  margin: 0px auto;
+  height: 1080px;
+  min-height: auto;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  right: 0; 
+  z-index: 1;
+  filter: brightness(100%);
+}
+
+.abstract {
+  position: absolute;
+  top: -13rem;
+  left: -25rem;
+  z-index: 0;
+  width: 80rem;
+  filter: brightness(70%);
+}
+
+.akash {
+  position: absolute;
+  right: 61.5rem;
+  top: 54.8rem;
+  width: 14rem;
+  height: 14rem;
+  z-index: 1;
+}
+
+.atom {
+  position: absolute;
+  z-index: 2;
+  right: 15.8rem;
+  top: 25.8rem;
+  height: 27.8rem;
+  width: 27.8rem;
+}
+
+.juno {
+  width: 21.5rem;
+  height: 21.5rem;
+  position: absolute;
+  z-index: 3;
+  right: 6.8rem;
+  top: 13rem;
+}
+
+.secret {
+  width: 19rem;
+  height: 19rem;
+  position: absolute;
+  top: 45.5rem;
+  right: 6rem;
+  z-index: 2;
+}
+
+.evmos {
+  width: 13.7rem;
+  height: 13.7rem;
+  position: absolute;
+  top: 46.4rem;
+  right: 35.5rem;
+  z-index: 3;
+}
+.omniflix {
+  width: 18rem;
+  height: 18rem;
+  position: absolute;
+  z-index: 1;
+  top: 49.6rem;
+  right: 77.5rem;
+}
+.sifchain {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  top: 18.3rem;
+  right: 35.6rem;
+  z-index: 1;
+}
+.osmosis {
+  width: 21.4rem;
+  height: 21.4rem;
+  position: absolute;
+  top: 40.3rem;
+  right: 48.5rem;
+  z-index: 2;
+}
+
+.yellow {
+  width: 6rem;
+  position: absolute;
+  top: 15.6rem;
+  height: 10rem;
+  right: 0.7rem;
+}
+.red {
+  width: 4.5rem;
+  position: absolute;
+  top: 31.8rem;
+  height: 10rem;
+  right: 5.5rem;
+  z-index: 9;
+}
+.green {
+  width: 6.5rem;
+  position: absolute;
+  top: 32.4rem;
+  height: 10rem;
+  right: 54rem;
+}
+.purple {
+  width: 6.5rem;
+  position: absolute;
+  top: 55rem;
+  height: 10rem;
+  right: 25.5rem;
+  z-index: 2;
+}
+.blue {
+  width: 6.5rem;
+  position: absolute;
+  top: 10.2rem;
+  right: 29.5rem;
+  height: 10rem;
+}
+.orange {
+  width: 6.5rem;
+  position: absolute;
+  top: 54.7rem;
+  height: 10rem;
+  right: 73.8rem;
+  z-index: 1;
+}
+
+.description {
+  display: inline-block;
+  position: relative;
+  margin-top: 13rem;
+  margin-left: 9rem;
+  z-index: 1;
+}
+.description .bar {
+  margin-left: 0;
+  width: 100px;
+  height: 8px;
+  border: none;
+  background-color: #943afd;
+  z-index: 1;
+}
+.description .greetings {
+  font-family: "SegoeUI-Bold";
+  color: white;
+  font-size: 50px;
+  line-break: strict;
+  max-width: 50rem;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) {
+  .lines {
+    width: 100vw;
+    height: calc(100vw * 2000 / 1920 );
+  }
+
+  .header {
+    height: calc(100vw * 1080 / 1920);
+  }
+
+  .abstract {
+    top: calc(100vw * -13 * 16 / 1920);
+    left: calc(100vw * -25 * 16 / 1920);
+    width: calc(100vw * 80 * 16 / 1920);
+  }
+
+  .akash {
+    width: calc(100vw * 14 * 16 / 1920);
+    right: calc(100vw * 61.5 * 16 / 1920);
+    top: calc(100vw * 54.8 * 16 / 1920);
+    height: calc(100vw * 14 * 16 / 1920);
+  }
+
+  .atom {
+    width: calc(100vw * 27.8 * 16 / 1920);
+    right: calc(100vw * 15.8 * 16 / 1920);
+    top: calc(100vw * 25.8 * 16 / 1920);
+    height: calc(100vw * 27.8 * 16 / 1920);
+  }
+
+  .juno {
+    width: calc(100vw * 21.5 * 16 / 1920);
+    right: calc(100vw * 6.8 * 16 / 1920);
+    top: calc(100vw * 13 * 16 / 1920);
+    height: calc(100vw * 21.5 * 16 / 1920);
+  }
+
+  .secret {
+    width: calc(100vw * 19 * 16 / 1920);
+    height: calc(100vw * 19 * 16 / 1920);
+    top: calc(100vw * 45.5 * 16 / 1920);
+    right: calc(100vw * 6 * 16 / 1920);
+  }
+
+  .evmos {
+    width: calc(100vw * 13.7 * 16 / 1920);
+    top: calc(100vw * 46.4 * 16 / 1920);
+    right: calc(100vw * 35.5 * 16 / 1920);
+    height: calc(100vw * 13.7 * 16 / 1920);
+  }
+  .omniflix {
+    width: calc(100vw * 18 * 16 / 1920);
+    top: calc(100vw * 49.6 * 16 / 1920);
+    right: calc(100vw * 77.5 * 16 / 1920);
+    height: calc(100vw * 18 * 16 / 1920);
+  }
+  .sifchain {
+    width: calc(100vw * 20 * 16 / 1920);
+    height: calc(100vw * 20 * 16 / 1920);
+    top: calc(100vw * 18.3 * 16 / 1920);
+    right: calc(100vw * 35.6 * 16 / 1920);
+  }
+  .osmosis {
+    width: calc(100vw * 21.4 * 16 / 1920);
+    top: calc(100vw * 40.3 * 16 / 1920);
+    height: calc(100vw * 21.4 * 16 / 1920);
+    right: calc(100vw * 48.5 * 16 / 1920);
+  }
+
+  .yellow {
+    width: calc(100vw * 6 * 16 / 1920);
+    top: calc(100vw * 15.6 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 0.7 * 16 / 1920);
+  }
+  .red {
+    width: calc(100vw * 4.5 * 16 / 1920);
+    top: calc(100vw * 31.8 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 5.5 * 16 / 1920);
+  }
+  .green {
+    width: calc(100vw * 6.5 * 16 / 1920);
+    top: calc(100vw * 32.4 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 54 * 16 / 1920);
+  }
+  .purple {
+    width: calc(100vw * 6.5 * 16 / 1920);
+    top: calc(100vw * 55 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 25.5 * 16 / 1920);
+  }
+  .blue {
+    width: calc(100vw * 6.5 * 16 / 1920);
+    top: calc(100vw * 10.2 * 16 / 1920);
+    right: calc(100vw * 29.5 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+  }
+  .orange {
+    width: calc(100vw * 6.5 * 16 / 1920);
+    top: calc(100vw * 54.7 * 16 / 1920);
+    height: calc(100vw * 10 * 16 / 1920);
+    right: calc(100vw * 73.8 * 16 / 1920);
+  }
+  .description {
+    margin-top: calc(100vw * 13 * 16 / 1920);
+    margin-left: calc(100vw * 9 * 16 / 1920);
+  }
+
+  .description .bar {
+    height: calc(100vw * 8 / 1920);
+    width: calc(100vw * 100 / 1920);
+  }
+
+  .description .greetings {
+    font-size: calc(100vw * 50 / 1920);
+    max-width: calc(100vw * 50 * 16 / 1920);
+  }
+}

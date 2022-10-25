@@ -1,0 +1,60 @@
+.uptime {
+  margin-top: 2.5rem;
+  text-align: right;
+  align-items: right;
+  height: auto;
+}
+
+.uptime-header {
+  font-family: "SegoeUI-Light";
+  font-size: 40px;
+  color: white;
+}
+
+.label {
+  font-family: "SegoeUI-Light";
+  font-size: 15px;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  margin-top: -20px;
+  margin-bottom: -38px;
+}
+
+.col {
+  margin-right: -25px;
+  margin-left: -10px;
+}
+
+@media only screen and (min-width:360px) and (max-width: 1600px){
+  .uptime {
+    margin-top: 2.5rem;
+  }
+  
+  .uptime-header {
+    font-size: calc(100vw / 1920 * 60);
+  }
+  
+  .label {
+    font-size: calc(100vw / 1920 * 25);
+    margin-top: calc(100vw / 1920 * -5);
+    margin-bottom: calc(100vw / 1920 * 15);
+  }
+
+  .divisor {
+    width: calc(100vw / 1920 * 800);
+  }
+
+  .row {
+    margin-top: calc(100vw / 1920 * -20);
+    margin-bottom: calc(100vw / 1920 * -38);
+  }
+
+  .col {
+    margin-right: calc(100vw / 1920 * -25);
+    margin-left: calc(100vw / 1920 * -10);
+  }
+}

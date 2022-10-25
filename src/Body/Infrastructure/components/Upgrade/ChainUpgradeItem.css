@@ -1,0 +1,26 @@
+.chain-upgrade-items td {
+  padding: 1em;
+  text-align: center;
+  background: rgba(188, 188, 188, 0.2);
+  font-family: "SegoeUI-Light";
+  font-weight: 800;
+  font-size: 15px;
+  border-top: 0.5px solid white;
+  height: 60px;
+}
+
+.chain-upgrade-items .not-found {
+  padding: 1em;
+  text-align: center;
+  background: rgba(188, 188, 188, 0.2);
+  font-family: "SegoeUI-LightItalic";
+  font-weight: 800;
+  border-bottom: 0.5px solid white;
+  height: 60px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1027px) {
+  .chain-upgrade-items td {
+    font-size: calc(100vw * 30 / 1920);
+  }
+}
