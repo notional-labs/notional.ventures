@@ -15,28 +15,4 @@
        <changefreq>daily</changefreq>
        <priority>1.0000</priority>
   </url>
-  <url>
-      <loc>https://notional.ventures/endpoint</loc>
-      <lastmod>2022-09-30T02:38:47+00:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>1.0000</priority>
-  </url>
-  <url>
-      <loc>https://notional.ventures/snapshot</loc>
-      <lastmod>2022-09-30T02:38:47+00:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>1.0000</priority>
-  </url>
-  <url>
-      <loc>https://notional.ventures/upgrade</loc>
-      <lastmod>2022-09-30T02:38:47+00:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>1.0000</priority>
-  </url>
-<url>
-    <loc>https://status.notional.ventures</loc>
-    <lastmod>2022-09-30T02:38:47+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0000</priority>
-  </url>
 </urlset>

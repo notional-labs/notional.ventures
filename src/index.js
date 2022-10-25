@@ -2,11 +2,8 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Snapshot from "./Body/Infrastructure/pages/Snapshot";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Endpoint from "./Body/Infrastructure/pages/Endpoint";
-import ChainUpgrade from "./Body/Infrastructure/pages/ChainUpgrade";
 import { Navigate } from "react-router-dom";
 import Error from "./404";
 
