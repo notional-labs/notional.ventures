@@ -15,7 +15,9 @@ const StakeItem = (props) => {
   const [validator, setValidator] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetchData();
+    if (showHandler || props.showModal) {
+      fetchData();
+    }
   }, [showHandler]);
 
   const closeModalHandler = () => {
