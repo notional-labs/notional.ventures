@@ -90,7 +90,7 @@ const StakeItem = (props) => {
           apr={loadedChainInfo.data.apr}
           price={loadedChainInfo.data.prices}
           votingPower={validator.data.power}
-          rank={props.rank}
+          rank={validator.data.rank}
         ></Modal>
       )}
       {showHandler && !error && isLoading && (
