@@ -19,3 +19,9 @@
 font-family: "SegoeUI-Light";
 font-size: 40px;
 }
+
+@media only screen and (min-width: 360px) and (max-width: 1920px) { 
+  .nav-menu-option {
+  font-size: calc(100vw * 80 / 1920);
+  }
+}

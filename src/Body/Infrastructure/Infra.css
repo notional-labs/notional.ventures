@@ -142,6 +142,11 @@
     border-radius: calc(100vw / 1920 * 30);
   }
 
+  .service-item:hover {
+    width: calc(100vw / 1920 * 470);
+    height: calc(100vw / 1920 * 290);
+  }
+
   .service-item div img {
     max-width: calc(100vw / 1920 * 110);
     max-height: calc(100vw / 1920 * 110);
