@@ -30,33 +30,22 @@ const Navbar = () => {
       <SideDrawer show={drawerHandler} onCancel={closeDrawerHandler}>
         <nav className="main-nav-drawer">
           <ul className="main-nav-list-drawer">
-            <li>
+            <li onClick={closeDrawerHandler}>
               <a href="#Contribution">Contribution</a>
             </li>
-            <li>
+            <li onClick={closeDrawerHandler}>
               <a href="#Delegate">Delegate</a>
             </li>
-            <li className="dropdown-menu">
+            <li onClick={closeDrawerHandler} className="dropdown-menu">
               <a href="#Infra">Infrastructure</a>
-              <div className="navigation-content">
-                <Link to="/endpoint" style={{ fontSize: "20px" }}>
-                  Endpoints
-                </Link>
-                <Link to="/snapshot" style={{ fontSize: "20px" }}>
-                  Snapshot
-                </Link>
-                <Link to="/upgrade" style={{ fontSize: "20px" }}>
-                  Upgrade
-                </Link>
-              </div>
             </li>
-            <li>
+            <li onClick={closeDrawerHandler}>
               <a href="#Project">Projects</a>
             </li>
-            <li>
+            <li onClick={closeDrawerHandler}>
               <a href="#Team">Team</a>
             </li>
-            <li>
+            <li onClick={closeDrawerHandler}>
               <a href="#Contact">Contact</a>
             </li>
           </ul>
