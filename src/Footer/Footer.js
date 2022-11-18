@@ -31,14 +31,6 @@ const Footer = () => {
                         src={Twitter}
                     />
                 </a>
-                <a href="https://web.telegram.org/z/#-542022627">
-                    <Image
-                        className="icon-footer__img"
-                        alt="An telegram"
-                        preview={false}
-                        src={Telegram}
-                    />
-                </a>
             </div>
         </div>
     );
