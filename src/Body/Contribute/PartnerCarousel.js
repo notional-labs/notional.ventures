@@ -2,8 +2,6 @@ import React from "react";
 import Osmosis from "../../media/imgs/Contribution/Carousel/osmosis.avif";
 import Juno from "../../media/imgs/Contribution/Carousel/juno.avif";
 import Cosmos from "../../media/imgs/Contribution/Carousel/cosmos.avif";
-// import Stargaze from "../../media/imgs/Contribution/Carousel/stargaze.avif";
-// import Cheq from "../../media/imgs/Contribution/Carousel/cheqd.avif";
 import Omniflix from "../../media/imgs/Contribution/Carousel/omniflix.avif";
 import Injective from "../../media/imgs/Contribution/Carousel/injetive.avif";
 import Evmos from "../../media/imgs/Contribution/Carousel/evmos.avif";
