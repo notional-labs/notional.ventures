@@ -40,7 +40,7 @@ const AutoSlide = () => {
                         <img src={Juno} alt="" />
                     </div>
                     <div className="slide">
-                        <img src={Sifchain} alt="" />
+                        <img src={Injective} alt="" />
                     </div>
                     <div className="slide">
                         <img src={Evmos} alt="" />
@@ -58,7 +58,7 @@ const AutoSlide = () => {
                         <img src={Juno} alt="" />
                     </div>
                     <div className="slide">
-                        <img src={Sifchain} alt="" />
+                        <img src={Injective} alt="" />
                     </div>
                     <div className="slide">
                         <img src={Evmos} alt="" />
