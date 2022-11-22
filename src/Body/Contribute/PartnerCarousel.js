@@ -3,7 +3,7 @@ import Osmosis from "../../media/imgs/Contribution/Carousel/osmosis.avif";
 import Juno from "../../media/imgs/Contribution/Carousel/juno.avif";
 import Cosmos from "../../media/imgs/Contribution/Carousel/cosmos.avif";
 import Omniflix from "../../media/imgs/Contribution/Carousel/omniflix.avif";
-import Injective from "../../media/imgs/Contribution/Carousel/injetive.avif";
+import Injective from "../../media/imgs/Contribution/Carousel/injective.avif";
 import Evmos from "../../media/imgs/Contribution/Carousel/evmos.avif";
 import "./PartnerCarousel.css";
 
