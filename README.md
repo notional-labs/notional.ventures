@@ -4,3 +4,4 @@ We are Notional
 This is the landing page of Notional. This will contains the team, all projects and validators
 https://notional.ventures/
 
+f
